@@ -156,18 +156,21 @@ u_conv
 
 // Mux access to the 2nd port between external access and CPU data access
 wire                 muxed_hi_w   = ext_accept_w ? ext_addr_w[2] : mem_d_addr_i[2];
-wire [12:0] muxed_addr_w = ext_accept_w ? ext_addr_w[15:3] : mem_d_addr_i[15:3];
+wire [($clog2(MEM_DIM_KB * 1024)-4):0] muxed_addr_w = ext_accept_w ? ext_addr_w[($clog2(MEM_DIM_KB * 1024)-1):3] : mem_d_addr_i[($clog2(MEM_DIM_KB * 1024)-1):3];
 wire [31:0] muxed_data_w = ext_accept_w ? ext_write_data_w : mem_d_data_wr_i;
 wire [3:0]  muxed_wr_w   = ext_accept_w ? ext_wr_w         : mem_d_wr_i;
 wire [63:0] data_r_w;
 
 tcm_mem_ram
+#(
+     .MEM_DIM_KB(MEM_DIM_KB)
+)
 u_ram
 (
     // Instruction fetch
      .clk0_i(clk_i)
     ,.rst0_i(rst_i)
-    ,.addr0_i(mem_i_pc_i[15:3])
+    ,.addr0_i(mem_i_pc_i[($clog2(MEM_DIM_KB * 1024)-1):3])
     ,.data0_i(64'b0)
     ,.wr0_i(8'b0)
 
@@ -256,47 +259,5 @@ assign mem_d_error_o        = 1'b0;
 assign mem_d_accept_o       = mem_d_accept_q;
 assign ext_accept_w         = !mem_d_accept_q;
 assign ext_ack_w            = ext_ack_q;
-
-`ifdef verilator
-//-------------------------------------------------------------
-// write: Write byte into memory
-//-------------------------------------------------------------
-function write; /*verilator public*/
-    input [31:0] addr;
-    input [7:0]  data;
-begin
-    case (addr[2:0])
-    3'd0: u_ram.ram[addr/8][7:0]   = data;
-    3'd1: u_ram.ram[addr/8][15:8]  = data;
-    3'd2: u_ram.ram[addr/8][23:16] = data;
-    3'd3: u_ram.ram[addr/8][31:24] = data;
-    3'd4: u_ram.ram[addr/8][39:32] = data;
-    3'd5: u_ram.ram[addr/8][47:40] = data;
-    3'd6: u_ram.ram[addr/8][55:48] = data;
-    3'd7: u_ram.ram[addr/8][63:56] = data;
-    endcase
-end
-endfunction
-//-------------------------------------------------------------
-// read: Read byte from memory
-//-------------------------------------------------------------
-function [7:0] read; /*verilator public*/
-    input [31:0] addr;
-begin
-    case (addr[2:0])
-    3'd0: read = u_ram.ram[addr/8][7:0];
-    3'd1: read = u_ram.ram[addr/8][15:8];
-    3'd2: read = u_ram.ram[addr/8][23:16];
-    3'd3: read = u_ram.ram[addr/8][31:24];
-    3'd4: read = u_ram.ram[addr/8][39:32];
-    3'd5: read = u_ram.ram[addr/8][47:40];
-    3'd6: read = u_ram.ram[addr/8][55:48];
-    3'd7: read = u_ram.ram[addr/8][63:56];
-    endcase
-end
-endfunction
-`endif
-
-
 
 endmodule
