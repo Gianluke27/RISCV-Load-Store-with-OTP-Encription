@@ -28,7 +28,8 @@ module riscv_core
 // Params
 //-----------------------------------------------------------------
 #(
-     parameter SUPPORT_BRANCH_PREDICTION = 1
+     parameter MEM_DIM_KB = 64
+    ,parameter SUPPORT_BRANCH_PREDICTION = 1
     ,parameter SUPPORT_MULDIV   = 1
     ,parameter SUPPORT_SUPER    = 0
     ,parameter SUPPORT_MMU      = 0

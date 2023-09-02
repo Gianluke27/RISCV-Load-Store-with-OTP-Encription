@@ -28,7 +28,8 @@ module dport_mux
 // Params
 //-----------------------------------------------------------------
 #(
-     parameter TCM_MEM_BASE     = 0
+     parameter TCM_MEM_BASE = 0
+    ,parameter MEM_DIM_KB = 64
 )
 //-----------------------------------------------------------------
 // Ports

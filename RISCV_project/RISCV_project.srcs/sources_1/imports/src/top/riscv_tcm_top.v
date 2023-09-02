@@ -28,9 +28,9 @@ module riscv_tcm_top
 // Params
 //-----------------------------------------------------------------
 #(
-     parameter BOOT_VECTOR      = 32'h00000000
+     parameter BOOT_VECTOR      = 32'h80000000
     ,parameter CORE_ID          = 0
-    ,parameter TCM_MEM_BASE     = 32'h00000000
+    ,parameter TCM_MEM_BASE     = 32'h80000000
     ,parameter SUPPORT_BRANCH_PREDICTION = 1
     ,parameter SUPPORT_MULDIV   = 1
     ,parameter SUPPORT_SUPER    = 0
@@ -40,6 +40,7 @@ module riscv_tcm_top
     ,parameter SUPPORT_MUL_BYPASS = 1
     ,parameter SUPPORT_REGFILE_XILINX = 0
     ,parameter EXTRA_DECODE_STAGE = 0
+    ,parameter MEM_DIM_KB = 64
     ,parameter MEM_CACHE_ADDR_MIN = 32'h80000000
     ,parameter MEM_CACHE_ADDR_MAX = 32'h8fffffff
     ,parameter NUM_BTB_ENTRIES  = 32
@@ -165,7 +166,8 @@ wire           dport_accept_w;
 
 riscv_core
 #(
-     .MEM_CACHE_ADDR_MIN(MEM_CACHE_ADDR_MIN)
+     .MEM_DIM_KB(MEM_DIM_KB)
+    ,.MEM_CACHE_ADDR_MIN(MEM_CACHE_ADDR_MIN)
     ,.MEM_CACHE_ADDR_MAX(MEM_CACHE_ADDR_MAX)
     ,.SUPPORT_BRANCH_PREDICTION(SUPPORT_BRANCH_PREDICTION)
     ,.SUPPORT_MULDIV(SUPPORT_MULDIV)
@@ -224,6 +226,7 @@ u_core
 dport_mux
 #(
      .TCM_MEM_BASE(TCM_MEM_BASE)
+     ,.MEM_DIM_KB(MEM_DIM_KB)
 )
 u_dmux
 (
@@ -278,6 +281,9 @@ u_dmux
 
 
 tcm_mem
+#(
+     .MEM_DIM_KB(MEM_DIM_KB)
+)
 u_tcm
 (
     // Inputs
@@ -378,6 +384,21 @@ u_axi
     ,.axi_rready_o(axi_i_rready_o)
 );
 
+// Added PseudoRandomGenerator
+// To implement a quantum random generator in the future
+wire [31:0] random_num_w;
 
+// PseudoRandomGenerator module
+RandomGenerator
+u_rand_gen
+(
+    // Inputs
+     .clk_i(clk_i)
+    ,.rst_i(rst_i)
+    ,.en_i(|dport_wr_w)
+    
+    //Outputs
+    ,.random_num_o(random_num_w)
+);
 
 endmodule
