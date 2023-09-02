@@ -201,6 +201,7 @@ u_core
     ,.mem_i_valid_i(ifetch_valid_w)
     ,.mem_i_error_i(ifetch_error_w)
     ,.mem_i_inst_i(ifetch_inst_w)
+    ,.mem_d_enc_error_i(dport_error_w)
     ,.intr_i(|intr_i)
     ,.reset_vector_i(boot_vector_w)
     ,.cpu_id_i(cpu_id_w)
@@ -282,6 +283,8 @@ u_dmux
 tcm_mem
 #(
      .MEM_DIM_KB(MEM_DIM_KB)
+    ,.SUPPORT_ENCRYPTION(SUPPORT_ENCRYPTION)
+    ,.SUPPORT_ENC_UPDATER(SUPPORT_ENC_UPDATER)
 )
 u_tcm
 (
@@ -301,6 +304,7 @@ u_tcm
     ,.mem_d_invalidate_i(dport_tcm_invalidate_w)
     ,.mem_d_writeback_i(dport_tcm_writeback_w)
     ,.mem_d_flush_i(dport_tcm_flush_w)
+    ,.random_num_i(random_num_w)
     ,.axi_awvalid_i(axi_t_awvalid_i)
     ,.axi_awaddr_i(axi_t_awaddr_i)
     ,.axi_awid_i(axi_t_awid_i)
