@@ -1,21 +1,32 @@
+//-----------------------------------------------------------------
+// Includes
+//-----------------------------------------------------------------
+// RAM SIZE (KB)
+`define MEMORY_SIZE_KB          (64)
+
+// Other RAM definitions
+`define MEMORY_SIZE_DW          (`MEMORY_SIZE_KB * 128)
+`define MEMORY_SIZE_B           (`MEMORY_SIZE_KB * 1024)
+`define MEMORY_ADDRESS_SIZE     ($clog2(`MEMORY_SIZE_B))
+
+// ENC SUPPORT (KB)
+`define ENC_SUPPORT             (1)
+
 module tb_top;
 
 reg clk;
 reg rst;
 
-reg [7:0] mem[131072:0];
+reg [7:0] mem[(`MEMORY_SIZE_B-1):0];
 integer i;
 integer f;
+integer mem_empty;
+integer mem_dim = `MEMORY_SIZE_B;
 
 initial
 begin
     $display("Starting bench");
 
-    if (`TRACE)
-    begin
-        $dumpfile("waveform.vcd");
-        $dumpvars(0, tb_top);
-    end
 
     // Reset
     clk = 0;
@@ -24,13 +35,62 @@ begin
     rst = 0;
 
     // Load TCM memory
-    for (i=0;i<131072;i=i+1)
+    for (i=0;i<mem_dim;i=i+1)
         mem[i] = 0;
+        
+    if(`ENC_SUPPORT)
+    begin
+        for (i=0;i<mem_dim;i=i+1)
+        begin
+            write_enc(i, 0);
+            write_otp(i, 0);
+        end
+    end
 
-    f = $fopenr("./build/tcm.bin");
+    f = $fopen("test_01.bin","rb");
     i = $fread(mem, f);
-    for (i=0;i<131072;i=i+1)
-        u_mem.write(i, mem[i]);
+    $fclose(f);
+    $display("i = %d",i);
+    $display("before -> rdata:");
+    mem_empty = 1;
+    for (i=mem_dim-1; i >= 0; i=i-1)
+        if(riscv.u_tcm.u_ram.ram[i] != 64'd0)
+            mem_empty = 0;
+            
+    if(mem_empty)
+        $display("OK! Memory Empty!");
+        
+    for (i=0;i<mem_dim;i=i+1)
+        write(i, mem[i]);
+        
+    //write(512, 8'd27);
+    //write(1024, 8'd82);
+    
+    
+    
+    $display("after -> rdata:");
+    for (i=mem_dim-1; i >= 0; i=i-1)
+        if(riscv.u_tcm.u_ram.ram[i] != 64'd0)
+            $display("%d:%h",i,riscv.u_tcm.u_ram.ram[i]);
+        
+    repeat (42) @(posedge clk);
+    write(512, 8'd27);
+    repeat (10) @(posedge clk);
+            
+    // Stop condition - to implement
+    /*
+    i = 0;
+    while(u_dut.u_frontend.u_fetch.fetch_pc_o != 32'h80000000)
+    begin
+        repeat (1) @(posedge clk);
+        //$display("%d",i);
+        //i=i+1;
+    end
+    repeat (5) @(posedge clk);
+    */
+    
+    // Finish 
+    $finish;
 end
 
 initial
@@ -41,97 +101,100 @@ begin
     end
 end
 
-wire          mem_i_rd_w;
-wire          mem_i_flush_w;
-wire          mem_i_invalidate_w;
-wire [ 31:0]  mem_i_pc_w;
-wire [ 31:0]  mem_d_addr_w;
-wire [ 31:0]  mem_d_data_wr_w;
-wire          mem_d_rd_w;
-wire [  3:0]  mem_d_wr_w;
-wire          mem_d_cacheable_w;
-wire [ 10:0]  mem_d_req_tag_w;
-wire          mem_d_invalidate_w;
-wire          mem_d_writeback_w;
-wire          mem_d_flush_w;
-wire          mem_i_accept_w;
-wire          mem_i_valid_w;
-wire          mem_i_error_w;
-wire [ 63:0]  mem_i_inst_w;
-wire [ 31:0]  mem_d_data_rd_w;
-wire          mem_d_accept_w;
-wire          mem_d_ack_w;
-wire          mem_d_error_w;
-wire [ 10:0]  mem_d_resp_tag_w;
-
-riscv_core
-u_dut
-//-----------------------------------------------------------------
-// Ports
-//-----------------------------------------------------------------
+riscv_tcm_top 
+#(
+    .BOOT_VECTOR(32'h80000000)
+    ,.CORE_ID(0)
+    ,.TCM_MEM_BASE(32'h80000000)
+    ,.SUPPORT_BRANCH_PREDICTION(1)
+    ,.SUPPORT_MULDIV(1)
+    ,.SUPPORT_SUPER(0)
+    ,.SUPPORT_MMU(0)
+    ,.SUPPORT_DUAL_ISSUE(1)
+    ,.SUPPORT_LOAD_BYPASS(1)
+    ,.SUPPORT_MUL_BYPASS(1)
+    ,.SUPPORT_REGFILE_XILINX(0)
+    ,.EXTRA_DECODE_STAGE(0)
+    ,.MEM_CACHE_ADDR_MIN(32'h80000000)
+    ,.MEM_CACHE_ADDR_MAX(32'h8fffffff)
+    ,.NUM_BTB_ENTRIES(32)
+    ,.NUM_BTB_ENTRIES_W(5)
+    ,.NUM_BHT_ENTRIES(512)
+    ,.NUM_BHT_ENTRIES_W(9)
+    ,.RAS_ENABLE(1)
+    ,.GSHARE_ENABLE(0)
+    ,.BHT_ENABLE(1)
+    ,.NUM_RAS_ENTRIES(8)
+    ,.NUM_RAS_ENTRIES_W(3)
+    ,.SUPPORT_ENCRYPTION(1)
+    ,.SUPPORT_ENC_UPDATER(0)
+)
+riscv
 (
     // Inputs
      .clk_i(clk)
     ,.rst_i(rst)
-    ,.mem_d_data_rd_i(mem_d_data_rd_w)
-    ,.mem_d_accept_i(mem_d_accept_w)
-    ,.mem_d_ack_i(mem_d_ack_w)
-    ,.mem_d_error_i(mem_d_error_w)
-    ,.mem_d_resp_tag_i(mem_d_resp_tag_w)
-    ,.mem_i_accept_i(mem_i_accept_w)
-    ,.mem_i_valid_i(mem_i_valid_w)
-    ,.mem_i_error_i(mem_i_error_w)
-    ,.mem_i_inst_i(mem_i_inst_w)
-    ,.intr_i(1'b0)
-    ,.reset_vector_i(32'h80000000)
-    ,.cpu_id_i('b0)
-
-    // Outputs
-    ,.mem_d_addr_o(mem_d_addr_w)
-    ,.mem_d_data_wr_o(mem_d_data_wr_w)
-    ,.mem_d_rd_o(mem_d_rd_w)
-    ,.mem_d_wr_o(mem_d_wr_w)
-    ,.mem_d_cacheable_o(mem_d_cacheable_w)
-    ,.mem_d_req_tag_o(mem_d_req_tag_w)
-    ,.mem_d_invalidate_o(mem_d_invalidate_w)
-    ,.mem_d_writeback_o(mem_d_writeback_w)
-    ,.mem_d_flush_o(mem_d_flush_w)
-    ,.mem_i_rd_o(mem_i_rd_w)
-    ,.mem_i_flush_o(mem_i_flush_w)
-    ,.mem_i_invalidate_o(mem_i_invalidate_w)
-    ,.mem_i_pc_o(mem_i_pc_w)
+    ,.rst_cpu_i(rst)
 );
 
-tcm_mem
-u_mem
-(
-    // Inputs
-     .clk_i(clk)
-    ,.rst_i(rst)
-    ,.mem_i_rd_i(mem_i_rd_w)
-    ,.mem_i_flush_i(mem_i_flush_w)
-    ,.mem_i_invalidate_i(mem_i_invalidate_w)
-    ,.mem_i_pc_i(mem_i_pc_w)
-    ,.mem_d_addr_i(mem_d_addr_w)
-    ,.mem_d_data_wr_i(mem_d_data_wr_w)
-    ,.mem_d_rd_i(mem_d_rd_w)
-    ,.mem_d_wr_i(mem_d_wr_w)
-    ,.mem_d_cacheable_i(mem_d_cacheable_w)
-    ,.mem_d_req_tag_i(mem_d_req_tag_w)
-    ,.mem_d_invalidate_i(mem_d_invalidate_w)
-    ,.mem_d_writeback_i(mem_d_writeback_w)
-    ,.mem_d_flush_i(mem_d_flush_w)
 
-    // Outputs
-    ,.mem_i_accept_o(mem_i_accept_w)
-    ,.mem_i_valid_o(mem_i_valid_w)
-    ,.mem_i_error_o(mem_i_error_w)
-    ,.mem_i_inst_o(mem_i_inst_w)
-    ,.mem_d_data_rd_o(mem_d_data_rd_w)
-    ,.mem_d_accept_o(mem_d_accept_w)
-    ,.mem_d_ack_o(mem_d_ack_w)
-    ,.mem_d_error_o(mem_d_error_w)
-    ,.mem_d_resp_tag_o(mem_d_resp_tag_w)
-);
+//-------------------------------------------------------------
+// write: Write byte into memory
+//-------------------------------------------------------------
+task write; /*verilator public*/
+    input [31:0] addr;
+    input [7:0]  data;
+begin
+    case (addr[2:0])
+    3'd0: riscv.u_tcm.u_ram.ram[addr/8][7:0]   = data;
+    3'd1: riscv.u_tcm.u_ram.ram[addr/8][15:8]  = data;
+    3'd2: riscv.u_tcm.u_ram.ram[addr/8][23:16] = data;
+    3'd3: riscv.u_tcm.u_ram.ram[addr/8][31:24] = data;
+    3'd4: riscv.u_tcm.u_ram.ram[addr/8][39:32] = data;
+    3'd5: riscv.u_tcm.u_ram.ram[addr/8][47:40] = data;
+    3'd6: riscv.u_tcm.u_ram.ram[addr/8][55:48] = data;
+    3'd7: riscv.u_tcm.u_ram.ram[addr/8][63:56] = data;
+    endcase
+end
+endtask
+
+generate
+if(`ENC_SUPPORT)
+begin
+    task write_otp; 
+        input [31:0] addr;
+        input [7:0]  data;
+    begin
+        case (addr[2:0])
+        3'd0: riscv.u_tcm.secure_zone.no_enc_updater.u_otp_ram.ram[addr/8][7:0]   = data;
+        3'd1: riscv.u_tcm.secure_zone.no_enc_updater.u_otp_ram.ram[addr/8][15:8]  = data;
+        3'd2: riscv.u_tcm.secure_zone.no_enc_updater.u_otp_ram.ram[addr/8][23:16] = data;
+        3'd3: riscv.u_tcm.secure_zone.no_enc_updater.u_otp_ram.ram[addr/8][31:24] = data;
+        3'd4: riscv.u_tcm.secure_zone.no_enc_updater.u_otp_ram.ram[addr/8][39:32] = data;
+        3'd5: riscv.u_tcm.secure_zone.no_enc_updater.u_otp_ram.ram[addr/8][47:40] = data;
+        3'd6: riscv.u_tcm.secure_zone.no_enc_updater.u_otp_ram.ram[addr/8][55:48] = data;
+        3'd7: riscv.u_tcm.secure_zone.no_enc_updater.u_otp_ram.ram[addr/8][63:56] = data;
+        endcase
+    end
+    endtask
+    
+    task write_enc; 
+        input [31:0] addr;
+        input [7:0]  data;
+    begin
+        case (addr[2:0])
+        3'd0: riscv.u_tcm.secure_zone.no_enc_updater.u_enc_ram.ram[addr/8][7:0]   = data;
+        3'd1: riscv.u_tcm.secure_zone.no_enc_updater.u_enc_ram.ram[addr/8][15:8]  = data;
+        3'd2: riscv.u_tcm.secure_zone.no_enc_updater.u_enc_ram.ram[addr/8][23:16] = data;
+        3'd3: riscv.u_tcm.secure_zone.no_enc_updater.u_enc_ram.ram[addr/8][31:24] = data;
+        3'd4: riscv.u_tcm.secure_zone.no_enc_updater.u_enc_ram.ram[addr/8][39:32] = data;
+        3'd5: riscv.u_tcm.secure_zone.no_enc_updater.u_enc_ram.ram[addr/8][47:40] = data;
+        3'd6: riscv.u_tcm.secure_zone.no_enc_updater.u_enc_ram.ram[addr/8][55:48] = data;
+        3'd7: riscv.u_tcm.secure_zone.no_enc_updater.u_enc_ram.ram[addr/8][63:56] = data;
+        endcase
+    end
+    endtask
+end
+endgenerate
 
 endmodule
