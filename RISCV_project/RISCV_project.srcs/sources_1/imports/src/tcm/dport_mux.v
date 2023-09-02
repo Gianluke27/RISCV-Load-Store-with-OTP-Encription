@@ -92,7 +92,7 @@ module dport_mux
 wire hold_w;
 
 /* verilator lint_off UNSIGNED */
-wire tcm_access_w = (mem_addr_i >= TCM_MEM_BASE && mem_addr_i < (TCM_MEM_BASE + 32'd65536));
+wire tcm_access_w = (mem_addr_i >= TCM_MEM_BASE && mem_addr_i < (TCM_MEM_BASE + (MEM_DIM_KB*1024)));
 /* verilator lint_on UNSIGNED */
 
 reg       tcm_access_q;
