@@ -498,9 +498,9 @@
 `define MCAUSE_ILLEGAL_INSTRUCTION      ((0 << `MCAUSE_INT) | 2)
 `define MCAUSE_BREAKPOINT               ((0 << `MCAUSE_INT) | 3)
 `define MCAUSE_MISALIGNED_LOAD          ((0 << `MCAUSE_INT) | 4)
-`define MCAUSE_FAULT_LOAD               ((0 << `MCAUSE_INT) | 5)
+`define MCAUSE_FAULT_LOAD               ((0 << `MCAUSE_INT) | 5)    //  00101
 `define MCAUSE_MISALIGNED_STORE         ((0 << `MCAUSE_INT) | 6)
-`define MCAUSE_FAULT_STORE              ((0 << `MCAUSE_INT) | 7)
+`define MCAUSE_FAULT_STORE              ((0 << `MCAUSE_INT) | 7)    //  00111
 `define MCAUSE_ECALL_U                  ((0 << `MCAUSE_INT) | 8)
 `define MCAUSE_ECALL_S                  ((0 << `MCAUSE_INT) | 9)
 `define MCAUSE_ECALL_H                  ((0 << `MCAUSE_INT) | 10)
@@ -508,6 +508,8 @@
 `define MCAUSE_PAGE_FAULT_INST          ((0 << `MCAUSE_INT) | 12)
 `define MCAUSE_PAGE_FAULT_LOAD          ((0 << `MCAUSE_INT) | 13)
 `define MCAUSE_PAGE_FAULT_STORE         ((0 << `MCAUSE_INT) | 15)
+`define MCAUSE_FAULT_LOAD_ENC           ((0 << `MCAUSE_INT) | 21)   //  10101
+`define MCAUSE_FAULT_STORE_ENC          ((0 << `MCAUSE_INT) | 23)   //  10111
 `define MCAUSE_INTERRUPT                (1 << `MCAUSE_INT)
 
 //--------------------------------------------------------------------

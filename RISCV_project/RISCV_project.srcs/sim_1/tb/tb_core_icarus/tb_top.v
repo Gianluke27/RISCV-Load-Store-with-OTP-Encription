@@ -158,43 +158,38 @@ begin
 end
 endtask
 
-generate
-if(`ENC_SUPPORT)
+task write_otp; 
+    input [31:0] addr;
+    input [7:0]  data;
 begin
-    task write_otp; 
-        input [31:0] addr;
-        input [7:0]  data;
-    begin
-        case (addr[2:0])
-        3'd0: riscv.u_tcm.secure_zone.no_enc_updater.u_otp_ram.ram[addr/8][7:0]   = data;
-        3'd1: riscv.u_tcm.secure_zone.no_enc_updater.u_otp_ram.ram[addr/8][15:8]  = data;
-        3'd2: riscv.u_tcm.secure_zone.no_enc_updater.u_otp_ram.ram[addr/8][23:16] = data;
-        3'd3: riscv.u_tcm.secure_zone.no_enc_updater.u_otp_ram.ram[addr/8][31:24] = data;
-        3'd4: riscv.u_tcm.secure_zone.no_enc_updater.u_otp_ram.ram[addr/8][39:32] = data;
-        3'd5: riscv.u_tcm.secure_zone.no_enc_updater.u_otp_ram.ram[addr/8][47:40] = data;
-        3'd6: riscv.u_tcm.secure_zone.no_enc_updater.u_otp_ram.ram[addr/8][55:48] = data;
-        3'd7: riscv.u_tcm.secure_zone.no_enc_updater.u_otp_ram.ram[addr/8][63:56] = data;
-        endcase
-    end
-    endtask
-    
-    task write_enc; 
-        input [31:0] addr;
-        input [7:0]  data;
-    begin
-        case (addr[2:0])
-        3'd0: riscv.u_tcm.secure_zone.no_enc_updater.u_enc_ram.ram[addr/8][7:0]   = data;
-        3'd1: riscv.u_tcm.secure_zone.no_enc_updater.u_enc_ram.ram[addr/8][15:8]  = data;
-        3'd2: riscv.u_tcm.secure_zone.no_enc_updater.u_enc_ram.ram[addr/8][23:16] = data;
-        3'd3: riscv.u_tcm.secure_zone.no_enc_updater.u_enc_ram.ram[addr/8][31:24] = data;
-        3'd4: riscv.u_tcm.secure_zone.no_enc_updater.u_enc_ram.ram[addr/8][39:32] = data;
-        3'd5: riscv.u_tcm.secure_zone.no_enc_updater.u_enc_ram.ram[addr/8][47:40] = data;
-        3'd6: riscv.u_tcm.secure_zone.no_enc_updater.u_enc_ram.ram[addr/8][55:48] = data;
-        3'd7: riscv.u_tcm.secure_zone.no_enc_updater.u_enc_ram.ram[addr/8][63:56] = data;
-        endcase
-    end
-    endtask
+    case (addr[2:0])
+    3'd0: riscv.u_tcm.secure_zone.no_enc_updater.u_otp_ram.ram[addr/8][7:0]   = data;
+    3'd1: riscv.u_tcm.secure_zone.no_enc_updater.u_otp_ram.ram[addr/8][15:8]  = data;
+    3'd2: riscv.u_tcm.secure_zone.no_enc_updater.u_otp_ram.ram[addr/8][23:16] = data;
+    3'd3: riscv.u_tcm.secure_zone.no_enc_updater.u_otp_ram.ram[addr/8][31:24] = data;
+    3'd4: riscv.u_tcm.secure_zone.no_enc_updater.u_otp_ram.ram[addr/8][39:32] = data;
+    3'd5: riscv.u_tcm.secure_zone.no_enc_updater.u_otp_ram.ram[addr/8][47:40] = data;
+    3'd6: riscv.u_tcm.secure_zone.no_enc_updater.u_otp_ram.ram[addr/8][55:48] = data;
+    3'd7: riscv.u_tcm.secure_zone.no_enc_updater.u_otp_ram.ram[addr/8][63:56] = data;
+    endcase
 end
-endgenerate
+endtask
+
+task write_enc; 
+    input [31:0] addr;
+    input [7:0]  data;
+begin
+    case (addr[2:0])
+    3'd0: riscv.u_tcm.secure_zone.no_enc_updater.u_enc_ram.ram[addr/8][7:0]   = data;
+    3'd1: riscv.u_tcm.secure_zone.no_enc_updater.u_enc_ram.ram[addr/8][15:8]  = data;
+    3'd2: riscv.u_tcm.secure_zone.no_enc_updater.u_enc_ram.ram[addr/8][23:16] = data;
+    3'd3: riscv.u_tcm.secure_zone.no_enc_updater.u_enc_ram.ram[addr/8][31:24] = data;
+    3'd4: riscv.u_tcm.secure_zone.no_enc_updater.u_enc_ram.ram[addr/8][39:32] = data;
+    3'd5: riscv.u_tcm.secure_zone.no_enc_updater.u_enc_ram.ram[addr/8][47:40] = data;
+    3'd6: riscv.u_tcm.secure_zone.no_enc_updater.u_enc_ram.ram[addr/8][55:48] = data;
+    3'd7: riscv.u_tcm.secure_zone.no_enc_updater.u_enc_ram.ram[addr/8][63:56] = data;
+    endcase
+end
+endtask
 
 endmodule

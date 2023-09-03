@@ -52,6 +52,8 @@ module riscv_tcm_top
     ,parameter BHT_ENABLE       = 1
     ,parameter NUM_RAS_ENTRIES  = 8
     ,parameter NUM_RAS_ENTRIES_W = 3
+    ,parameter SUPPORT_ENCRYPTION = 1
+    ,parameter SUPPORT_ENC_UPDATER = 0
 )
 //-----------------------------------------------------------------
 // Ports
@@ -186,6 +188,8 @@ riscv_core
     ,.BHT_ENABLE(BHT_ENABLE)
     ,.NUM_RAS_ENTRIES(NUM_RAS_ENTRIES)
     ,.NUM_RAS_ENTRIES_W(NUM_RAS_ENTRIES_W)
+    ,.SUPPORT_ENCRYPTION(SUPPORT_ENCRYPTION)
+    ,.SUPPORT_ENC_UPDATER(SUPPORT_ENC_UPDATER)
 )
 u_core
 (

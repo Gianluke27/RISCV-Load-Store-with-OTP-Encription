@@ -1,0 +1,42 @@
+Time resolution is 1 ps
+Starting bench
+WARNING: Insufficient data from the input file for $fread
+i =         268
+before -> rdata:
+OK! Memory Empty!
+after -> rdata:
+         33:0000000000008067
+         32:0101011300c12403
+         31:0007851300000793
+         30:200fac03200f9b83
+         29:21efa023200f8b03
+         28:21dfa023200faa83
+         27:21cfa023200f9a03
+         26:207fa023200f8983
+         25:0000001300000013
+         24:0000001300000013
+         23:0000001300000013
+         22:0000001300000013
+         21:0000001300000013
+         20:0000001300000013
+         19:200f8983206fa023
+         18:200fa903200f9483
+         17:200f8403205fa023
+         16:80000fb7678f0f13
+         15:12345f37555e8e93
+         14:55555eb7444e0e13
+         13:44444e3733338393
+         12:333333b722230313
+         11:2222233711128293
+         10:111112b701010413
+          9:00812623ff010113
+          8:0000006f7b201073
+          7:00000013008000ef
+          6:014000ef006282b3
+          5:00078293df878793
+          4:0002879320078293
+          3:800027b7df878313
+          2:800027b730529073
+          1:04078293800007b7
+          0:e401011380003137
+$finish called at time : 565 ns : File "H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.srcs/sim_1/imports/tb/tb_core_icarus/tb_top.v" Line 93

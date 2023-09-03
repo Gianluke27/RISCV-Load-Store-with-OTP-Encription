@@ -48,6 +48,8 @@ module riscv_core
     ,parameter BHT_ENABLE       = 1
     ,parameter NUM_RAS_ENTRIES  = 8
     ,parameter NUM_RAS_ENTRIES_W = 3
+    ,parameter SUPPORT_ENCRYPTION = 1
+    ,parameter SUPPORT_ENC_UPDATER = 0
 )
 //-----------------------------------------------------------------
 // Ports
@@ -61,6 +63,7 @@ module riscv_core
     ,input           mem_d_ack_i
     ,input           mem_d_error_i
     ,input  [ 10:0]  mem_d_resp_tag_i
+    ,input           mem_d_enc_error_i      // ADDED INPUT - memory data encryption error
     ,input           mem_i_accept_i
     ,input           mem_i_valid_i
     ,input           mem_i_error_i
@@ -251,6 +254,7 @@ wire  [  4:0]  lsu_opcode_ra_idx_w;
 wire  [ 31:0]  csr_writeback_exception_pc_w;
 wire           fetch1_instr_mul_w;
 wire           mmu_store_fault_w;
+wire           mem_enc_error_w;
 
 
 biriscv_frontend
@@ -402,6 +406,8 @@ biriscv_lsu
 #(
      .MEM_CACHE_ADDR_MAX(MEM_CACHE_ADDR_MAX)
     ,.MEM_CACHE_ADDR_MIN(MEM_CACHE_ADDR_MIN)
+    ,.SUPPORT_ENCRYPTION(SUPPORT_ENCRYPTION)
+    ,.SUPPORT_ENC_UPDATER(SUPPORT_ENC_UPDATER)
 )
 u_lsu
 (
@@ -421,6 +427,7 @@ u_lsu
     ,.mem_accept_i(mmu_lsu_accept_w)
     ,.mem_ack_i(mmu_lsu_ack_w)
     ,.mem_error_i(mmu_lsu_error_w)
+    ,.mem_enc_error_i(mem_d_enc_error_i)
     ,.mem_resp_tag_i(mmu_lsu_resp_tag_w)
     ,.mem_load_fault_i(mmu_load_fault_w)
     ,.mem_store_fault_i(mmu_store_fault_w)
@@ -438,6 +445,7 @@ u_lsu
     ,.writeback_valid_o(writeback_mem_valid_w)
     ,.writeback_value_o(writeback_mem_value_w)
     ,.writeback_exception_o(writeback_mem_exception_w)
+    ,.mem_enc_error_o(mem_enc_error_w)
     ,.stall_o(lsu_stall_w)
 );
 
@@ -446,6 +454,8 @@ biriscv_csr
 #(
      .SUPPORT_SUPER(SUPPORT_SUPER)
     ,.SUPPORT_MULDIV(SUPPORT_MULDIV)
+    ,.SUPPORT_ENCRYPTION(SUPPORT_ENCRYPTION)
+    ,.SUPPORT_ENC_UPDATER(SUPPORT_ENC_UPDATER)
 )
 u_csr
 (
@@ -462,6 +472,7 @@ u_csr
     ,.opcode_rb_idx_i(csr_opcode_rb_idx_w)
     ,.opcode_ra_operand_i(csr_opcode_ra_operand_w)
     ,.opcode_rb_operand_i(csr_opcode_rb_operand_w)
+    ,.csr_mem_d_enc_error_i(mem_enc_error_w)
     ,.csr_writeback_write_i(csr_writeback_write_w)
     ,.csr_writeback_waddr_i(csr_writeback_waddr_w)
     ,.csr_writeback_wdata_i(csr_writeback_wdata_w)

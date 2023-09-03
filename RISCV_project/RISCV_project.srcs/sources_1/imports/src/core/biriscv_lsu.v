@@ -30,6 +30,8 @@ module biriscv_lsu
 #(
      parameter MEM_CACHE_ADDR_MIN = 0
     ,parameter MEM_CACHE_ADDR_MAX = 32'hffffffff
+    ,parameter SUPPORT_ENCRYPTION = 1
+    ,parameter SUPPORT_ENC_UPDATER = 0
 )
 //-----------------------------------------------------------------
 // Ports
@@ -51,6 +53,7 @@ module biriscv_lsu
     ,input           mem_accept_i
     ,input           mem_ack_i
     ,input           mem_error_i
+    ,input           mem_enc_error_i
     ,input  [ 10:0]  mem_resp_tag_i
     ,input           mem_load_fault_i
     ,input           mem_store_fault_i
@@ -68,6 +71,7 @@ module biriscv_lsu
     ,output          writeback_valid_o
     ,output [ 31:0]  writeback_value_o
     ,output [  5:0]  writeback_exception_o
+    ,output          mem_enc_error_o
     ,output          stall_o
 );
 
@@ -416,6 +420,22 @@ assign writeback_exception_o         = fault_load_align_w  ? `EXCEPTION_MISALIGN
                                        fault_load_bus_w    ? `EXCEPTION_FAULT_LOAD:
                                        fault_store_bus_w   ? `EXCEPTION_FAULT_STORE:
                                        `EXCEPTION_W'b0;
+
+generate
+if(SUPPORT_ENCRYPTION)
+begin
+    // Delayed memory encryption error
+    reg    mem_enc_error_q;
+    
+    always @ (posedge clk_i or posedge rst_i)
+    if (rst_i)
+        mem_enc_error_q <= 1'b0;
+    else
+        mem_enc_error_q <= mem_enc_error_i;
+    
+    assign mem_enc_error_o = mem_enc_error_q;
+end
+endgenerate
 
 endmodule 
 

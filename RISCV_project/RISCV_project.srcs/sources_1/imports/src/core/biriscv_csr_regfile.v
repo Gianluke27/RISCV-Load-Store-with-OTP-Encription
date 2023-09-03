@@ -27,8 +27,10 @@ module biriscv_csr_regfile
 // Params
 //-----------------------------------------------------------------
 #(
-     parameter SUPPORT_MTIMECMP    = 1,
-     parameter SUPPORT_SUPER       = 0
+     parameter SUPPORT_MTIMECMP    = 1
+    ,parameter SUPPORT_SUPER       = 0
+    ,parameter SUPPORT_ENCRYPTION = 1
+    ,parameter SUPPORT_ENC_UPDATER = 0
 )
 //-----------------------------------------------------------------
 // Ports
@@ -46,6 +48,7 @@ module biriscv_csr_regfile
     ,input [5:0]     exception_i
     ,input [31:0]    exception_pc_i
     ,input [31:0]    exception_addr_i
+    ,input           exception_enc_mem_d_i      // ADDED INPUT - memory data encryption exception
 
     // CSR read port
     ,input           csr_ren_i
@@ -410,8 +413,15 @@ begin
         default:                        csr_mtval_r = 32'b0;
         endcase        
 
-        // Fault cause
-        csr_mcause_r = {28'b0, exception_i[3:0]};
+        // Fault cause 
+        if(SUPPORT_ENCRYPTION)
+        begin
+            csr_mcause_r = {26'b0, exception_enc_mem_d_i, 1'b0, exception_i[3:0]};
+        end
+        else
+        begin
+            csr_mcause_r = {28'b0, exception_i[3:0]};
+        end
     end
     else
     begin
@@ -602,8 +612,30 @@ begin
     // Exception - handled in machine mode
     else if (is_exception_w)
     begin
-        branch_r        = 1'b1;
-        branch_target_r = csr_mtvec_q;
+        /* 
+        In this segment of code, the exceptions of 
+        load enc failure and store enc failure can be handled.
+        */
+        
+        /*
+        // If the cause is a FAULT LOAD ENC
+        if(csr_mcause_r == `MCAUSE_FAULT_LOAD_ENC)
+        begin
+            branch_r        = 1'b1;
+            branch_target_r = 32'h80000000;
+        end
+        // If the cause is a FAULT STORE ENC
+        else if(csr_mcause_r == `MCAUSE_FAULT_STORE_ENC)
+        begin
+            branch_r        = 1'b1;
+            branch_target_r = 32'h80000000;
+        end
+        else
+        begin
+        //*/
+            branch_r        = 1'b1;
+            branch_target_r = csr_mtvec_q;
+        //end
     end
     // Fence / SATP register writes cause pipeline flushes
     else if (exception_i == `EXCEPTION_FENCE)

@@ -164,6 +164,10 @@ wire [31:0] muxed_data_w = ext_accept_w ? ext_write_data_w : mem_d_data_wr_i;
 wire [3:0]  muxed_wr_w   = ext_accept_w ? ext_wr_w         : mem_d_wr_i;
 wire [63:0] data_r_w;
 
+// For enc updater  -> to do
+wire [($clog2(MEM_DIM_KB * 1024)-4):0] enc_updater_addr_w = 0;
+
+
 tcm_mem_ram
 #(
      .MEM_DIM_KB(MEM_DIM_KB)
@@ -206,34 +210,38 @@ begin : secure_zone
         // Dual Port RAM - Encrypted - with enc updater
         //-------------------------------------------------------------
         tcm_mem_ram
+        #(
+             .MEM_DIM_KB(MEM_DIM_KB)
+        )
         u_enc_ram
         (
             // Data access - Load/Store Operation
             .clk0_i(clk_i)
             ,.rst0_i(rst_i)
             ,.addr0_i(muxed_addr_w)
-            ,.data0_i(muxed_hi_w? {muxed_data_w, 32'b0} : {32'b0, muxed_data_w})
+            ,.data0_i(muxed_hi_w? {random_num_i ^ muxed_data_w, 32'b0} : {32'b0, random_num_i ^ muxed_data_w})
             ,.wr0_i(muxed_hi_w? {muxed_wr_w, 4'b0} : {4'b0, muxed_wr_w})
                     
             // Data access - EncUpdate Module
+            // to do
             ,.clk1_i(clk_i)
             ,.rst1_i(rst_i)
-            ,.addr1_i(muxed_addr_w)
-            ,.data1_i(muxed_hi_w ? {muxed_data_w, 32'b0} : {32'b0, muxed_data_w})
-            ,.wr1_i(muxed_hi_w ? {muxed_wr_w, 4'b0} : {4'b0, muxed_wr_w})
-            
-            // Outputs
-           // ,.data0_o(enc_data_q)
+            ,.addr1_i(enc_updater_addr_w)
+            ,.data1_i(64'b0)
+            ,.wr1_i(8'b0)
             
             // Outputs
             ,.data0_o(enc_data_w)
-            ,.data1_o(data_r_w)
+            ,.data1_o()
         );
         
         //-------------------------------------------------------------
         // Dual Port RAM - OTP - with enc updater
         //-------------------------------------------------------------
         tcm_mem_ram
+        #(
+             .MEM_DIM_KB(MEM_DIM_KB)
+        )
         u_otp_ram
         (
             // Data access - Load/Store Operation
@@ -246,13 +254,13 @@ begin : secure_zone
              // Data access - EncUpdate Module
             ,.clk1_i(clk_i)
             ,.rst1_i(rst_i)
-            ,.addr1_i(muxed_addr_w)
-            ,.data1_i(muxed_hi_w ? {muxed_data_w, 32'b0} : {32'b0, muxed_data_w})
-            ,.wr1_i(muxed_hi_w ? {muxed_wr_w, 4'b0} : {4'b0, muxed_wr_w})
+            ,.addr1_i(enc_updater_addr_w)
+            ,.data1_i(64'b0)
+            ,.wr1_i(8'b0)
         
             // Outputs
             ,.data0_o(otp_data_w)
-            ,.data1_o(data_r_w)
+            ,.data1_o()
         );
     end
     else
@@ -261,6 +269,9 @@ begin : secure_zone
         // Dual Port RAM - Encrypted - without enc updater
         //-------------------------------------------------------------
         tcm_mem_ram
+        #(
+             .MEM_DIM_KB(MEM_DIM_KB)
+        )
         u_enc_ram
         (
             // Data access - Load/Store Operation
@@ -278,6 +289,9 @@ begin : secure_zone
         // Dual Port RAM - OTP - without enc updater
         //-------------------------------------------------------------
         tcm_mem_ram
+        #(
+             .MEM_DIM_KB(MEM_DIM_KB)
+        )
         u_otp_ram
         (
             // Data access
