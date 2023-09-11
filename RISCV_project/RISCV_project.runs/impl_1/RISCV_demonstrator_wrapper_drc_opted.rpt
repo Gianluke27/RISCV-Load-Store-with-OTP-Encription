@@ -1,0 +1,226 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Mon Sep 11 22:16:04 2023
+| Host         : Gianluca running 64-bit major release  (build 9200)
+| Command      : report_drc -file RISCV_demonstrator_wrapper_drc_opted.rpt -pb RISCV_demonstrator_wrapper_drc_opted.pb -rpx RISCV_demonstrator_wrapper_drc_opted.rpx
+| Design       : RISCV_demonstrator_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 37
++-----------+----------+----------------------------+------------+
+| Rule      | Severity | Description                | Violations |
++-----------+----------+----------------------------+------------+
+| CHECK-3   | Warning  | Report rule limit reached  | 1          |
+| DPIP-1    | Warning  | Input pipelining           | 7          |
+| DPOP-1    | Warning  | PREG Output pipelining     | 4          |
+| DPOP-2    | Warning  | MREG Output pipelining     | 4          |
+| REQP-1839 | Warning  | RAMB36 async control check | 20         |
+| ZPS7-1    | Warning  | PS7 block required         | 1          |
++-----------+----------+----------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CHECK-3#1 Warning
+Report rule limit reached  
+REQP-1839 rule limit reached: 20 violations have been found.
+Related violations: <none>
+
+DPIP-1#1 Warning
+Input pipelining  
+DSP RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w input RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w input RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w__0 input RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w__0 input RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#5 Warning
+Input pipelining  
+DSP RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w__1 input RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#6 Warning
+Input pipelining  
+DSP RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w__1 input RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#7 Warning
+Input pipelining  
+DSP RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w__2 input RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w output RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#2 Warning
+PREG Output pipelining  
+DSP RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w__0 output RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#3 Warning
+PREG Output pipelining  
+DSP RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w__1 output RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#4 Warning
+PREG Output pipelining  
+DSP RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w__2 output RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w multiplier stage RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w__0 multiplier stage RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#3 Warning
+MREG Output pipelining  
+DSP RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w__1 multiplier stage RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#4 Warning
+MREG Output pipelining  
+DSP RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w__2 multiplier stage RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+REQP-1839#1 Warning
+RAMB36 async control check  
+The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/ADDRARDADDR[10] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ADDRARDADDR[8]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_q_reg[11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#2 Warning
+RAMB36 async control check  
+The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/ADDRARDADDR[11] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ADDRARDADDR[9]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_q_reg[12]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#3 Warning
+RAMB36 async control check  
+The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/ADDRARDADDR[12] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ADDRARDADDR[10]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_q_reg[13]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#4 Warning
+RAMB36 async control check  
+The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/ADDRARDADDR[13] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ADDRARDADDR[11]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_q_reg[14]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#5 Warning
+RAMB36 async control check  
+The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/ADDRARDADDR[14] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ADDRARDADDR[12]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_q_reg[15]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#6 Warning
+RAMB36 async control check  
+The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/ADDRARDADDR[2] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ADDRARDADDR[0]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_q_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#7 Warning
+RAMB36 async control check  
+The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/ADDRARDADDR[3] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ADDRARDADDR[1]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_q_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#8 Warning
+RAMB36 async control check  
+The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/ADDRARDADDR[4] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ADDRARDADDR[2]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_q_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#9 Warning
+RAMB36 async control check  
+The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/ADDRARDADDR[5] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ADDRARDADDR[3]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_q_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#10 Warning
+RAMB36 async control check  
+The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/ADDRARDADDR[6] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ADDRARDADDR[4]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_q_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#11 Warning
+RAMB36 async control check  
+The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/ADDRARDADDR[7] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ADDRARDADDR[5]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_q_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#12 Warning
+RAMB36 async control check  
+The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/ADDRARDADDR[8] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ADDRARDADDR[6]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_q_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#13 Warning
+RAMB36 async control check  
+The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/ADDRARDADDR[9] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ADDRARDADDR[7]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_q_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#14 Warning
+RAMB36 async control check  
+The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/WEA[0] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/WEA[0]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_q_reg[16]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#15 Warning
+RAMB36 async control check  
+The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/WEA[0] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/WEA[0]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_q_reg[17]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#16 Warning
+RAMB36 async control check  
+The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/WEA[0] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/WEA[0]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_q_reg[18]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#17 Warning
+RAMB36 async control check  
+The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/WEA[0] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/WEA[0]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_q_reg[19]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#18 Warning
+RAMB36 async control check  
+The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/WEA[0] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/WEA[0]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_q_reg[20]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#19 Warning
+RAMB36 async control check  
+The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/WEA[0] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/WEA[0]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_q_reg[22]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#20 Warning
+RAMB36 async control check  
+The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/WEA[0] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/WEA[0]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_q_reg[27]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+ZPS7-1#1 Warning
+PS7 block required  
+The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+Related violations: <none>
+
+

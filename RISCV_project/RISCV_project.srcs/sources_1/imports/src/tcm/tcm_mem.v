@@ -93,8 +93,6 @@ module tcm_mem
     ,output          axi_rlast_o
 );
 
-
-
 //-------------------------------------------------------------
 // AXI -> PMEM Interface
 //-------------------------------------------------------------
@@ -192,7 +190,6 @@ u_ram
     ,.data0_o(mem_i_inst_o)
     ,.data1_o(data_r_w)
 );
-
 
 // Encryption 
 wire  [63:0]  enc_data_w;
@@ -306,25 +303,25 @@ begin : secure_zone
         );
     end
  
-    
-    assign data_selector_byte_w = muxed_hi_w? {muxed_wr_w, 4'b0} : {4'b0, muxed_wr_w};
-
-    assign result_xor_w = mem_d_rd_i ? (((enc_data_w ^ otp_data_w) == data_r_w) ? 1'b1: 1'b0): 1'b1;
-
-    // Save last read request
-    reg [31:0] mem_d_rd_q; 
-    
-    always @ (posedge clk_i or posedge rst_i)
-    if (rst_i)
-        mem_d_rd_q <= 32'b0;
-    else
-        mem_d_rd_q <= mem_d_rd_i;
+    assign result_xor_w = mem_d_rd_q ? (((enc_data_w ^ otp_data_w) == data_r_w) ? 1'b1: 1'b0): 1'b1;
 end
 else
 begin
     assign result_xor_w = 1'b1;
 end
 endgenerate
+
+//-------------------------------------------------------------
+// Sequential for Encryption
+//-------------------------------------------------------------
+// Save last read request
+reg mem_d_rd_q; 
+
+always @ (posedge clk_i or posedge rst_i)
+if (rst_i)
+    mem_d_rd_q <= 1'b0;
+else
+    mem_d_rd_q <= mem_d_rd_i;
 
 reg muxed_hi_q;
 
@@ -359,10 +356,6 @@ reg [10:0] mem_d_tag_q;
 reg        mem_d_ack_q;
 reg        ext_ack_q;
 
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-// ADDED REGISTER!!!!!!
-reg        mem_d_error_q; 
-
 always @ (posedge clk_i or posedge rst_i)
 if (rst_i)
     mem_d_accept_q <= 1'b1;
@@ -371,30 +364,21 @@ else if (ext_rd_w || ext_wr_w != 4'b0)
     mem_d_accept_q <= 1'b0;
 else
     mem_d_accept_q <= 1'b1;
-
+    
 always @ (posedge clk_i or posedge rst_i)
 if (rst_i)
 begin
     mem_d_ack_q    <= 1'b0;
     mem_d_tag_q    <= 11'b0;
-    mem_d_error_q <= 1'b0;
 end
 else if ((mem_d_rd_i || mem_d_wr_i != 4'b0 || mem_d_flush_i || mem_d_invalidate_i || mem_d_writeback_i) && mem_d_accept_o)
 begin
     mem_d_ack_q    <= 1'b1;
-    
-    // Data Validate
-    if(result_xor_w)
-        mem_d_error_q <= 1'b0;
-    else
-        mem_d_error_q <= 1'b1;
-        
     mem_d_tag_q    <= mem_d_req_tag_i;
 end
 else
 begin
     mem_d_ack_q    <= 1'b0;
-    mem_d_error_q <= 1'b0;
 end
 
 always @ (posedge clk_i or posedge rst_i)
@@ -409,7 +393,8 @@ else
 assign mem_d_ack_o          = mem_d_ack_q;
 assign mem_d_resp_tag_o     = mem_d_tag_q;
 assign mem_d_data_rd_o      = muxed_hi_q ? data_r_w[63:32] : data_r_w[31:0];
-assign mem_d_error_o        = mem_d_error_q;//1'b0;
+//assign mem_d_error_o        = mem_d_error_q;//1'b0;
+assign mem_d_error_o        = !result_xor_w;
 
 assign mem_d_accept_o       = mem_d_accept_q;
 assign ext_accept_w         = !mem_d_accept_q;

@@ -86,7 +86,7 @@ module riscv_wrapper(
         , .SUPPORT_DUAL_ISSUE(1)
         , .SUPPORT_LOAD_BYPASS(1)
         , .SUPPORT_MUL_BYPASS(1)
-        , .SUPPORT_REGFILE_XILINX(1)
+        , .SUPPORT_REGFILE_XILINX(0)
         , .EXTRA_DECODE_STAGE(0)
         , .MEM_DIM_KB(64)
         , .MEM_CACHE_ADDR_MIN(32'h80000000)
@@ -153,8 +153,7 @@ module riscv_wrapper(
         .axi_t_rvalid_o(s_axil_rvalid),
         .axi_t_rdata_o(s_axil_rdata),
         .axi_t_rresp_o(s_axil_rresp),
-        .intr_i({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .wkg_o(wkg_o)
+        .intr_i({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0})
     );
     
     assign m_axil_awprot = 3'd0;

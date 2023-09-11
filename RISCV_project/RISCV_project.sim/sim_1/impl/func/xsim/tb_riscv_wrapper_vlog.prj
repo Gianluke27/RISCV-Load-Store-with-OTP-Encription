@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ipshared/62b6" --include "../../../../../RISCV_project.srcs/sim_1/tb/tb_tcm" --include "../../../../../RISCV_project.srcs/sim_1/tb/tb_top" \
+"tb_riscv_wrapper_func_impl.v" \
+"../../../../../RISCV_project.srcs/sim_1/new/tb_riscv_wrapper.v" \
+
+# Do not sort compile order
+nosort

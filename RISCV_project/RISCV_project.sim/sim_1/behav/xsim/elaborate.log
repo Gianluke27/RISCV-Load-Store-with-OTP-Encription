@@ -1,47 +1,11 @@
 Vivado Simulator v2021.2
 Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
-Running: H:/TesiMagistrale/Software/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Running: H:/TesiMagistrale/Software/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L axi_lite_ipif_v3_0_4 -L lib_cdc_v1_0_2 -L interrupt_control_v3_1_4 -L axi_gpio_v2_0_27 -L proc_sys_reset_v5_0_13 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_riscv_wrapper_behav xil_defaultlib.tb_riscv_wrapper xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-5021] port 'axi_i_awready_i' is not connected on this instance [H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.srcs/sim_1/imports/tb/tb_core_icarus/tb_top.v:104]
-WARNING: [VRFC 10-5021] port 'clk1_i' is not connected on this instance [H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.srcs/sources_1/imports/src/tcm/tcm_mem.v:271]
-WARNING: [VRFC 10-5021] port 'clk1_i' is not connected on this instance [H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.srcs/sources_1/imports/src/tcm/tcm_mem.v:291]
+WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.ip_user_files/bd/RISCV_demonstrator/sim/RISCV_demonstrator.v:114]
+WARNING: [VRFC 10-5021] port 'clk1_i' is not connected on this instance [H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.srcs/sources_1/imports/src/tcm/tcm_mem.v:268]
+WARNING: [VRFC 10-5021] port 'clk1_i' is not connected on this instance [H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.srcs/sources_1/imports/src/tcm/tcm_mem.v:288]
 Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.biriscv_npc_lfsr
-Compiling module xil_defaultlib.biriscv_npc_default
-Compiling module xil_defaultlib.fetch_fifo(OPC_INFO_W=2)
-Compiling module xil_defaultlib.biriscv_decoder
-Compiling module xil_defaultlib.biriscv_decode_default
-Compiling module xil_defaultlib.biriscv_fetch(SUPPORT_MMU=0)
-Compiling module xil_defaultlib.biriscv_frontend(SUPPORT_MMU=0)
-Compiling module xil_defaultlib.biriscv_mmu(MEM_CACHE_ADDR_MIN=3...
-Compiling module xil_defaultlib.biriscv_lsu_fifo(WIDTH=36,DEPTH=...
-Compiling module xil_defaultlib.biriscv_lsu(MEM_CACHE_ADDR_MIN=3...
-Compiling module xil_defaultlib.biriscv_csr_regfile
-Compiling module xil_defaultlib.biriscv_csr(SUPPORT_SUPER=0)
-Compiling module xil_defaultlib.biriscv_multiplier
-Compiling module xil_defaultlib.biriscv_divider
-Compiling module xil_defaultlib.biriscv_pipe_ctrl
-Compiling module xil_defaultlib.biriscv_regfile_default
-Compiling module xil_defaultlib.biriscv_issue
-Compiling module xil_defaultlib.biriscv_alu
-Compiling module xil_defaultlib.biriscv_exec
-Compiling module xil_defaultlib.riscv_core
-Compiling module xil_defaultlib.dport_mux(TCM_MEM_BASE=32'b10000...
-Compiling module xil_defaultlib.tcm_mem_pmem_fifo2(WIDTH=6)
-Compiling module xil_defaultlib.tcm_mem_pmem_fifo2(WIDTH=32)
-Compiling module xil_defaultlib.tcm_mem_pmem
-Compiling module xil_defaultlib.tcm_mem_ram
-Compiling module xil_defaultlib.tcm_mem_default
-Compiling module xil_defaultlib.dport_axi_fifo(WIDTH=69)
-Compiling module xil_defaultlib.dport_axi_fifo(WIDTH=11)
-Compiling module xil_defaultlib.dport_axi
-Compiling module xil_defaultlib.RandomGenerator
-Compiling module xil_defaultlib.riscv_tcm_top
-Compiling module xil_defaultlib.tb_top
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_top_behav
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

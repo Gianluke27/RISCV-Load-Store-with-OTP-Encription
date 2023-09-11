@@ -64,6 +64,13 @@ reg [63:0]   ram [((MEM_DIM_KB * 128)-1):0] /*verilator public*/;
 reg [63:0] ram_read0_q;
 reg [63:0] ram_read1_q;
 
+// Popolate RAMs 
+/*
+initial begin
+    //$display("Loading RAM.");
+    $readmemh("test_01.mif", ram);//, 0, (MEM_DIM_KB * 128)-1);
+end
+//*/
 
 // Synchronous write
 always @ (posedge clk0_i)
