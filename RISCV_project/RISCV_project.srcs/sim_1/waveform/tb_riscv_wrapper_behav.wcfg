@@ -12,15 +12,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="2,620.885 ns"></ZoomStartTime>
-      <ZoomEndTime time="4,086.939 ns"></ZoomEndTime>
-      <Cursor1Time time="3,342.500 ns"></Cursor1Time>
+      <ZoomStartTime time="3,116.519 ns"></ZoomStartTime>
+      <ZoomEndTime time="4,300.520 ns"></ZoomEndTime>
+      <Cursor1Time time="3,436.250 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="319"></NameColumnWidth>
-      <ValueColumnWidth column_width="128"></ValueColumnWidth>
+      <ValueColumnWidth column_width="120"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="14" />
+   <WVObjectSize size="12" />
    <wvobject fp_name="/tb_riscv_wrapper/tb_ACLK" type="logic">
       <obj_property name="ElementShortName">tb_ACLK</obj_property>
       <obj_property name="ObjectShortName">tb_ACLK</obj_property>
@@ -36,14 +36,6 @@
    <wvobject fp_name="/tb_riscv_wrapper/LED" type="array">
       <obj_property name="ElementShortName">LED[3:0]</obj_property>
       <obj_property name="ObjectShortName">LED[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/decoder_0/A" type="array">
-      <obj_property name="ElementShortName">A[1:0]</obj_property>
-      <obj_property name="ObjectShortName">A[1:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/decoder_0/Y" type="array">
-      <obj_property name="ElementShortName">Y[3:0]</obj_property>
-      <obj_property name="ObjectShortName">Y[3:0]</obj_property>
    </wvobject>
    <wvobject fp_name="group71" type="group">
       <obj_property name="label">UUT</obj_property>
@@ -3366,17 +3358,41 @@
                <obj_property name="ElementShortName">result_xor_w</obj_property>
                <obj_property name="ObjectShortName">result_xor_w</obj_property>
             </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/mem_d_rd_i" type="logic">
+               <obj_property name="ElementShortName">mem_d_rd_i</obj_property>
+               <obj_property name="ObjectShortName">mem_d_rd_i</obj_property>
+            </wvobject>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/mem_d_rd_q" type="logic">
                <obj_property name="ElementShortName">mem_d_rd_q</obj_property>
                <obj_property name="ObjectShortName">mem_d_rd_q</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/mem_d_error_q" type="logic">
-               <obj_property name="ElementShortName">mem_d_error_q</obj_property>
-               <obj_property name="ObjectShortName">mem_d_error_q</obj_property>
-            </wvobject>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/mem_d_error_o" type="logic">
                <obj_property name="ElementShortName">mem_d_error_o</obj_property>
                <obj_property name="ObjectShortName">mem_d_error_o</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/muxed_hi_q" type="logic">
+               <obj_property name="ElementShortName">muxed_hi_q</obj_property>
+               <obj_property name="ObjectShortName">muxed_hi_q</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/muxed_hi_w" type="logic">
+               <obj_property name="ElementShortName">muxed_hi_w</obj_property>
+               <obj_property name="ObjectShortName">muxed_hi_w</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/enc_word_w" type="array">
+               <obj_property name="ElementShortName">enc_word_w[31:0]</obj_property>
+               <obj_property name="ObjectShortName">enc_word_w[31:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/otp_word_w" type="array">
+               <obj_property name="ElementShortName">otp_word_w[31:0]</obj_property>
+               <obj_property name="ObjectShortName">otp_word_w[31:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/plain_word_w" type="array">
+               <obj_property name="ElementShortName">plain_word_w[31:0]</obj_property>
+               <obj_property name="ObjectShortName">plain_word_w[31:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/mem_d_data_rd_o" type="array">
+               <obj_property name="ElementShortName">mem_d_data_rd_o[31:0]</obj_property>
+               <obj_property name="ObjectShortName">mem_d_data_rd_o[31:0]</obj_property>
             </wvobject>
          </wvobject>
          <wvobject fp_name="group17836" type="group">
@@ -3836,10 +3852,1419 @@
    <wvobject fp_name="group2971" type="group">
       <obj_property name="label">AXI_PERIPH</obj_property>
       <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="group4001" type="group">
          <obj_property name="label">Internal</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/ACLK" type="logic">
+            <obj_property name="ElementShortName">ACLK</obj_property>
+            <obj_property name="ObjectShortName">ACLK</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/ARESETN" type="logic">
+            <obj_property name="ElementShortName">ARESETN</obj_property>
+            <obj_property name="ObjectShortName">ARESETN</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/M00_ACLK" type="logic">
+            <obj_property name="ElementShortName">M00_ACLK</obj_property>
+            <obj_property name="ObjectShortName">M00_ACLK</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/M00_ARESETN" type="logic">
+            <obj_property name="ElementShortName">M00_ARESETN</obj_property>
+            <obj_property name="ObjectShortName">M00_ARESETN</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/M00_AXI_araddr" type="array">
+            <obj_property name="ElementShortName">M00_AXI_araddr[31:0]</obj_property>
+            <obj_property name="ObjectShortName">M00_AXI_araddr[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/M00_AXI_arready" type="array">
+            <obj_property name="ElementShortName">M00_AXI_arready[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M00_AXI_arready[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/M00_AXI_arvalid" type="array">
+            <obj_property name="ElementShortName">M00_AXI_arvalid[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M00_AXI_arvalid[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/M00_AXI_awaddr" type="array">
+            <obj_property name="ElementShortName">M00_AXI_awaddr[31:0]</obj_property>
+            <obj_property name="ObjectShortName">M00_AXI_awaddr[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/M00_AXI_awready" type="array">
+            <obj_property name="ElementShortName">M00_AXI_awready[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M00_AXI_awready[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/M00_AXI_awvalid" type="array">
+            <obj_property name="ElementShortName">M00_AXI_awvalid[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M00_AXI_awvalid[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/M00_AXI_bready" type="array">
+            <obj_property name="ElementShortName">M00_AXI_bready[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M00_AXI_bready[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/M00_AXI_bresp" type="array">
+            <obj_property name="ElementShortName">M00_AXI_bresp[1:0]</obj_property>
+            <obj_property name="ObjectShortName">M00_AXI_bresp[1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/M00_AXI_bvalid" type="array">
+            <obj_property name="ElementShortName">M00_AXI_bvalid[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M00_AXI_bvalid[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/M00_AXI_rdata" type="array">
+            <obj_property name="ElementShortName">M00_AXI_rdata[31:0]</obj_property>
+            <obj_property name="ObjectShortName">M00_AXI_rdata[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/M00_AXI_rready" type="array">
+            <obj_property name="ElementShortName">M00_AXI_rready[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M00_AXI_rready[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/M00_AXI_rresp" type="array">
+            <obj_property name="ElementShortName">M00_AXI_rresp[1:0]</obj_property>
+            <obj_property name="ObjectShortName">M00_AXI_rresp[1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/M00_AXI_rvalid" type="array">
+            <obj_property name="ElementShortName">M00_AXI_rvalid[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M00_AXI_rvalid[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/M00_AXI_wdata" type="array">
+            <obj_property name="ElementShortName">M00_AXI_wdata[31:0]</obj_property>
+            <obj_property name="ObjectShortName">M00_AXI_wdata[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/M00_AXI_wready" type="array">
+            <obj_property name="ElementShortName">M00_AXI_wready[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M00_AXI_wready[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/M00_AXI_wstrb" type="array">
+            <obj_property name="ElementShortName">M00_AXI_wstrb[3:0]</obj_property>
+            <obj_property name="ObjectShortName">M00_AXI_wstrb[3:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/M00_AXI_wvalid" type="array">
+            <obj_property name="ElementShortName">M00_AXI_wvalid[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M00_AXI_wvalid[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/M01_ACLK" type="logic">
+            <obj_property name="ElementShortName">M01_ACLK</obj_property>
+            <obj_property name="ObjectShortName">M01_ACLK</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/M01_ARESETN" type="logic">
+            <obj_property name="ElementShortName">M01_ARESETN</obj_property>
+            <obj_property name="ObjectShortName">M01_ARESETN</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/M01_AXI_araddr" type="array">
+            <obj_property name="ElementShortName">M01_AXI_araddr[31:0]</obj_property>
+            <obj_property name="ObjectShortName">M01_AXI_araddr[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/M01_AXI_arready" type="array">
+            <obj_property name="ElementShortName">M01_AXI_arready[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M01_AXI_arready[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/M01_AXI_arvalid" type="array">
+            <obj_property name="ElementShortName">M01_AXI_arvalid[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M01_AXI_arvalid[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/M01_AXI_awaddr" type="array">
+            <obj_property name="ElementShortName">M01_AXI_awaddr[31:0]</obj_property>
+            <obj_property name="ObjectShortName">M01_AXI_awaddr[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/M01_AXI_awready" type="array">
+            <obj_property name="ElementShortName">M01_AXI_awready[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M01_AXI_awready[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/M01_AXI_awvalid" type="array">
+            <obj_property name="ElementShortName">M01_AXI_awvalid[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M01_AXI_awvalid[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/M01_AXI_bready" type="array">
+            <obj_property name="ElementShortName">M01_AXI_bready[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M01_AXI_bready[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/M01_AXI_bresp" type="array">
+            <obj_property name="ElementShortName">M01_AXI_bresp[1:0]</obj_property>
+            <obj_property name="ObjectShortName">M01_AXI_bresp[1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/M01_AXI_bvalid" type="array">
+            <obj_property name="ElementShortName">M01_AXI_bvalid[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M01_AXI_bvalid[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/M01_AXI_rdata" type="array">
+            <obj_property name="ElementShortName">M01_AXI_rdata[31:0]</obj_property>
+            <obj_property name="ObjectShortName">M01_AXI_rdata[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/M01_AXI_rready" type="array">
+            <obj_property name="ElementShortName">M01_AXI_rready[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M01_AXI_rready[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/M01_AXI_rresp" type="array">
+            <obj_property name="ElementShortName">M01_AXI_rresp[1:0]</obj_property>
+            <obj_property name="ObjectShortName">M01_AXI_rresp[1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/M01_AXI_rvalid" type="array">
+            <obj_property name="ElementShortName">M01_AXI_rvalid[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M01_AXI_rvalid[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/M01_AXI_wdata" type="array">
+            <obj_property name="ElementShortName">M01_AXI_wdata[31:0]</obj_property>
+            <obj_property name="ObjectShortName">M01_AXI_wdata[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/M01_AXI_wready" type="array">
+            <obj_property name="ElementShortName">M01_AXI_wready[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M01_AXI_wready[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/M01_AXI_wstrb" type="array">
+            <obj_property name="ElementShortName">M01_AXI_wstrb[3:0]</obj_property>
+            <obj_property name="ObjectShortName">M01_AXI_wstrb[3:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/M01_AXI_wvalid" type="array">
+            <obj_property name="ElementShortName">M01_AXI_wvalid[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M01_AXI_wvalid[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/S00_ACLK" type="logic">
+            <obj_property name="ElementShortName">S00_ACLK</obj_property>
+            <obj_property name="ObjectShortName">S00_ACLK</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/S00_ARESETN" type="logic">
+            <obj_property name="ElementShortName">S00_ARESETN</obj_property>
+            <obj_property name="ObjectShortName">S00_ARESETN</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/S00_AXI_araddr" type="array">
+            <obj_property name="ElementShortName">S00_AXI_araddr[31:0]</obj_property>
+            <obj_property name="ObjectShortName">S00_AXI_araddr[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/S00_AXI_arprot" type="array">
+            <obj_property name="ElementShortName">S00_AXI_arprot[2:0]</obj_property>
+            <obj_property name="ObjectShortName">S00_AXI_arprot[2:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/S00_AXI_arready" type="array">
+            <obj_property name="ElementShortName">S00_AXI_arready[0:0]</obj_property>
+            <obj_property name="ObjectShortName">S00_AXI_arready[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/S00_AXI_arvalid" type="array">
+            <obj_property name="ElementShortName">S00_AXI_arvalid[0:0]</obj_property>
+            <obj_property name="ObjectShortName">S00_AXI_arvalid[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/S00_AXI_awaddr" type="array">
+            <obj_property name="ElementShortName">S00_AXI_awaddr[31:0]</obj_property>
+            <obj_property name="ObjectShortName">S00_AXI_awaddr[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/S00_AXI_awprot" type="array">
+            <obj_property name="ElementShortName">S00_AXI_awprot[2:0]</obj_property>
+            <obj_property name="ObjectShortName">S00_AXI_awprot[2:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/S00_AXI_awready" type="array">
+            <obj_property name="ElementShortName">S00_AXI_awready[0:0]</obj_property>
+            <obj_property name="ObjectShortName">S00_AXI_awready[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/S00_AXI_awvalid" type="array">
+            <obj_property name="ElementShortName">S00_AXI_awvalid[0:0]</obj_property>
+            <obj_property name="ObjectShortName">S00_AXI_awvalid[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/S00_AXI_bready" type="array">
+            <obj_property name="ElementShortName">S00_AXI_bready[0:0]</obj_property>
+            <obj_property name="ObjectShortName">S00_AXI_bready[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/S00_AXI_bresp" type="array">
+            <obj_property name="ElementShortName">S00_AXI_bresp[1:0]</obj_property>
+            <obj_property name="ObjectShortName">S00_AXI_bresp[1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/S00_AXI_bvalid" type="array">
+            <obj_property name="ElementShortName">S00_AXI_bvalid[0:0]</obj_property>
+            <obj_property name="ObjectShortName">S00_AXI_bvalid[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/S00_AXI_rdata" type="array">
+            <obj_property name="ElementShortName">S00_AXI_rdata[31:0]</obj_property>
+            <obj_property name="ObjectShortName">S00_AXI_rdata[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/S00_AXI_rready" type="array">
+            <obj_property name="ElementShortName">S00_AXI_rready[0:0]</obj_property>
+            <obj_property name="ObjectShortName">S00_AXI_rready[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/S00_AXI_rresp" type="array">
+            <obj_property name="ElementShortName">S00_AXI_rresp[1:0]</obj_property>
+            <obj_property name="ObjectShortName">S00_AXI_rresp[1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/S00_AXI_rvalid" type="array">
+            <obj_property name="ElementShortName">S00_AXI_rvalid[0:0]</obj_property>
+            <obj_property name="ObjectShortName">S00_AXI_rvalid[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/S00_AXI_wdata" type="array">
+            <obj_property name="ElementShortName">S00_AXI_wdata[31:0]</obj_property>
+            <obj_property name="ObjectShortName">S00_AXI_wdata[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/S00_AXI_wready" type="array">
+            <obj_property name="ElementShortName">S00_AXI_wready[0:0]</obj_property>
+            <obj_property name="ObjectShortName">S00_AXI_wready[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/S00_AXI_wstrb" type="array">
+            <obj_property name="ElementShortName">S00_AXI_wstrb[3:0]</obj_property>
+            <obj_property name="ObjectShortName">S00_AXI_wstrb[3:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/S00_AXI_wvalid" type="array">
+            <obj_property name="ElementShortName">S00_AXI_wvalid[0:0]</obj_property>
+            <obj_property name="ObjectShortName">S00_AXI_wvalid[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers_to_riscv_wrapper_0_axi_periph_ARADDR" type="array">
+            <obj_property name="ElementShortName">m00_couplers_to_riscv_wrapper_0_axi_periph_ARADDR[31:0]</obj_property>
+            <obj_property name="ObjectShortName">m00_couplers_to_riscv_wrapper_0_axi_periph_ARADDR[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers_to_riscv_wrapper_0_axi_periph_ARREADY" type="array">
+            <obj_property name="ElementShortName">m00_couplers_to_riscv_wrapper_0_axi_periph_ARREADY[0:0]</obj_property>
+            <obj_property name="ObjectShortName">m00_couplers_to_riscv_wrapper_0_axi_periph_ARREADY[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers_to_riscv_wrapper_0_axi_periph_ARVALID" type="array">
+            <obj_property name="ElementShortName">m00_couplers_to_riscv_wrapper_0_axi_periph_ARVALID[0:0]</obj_property>
+            <obj_property name="ObjectShortName">m00_couplers_to_riscv_wrapper_0_axi_periph_ARVALID[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers_to_riscv_wrapper_0_axi_periph_AWADDR" type="array">
+            <obj_property name="ElementShortName">m00_couplers_to_riscv_wrapper_0_axi_periph_AWADDR[31:0]</obj_property>
+            <obj_property name="ObjectShortName">m00_couplers_to_riscv_wrapper_0_axi_periph_AWADDR[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers_to_riscv_wrapper_0_axi_periph_AWREADY" type="array">
+            <obj_property name="ElementShortName">m00_couplers_to_riscv_wrapper_0_axi_periph_AWREADY[0:0]</obj_property>
+            <obj_property name="ObjectShortName">m00_couplers_to_riscv_wrapper_0_axi_periph_AWREADY[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers_to_riscv_wrapper_0_axi_periph_AWVALID" type="array">
+            <obj_property name="ElementShortName">m00_couplers_to_riscv_wrapper_0_axi_periph_AWVALID[0:0]</obj_property>
+            <obj_property name="ObjectShortName">m00_couplers_to_riscv_wrapper_0_axi_periph_AWVALID[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers_to_riscv_wrapper_0_axi_periph_BREADY" type="array">
+            <obj_property name="ElementShortName">m00_couplers_to_riscv_wrapper_0_axi_periph_BREADY[0:0]</obj_property>
+            <obj_property name="ObjectShortName">m00_couplers_to_riscv_wrapper_0_axi_periph_BREADY[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers_to_riscv_wrapper_0_axi_periph_BRESP" type="array">
+            <obj_property name="ElementShortName">m00_couplers_to_riscv_wrapper_0_axi_periph_BRESP[1:0]</obj_property>
+            <obj_property name="ObjectShortName">m00_couplers_to_riscv_wrapper_0_axi_periph_BRESP[1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers_to_riscv_wrapper_0_axi_periph_BVALID" type="array">
+            <obj_property name="ElementShortName">m00_couplers_to_riscv_wrapper_0_axi_periph_BVALID[0:0]</obj_property>
+            <obj_property name="ObjectShortName">m00_couplers_to_riscv_wrapper_0_axi_periph_BVALID[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers_to_riscv_wrapper_0_axi_periph_RDATA" type="array">
+            <obj_property name="ElementShortName">m00_couplers_to_riscv_wrapper_0_axi_periph_RDATA[31:0]</obj_property>
+            <obj_property name="ObjectShortName">m00_couplers_to_riscv_wrapper_0_axi_periph_RDATA[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers_to_riscv_wrapper_0_axi_periph_RREADY" type="array">
+            <obj_property name="ElementShortName">m00_couplers_to_riscv_wrapper_0_axi_periph_RREADY[0:0]</obj_property>
+            <obj_property name="ObjectShortName">m00_couplers_to_riscv_wrapper_0_axi_periph_RREADY[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers_to_riscv_wrapper_0_axi_periph_RRESP" type="array">
+            <obj_property name="ElementShortName">m00_couplers_to_riscv_wrapper_0_axi_periph_RRESP[1:0]</obj_property>
+            <obj_property name="ObjectShortName">m00_couplers_to_riscv_wrapper_0_axi_periph_RRESP[1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers_to_riscv_wrapper_0_axi_periph_RVALID" type="array">
+            <obj_property name="ElementShortName">m00_couplers_to_riscv_wrapper_0_axi_periph_RVALID[0:0]</obj_property>
+            <obj_property name="ObjectShortName">m00_couplers_to_riscv_wrapper_0_axi_periph_RVALID[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers_to_riscv_wrapper_0_axi_periph_WDATA" type="array">
+            <obj_property name="ElementShortName">m00_couplers_to_riscv_wrapper_0_axi_periph_WDATA[31:0]</obj_property>
+            <obj_property name="ObjectShortName">m00_couplers_to_riscv_wrapper_0_axi_periph_WDATA[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers_to_riscv_wrapper_0_axi_periph_WREADY" type="array">
+            <obj_property name="ElementShortName">m00_couplers_to_riscv_wrapper_0_axi_periph_WREADY[0:0]</obj_property>
+            <obj_property name="ObjectShortName">m00_couplers_to_riscv_wrapper_0_axi_periph_WREADY[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers_to_riscv_wrapper_0_axi_periph_WSTRB" type="array">
+            <obj_property name="ElementShortName">m00_couplers_to_riscv_wrapper_0_axi_periph_WSTRB[3:0]</obj_property>
+            <obj_property name="ObjectShortName">m00_couplers_to_riscv_wrapper_0_axi_periph_WSTRB[3:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers_to_riscv_wrapper_0_axi_periph_WVALID" type="array">
+            <obj_property name="ElementShortName">m00_couplers_to_riscv_wrapper_0_axi_periph_WVALID[0:0]</obj_property>
+            <obj_property name="ObjectShortName">m00_couplers_to_riscv_wrapper_0_axi_periph_WVALID[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers_to_riscv_wrapper_0_axi_periph_ARADDR" type="array">
+            <obj_property name="ElementShortName">m01_couplers_to_riscv_wrapper_0_axi_periph_ARADDR[31:0]</obj_property>
+            <obj_property name="ObjectShortName">m01_couplers_to_riscv_wrapper_0_axi_periph_ARADDR[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers_to_riscv_wrapper_0_axi_periph_ARREADY" type="array">
+            <obj_property name="ElementShortName">m01_couplers_to_riscv_wrapper_0_axi_periph_ARREADY[0:0]</obj_property>
+            <obj_property name="ObjectShortName">m01_couplers_to_riscv_wrapper_0_axi_periph_ARREADY[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers_to_riscv_wrapper_0_axi_periph_ARVALID" type="array">
+            <obj_property name="ElementShortName">m01_couplers_to_riscv_wrapper_0_axi_periph_ARVALID[0:0]</obj_property>
+            <obj_property name="ObjectShortName">m01_couplers_to_riscv_wrapper_0_axi_periph_ARVALID[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers_to_riscv_wrapper_0_axi_periph_AWADDR" type="array">
+            <obj_property name="ElementShortName">m01_couplers_to_riscv_wrapper_0_axi_periph_AWADDR[31:0]</obj_property>
+            <obj_property name="ObjectShortName">m01_couplers_to_riscv_wrapper_0_axi_periph_AWADDR[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers_to_riscv_wrapper_0_axi_periph_AWREADY" type="array">
+            <obj_property name="ElementShortName">m01_couplers_to_riscv_wrapper_0_axi_periph_AWREADY[0:0]</obj_property>
+            <obj_property name="ObjectShortName">m01_couplers_to_riscv_wrapper_0_axi_periph_AWREADY[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers_to_riscv_wrapper_0_axi_periph_AWVALID" type="array">
+            <obj_property name="ElementShortName">m01_couplers_to_riscv_wrapper_0_axi_periph_AWVALID[0:0]</obj_property>
+            <obj_property name="ObjectShortName">m01_couplers_to_riscv_wrapper_0_axi_periph_AWVALID[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers_to_riscv_wrapper_0_axi_periph_BREADY" type="array">
+            <obj_property name="ElementShortName">m01_couplers_to_riscv_wrapper_0_axi_periph_BREADY[0:0]</obj_property>
+            <obj_property name="ObjectShortName">m01_couplers_to_riscv_wrapper_0_axi_periph_BREADY[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers_to_riscv_wrapper_0_axi_periph_BRESP" type="array">
+            <obj_property name="ElementShortName">m01_couplers_to_riscv_wrapper_0_axi_periph_BRESP[1:0]</obj_property>
+            <obj_property name="ObjectShortName">m01_couplers_to_riscv_wrapper_0_axi_periph_BRESP[1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers_to_riscv_wrapper_0_axi_periph_BVALID" type="array">
+            <obj_property name="ElementShortName">m01_couplers_to_riscv_wrapper_0_axi_periph_BVALID[0:0]</obj_property>
+            <obj_property name="ObjectShortName">m01_couplers_to_riscv_wrapper_0_axi_periph_BVALID[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers_to_riscv_wrapper_0_axi_periph_RDATA" type="array">
+            <obj_property name="ElementShortName">m01_couplers_to_riscv_wrapper_0_axi_periph_RDATA[31:0]</obj_property>
+            <obj_property name="ObjectShortName">m01_couplers_to_riscv_wrapper_0_axi_periph_RDATA[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers_to_riscv_wrapper_0_axi_periph_RREADY" type="array">
+            <obj_property name="ElementShortName">m01_couplers_to_riscv_wrapper_0_axi_periph_RREADY[0:0]</obj_property>
+            <obj_property name="ObjectShortName">m01_couplers_to_riscv_wrapper_0_axi_periph_RREADY[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers_to_riscv_wrapper_0_axi_periph_RRESP" type="array">
+            <obj_property name="ElementShortName">m01_couplers_to_riscv_wrapper_0_axi_periph_RRESP[1:0]</obj_property>
+            <obj_property name="ObjectShortName">m01_couplers_to_riscv_wrapper_0_axi_periph_RRESP[1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers_to_riscv_wrapper_0_axi_periph_RVALID" type="array">
+            <obj_property name="ElementShortName">m01_couplers_to_riscv_wrapper_0_axi_periph_RVALID[0:0]</obj_property>
+            <obj_property name="ObjectShortName">m01_couplers_to_riscv_wrapper_0_axi_periph_RVALID[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers_to_riscv_wrapper_0_axi_periph_WDATA" type="array">
+            <obj_property name="ElementShortName">m01_couplers_to_riscv_wrapper_0_axi_periph_WDATA[31:0]</obj_property>
+            <obj_property name="ObjectShortName">m01_couplers_to_riscv_wrapper_0_axi_periph_WDATA[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers_to_riscv_wrapper_0_axi_periph_WREADY" type="array">
+            <obj_property name="ElementShortName">m01_couplers_to_riscv_wrapper_0_axi_periph_WREADY[0:0]</obj_property>
+            <obj_property name="ObjectShortName">m01_couplers_to_riscv_wrapper_0_axi_periph_WREADY[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers_to_riscv_wrapper_0_axi_periph_WSTRB" type="array">
+            <obj_property name="ElementShortName">m01_couplers_to_riscv_wrapper_0_axi_periph_WSTRB[3:0]</obj_property>
+            <obj_property name="ObjectShortName">m01_couplers_to_riscv_wrapper_0_axi_periph_WSTRB[3:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers_to_riscv_wrapper_0_axi_periph_WVALID" type="array">
+            <obj_property name="ElementShortName">m01_couplers_to_riscv_wrapper_0_axi_periph_WVALID[0:0]</obj_property>
+            <obj_property name="ObjectShortName">m01_couplers_to_riscv_wrapper_0_axi_periph_WVALID[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/riscv_wrapper_0_axi_periph_ACLK_net" type="logic">
+            <obj_property name="ElementShortName">riscv_wrapper_0_axi_periph_ACLK_net</obj_property>
+            <obj_property name="ObjectShortName">riscv_wrapper_0_axi_periph_ACLK_net</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/riscv_wrapper_0_axi_periph_ARESETN_net" type="logic">
+            <obj_property name="ElementShortName">riscv_wrapper_0_axi_periph_ARESETN_net</obj_property>
+            <obj_property name="ObjectShortName">riscv_wrapper_0_axi_periph_ARESETN_net</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/riscv_wrapper_0_axi_periph_to_s00_couplers_ARADDR" type="array">
+            <obj_property name="ElementShortName">riscv_wrapper_0_axi_periph_to_s00_couplers_ARADDR[31:0]</obj_property>
+            <obj_property name="ObjectShortName">riscv_wrapper_0_axi_periph_to_s00_couplers_ARADDR[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/riscv_wrapper_0_axi_periph_to_s00_couplers_ARPROT" type="array">
+            <obj_property name="ElementShortName">riscv_wrapper_0_axi_periph_to_s00_couplers_ARPROT[2:0]</obj_property>
+            <obj_property name="ObjectShortName">riscv_wrapper_0_axi_periph_to_s00_couplers_ARPROT[2:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/riscv_wrapper_0_axi_periph_to_s00_couplers_ARREADY" type="array">
+            <obj_property name="ElementShortName">riscv_wrapper_0_axi_periph_to_s00_couplers_ARREADY[0:0]</obj_property>
+            <obj_property name="ObjectShortName">riscv_wrapper_0_axi_periph_to_s00_couplers_ARREADY[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/riscv_wrapper_0_axi_periph_to_s00_couplers_ARVALID" type="array">
+            <obj_property name="ElementShortName">riscv_wrapper_0_axi_periph_to_s00_couplers_ARVALID[0:0]</obj_property>
+            <obj_property name="ObjectShortName">riscv_wrapper_0_axi_periph_to_s00_couplers_ARVALID[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/riscv_wrapper_0_axi_periph_to_s00_couplers_AWADDR" type="array">
+            <obj_property name="ElementShortName">riscv_wrapper_0_axi_periph_to_s00_couplers_AWADDR[31:0]</obj_property>
+            <obj_property name="ObjectShortName">riscv_wrapper_0_axi_periph_to_s00_couplers_AWADDR[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/riscv_wrapper_0_axi_periph_to_s00_couplers_AWPROT" type="array">
+            <obj_property name="ElementShortName">riscv_wrapper_0_axi_periph_to_s00_couplers_AWPROT[2:0]</obj_property>
+            <obj_property name="ObjectShortName">riscv_wrapper_0_axi_periph_to_s00_couplers_AWPROT[2:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/riscv_wrapper_0_axi_periph_to_s00_couplers_AWREADY" type="array">
+            <obj_property name="ElementShortName">riscv_wrapper_0_axi_periph_to_s00_couplers_AWREADY[0:0]</obj_property>
+            <obj_property name="ObjectShortName">riscv_wrapper_0_axi_periph_to_s00_couplers_AWREADY[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/riscv_wrapper_0_axi_periph_to_s00_couplers_AWVALID" type="array">
+            <obj_property name="ElementShortName">riscv_wrapper_0_axi_periph_to_s00_couplers_AWVALID[0:0]</obj_property>
+            <obj_property name="ObjectShortName">riscv_wrapper_0_axi_periph_to_s00_couplers_AWVALID[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/riscv_wrapper_0_axi_periph_to_s00_couplers_BREADY" type="array">
+            <obj_property name="ElementShortName">riscv_wrapper_0_axi_periph_to_s00_couplers_BREADY[0:0]</obj_property>
+            <obj_property name="ObjectShortName">riscv_wrapper_0_axi_periph_to_s00_couplers_BREADY[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/riscv_wrapper_0_axi_periph_to_s00_couplers_BRESP" type="array">
+            <obj_property name="ElementShortName">riscv_wrapper_0_axi_periph_to_s00_couplers_BRESP[1:0]</obj_property>
+            <obj_property name="ObjectShortName">riscv_wrapper_0_axi_periph_to_s00_couplers_BRESP[1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/riscv_wrapper_0_axi_periph_to_s00_couplers_BVALID" type="array">
+            <obj_property name="ElementShortName">riscv_wrapper_0_axi_periph_to_s00_couplers_BVALID[0:0]</obj_property>
+            <obj_property name="ObjectShortName">riscv_wrapper_0_axi_periph_to_s00_couplers_BVALID[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/riscv_wrapper_0_axi_periph_to_s00_couplers_RDATA" type="array">
+            <obj_property name="ElementShortName">riscv_wrapper_0_axi_periph_to_s00_couplers_RDATA[31:0]</obj_property>
+            <obj_property name="ObjectShortName">riscv_wrapper_0_axi_periph_to_s00_couplers_RDATA[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/riscv_wrapper_0_axi_periph_to_s00_couplers_RREADY" type="array">
+            <obj_property name="ElementShortName">riscv_wrapper_0_axi_periph_to_s00_couplers_RREADY[0:0]</obj_property>
+            <obj_property name="ObjectShortName">riscv_wrapper_0_axi_periph_to_s00_couplers_RREADY[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/riscv_wrapper_0_axi_periph_to_s00_couplers_RRESP" type="array">
+            <obj_property name="ElementShortName">riscv_wrapper_0_axi_periph_to_s00_couplers_RRESP[1:0]</obj_property>
+            <obj_property name="ObjectShortName">riscv_wrapper_0_axi_periph_to_s00_couplers_RRESP[1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/riscv_wrapper_0_axi_periph_to_s00_couplers_RVALID" type="array">
+            <obj_property name="ElementShortName">riscv_wrapper_0_axi_periph_to_s00_couplers_RVALID[0:0]</obj_property>
+            <obj_property name="ObjectShortName">riscv_wrapper_0_axi_periph_to_s00_couplers_RVALID[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/riscv_wrapper_0_axi_periph_to_s00_couplers_WDATA" type="array">
+            <obj_property name="ElementShortName">riscv_wrapper_0_axi_periph_to_s00_couplers_WDATA[31:0]</obj_property>
+            <obj_property name="ObjectShortName">riscv_wrapper_0_axi_periph_to_s00_couplers_WDATA[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/riscv_wrapper_0_axi_periph_to_s00_couplers_WREADY" type="array">
+            <obj_property name="ElementShortName">riscv_wrapper_0_axi_periph_to_s00_couplers_WREADY[0:0]</obj_property>
+            <obj_property name="ObjectShortName">riscv_wrapper_0_axi_periph_to_s00_couplers_WREADY[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/riscv_wrapper_0_axi_periph_to_s00_couplers_WSTRB" type="array">
+            <obj_property name="ElementShortName">riscv_wrapper_0_axi_periph_to_s00_couplers_WSTRB[3:0]</obj_property>
+            <obj_property name="ObjectShortName">riscv_wrapper_0_axi_periph_to_s00_couplers_WSTRB[3:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/riscv_wrapper_0_axi_periph_to_s00_couplers_WVALID" type="array">
+            <obj_property name="ElementShortName">riscv_wrapper_0_axi_periph_to_s00_couplers_WVALID[0:0]</obj_property>
+            <obj_property name="ObjectShortName">riscv_wrapper_0_axi_periph_to_s00_couplers_WVALID[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers_to_xbar_ARADDR" type="array">
+            <obj_property name="ElementShortName">s00_couplers_to_xbar_ARADDR[31:0]</obj_property>
+            <obj_property name="ObjectShortName">s00_couplers_to_xbar_ARADDR[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers_to_xbar_ARPROT" type="array">
+            <obj_property name="ElementShortName">s00_couplers_to_xbar_ARPROT[2:0]</obj_property>
+            <obj_property name="ObjectShortName">s00_couplers_to_xbar_ARPROT[2:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers_to_xbar_ARREADY" type="array">
+            <obj_property name="ElementShortName">s00_couplers_to_xbar_ARREADY[0:0]</obj_property>
+            <obj_property name="ObjectShortName">s00_couplers_to_xbar_ARREADY[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers_to_xbar_ARVALID" type="array">
+            <obj_property name="ElementShortName">s00_couplers_to_xbar_ARVALID[0:0]</obj_property>
+            <obj_property name="ObjectShortName">s00_couplers_to_xbar_ARVALID[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers_to_xbar_AWADDR" type="array">
+            <obj_property name="ElementShortName">s00_couplers_to_xbar_AWADDR[31:0]</obj_property>
+            <obj_property name="ObjectShortName">s00_couplers_to_xbar_AWADDR[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers_to_xbar_AWPROT" type="array">
+            <obj_property name="ElementShortName">s00_couplers_to_xbar_AWPROT[2:0]</obj_property>
+            <obj_property name="ObjectShortName">s00_couplers_to_xbar_AWPROT[2:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers_to_xbar_AWREADY" type="array">
+            <obj_property name="ElementShortName">s00_couplers_to_xbar_AWREADY[0:0]</obj_property>
+            <obj_property name="ObjectShortName">s00_couplers_to_xbar_AWREADY[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers_to_xbar_AWVALID" type="array">
+            <obj_property name="ElementShortName">s00_couplers_to_xbar_AWVALID[0:0]</obj_property>
+            <obj_property name="ObjectShortName">s00_couplers_to_xbar_AWVALID[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers_to_xbar_BREADY" type="array">
+            <obj_property name="ElementShortName">s00_couplers_to_xbar_BREADY[0:0]</obj_property>
+            <obj_property name="ObjectShortName">s00_couplers_to_xbar_BREADY[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers_to_xbar_BRESP" type="array">
+            <obj_property name="ElementShortName">s00_couplers_to_xbar_BRESP[1:0]</obj_property>
+            <obj_property name="ObjectShortName">s00_couplers_to_xbar_BRESP[1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers_to_xbar_BVALID" type="array">
+            <obj_property name="ElementShortName">s00_couplers_to_xbar_BVALID[0:0]</obj_property>
+            <obj_property name="ObjectShortName">s00_couplers_to_xbar_BVALID[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers_to_xbar_RDATA" type="array">
+            <obj_property name="ElementShortName">s00_couplers_to_xbar_RDATA[31:0]</obj_property>
+            <obj_property name="ObjectShortName">s00_couplers_to_xbar_RDATA[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers_to_xbar_RREADY" type="array">
+            <obj_property name="ElementShortName">s00_couplers_to_xbar_RREADY[0:0]</obj_property>
+            <obj_property name="ObjectShortName">s00_couplers_to_xbar_RREADY[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers_to_xbar_RRESP" type="array">
+            <obj_property name="ElementShortName">s00_couplers_to_xbar_RRESP[1:0]</obj_property>
+            <obj_property name="ObjectShortName">s00_couplers_to_xbar_RRESP[1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers_to_xbar_RVALID" type="array">
+            <obj_property name="ElementShortName">s00_couplers_to_xbar_RVALID[0:0]</obj_property>
+            <obj_property name="ObjectShortName">s00_couplers_to_xbar_RVALID[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers_to_xbar_WDATA" type="array">
+            <obj_property name="ElementShortName">s00_couplers_to_xbar_WDATA[31:0]</obj_property>
+            <obj_property name="ObjectShortName">s00_couplers_to_xbar_WDATA[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers_to_xbar_WREADY" type="array">
+            <obj_property name="ElementShortName">s00_couplers_to_xbar_WREADY[0:0]</obj_property>
+            <obj_property name="ObjectShortName">s00_couplers_to_xbar_WREADY[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers_to_xbar_WSTRB" type="array">
+            <obj_property name="ElementShortName">s00_couplers_to_xbar_WSTRB[3:0]</obj_property>
+            <obj_property name="ObjectShortName">s00_couplers_to_xbar_WSTRB[3:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers_to_xbar_WVALID" type="array">
+            <obj_property name="ElementShortName">s00_couplers_to_xbar_WVALID[0:0]</obj_property>
+            <obj_property name="ObjectShortName">s00_couplers_to_xbar_WVALID[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/xbar_to_m00_couplers_ARADDR" type="array">
+            <obj_property name="ElementShortName">xbar_to_m00_couplers_ARADDR[31:0]</obj_property>
+            <obj_property name="ObjectShortName">xbar_to_m00_couplers_ARADDR[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/xbar_to_m00_couplers_ARREADY" type="array">
+            <obj_property name="ElementShortName">xbar_to_m00_couplers_ARREADY[0:0]</obj_property>
+            <obj_property name="ObjectShortName">xbar_to_m00_couplers_ARREADY[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/xbar_to_m00_couplers_ARVALID" type="array">
+            <obj_property name="ElementShortName">xbar_to_m00_couplers_ARVALID[0:0]</obj_property>
+            <obj_property name="ObjectShortName">xbar_to_m00_couplers_ARVALID[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/xbar_to_m00_couplers_AWADDR" type="array">
+            <obj_property name="ElementShortName">xbar_to_m00_couplers_AWADDR[31:0]</obj_property>
+            <obj_property name="ObjectShortName">xbar_to_m00_couplers_AWADDR[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/xbar_to_m00_couplers_AWREADY" type="array">
+            <obj_property name="ElementShortName">xbar_to_m00_couplers_AWREADY[0:0]</obj_property>
+            <obj_property name="ObjectShortName">xbar_to_m00_couplers_AWREADY[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/xbar_to_m00_couplers_AWVALID" type="array">
+            <obj_property name="ElementShortName">xbar_to_m00_couplers_AWVALID[0:0]</obj_property>
+            <obj_property name="ObjectShortName">xbar_to_m00_couplers_AWVALID[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/xbar_to_m00_couplers_BREADY" type="array">
+            <obj_property name="ElementShortName">xbar_to_m00_couplers_BREADY[0:0]</obj_property>
+            <obj_property name="ObjectShortName">xbar_to_m00_couplers_BREADY[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/xbar_to_m00_couplers_BRESP" type="array">
+            <obj_property name="ElementShortName">xbar_to_m00_couplers_BRESP[1:0]</obj_property>
+            <obj_property name="ObjectShortName">xbar_to_m00_couplers_BRESP[1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/xbar_to_m00_couplers_BVALID" type="array">
+            <obj_property name="ElementShortName">xbar_to_m00_couplers_BVALID[0:0]</obj_property>
+            <obj_property name="ObjectShortName">xbar_to_m00_couplers_BVALID[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/xbar_to_m00_couplers_RDATA" type="array">
+            <obj_property name="ElementShortName">xbar_to_m00_couplers_RDATA[31:0]</obj_property>
+            <obj_property name="ObjectShortName">xbar_to_m00_couplers_RDATA[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/xbar_to_m00_couplers_RREADY" type="array">
+            <obj_property name="ElementShortName">xbar_to_m00_couplers_RREADY[0:0]</obj_property>
+            <obj_property name="ObjectShortName">xbar_to_m00_couplers_RREADY[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/xbar_to_m00_couplers_RRESP" type="array">
+            <obj_property name="ElementShortName">xbar_to_m00_couplers_RRESP[1:0]</obj_property>
+            <obj_property name="ObjectShortName">xbar_to_m00_couplers_RRESP[1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/xbar_to_m00_couplers_RVALID" type="array">
+            <obj_property name="ElementShortName">xbar_to_m00_couplers_RVALID[0:0]</obj_property>
+            <obj_property name="ObjectShortName">xbar_to_m00_couplers_RVALID[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/xbar_to_m00_couplers_WDATA" type="array">
+            <obj_property name="ElementShortName">xbar_to_m00_couplers_WDATA[31:0]</obj_property>
+            <obj_property name="ObjectShortName">xbar_to_m00_couplers_WDATA[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/xbar_to_m00_couplers_WREADY" type="array">
+            <obj_property name="ElementShortName">xbar_to_m00_couplers_WREADY[0:0]</obj_property>
+            <obj_property name="ObjectShortName">xbar_to_m00_couplers_WREADY[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/xbar_to_m00_couplers_WSTRB" type="array">
+            <obj_property name="ElementShortName">xbar_to_m00_couplers_WSTRB[3:0]</obj_property>
+            <obj_property name="ObjectShortName">xbar_to_m00_couplers_WSTRB[3:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/xbar_to_m00_couplers_WVALID" type="array">
+            <obj_property name="ElementShortName">xbar_to_m00_couplers_WVALID[0:0]</obj_property>
+            <obj_property name="ObjectShortName">xbar_to_m00_couplers_WVALID[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/xbar_to_m01_couplers_ARADDR" type="array">
+            <obj_property name="ElementShortName">xbar_to_m01_couplers_ARADDR[63:32]</obj_property>
+            <obj_property name="ObjectShortName">xbar_to_m01_couplers_ARADDR[63:32]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/xbar_to_m01_couplers_ARREADY" type="array">
+            <obj_property name="ElementShortName">xbar_to_m01_couplers_ARREADY[0:0]</obj_property>
+            <obj_property name="ObjectShortName">xbar_to_m01_couplers_ARREADY[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/xbar_to_m01_couplers_ARVALID" type="array">
+            <obj_property name="ElementShortName">xbar_to_m01_couplers_ARVALID[1:1]</obj_property>
+            <obj_property name="ObjectShortName">xbar_to_m01_couplers_ARVALID[1:1]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/xbar_to_m01_couplers_AWADDR" type="array">
+            <obj_property name="ElementShortName">xbar_to_m01_couplers_AWADDR[63:32]</obj_property>
+            <obj_property name="ObjectShortName">xbar_to_m01_couplers_AWADDR[63:32]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/xbar_to_m01_couplers_AWREADY" type="array">
+            <obj_property name="ElementShortName">xbar_to_m01_couplers_AWREADY[0:0]</obj_property>
+            <obj_property name="ObjectShortName">xbar_to_m01_couplers_AWREADY[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/xbar_to_m01_couplers_AWVALID" type="array">
+            <obj_property name="ElementShortName">xbar_to_m01_couplers_AWVALID[1:1]</obj_property>
+            <obj_property name="ObjectShortName">xbar_to_m01_couplers_AWVALID[1:1]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/xbar_to_m01_couplers_BREADY" type="array">
+            <obj_property name="ElementShortName">xbar_to_m01_couplers_BREADY[1:1]</obj_property>
+            <obj_property name="ObjectShortName">xbar_to_m01_couplers_BREADY[1:1]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/xbar_to_m01_couplers_BRESP" type="array">
+            <obj_property name="ElementShortName">xbar_to_m01_couplers_BRESP[1:0]</obj_property>
+            <obj_property name="ObjectShortName">xbar_to_m01_couplers_BRESP[1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/xbar_to_m01_couplers_BVALID" type="array">
+            <obj_property name="ElementShortName">xbar_to_m01_couplers_BVALID[0:0]</obj_property>
+            <obj_property name="ObjectShortName">xbar_to_m01_couplers_BVALID[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/xbar_to_m01_couplers_RDATA" type="array">
+            <obj_property name="ElementShortName">xbar_to_m01_couplers_RDATA[31:0]</obj_property>
+            <obj_property name="ObjectShortName">xbar_to_m01_couplers_RDATA[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/xbar_to_m01_couplers_RREADY" type="array">
+            <obj_property name="ElementShortName">xbar_to_m01_couplers_RREADY[1:1]</obj_property>
+            <obj_property name="ObjectShortName">xbar_to_m01_couplers_RREADY[1:1]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/xbar_to_m01_couplers_RRESP" type="array">
+            <obj_property name="ElementShortName">xbar_to_m01_couplers_RRESP[1:0]</obj_property>
+            <obj_property name="ObjectShortName">xbar_to_m01_couplers_RRESP[1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/xbar_to_m01_couplers_RVALID" type="array">
+            <obj_property name="ElementShortName">xbar_to_m01_couplers_RVALID[0:0]</obj_property>
+            <obj_property name="ObjectShortName">xbar_to_m01_couplers_RVALID[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/xbar_to_m01_couplers_WDATA" type="array">
+            <obj_property name="ElementShortName">xbar_to_m01_couplers_WDATA[63:32]</obj_property>
+            <obj_property name="ObjectShortName">xbar_to_m01_couplers_WDATA[63:32]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/xbar_to_m01_couplers_WREADY" type="array">
+            <obj_property name="ElementShortName">xbar_to_m01_couplers_WREADY[0:0]</obj_property>
+            <obj_property name="ObjectShortName">xbar_to_m01_couplers_WREADY[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/xbar_to_m01_couplers_WSTRB" type="array">
+            <obj_property name="ElementShortName">xbar_to_m01_couplers_WSTRB[7:4]</obj_property>
+            <obj_property name="ObjectShortName">xbar_to_m01_couplers_WSTRB[7:4]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/xbar_to_m01_couplers_WVALID" type="array">
+            <obj_property name="ElementShortName">xbar_to_m01_couplers_WVALID[1:1]</obj_property>
+            <obj_property name="ObjectShortName">xbar_to_m01_couplers_WVALID[1:1]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/M00_AXI" type="protoinst">
+            <obj_property name="ElementShortName">M00_AXI</obj_property>
+            <obj_property name="ObjectShortName">M00_AXI</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/M01_AXI" type="protoinst">
+            <obj_property name="ElementShortName">M01_AXI</obj_property>
+            <obj_property name="ObjectShortName">M01_AXI</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/S00_AXI" type="protoinst">
+            <obj_property name="ElementShortName">S00_AXI</obj_property>
+            <obj_property name="ObjectShortName">S00_AXI</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group3268" type="group">
+         <obj_property name="label">M00</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/M_ACLK" type="logic">
+            <obj_property name="ElementShortName">M_ACLK</obj_property>
+            <obj_property name="ObjectShortName">M_ACLK</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/M_ARESETN" type="logic">
+            <obj_property name="ElementShortName">M_ARESETN</obj_property>
+            <obj_property name="ObjectShortName">M_ARESETN</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/M_AXI_araddr" type="array">
+            <obj_property name="ElementShortName">M_AXI_araddr[31:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_araddr[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/M_AXI_arready" type="array">
+            <obj_property name="ElementShortName">M_AXI_arready[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_arready[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/M_AXI_arvalid" type="array">
+            <obj_property name="ElementShortName">M_AXI_arvalid[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_arvalid[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/M_AXI_awaddr" type="array">
+            <obj_property name="ElementShortName">M_AXI_awaddr[31:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_awaddr[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/M_AXI_awready" type="array">
+            <obj_property name="ElementShortName">M_AXI_awready[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_awready[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/M_AXI_awvalid" type="array">
+            <obj_property name="ElementShortName">M_AXI_awvalid[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_awvalid[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/M_AXI_bready" type="array">
+            <obj_property name="ElementShortName">M_AXI_bready[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_bready[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/M_AXI_bresp" type="array">
+            <obj_property name="ElementShortName">M_AXI_bresp[1:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_bresp[1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/M_AXI_bvalid" type="array">
+            <obj_property name="ElementShortName">M_AXI_bvalid[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_bvalid[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/M_AXI_rdata" type="array">
+            <obj_property name="ElementShortName">M_AXI_rdata[31:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_rdata[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/M_AXI_rready" type="array">
+            <obj_property name="ElementShortName">M_AXI_rready[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_rready[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/M_AXI_rresp" type="array">
+            <obj_property name="ElementShortName">M_AXI_rresp[1:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_rresp[1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/M_AXI_rvalid" type="array">
+            <obj_property name="ElementShortName">M_AXI_rvalid[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_rvalid[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/M_AXI_wdata" type="array">
+            <obj_property name="ElementShortName">M_AXI_wdata[31:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_wdata[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/M_AXI_wready" type="array">
+            <obj_property name="ElementShortName">M_AXI_wready[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_wready[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/M_AXI_wstrb" type="array">
+            <obj_property name="ElementShortName">M_AXI_wstrb[3:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_wstrb[3:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/M_AXI_wvalid" type="array">
+            <obj_property name="ElementShortName">M_AXI_wvalid[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_wvalid[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/S_ACLK" type="logic">
+            <obj_property name="ElementShortName">S_ACLK</obj_property>
+            <obj_property name="ObjectShortName">S_ACLK</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/S_ARESETN" type="logic">
+            <obj_property name="ElementShortName">S_ARESETN</obj_property>
+            <obj_property name="ObjectShortName">S_ARESETN</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/S_AXI_araddr" type="array">
+            <obj_property name="ElementShortName">S_AXI_araddr[31:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_araddr[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/S_AXI_arready" type="array">
+            <obj_property name="ElementShortName">S_AXI_arready[0:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_arready[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/S_AXI_arvalid" type="array">
+            <obj_property name="ElementShortName">S_AXI_arvalid[0:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_arvalid[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/S_AXI_awaddr" type="array">
+            <obj_property name="ElementShortName">S_AXI_awaddr[31:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_awaddr[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/S_AXI_awready" type="array">
+            <obj_property name="ElementShortName">S_AXI_awready[0:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_awready[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/S_AXI_awvalid" type="array">
+            <obj_property name="ElementShortName">S_AXI_awvalid[0:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_awvalid[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/S_AXI_bready" type="array">
+            <obj_property name="ElementShortName">S_AXI_bready[0:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_bready[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/S_AXI_bresp" type="array">
+            <obj_property name="ElementShortName">S_AXI_bresp[1:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_bresp[1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/S_AXI_bvalid" type="array">
+            <obj_property name="ElementShortName">S_AXI_bvalid[0:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_bvalid[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/S_AXI_rdata" type="array">
+            <obj_property name="ElementShortName">S_AXI_rdata[31:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_rdata[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/S_AXI_rready" type="array">
+            <obj_property name="ElementShortName">S_AXI_rready[0:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_rready[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/S_AXI_rresp" type="array">
+            <obj_property name="ElementShortName">S_AXI_rresp[1:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_rresp[1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/S_AXI_rvalid" type="array">
+            <obj_property name="ElementShortName">S_AXI_rvalid[0:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_rvalid[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/S_AXI_wdata" type="array">
+            <obj_property name="ElementShortName">S_AXI_wdata[31:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_wdata[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/S_AXI_wready" type="array">
+            <obj_property name="ElementShortName">S_AXI_wready[0:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_wready[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/S_AXI_wstrb" type="array">
+            <obj_property name="ElementShortName">S_AXI_wstrb[3:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_wstrb[3:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/S_AXI_wvalid" type="array">
+            <obj_property name="ElementShortName">S_AXI_wvalid[0:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_wvalid[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/m00_couplers_to_m00_couplers_ARADDR" type="array">
+            <obj_property name="ElementShortName">m00_couplers_to_m00_couplers_ARADDR[31:0]</obj_property>
+            <obj_property name="ObjectShortName">m00_couplers_to_m00_couplers_ARADDR[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/m00_couplers_to_m00_couplers_ARREADY" type="array">
+            <obj_property name="ElementShortName">m00_couplers_to_m00_couplers_ARREADY[0:0]</obj_property>
+            <obj_property name="ObjectShortName">m00_couplers_to_m00_couplers_ARREADY[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/m00_couplers_to_m00_couplers_ARVALID" type="array">
+            <obj_property name="ElementShortName">m00_couplers_to_m00_couplers_ARVALID[0:0]</obj_property>
+            <obj_property name="ObjectShortName">m00_couplers_to_m00_couplers_ARVALID[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/m00_couplers_to_m00_couplers_AWADDR" type="array">
+            <obj_property name="ElementShortName">m00_couplers_to_m00_couplers_AWADDR[31:0]</obj_property>
+            <obj_property name="ObjectShortName">m00_couplers_to_m00_couplers_AWADDR[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/m00_couplers_to_m00_couplers_AWREADY" type="array">
+            <obj_property name="ElementShortName">m00_couplers_to_m00_couplers_AWREADY[0:0]</obj_property>
+            <obj_property name="ObjectShortName">m00_couplers_to_m00_couplers_AWREADY[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/m00_couplers_to_m00_couplers_AWVALID" type="array">
+            <obj_property name="ElementShortName">m00_couplers_to_m00_couplers_AWVALID[0:0]</obj_property>
+            <obj_property name="ObjectShortName">m00_couplers_to_m00_couplers_AWVALID[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/m00_couplers_to_m00_couplers_BREADY" type="array">
+            <obj_property name="ElementShortName">m00_couplers_to_m00_couplers_BREADY[0:0]</obj_property>
+            <obj_property name="ObjectShortName">m00_couplers_to_m00_couplers_BREADY[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/m00_couplers_to_m00_couplers_BRESP" type="array">
+            <obj_property name="ElementShortName">m00_couplers_to_m00_couplers_BRESP[1:0]</obj_property>
+            <obj_property name="ObjectShortName">m00_couplers_to_m00_couplers_BRESP[1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/m00_couplers_to_m00_couplers_BVALID" type="array">
+            <obj_property name="ElementShortName">m00_couplers_to_m00_couplers_BVALID[0:0]</obj_property>
+            <obj_property name="ObjectShortName">m00_couplers_to_m00_couplers_BVALID[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/m00_couplers_to_m00_couplers_RDATA" type="array">
+            <obj_property name="ElementShortName">m00_couplers_to_m00_couplers_RDATA[31:0]</obj_property>
+            <obj_property name="ObjectShortName">m00_couplers_to_m00_couplers_RDATA[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/m00_couplers_to_m00_couplers_RREADY" type="array">
+            <obj_property name="ElementShortName">m00_couplers_to_m00_couplers_RREADY[0:0]</obj_property>
+            <obj_property name="ObjectShortName">m00_couplers_to_m00_couplers_RREADY[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/m00_couplers_to_m00_couplers_RRESP" type="array">
+            <obj_property name="ElementShortName">m00_couplers_to_m00_couplers_RRESP[1:0]</obj_property>
+            <obj_property name="ObjectShortName">m00_couplers_to_m00_couplers_RRESP[1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/m00_couplers_to_m00_couplers_RVALID" type="array">
+            <obj_property name="ElementShortName">m00_couplers_to_m00_couplers_RVALID[0:0]</obj_property>
+            <obj_property name="ObjectShortName">m00_couplers_to_m00_couplers_RVALID[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/m00_couplers_to_m00_couplers_WDATA" type="array">
+            <obj_property name="ElementShortName">m00_couplers_to_m00_couplers_WDATA[31:0]</obj_property>
+            <obj_property name="ObjectShortName">m00_couplers_to_m00_couplers_WDATA[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/m00_couplers_to_m00_couplers_WREADY" type="array">
+            <obj_property name="ElementShortName">m00_couplers_to_m00_couplers_WREADY[0:0]</obj_property>
+            <obj_property name="ObjectShortName">m00_couplers_to_m00_couplers_WREADY[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/m00_couplers_to_m00_couplers_WSTRB" type="array">
+            <obj_property name="ElementShortName">m00_couplers_to_m00_couplers_WSTRB[3:0]</obj_property>
+            <obj_property name="ObjectShortName">m00_couplers_to_m00_couplers_WSTRB[3:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/m00_couplers_to_m00_couplers_WVALID" type="array">
+            <obj_property name="ElementShortName">m00_couplers_to_m00_couplers_WVALID[0:0]</obj_property>
+            <obj_property name="ObjectShortName">m00_couplers_to_m00_couplers_WVALID[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/M_AXI" type="protoinst">
+            <obj_property name="ElementShortName">M_AXI</obj_property>
+            <obj_property name="ObjectShortName">M_AXI</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m00_couplers/S_AXI" type="protoinst">
+            <obj_property name="ElementShortName">S_AXI</obj_property>
+            <obj_property name="ObjectShortName">S_AXI</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group3483" type="group">
+         <obj_property name="label">M01</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/M_ACLK" type="logic">
+            <obj_property name="ElementShortName">M_ACLK</obj_property>
+            <obj_property name="ObjectShortName">M_ACLK</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/M_ARESETN" type="logic">
+            <obj_property name="ElementShortName">M_ARESETN</obj_property>
+            <obj_property name="ObjectShortName">M_ARESETN</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/M_AXI_araddr" type="array">
+            <obj_property name="ElementShortName">M_AXI_araddr[31:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_araddr[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/M_AXI_arready" type="array">
+            <obj_property name="ElementShortName">M_AXI_arready[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_arready[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/M_AXI_arvalid" type="array">
+            <obj_property name="ElementShortName">M_AXI_arvalid[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_arvalid[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/M_AXI_awaddr" type="array">
+            <obj_property name="ElementShortName">M_AXI_awaddr[31:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_awaddr[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/M_AXI_awready" type="array">
+            <obj_property name="ElementShortName">M_AXI_awready[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_awready[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/M_AXI_awvalid" type="array">
+            <obj_property name="ElementShortName">M_AXI_awvalid[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_awvalid[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/M_AXI_bready" type="array">
+            <obj_property name="ElementShortName">M_AXI_bready[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_bready[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/M_AXI_bresp" type="array">
+            <obj_property name="ElementShortName">M_AXI_bresp[1:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_bresp[1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/M_AXI_bvalid" type="array">
+            <obj_property name="ElementShortName">M_AXI_bvalid[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_bvalid[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/M_AXI_rdata" type="array">
+            <obj_property name="ElementShortName">M_AXI_rdata[31:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_rdata[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/M_AXI_rready" type="array">
+            <obj_property name="ElementShortName">M_AXI_rready[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_rready[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/M_AXI_rresp" type="array">
+            <obj_property name="ElementShortName">M_AXI_rresp[1:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_rresp[1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/M_AXI_rvalid" type="array">
+            <obj_property name="ElementShortName">M_AXI_rvalid[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_rvalid[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/M_AXI_wdata" type="array">
+            <obj_property name="ElementShortName">M_AXI_wdata[31:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_wdata[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/M_AXI_wready" type="array">
+            <obj_property name="ElementShortName">M_AXI_wready[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_wready[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/M_AXI_wstrb" type="array">
+            <obj_property name="ElementShortName">M_AXI_wstrb[3:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_wstrb[3:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/M_AXI_wvalid" type="array">
+            <obj_property name="ElementShortName">M_AXI_wvalid[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_wvalid[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/S_ACLK" type="logic">
+            <obj_property name="ElementShortName">S_ACLK</obj_property>
+            <obj_property name="ObjectShortName">S_ACLK</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/S_ARESETN" type="logic">
+            <obj_property name="ElementShortName">S_ARESETN</obj_property>
+            <obj_property name="ObjectShortName">S_ARESETN</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/S_AXI_araddr" type="array">
+            <obj_property name="ElementShortName">S_AXI_araddr[31:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_araddr[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/S_AXI_arready" type="array">
+            <obj_property name="ElementShortName">S_AXI_arready[0:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_arready[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/S_AXI_arvalid" type="array">
+            <obj_property name="ElementShortName">S_AXI_arvalid[0:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_arvalid[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/S_AXI_awaddr" type="array">
+            <obj_property name="ElementShortName">S_AXI_awaddr[31:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_awaddr[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/S_AXI_awready" type="array">
+            <obj_property name="ElementShortName">S_AXI_awready[0:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_awready[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/S_AXI_awvalid" type="array">
+            <obj_property name="ElementShortName">S_AXI_awvalid[0:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_awvalid[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/S_AXI_bready" type="array">
+            <obj_property name="ElementShortName">S_AXI_bready[0:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_bready[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/S_AXI_bresp" type="array">
+            <obj_property name="ElementShortName">S_AXI_bresp[1:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_bresp[1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/S_AXI_bvalid" type="array">
+            <obj_property name="ElementShortName">S_AXI_bvalid[0:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_bvalid[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/S_AXI_rdata" type="array">
+            <obj_property name="ElementShortName">S_AXI_rdata[31:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_rdata[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/S_AXI_rready" type="array">
+            <obj_property name="ElementShortName">S_AXI_rready[0:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_rready[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/S_AXI_rresp" type="array">
+            <obj_property name="ElementShortName">S_AXI_rresp[1:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_rresp[1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/S_AXI_rvalid" type="array">
+            <obj_property name="ElementShortName">S_AXI_rvalid[0:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_rvalid[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/S_AXI_wdata" type="array">
+            <obj_property name="ElementShortName">S_AXI_wdata[31:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_wdata[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/S_AXI_wready" type="array">
+            <obj_property name="ElementShortName">S_AXI_wready[0:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_wready[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/S_AXI_wstrb" type="array">
+            <obj_property name="ElementShortName">S_AXI_wstrb[3:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_wstrb[3:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/S_AXI_wvalid" type="array">
+            <obj_property name="ElementShortName">S_AXI_wvalid[0:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_wvalid[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/m01_couplers_to_m01_couplers_ARADDR" type="array">
+            <obj_property name="ElementShortName">m01_couplers_to_m01_couplers_ARADDR[31:0]</obj_property>
+            <obj_property name="ObjectShortName">m01_couplers_to_m01_couplers_ARADDR[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/m01_couplers_to_m01_couplers_ARREADY" type="array">
+            <obj_property name="ElementShortName">m01_couplers_to_m01_couplers_ARREADY[0:0]</obj_property>
+            <obj_property name="ObjectShortName">m01_couplers_to_m01_couplers_ARREADY[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/m01_couplers_to_m01_couplers_ARVALID" type="array">
+            <obj_property name="ElementShortName">m01_couplers_to_m01_couplers_ARVALID[0:0]</obj_property>
+            <obj_property name="ObjectShortName">m01_couplers_to_m01_couplers_ARVALID[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/m01_couplers_to_m01_couplers_AWADDR" type="array">
+            <obj_property name="ElementShortName">m01_couplers_to_m01_couplers_AWADDR[31:0]</obj_property>
+            <obj_property name="ObjectShortName">m01_couplers_to_m01_couplers_AWADDR[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/m01_couplers_to_m01_couplers_AWREADY" type="array">
+            <obj_property name="ElementShortName">m01_couplers_to_m01_couplers_AWREADY[0:0]</obj_property>
+            <obj_property name="ObjectShortName">m01_couplers_to_m01_couplers_AWREADY[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/m01_couplers_to_m01_couplers_AWVALID" type="array">
+            <obj_property name="ElementShortName">m01_couplers_to_m01_couplers_AWVALID[0:0]</obj_property>
+            <obj_property name="ObjectShortName">m01_couplers_to_m01_couplers_AWVALID[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/m01_couplers_to_m01_couplers_BREADY" type="array">
+            <obj_property name="ElementShortName">m01_couplers_to_m01_couplers_BREADY[0:0]</obj_property>
+            <obj_property name="ObjectShortName">m01_couplers_to_m01_couplers_BREADY[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/m01_couplers_to_m01_couplers_BRESP" type="array">
+            <obj_property name="ElementShortName">m01_couplers_to_m01_couplers_BRESP[1:0]</obj_property>
+            <obj_property name="ObjectShortName">m01_couplers_to_m01_couplers_BRESP[1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/m01_couplers_to_m01_couplers_BVALID" type="array">
+            <obj_property name="ElementShortName">m01_couplers_to_m01_couplers_BVALID[0:0]</obj_property>
+            <obj_property name="ObjectShortName">m01_couplers_to_m01_couplers_BVALID[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/m01_couplers_to_m01_couplers_RDATA" type="array">
+            <obj_property name="ElementShortName">m01_couplers_to_m01_couplers_RDATA[31:0]</obj_property>
+            <obj_property name="ObjectShortName">m01_couplers_to_m01_couplers_RDATA[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/m01_couplers_to_m01_couplers_RREADY" type="array">
+            <obj_property name="ElementShortName">m01_couplers_to_m01_couplers_RREADY[0:0]</obj_property>
+            <obj_property name="ObjectShortName">m01_couplers_to_m01_couplers_RREADY[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/m01_couplers_to_m01_couplers_RRESP" type="array">
+            <obj_property name="ElementShortName">m01_couplers_to_m01_couplers_RRESP[1:0]</obj_property>
+            <obj_property name="ObjectShortName">m01_couplers_to_m01_couplers_RRESP[1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/m01_couplers_to_m01_couplers_RVALID" type="array">
+            <obj_property name="ElementShortName">m01_couplers_to_m01_couplers_RVALID[0:0]</obj_property>
+            <obj_property name="ObjectShortName">m01_couplers_to_m01_couplers_RVALID[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/m01_couplers_to_m01_couplers_WDATA" type="array">
+            <obj_property name="ElementShortName">m01_couplers_to_m01_couplers_WDATA[31:0]</obj_property>
+            <obj_property name="ObjectShortName">m01_couplers_to_m01_couplers_WDATA[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/m01_couplers_to_m01_couplers_WREADY" type="array">
+            <obj_property name="ElementShortName">m01_couplers_to_m01_couplers_WREADY[0:0]</obj_property>
+            <obj_property name="ObjectShortName">m01_couplers_to_m01_couplers_WREADY[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/m01_couplers_to_m01_couplers_WSTRB" type="array">
+            <obj_property name="ElementShortName">m01_couplers_to_m01_couplers_WSTRB[3:0]</obj_property>
+            <obj_property name="ObjectShortName">m01_couplers_to_m01_couplers_WSTRB[3:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/m01_couplers_to_m01_couplers_WVALID" type="array">
+            <obj_property name="ElementShortName">m01_couplers_to_m01_couplers_WVALID[0:0]</obj_property>
+            <obj_property name="ObjectShortName">m01_couplers_to_m01_couplers_WVALID[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/M_AXI" type="protoinst">
+            <obj_property name="ElementShortName">M_AXI</obj_property>
+            <obj_property name="ObjectShortName">M_AXI</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/S_AXI" type="protoinst">
+            <obj_property name="ElementShortName">S_AXI</obj_property>
+            <obj_property name="ObjectShortName">S_AXI</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group3597" type="group">
+         <obj_property name="label">S00</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
          <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/M_ACLK" type="logic">
+            <obj_property name="ElementShortName">M_ACLK</obj_property>
+            <obj_property name="ObjectShortName">M_ACLK</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/M_ARESETN" type="logic">
+            <obj_property name="ElementShortName">M_ARESETN</obj_property>
+            <obj_property name="ObjectShortName">M_ARESETN</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/M_AXI_araddr" type="array">
+            <obj_property name="ElementShortName">M_AXI_araddr[31:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_araddr[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/M_AXI_arprot" type="array">
+            <obj_property name="ElementShortName">M_AXI_arprot[2:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_arprot[2:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/M_AXI_arready" type="array">
+            <obj_property name="ElementShortName">M_AXI_arready[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_arready[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/M_AXI_arvalid" type="array">
+            <obj_property name="ElementShortName">M_AXI_arvalid[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_arvalid[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/M_AXI_awaddr" type="array">
+            <obj_property name="ElementShortName">M_AXI_awaddr[31:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_awaddr[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/M_AXI_awprot" type="array">
+            <obj_property name="ElementShortName">M_AXI_awprot[2:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_awprot[2:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/M_AXI_awready" type="array">
+            <obj_property name="ElementShortName">M_AXI_awready[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_awready[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/M_AXI_awvalid" type="array">
+            <obj_property name="ElementShortName">M_AXI_awvalid[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_awvalid[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/M_AXI_bready" type="array">
+            <obj_property name="ElementShortName">M_AXI_bready[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_bready[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/M_AXI_bresp" type="array">
+            <obj_property name="ElementShortName">M_AXI_bresp[1:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_bresp[1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/M_AXI_bvalid" type="array">
+            <obj_property name="ElementShortName">M_AXI_bvalid[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_bvalid[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/M_AXI_rdata" type="array">
+            <obj_property name="ElementShortName">M_AXI_rdata[31:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_rdata[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/M_AXI_rready" type="array">
+            <obj_property name="ElementShortName">M_AXI_rready[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_rready[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/M_AXI_rresp" type="array">
+            <obj_property name="ElementShortName">M_AXI_rresp[1:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_rresp[1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/M_AXI_rvalid" type="array">
+            <obj_property name="ElementShortName">M_AXI_rvalid[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_rvalid[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/M_AXI_wdata" type="array">
+            <obj_property name="ElementShortName">M_AXI_wdata[31:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_wdata[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/M_AXI_wready" type="array">
+            <obj_property name="ElementShortName">M_AXI_wready[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_wready[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/M_AXI_wstrb" type="array">
+            <obj_property name="ElementShortName">M_AXI_wstrb[3:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_wstrb[3:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/M_AXI_wvalid" type="array">
+            <obj_property name="ElementShortName">M_AXI_wvalid[0:0]</obj_property>
+            <obj_property name="ObjectShortName">M_AXI_wvalid[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/S_ACLK" type="logic">
+            <obj_property name="ElementShortName">S_ACLK</obj_property>
+            <obj_property name="ObjectShortName">S_ACLK</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/S_ARESETN" type="logic">
+            <obj_property name="ElementShortName">S_ARESETN</obj_property>
+            <obj_property name="ObjectShortName">S_ARESETN</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/S_AXI_araddr" type="array">
+            <obj_property name="ElementShortName">S_AXI_araddr[31:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_araddr[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/S_AXI_arprot" type="array">
+            <obj_property name="ElementShortName">S_AXI_arprot[2:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_arprot[2:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/S_AXI_arready" type="array">
+            <obj_property name="ElementShortName">S_AXI_arready[0:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_arready[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/S_AXI_arvalid" type="array">
+            <obj_property name="ElementShortName">S_AXI_arvalid[0:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_arvalid[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/S_AXI_awaddr" type="array">
+            <obj_property name="ElementShortName">S_AXI_awaddr[31:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_awaddr[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/S_AXI_awprot" type="array">
+            <obj_property name="ElementShortName">S_AXI_awprot[2:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_awprot[2:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/S_AXI_awready" type="array">
+            <obj_property name="ElementShortName">S_AXI_awready[0:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_awready[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/S_AXI_awvalid" type="array">
+            <obj_property name="ElementShortName">S_AXI_awvalid[0:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_awvalid[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/S_AXI_bready" type="array">
+            <obj_property name="ElementShortName">S_AXI_bready[0:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_bready[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/S_AXI_bresp" type="array">
+            <obj_property name="ElementShortName">S_AXI_bresp[1:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_bresp[1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/S_AXI_bvalid" type="array">
+            <obj_property name="ElementShortName">S_AXI_bvalid[0:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_bvalid[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/S_AXI_rdata" type="array">
+            <obj_property name="ElementShortName">S_AXI_rdata[31:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_rdata[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/S_AXI_rready" type="array">
+            <obj_property name="ElementShortName">S_AXI_rready[0:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_rready[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/S_AXI_rresp" type="array">
+            <obj_property name="ElementShortName">S_AXI_rresp[1:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_rresp[1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/S_AXI_rvalid" type="array">
+            <obj_property name="ElementShortName">S_AXI_rvalid[0:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_rvalid[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/S_AXI_wdata" type="array">
+            <obj_property name="ElementShortName">S_AXI_wdata[31:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_wdata[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/S_AXI_wready" type="array">
+            <obj_property name="ElementShortName">S_AXI_wready[0:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_wready[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/S_AXI_wstrb" type="array">
+            <obj_property name="ElementShortName">S_AXI_wstrb[3:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_wstrb[3:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/S_AXI_wvalid" type="array">
+            <obj_property name="ElementShortName">S_AXI_wvalid[0:0]</obj_property>
+            <obj_property name="ObjectShortName">S_AXI_wvalid[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/s00_couplers_to_s00_couplers_ARADDR" type="array">
+            <obj_property name="ElementShortName">s00_couplers_to_s00_couplers_ARADDR[31:0]</obj_property>
+            <obj_property name="ObjectShortName">s00_couplers_to_s00_couplers_ARADDR[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/s00_couplers_to_s00_couplers_ARPROT" type="array">
+            <obj_property name="ElementShortName">s00_couplers_to_s00_couplers_ARPROT[2:0]</obj_property>
+            <obj_property name="ObjectShortName">s00_couplers_to_s00_couplers_ARPROT[2:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/s00_couplers_to_s00_couplers_ARREADY" type="array">
+            <obj_property name="ElementShortName">s00_couplers_to_s00_couplers_ARREADY[0:0]</obj_property>
+            <obj_property name="ObjectShortName">s00_couplers_to_s00_couplers_ARREADY[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/s00_couplers_to_s00_couplers_ARVALID" type="array">
+            <obj_property name="ElementShortName">s00_couplers_to_s00_couplers_ARVALID[0:0]</obj_property>
+            <obj_property name="ObjectShortName">s00_couplers_to_s00_couplers_ARVALID[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/s00_couplers_to_s00_couplers_AWADDR" type="array">
+            <obj_property name="ElementShortName">s00_couplers_to_s00_couplers_AWADDR[31:0]</obj_property>
+            <obj_property name="ObjectShortName">s00_couplers_to_s00_couplers_AWADDR[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/s00_couplers_to_s00_couplers_AWPROT" type="array">
+            <obj_property name="ElementShortName">s00_couplers_to_s00_couplers_AWPROT[2:0]</obj_property>
+            <obj_property name="ObjectShortName">s00_couplers_to_s00_couplers_AWPROT[2:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/s00_couplers_to_s00_couplers_AWREADY" type="array">
+            <obj_property name="ElementShortName">s00_couplers_to_s00_couplers_AWREADY[0:0]</obj_property>
+            <obj_property name="ObjectShortName">s00_couplers_to_s00_couplers_AWREADY[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/s00_couplers_to_s00_couplers_AWVALID" type="array">
+            <obj_property name="ElementShortName">s00_couplers_to_s00_couplers_AWVALID[0:0]</obj_property>
+            <obj_property name="ObjectShortName">s00_couplers_to_s00_couplers_AWVALID[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/s00_couplers_to_s00_couplers_BREADY" type="array">
+            <obj_property name="ElementShortName">s00_couplers_to_s00_couplers_BREADY[0:0]</obj_property>
+            <obj_property name="ObjectShortName">s00_couplers_to_s00_couplers_BREADY[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/s00_couplers_to_s00_couplers_BRESP" type="array">
+            <obj_property name="ElementShortName">s00_couplers_to_s00_couplers_BRESP[1:0]</obj_property>
+            <obj_property name="ObjectShortName">s00_couplers_to_s00_couplers_BRESP[1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/s00_couplers_to_s00_couplers_BVALID" type="array">
+            <obj_property name="ElementShortName">s00_couplers_to_s00_couplers_BVALID[0:0]</obj_property>
+            <obj_property name="ObjectShortName">s00_couplers_to_s00_couplers_BVALID[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/s00_couplers_to_s00_couplers_RDATA" type="array">
+            <obj_property name="ElementShortName">s00_couplers_to_s00_couplers_RDATA[31:0]</obj_property>
+            <obj_property name="ObjectShortName">s00_couplers_to_s00_couplers_RDATA[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/s00_couplers_to_s00_couplers_RREADY" type="array">
+            <obj_property name="ElementShortName">s00_couplers_to_s00_couplers_RREADY[0:0]</obj_property>
+            <obj_property name="ObjectShortName">s00_couplers_to_s00_couplers_RREADY[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/s00_couplers_to_s00_couplers_RRESP" type="array">
+            <obj_property name="ElementShortName">s00_couplers_to_s00_couplers_RRESP[1:0]</obj_property>
+            <obj_property name="ObjectShortName">s00_couplers_to_s00_couplers_RRESP[1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/s00_couplers_to_s00_couplers_RVALID" type="array">
+            <obj_property name="ElementShortName">s00_couplers_to_s00_couplers_RVALID[0:0]</obj_property>
+            <obj_property name="ObjectShortName">s00_couplers_to_s00_couplers_RVALID[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/s00_couplers_to_s00_couplers_WDATA" type="array">
+            <obj_property name="ElementShortName">s00_couplers_to_s00_couplers_WDATA[31:0]</obj_property>
+            <obj_property name="ObjectShortName">s00_couplers_to_s00_couplers_WDATA[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/s00_couplers_to_s00_couplers_WREADY" type="array">
+            <obj_property name="ElementShortName">s00_couplers_to_s00_couplers_WREADY[0:0]</obj_property>
+            <obj_property name="ObjectShortName">s00_couplers_to_s00_couplers_WREADY[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/s00_couplers_to_s00_couplers_WSTRB" type="array">
+            <obj_property name="ElementShortName">s00_couplers_to_s00_couplers_WSTRB[3:0]</obj_property>
+            <obj_property name="ObjectShortName">s00_couplers_to_s00_couplers_WSTRB[3:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/s00_couplers_to_s00_couplers_WVALID" type="array">
+            <obj_property name="ElementShortName">s00_couplers_to_s00_couplers_WVALID[0:0]</obj_property>
+            <obj_property name="ObjectShortName">s00_couplers_to_s00_couplers_WVALID[0:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/M_AXI" type="protoinst">
+            <obj_property name="ElementShortName">M_AXI</obj_property>
+            <obj_property name="ObjectShortName">M_AXI</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/S_AXI" type="protoinst">
+            <obj_property name="ElementShortName">S_AXI</obj_property>
+            <obj_property name="ObjectShortName">S_AXI</obj_property>
+         </wvobject>
       </wvobject>
    </wvobject>
    <wvobject fp_name="group8603" type="group">
@@ -3904,6 +5329,234 @@
       <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/clk_wiz/clk_in1" type="logic">
          <obj_property name="ElementShortName">clk_in1</obj_property>
          <obj_property name="ObjectShortName">clk_in1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/M_ACLK" type="logic">
+         <obj_property name="ElementShortName">M_ACLK</obj_property>
+         <obj_property name="ObjectShortName">M_ACLK</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/M_ARESETN" type="logic">
+         <obj_property name="ElementShortName">M_ARESETN</obj_property>
+         <obj_property name="ObjectShortName">M_ARESETN</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/M_AXI_araddr" type="array">
+         <obj_property name="ElementShortName">M_AXI_araddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_araddr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/M_AXI_arready" type="array">
+         <obj_property name="ElementShortName">M_AXI_arready[0:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_arready[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/M_AXI_arvalid" type="array">
+         <obj_property name="ElementShortName">M_AXI_arvalid[0:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_arvalid[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/M_AXI_awaddr" type="array">
+         <obj_property name="ElementShortName">M_AXI_awaddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_awaddr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/M_AXI_awready" type="array">
+         <obj_property name="ElementShortName">M_AXI_awready[0:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_awready[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/M_AXI_awvalid" type="array">
+         <obj_property name="ElementShortName">M_AXI_awvalid[0:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_awvalid[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/M_AXI_bready" type="array">
+         <obj_property name="ElementShortName">M_AXI_bready[0:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_bready[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/M_AXI_bresp" type="array">
+         <obj_property name="ElementShortName">M_AXI_bresp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_bresp[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/M_AXI_bvalid" type="array">
+         <obj_property name="ElementShortName">M_AXI_bvalid[0:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_bvalid[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/M_AXI_rdata" type="array">
+         <obj_property name="ElementShortName">M_AXI_rdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_rdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/M_AXI_rready" type="array">
+         <obj_property name="ElementShortName">M_AXI_rready[0:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_rready[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/M_AXI_rresp" type="array">
+         <obj_property name="ElementShortName">M_AXI_rresp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_rresp[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/M_AXI_rvalid" type="array">
+         <obj_property name="ElementShortName">M_AXI_rvalid[0:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_rvalid[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/M_AXI_wdata" type="array">
+         <obj_property name="ElementShortName">M_AXI_wdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_wdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/M_AXI_wready" type="array">
+         <obj_property name="ElementShortName">M_AXI_wready[0:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_wready[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/M_AXI_wstrb" type="array">
+         <obj_property name="ElementShortName">M_AXI_wstrb[3:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_wstrb[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/M_AXI_wvalid" type="array">
+         <obj_property name="ElementShortName">M_AXI_wvalid[0:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_wvalid[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/S_ACLK" type="logic">
+         <obj_property name="ElementShortName">S_ACLK</obj_property>
+         <obj_property name="ObjectShortName">S_ACLK</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/S_ARESETN" type="logic">
+         <obj_property name="ElementShortName">S_ARESETN</obj_property>
+         <obj_property name="ObjectShortName">S_ARESETN</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/S_AXI_araddr" type="array">
+         <obj_property name="ElementShortName">S_AXI_araddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">S_AXI_araddr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/S_AXI_arready" type="array">
+         <obj_property name="ElementShortName">S_AXI_arready[0:0]</obj_property>
+         <obj_property name="ObjectShortName">S_AXI_arready[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/S_AXI_arvalid" type="array">
+         <obj_property name="ElementShortName">S_AXI_arvalid[0:0]</obj_property>
+         <obj_property name="ObjectShortName">S_AXI_arvalid[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/S_AXI_awaddr" type="array">
+         <obj_property name="ElementShortName">S_AXI_awaddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">S_AXI_awaddr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/S_AXI_awready" type="array">
+         <obj_property name="ElementShortName">S_AXI_awready[0:0]</obj_property>
+         <obj_property name="ObjectShortName">S_AXI_awready[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/S_AXI_awvalid" type="array">
+         <obj_property name="ElementShortName">S_AXI_awvalid[0:0]</obj_property>
+         <obj_property name="ObjectShortName">S_AXI_awvalid[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/S_AXI_bready" type="array">
+         <obj_property name="ElementShortName">S_AXI_bready[0:0]</obj_property>
+         <obj_property name="ObjectShortName">S_AXI_bready[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/S_AXI_bresp" type="array">
+         <obj_property name="ElementShortName">S_AXI_bresp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">S_AXI_bresp[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/S_AXI_bvalid" type="array">
+         <obj_property name="ElementShortName">S_AXI_bvalid[0:0]</obj_property>
+         <obj_property name="ObjectShortName">S_AXI_bvalid[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/S_AXI_rdata" type="array">
+         <obj_property name="ElementShortName">S_AXI_rdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">S_AXI_rdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/S_AXI_rready" type="array">
+         <obj_property name="ElementShortName">S_AXI_rready[0:0]</obj_property>
+         <obj_property name="ObjectShortName">S_AXI_rready[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/S_AXI_rresp" type="array">
+         <obj_property name="ElementShortName">S_AXI_rresp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">S_AXI_rresp[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/S_AXI_rvalid" type="array">
+         <obj_property name="ElementShortName">S_AXI_rvalid[0:0]</obj_property>
+         <obj_property name="ObjectShortName">S_AXI_rvalid[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/S_AXI_wdata" type="array">
+         <obj_property name="ElementShortName">S_AXI_wdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">S_AXI_wdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/S_AXI_wready" type="array">
+         <obj_property name="ElementShortName">S_AXI_wready[0:0]</obj_property>
+         <obj_property name="ObjectShortName">S_AXI_wready[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/S_AXI_wstrb" type="array">
+         <obj_property name="ElementShortName">S_AXI_wstrb[3:0]</obj_property>
+         <obj_property name="ObjectShortName">S_AXI_wstrb[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/S_AXI_wvalid" type="array">
+         <obj_property name="ElementShortName">S_AXI_wvalid[0:0]</obj_property>
+         <obj_property name="ObjectShortName">S_AXI_wvalid[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/m01_couplers_to_m01_couplers_ARADDR" type="array">
+         <obj_property name="ElementShortName">m01_couplers_to_m01_couplers_ARADDR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">m01_couplers_to_m01_couplers_ARADDR[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/m01_couplers_to_m01_couplers_ARREADY" type="array">
+         <obj_property name="ElementShortName">m01_couplers_to_m01_couplers_ARREADY[0:0]</obj_property>
+         <obj_property name="ObjectShortName">m01_couplers_to_m01_couplers_ARREADY[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/m01_couplers_to_m01_couplers_ARVALID" type="array">
+         <obj_property name="ElementShortName">m01_couplers_to_m01_couplers_ARVALID[0:0]</obj_property>
+         <obj_property name="ObjectShortName">m01_couplers_to_m01_couplers_ARVALID[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/m01_couplers_to_m01_couplers_AWADDR" type="array">
+         <obj_property name="ElementShortName">m01_couplers_to_m01_couplers_AWADDR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">m01_couplers_to_m01_couplers_AWADDR[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/m01_couplers_to_m01_couplers_AWREADY" type="array">
+         <obj_property name="ElementShortName">m01_couplers_to_m01_couplers_AWREADY[0:0]</obj_property>
+         <obj_property name="ObjectShortName">m01_couplers_to_m01_couplers_AWREADY[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/m01_couplers_to_m01_couplers_AWVALID" type="array">
+         <obj_property name="ElementShortName">m01_couplers_to_m01_couplers_AWVALID[0:0]</obj_property>
+         <obj_property name="ObjectShortName">m01_couplers_to_m01_couplers_AWVALID[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/m01_couplers_to_m01_couplers_BREADY" type="array">
+         <obj_property name="ElementShortName">m01_couplers_to_m01_couplers_BREADY[0:0]</obj_property>
+         <obj_property name="ObjectShortName">m01_couplers_to_m01_couplers_BREADY[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/m01_couplers_to_m01_couplers_BRESP" type="array">
+         <obj_property name="ElementShortName">m01_couplers_to_m01_couplers_BRESP[1:0]</obj_property>
+         <obj_property name="ObjectShortName">m01_couplers_to_m01_couplers_BRESP[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/m01_couplers_to_m01_couplers_BVALID" type="array">
+         <obj_property name="ElementShortName">m01_couplers_to_m01_couplers_BVALID[0:0]</obj_property>
+         <obj_property name="ObjectShortName">m01_couplers_to_m01_couplers_BVALID[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/m01_couplers_to_m01_couplers_RDATA" type="array">
+         <obj_property name="ElementShortName">m01_couplers_to_m01_couplers_RDATA[31:0]</obj_property>
+         <obj_property name="ObjectShortName">m01_couplers_to_m01_couplers_RDATA[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/m01_couplers_to_m01_couplers_RREADY" type="array">
+         <obj_property name="ElementShortName">m01_couplers_to_m01_couplers_RREADY[0:0]</obj_property>
+         <obj_property name="ObjectShortName">m01_couplers_to_m01_couplers_RREADY[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/m01_couplers_to_m01_couplers_RRESP" type="array">
+         <obj_property name="ElementShortName">m01_couplers_to_m01_couplers_RRESP[1:0]</obj_property>
+         <obj_property name="ObjectShortName">m01_couplers_to_m01_couplers_RRESP[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/m01_couplers_to_m01_couplers_RVALID" type="array">
+         <obj_property name="ElementShortName">m01_couplers_to_m01_couplers_RVALID[0:0]</obj_property>
+         <obj_property name="ObjectShortName">m01_couplers_to_m01_couplers_RVALID[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/m01_couplers_to_m01_couplers_WDATA" type="array">
+         <obj_property name="ElementShortName">m01_couplers_to_m01_couplers_WDATA[31:0]</obj_property>
+         <obj_property name="ObjectShortName">m01_couplers_to_m01_couplers_WDATA[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/m01_couplers_to_m01_couplers_WREADY" type="array">
+         <obj_property name="ElementShortName">m01_couplers_to_m01_couplers_WREADY[0:0]</obj_property>
+         <obj_property name="ObjectShortName">m01_couplers_to_m01_couplers_WREADY[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/m01_couplers_to_m01_couplers_WSTRB" type="array">
+         <obj_property name="ElementShortName">m01_couplers_to_m01_couplers_WSTRB[3:0]</obj_property>
+         <obj_property name="ObjectShortName">m01_couplers_to_m01_couplers_WSTRB[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/m01_couplers_to_m01_couplers_WVALID" type="array">
+         <obj_property name="ElementShortName">m01_couplers_to_m01_couplers_WVALID[0:0]</obj_property>
+         <obj_property name="ObjectShortName">m01_couplers_to_m01_couplers_WVALID[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/M_AXI" type="protoinst">
+         <obj_property name="ElementShortName">M_AXI</obj_property>
+         <obj_property name="ObjectShortName">M_AXI</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/m01_couplers/S_AXI" type="protoinst">
+         <obj_property name="ElementShortName">S_AXI</obj_property>
+         <obj_property name="ObjectShortName">S_AXI</obj_property>
       </wvobject>
    </wvobject>
 </wave_config>

@@ -25,65 +25,104 @@ WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis b
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 30140
+INFO: [Synth 8-7075] Helper process launched with PID 688
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1243.551 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1246.664 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'RISCV_demonstrator_wrapper' [H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/hdl/RISCV_demonstrator_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'RISCV_demonstrator' [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/synth/RISCV_demonstrator.v:13]
-INFO: [Synth 8-6157] synthesizing module 'RISCV_demonstrator_axi_gpio_0_1' [H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.runs/synth_1/.Xil/Vivado-15608-Gianluca/realtime/RISCV_demonstrator_axi_gpio_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'RISCV_demonstrator_axi_gpio_0_1' (1#1) [H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.runs/synth_1/.Xil/Vivado-15608-Gianluca/realtime/RISCV_demonstrator_axi_gpio_0_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'RISCV_demonstrator_clk_wiz_0' [H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.runs/synth_1/.Xil/Vivado-15608-Gianluca/realtime/RISCV_demonstrator_clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'RISCV_demonstrator_clk_wiz_0' (2#1) [H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.runs/synth_1/.Xil/Vivado-15608-Gianluca/realtime/RISCV_demonstrator_clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'RISCV_demonstrator_decoder_0_0' [H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.runs/synth_1/.Xil/Vivado-15608-Gianluca/realtime/RISCV_demonstrator_decoder_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'RISCV_demonstrator_decoder_0_0' (3#1) [H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.runs/synth_1/.Xil/Vivado-15608-Gianluca/realtime/RISCV_demonstrator_decoder_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'RISCV_demonstrator_riscv_wrapper_0_1' [H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.runs/synth_1/.Xil/Vivado-15608-Gianluca/realtime/RISCV_demonstrator_riscv_wrapper_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'RISCV_demonstrator_riscv_wrapper_0_1' (4#1) [H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.runs/synth_1/.Xil/Vivado-15608-Gianluca/realtime/RISCV_demonstrator_riscv_wrapper_0_1_stub.v:6]
-WARNING: [Synth 8-7071] port 's_axil_awready' of module 'RISCV_demonstrator_riscv_wrapper_0_1' is unconnected for instance 'riscv_wrapper_0' [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/synth/RISCV_demonstrator.v:83]
-WARNING: [Synth 8-7071] port 's_axil_wready' of module 'RISCV_demonstrator_riscv_wrapper_0_1' is unconnected for instance 'riscv_wrapper_0' [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/synth/RISCV_demonstrator.v:83]
-WARNING: [Synth 8-7071] port 's_axil_bresp' of module 'RISCV_demonstrator_riscv_wrapper_0_1' is unconnected for instance 'riscv_wrapper_0' [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/synth/RISCV_demonstrator.v:83]
-WARNING: [Synth 8-7071] port 's_axil_bvalid' of module 'RISCV_demonstrator_riscv_wrapper_0_1' is unconnected for instance 'riscv_wrapper_0' [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/synth/RISCV_demonstrator.v:83]
-WARNING: [Synth 8-7071] port 's_axil_arready' of module 'RISCV_demonstrator_riscv_wrapper_0_1' is unconnected for instance 'riscv_wrapper_0' [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/synth/RISCV_demonstrator.v:83]
-WARNING: [Synth 8-7071] port 's_axil_rdata' of module 'RISCV_demonstrator_riscv_wrapper_0_1' is unconnected for instance 'riscv_wrapper_0' [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/synth/RISCV_demonstrator.v:83]
-WARNING: [Synth 8-7071] port 's_axil_rresp' of module 'RISCV_demonstrator_riscv_wrapper_0_1' is unconnected for instance 'riscv_wrapper_0' [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/synth/RISCV_demonstrator.v:83]
-WARNING: [Synth 8-7071] port 's_axil_rvalid' of module 'RISCV_demonstrator_riscv_wrapper_0_1' is unconnected for instance 'riscv_wrapper_0' [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/synth/RISCV_demonstrator.v:83]
-WARNING: [Synth 8-7071] port 'm_axil_awprot' of module 'RISCV_demonstrator_riscv_wrapper_0_1' is unconnected for instance 'riscv_wrapper_0' [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/synth/RISCV_demonstrator.v:83]
-WARNING: [Synth 8-7071] port 'm_axil_arprot' of module 'RISCV_demonstrator_riscv_wrapper_0_1' is unconnected for instance 'riscv_wrapper_0' [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/synth/RISCV_demonstrator.v:83]
-WARNING: [Synth 8-7023] instance 'riscv_wrapper_0' of module 'RISCV_demonstrator_riscv_wrapper_0_1' has 40 connections declared, but only 30 given [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/synth/RISCV_demonstrator.v:83]
-INFO: [Synth 8-6157] synthesizing module 'RISCV_demonstrator_rst_clk_wiz_100M_1' [H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.runs/synth_1/.Xil/Vivado-15608-Gianluca/realtime/RISCV_demonstrator_rst_clk_wiz_100M_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'RISCV_demonstrator_rst_clk_wiz_100M_1' (5#1) [H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.runs/synth_1/.Xil/Vivado-15608-Gianluca/realtime/RISCV_demonstrator_rst_clk_wiz_100M_1_stub.v:6]
-WARNING: [Synth 8-7071] port 'mb_reset' of module 'RISCV_demonstrator_rst_clk_wiz_100M_1' is unconnected for instance 'rst_clk_wiz_100M' [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/synth/RISCV_demonstrator.v:114]
-WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'RISCV_demonstrator_rst_clk_wiz_100M_1' is unconnected for instance 'rst_clk_wiz_100M' [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/synth/RISCV_demonstrator.v:114]
-WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'RISCV_demonstrator_rst_clk_wiz_100M_1' is unconnected for instance 'rst_clk_wiz_100M' [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/synth/RISCV_demonstrator.v:114]
-WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'RISCV_demonstrator_rst_clk_wiz_100M_1' is unconnected for instance 'rst_clk_wiz_100M' [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/synth/RISCV_demonstrator.v:114]
-WARNING: [Synth 8-7023] instance 'rst_clk_wiz_100M' of module 'RISCV_demonstrator_rst_clk_wiz_100M_1' has 10 connections declared, but only 6 given [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/synth/RISCV_demonstrator.v:114]
-INFO: [Synth 8-6155] done synthesizing module 'RISCV_demonstrator' (6#1) [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/synth/RISCV_demonstrator.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'RISCV_demonstrator_wrapper' (7#1) [H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/hdl/RISCV_demonstrator_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'RISCV_demonstrator_axi_gpio_0_1' [H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.runs/synth_1/.Xil/Vivado-37328-Gianluca/realtime/RISCV_demonstrator_axi_gpio_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RISCV_demonstrator_axi_gpio_0_1' (1#1) [H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.runs/synth_1/.Xil/Vivado-37328-Gianluca/realtime/RISCV_demonstrator_axi_gpio_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'RISCV_demonstrator_axi_gpio_1_0' [H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.runs/synth_1/.Xil/Vivado-37328-Gianluca/realtime/RISCV_demonstrator_axi_gpio_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RISCV_demonstrator_axi_gpio_1_0' (2#1) [H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.runs/synth_1/.Xil/Vivado-37328-Gianluca/realtime/RISCV_demonstrator_axi_gpio_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'RISCV_demonstrator_clk_wiz_0' [H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.runs/synth_1/.Xil/Vivado-37328-Gianluca/realtime/RISCV_demonstrator_clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'RISCV_demonstrator_clk_wiz_0' (3#1) [H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.runs/synth_1/.Xil/Vivado-37328-Gianluca/realtime/RISCV_demonstrator_clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'RISCV_demonstrator_decoder1to2_0_0' [H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.runs/synth_1/.Xil/Vivado-37328-Gianluca/realtime/RISCV_demonstrator_decoder1to2_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RISCV_demonstrator_decoder1to2_0_0' (4#1) [H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.runs/synth_1/.Xil/Vivado-37328-Gianluca/realtime/RISCV_demonstrator_decoder1to2_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'RISCV_demonstrator_decoder2to4_0_0' [H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.runs/synth_1/.Xil/Vivado-37328-Gianluca/realtime/RISCV_demonstrator_decoder2to4_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RISCV_demonstrator_decoder2to4_0_0' (5#1) [H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.runs/synth_1/.Xil/Vivado-37328-Gianluca/realtime/RISCV_demonstrator_decoder2to4_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'RISCV_demonstrator_riscv_wrapper_0_1' [H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.runs/synth_1/.Xil/Vivado-37328-Gianluca/realtime/RISCV_demonstrator_riscv_wrapper_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RISCV_demonstrator_riscv_wrapper_0_1' (6#1) [H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.runs/synth_1/.Xil/Vivado-37328-Gianluca/realtime/RISCV_demonstrator_riscv_wrapper_0_1_stub.v:6]
+WARNING: [Synth 8-7071] port 's_axil_awready' of module 'RISCV_demonstrator_riscv_wrapper_0_1' is unconnected for instance 'riscv_wrapper_0' [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/synth/RISCV_demonstrator.v:148]
+WARNING: [Synth 8-7071] port 's_axil_wready' of module 'RISCV_demonstrator_riscv_wrapper_0_1' is unconnected for instance 'riscv_wrapper_0' [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/synth/RISCV_demonstrator.v:148]
+WARNING: [Synth 8-7071] port 's_axil_bresp' of module 'RISCV_demonstrator_riscv_wrapper_0_1' is unconnected for instance 'riscv_wrapper_0' [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/synth/RISCV_demonstrator.v:148]
+WARNING: [Synth 8-7071] port 's_axil_bvalid' of module 'RISCV_demonstrator_riscv_wrapper_0_1' is unconnected for instance 'riscv_wrapper_0' [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/synth/RISCV_demonstrator.v:148]
+WARNING: [Synth 8-7071] port 's_axil_arready' of module 'RISCV_demonstrator_riscv_wrapper_0_1' is unconnected for instance 'riscv_wrapper_0' [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/synth/RISCV_demonstrator.v:148]
+WARNING: [Synth 8-7071] port 's_axil_rdata' of module 'RISCV_demonstrator_riscv_wrapper_0_1' is unconnected for instance 'riscv_wrapper_0' [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/synth/RISCV_demonstrator.v:148]
+WARNING: [Synth 8-7071] port 's_axil_rresp' of module 'RISCV_demonstrator_riscv_wrapper_0_1' is unconnected for instance 'riscv_wrapper_0' [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/synth/RISCV_demonstrator.v:148]
+WARNING: [Synth 8-7071] port 's_axil_rvalid' of module 'RISCV_demonstrator_riscv_wrapper_0_1' is unconnected for instance 'riscv_wrapper_0' [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/synth/RISCV_demonstrator.v:148]
+WARNING: [Synth 8-7023] instance 'riscv_wrapper_0' of module 'RISCV_demonstrator_riscv_wrapper_0_1' has 40 connections declared, but only 32 given [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/synth/RISCV_demonstrator.v:148]
+INFO: [Synth 8-6157] synthesizing module 'RISCV_demonstrator_riscv_wrapper_0_axi_periph_0' [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/synth/RISCV_demonstrator.v:252]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_PVEKGE' [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/synth/RISCV_demonstrator.v:702]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_PVEKGE' (7#1) [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/synth/RISCV_demonstrator.v:702]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_POE2AB' [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/synth/RISCV_demonstrator.v:834]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_POE2AB' (8#1) [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/synth/RISCV_demonstrator.v:834]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_17J8HML' [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/synth/RISCV_demonstrator.v:966]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_17J8HML' (9#1) [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/synth/RISCV_demonstrator.v:966]
+INFO: [Synth 8-6157] synthesizing module 'RISCV_demonstrator_xbar_0' [H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.runs/synth_1/.Xil/Vivado-37328-Gianluca/realtime/RISCV_demonstrator_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RISCV_demonstrator_xbar_0' (10#1) [H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.runs/synth_1/.Xil/Vivado-37328-Gianluca/realtime/RISCV_demonstrator_xbar_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'RISCV_demonstrator_xbar_0' is unconnected for instance 'xbar' [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/synth/RISCV_demonstrator.v:661]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'RISCV_demonstrator_xbar_0' is unconnected for instance 'xbar' [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/synth/RISCV_demonstrator.v:661]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'RISCV_demonstrator_xbar_0' has 40 connections declared, but only 38 given [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/synth/RISCV_demonstrator.v:661]
+INFO: [Synth 8-6155] done synthesizing module 'RISCV_demonstrator_riscv_wrapper_0_axi_periph_0' (11#1) [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/synth/RISCV_demonstrator.v:252]
+INFO: [Synth 8-6157] synthesizing module 'RISCV_demonstrator_rst_clk_wiz_100M_1' [H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.runs/synth_1/.Xil/Vivado-37328-Gianluca/realtime/RISCV_demonstrator_rst_clk_wiz_100M_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RISCV_demonstrator_rst_clk_wiz_100M_1' (12#1) [H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.runs/synth_1/.Xil/Vivado-37328-Gianluca/realtime/RISCV_demonstrator_rst_clk_wiz_100M_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'RISCV_demonstrator_rst_clk_wiz_100M_1' is unconnected for instance 'rst_clk_wiz_100M' [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/synth/RISCV_demonstrator.v:243]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'RISCV_demonstrator_rst_clk_wiz_100M_1' is unconnected for instance 'rst_clk_wiz_100M' [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/synth/RISCV_demonstrator.v:243]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'RISCV_demonstrator_rst_clk_wiz_100M_1' is unconnected for instance 'rst_clk_wiz_100M' [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/synth/RISCV_demonstrator.v:243]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'RISCV_demonstrator_rst_clk_wiz_100M_1' is unconnected for instance 'rst_clk_wiz_100M' [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/synth/RISCV_demonstrator.v:243]
+WARNING: [Synth 8-7023] instance 'rst_clk_wiz_100M' of module 'RISCV_demonstrator_rst_clk_wiz_100M_1' has 10 connections declared, but only 6 given [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/synth/RISCV_demonstrator.v:243]
+INFO: [Synth 8-6155] done synthesizing module 'RISCV_demonstrator' (13#1) [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/synth/RISCV_demonstrator.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'RISCV_demonstrator_wrapper' (14#1) [H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/hdl/RISCV_demonstrator_wrapper.v:12]
+WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_17J8HML is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_17J8HML is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module s00_couplers_imp_17J8HML is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module s00_couplers_imp_17J8HML is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m01_couplers_imp_POE2AB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m01_couplers_imp_POE2AB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m01_couplers_imp_POE2AB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m01_couplers_imp_POE2AB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m00_couplers_imp_PVEKGE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m00_couplers_imp_PVEKGE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m00_couplers_imp_PVEKGE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m00_couplers_imp_PVEKGE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ACLK in module RISCV_demonstrator_riscv_wrapper_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module RISCV_demonstrator_riscv_wrapper_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ACLK in module RISCV_demonstrator_riscv_wrapper_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ARESETN in module RISCV_demonstrator_riscv_wrapper_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module RISCV_demonstrator_riscv_wrapper_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module RISCV_demonstrator_riscv_wrapper_0_axi_periph_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1243.551 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1246.664 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1243.551 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1246.664 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1243.551 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1246.664 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1243.551 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1246.664 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_decoder_0_0/RISCV_demonstrator_decoder_0_0/RISCV_demonstrator_decoder_0_0_in_context.xdc] for cell 'RISCV_demonstrator_i/decoder_0'
-Finished Parsing XDC File [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_decoder_0_0/RISCV_demonstrator_decoder_0_0/RISCV_demonstrator_decoder_0_0_in_context.xdc] for cell 'RISCV_demonstrator_i/decoder_0'
 Parsing XDC File [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_axi_gpio_0_1/RISCV_demonstrator_axi_gpio_0_1/RISCV_demonstrator_axi_gpio_0_1_in_context.xdc] for cell 'RISCV_demonstrator_i/axi_gpio_0'
 Finished Parsing XDC File [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_axi_gpio_0_1/RISCV_demonstrator_axi_gpio_0_1/RISCV_demonstrator_axi_gpio_0_1_in_context.xdc] for cell 'RISCV_demonstrator_i/axi_gpio_0'
 Parsing XDC File [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_clk_wiz_0/RISCV_demonstrator_clk_wiz_0/RISCV_demonstrator_clk_wiz_0_in_context.xdc] for cell 'RISCV_demonstrator_i/clk_wiz'
 Finished Parsing XDC File [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_clk_wiz_0/RISCV_demonstrator_clk_wiz_0/RISCV_demonstrator_clk_wiz_0_in_context.xdc] for cell 'RISCV_demonstrator_i/clk_wiz'
 Parsing XDC File [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_rst_clk_wiz_100M_1/RISCV_demonstrator_rst_clk_wiz_100M_1/RISCV_demonstrator_rst_clk_wiz_100M_1_in_context.xdc] for cell 'RISCV_demonstrator_i/rst_clk_wiz_100M'
 Finished Parsing XDC File [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_rst_clk_wiz_100M_1/RISCV_demonstrator_rst_clk_wiz_100M_1/RISCV_demonstrator_rst_clk_wiz_100M_1_in_context.xdc] for cell 'RISCV_demonstrator_i/rst_clk_wiz_100M'
+Parsing XDC File [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_axi_gpio_1_0/RISCV_demonstrator_axi_gpio_1_0/RISCV_demonstrator_axi_gpio_1_0_in_context.xdc] for cell 'RISCV_demonstrator_i/axi_gpio_1'
+Finished Parsing XDC File [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_axi_gpio_1_0/RISCV_demonstrator_axi_gpio_1_0/RISCV_demonstrator_axi_gpio_1_0_in_context.xdc] for cell 'RISCV_demonstrator_i/axi_gpio_1'
+Parsing XDC File [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_xbar_0/RISCV_demonstrator_xbar_0/RISCV_demonstrator_xbar_0_in_context.xdc] for cell 'RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/xbar'
+Finished Parsing XDC File [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_xbar_0/RISCV_demonstrator_xbar_0/RISCV_demonstrator_xbar_0_in_context.xdc] for cell 'RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/xbar'
+Parsing XDC File [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_decoder2to4_0_0/RISCV_demonstrator_decoder2to4_0_0/RISCV_demonstrator_decoder2to4_0_0_in_context.xdc] for cell 'RISCV_demonstrator_i/decoder2to4_0'
+Finished Parsing XDC File [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_decoder2to4_0_0/RISCV_demonstrator_decoder2to4_0_0/RISCV_demonstrator_decoder2to4_0_0_in_context.xdc] for cell 'RISCV_demonstrator_i/decoder2to4_0'
+Parsing XDC File [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_decoder1to2_0_0/RISCV_demonstrator_decoder1to2_0_0/RISCV_demonstrator_decoder1to2_0_0_in_context.xdc] for cell 'RISCV_demonstrator_i/decoder1to2_0'
+Finished Parsing XDC File [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_decoder1to2_0_0/RISCV_demonstrator_decoder1to2_0_0/RISCV_demonstrator_decoder1to2_0_0_in_context.xdc] for cell 'RISCV_demonstrator_i/decoder1to2_0'
 Parsing XDC File [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_riscv_wrapper_0_1/RISCV_demonstrator_riscv_wrapper_0_1/RISCV_demonstrator_riscv_wrapper_0_1_in_context.xdc] for cell 'RISCV_demonstrator_i/riscv_wrapper_0'
 Finished Parsing XDC File [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_riscv_wrapper_0_1/RISCV_demonstrator_riscv_wrapper_0_1/RISCV_demonstrator_riscv_wrapper_0_1_in_context.xdc] for cell 'RISCV_demonstrator_i/riscv_wrapper_0'
 Parsing XDC File [H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.srcs/constrs_1/new/Zybo_Z7_Master.xdc]
@@ -94,22 +133,22 @@ Parsing XDC File [H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store
 Finished Parsing XDC File [H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1243.551 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1246.664 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1243.551 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1246.664 ; gain = 0.000
 WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1243.551 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1246.664 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1243.551 ; gain = 0.000
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1246.664 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -117,16 +156,20 @@ Start Applying 'set_property' XDC Constraints
 Applied set_property IO_BUFFER_TYPE = NONE for sysclk. (constraint file  h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_clk_wiz_0/RISCV_demonstrator_clk_wiz_0/RISCV_demonstrator_clk_wiz_0_in_context.xdc, line 3).
 Applied set_property CLOCK_BUFFER_TYPE = NONE for sysclk. (constraint file  h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_clk_wiz_0/RISCV_demonstrator_clk_wiz_0/RISCV_demonstrator_clk_wiz_0_in_context.xdc, line 4).
 Applied set_property KEEP_HIERARCHY = SOFT for RISCV_demonstrator_i. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for RISCV_demonstrator_i/decoder_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for RISCV_demonstrator_i/axi_gpio_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for RISCV_demonstrator_i/clk_wiz. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for RISCV_demonstrator_i/rst_clk_wiz_100M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for RISCV_demonstrator_i/axi_gpio_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for RISCV_demonstrator_i/riscv_wrapper_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for RISCV_demonstrator_i/decoder2to4_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for RISCV_demonstrator_i/decoder1to2_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for RISCV_demonstrator_i/riscv_wrapper_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1243.551 ; gain = 0.000
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1246.664 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1243.551 ; gain = 0.000
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1246.664 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -148,26 +191,32 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port M00_ACLK in module RISCV_demonstrator_riscv_wrapper_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module RISCV_demonstrator_riscv_wrapper_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ACLK in module RISCV_demonstrator_riscv_wrapper_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ARESETN in module RISCV_demonstrator_riscv_wrapper_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module RISCV_demonstrator_riscv_wrapper_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module RISCV_demonstrator_riscv_wrapper_0_axi_periph_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1243.551 ; gain = 0.000
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1246.664 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1243.551 ; gain = 0.000
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1246.664 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1243.551 ; gain = 0.000
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1246.664 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1243.551 ; gain = 0.000
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1246.664 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -185,37 +234,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1243.551 ; gain = 0.000
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1246.664 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1243.551 ; gain = 0.000
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1246.664 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1243.551 ; gain = 0.000
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1246.664 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1243.551 ; gain = 0.000
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1246.664 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1243.551 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1246.664 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1243.551 ; gain = 0.000
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1246.664 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -225,11 +274,14 @@ Report BlackBoxes:
 +------+--------------------------------------+----------+
 |      |BlackBox name                         |Instances |
 +------+--------------------------------------+----------+
-|1     |RISCV_demonstrator_axi_gpio_0_1       |         1|
-|2     |RISCV_demonstrator_clk_wiz_0          |         1|
-|3     |RISCV_demonstrator_decoder_0_0        |         1|
-|4     |RISCV_demonstrator_riscv_wrapper_0_1  |         1|
-|5     |RISCV_demonstrator_rst_clk_wiz_100M_1 |         1|
+|1     |RISCV_demonstrator_xbar_0             |         1|
+|2     |RISCV_demonstrator_axi_gpio_0_1       |         1|
+|3     |RISCV_demonstrator_axi_gpio_1_0       |         1|
+|4     |RISCV_demonstrator_clk_wiz_0          |         1|
+|5     |RISCV_demonstrator_decoder1to2_0_0    |         1|
+|6     |RISCV_demonstrator_decoder2to4_0_0    |         1|
+|7     |RISCV_demonstrator_riscv_wrapper_0_1  |         1|
+|8     |RISCV_demonstrator_rst_clk_wiz_100M_1 |         1|
 +------+--------------------------------------+----------+
 
 Report Cell Usage: 
@@ -237,32 +289,35 @@ Report Cell Usage:
 |      |Cell                                |Count |
 +------+------------------------------------+------+
 |1     |RISCV_demonstrator_axi_gpio_0       |     1|
-|2     |RISCV_demonstrator_clk_wiz          |     1|
-|3     |RISCV_demonstrator_decoder_0        |     1|
-|4     |RISCV_demonstrator_riscv_wrapper_0  |     1|
-|5     |RISCV_demonstrator_rst_clk_wiz_100M |     1|
-|6     |IBUF                                |     3|
-|7     |OBUF                                |     4|
+|2     |RISCV_demonstrator_axi_gpio_1       |     1|
+|3     |RISCV_demonstrator_clk_wiz          |     1|
+|4     |RISCV_demonstrator_decoder1to2_0    |     1|
+|5     |RISCV_demonstrator_decoder2to4_0    |     1|
+|6     |RISCV_demonstrator_riscv_wrapper_0  |     1|
+|7     |RISCV_demonstrator_rst_clk_wiz_100M |     1|
+|8     |RISCV_demonstrator_xbar             |     1|
+|9     |IBUF                                |     3|
+|10    |OBUF                                |     6|
 +------+------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1243.551 ; gain = 0.000
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1246.664 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 1243.551 ; gain = 0.000
-Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1243.551 ; gain = 0.000
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1246.664 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1246.664 ; gain = 0.000
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1248.281 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1253.605 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1260.297 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1262.199 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete, checksum: 7341eb73
+Synth Design complete, checksum: b70f32ae
 INFO: [Common 17-83] Releasing license: Synthesis
-34 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
+48 Infos, 44 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1260.297 ; gain = 16.746
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1262.199 ; gain = 15.535
 INFO: [Common 17-1381] The checkpoint 'H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.runs/synth_1/RISCV_demonstrator_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file RISCV_demonstrator_wrapper_utilization_synth.rpt -pb RISCV_demonstrator_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Sep 11 22:13:48 2023...
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 12 16:17:42 2023...

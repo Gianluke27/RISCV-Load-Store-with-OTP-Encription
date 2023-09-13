@@ -78,7 +78,7 @@ module tb_riscv_wrapper();
      .sysclk(temp_clk)
     );
     
-    //*
+    /*
     initial
     begin
         $display("Starting testbench");
@@ -134,14 +134,14 @@ module tb_riscv_wrapper();
         
         SW=2'b00; 
         
-        repeat (200) @(posedge temp_clk);
+        repeat (1000) @(posedge temp_clk);
         SW=2'b01;
-        repeat (140) @(posedge temp_clk);
-        write(512, 8'd27);
+        repeat (1000) @(posedge temp_clk);
+        //write(512, 8'd27);
         SW=2'b10;
-        repeat (200) @(posedge temp_clk);
+        repeat (1000) @(posedge temp_clk);
         SW=2'b11;
-        repeat (200) @(posedge temp_clk);
+        repeat (1000) @(posedge temp_clk);
         //write(512, 8'd27);
         SW=2'b11;
         //repeat (20000) @(posedge temp_clk);

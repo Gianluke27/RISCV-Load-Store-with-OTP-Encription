@@ -1,36 +1,3 @@
 Time resolution is 1 ps
-Starting testbench
-WARNING: Insufficient data from the input file for $fread
-i =         212
-before -> rdata:
-OK! Memory Empty!
-after -> rdata:
-         26:0000000000008067
-         25:0101011300c12403
-         24:0007851300000793
-         23:200f898300000013
-         22:0000001300000013
-         21:0000001300000013
-         20:0000001300000013
-         19:0000001300000013
-         18:0000001300000013
-         17:00000013200f8983
-         16:0000001300000013
-         15:0000001300000013
-         14:0000001300000013
-         13:0000001300000013
-         12:00000013205fa023
-         11:80000fb767828293
-         10:123452b701010413
-          9:00812623ff010113
-          8:0000006f7b201073
-          7:00000013008000ef
-          6:014000ef006282b3
-          5:00078293df878793
-          4:0002879320078293
-          3:800027b7df878313
-          2:800027b730529073
-          1:04078293800007b7
-          0:e401011380003137
 Warning: [Unisim MMCME2_ADV-20] Input CLKIN1 period and attribute CLKIN1_PERIOD are not same. Instance tb_riscv_wrapper.UUT.RISCV_demonstrator_i.clk_wiz.inst.mmcm_adv_inst 
-$finish called at time : 5297500 ps : File "H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.srcs/sim_1/new/tb_riscv_wrapper.v" Line 148
+$finish called at time : 21597500 ps : File "H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.srcs/sim_1/new/tb_riscv_wrapper.v" Line 148

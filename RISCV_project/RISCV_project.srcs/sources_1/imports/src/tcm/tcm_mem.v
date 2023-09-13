@@ -194,6 +194,9 @@ u_ram
 // Encryption 
 wire  [63:0]  enc_data_w;
 wire  [63:0]  otp_data_w; 
+wire  [31:0]  enc_word_w;
+wire  [31:0]  otp_word_w;
+wire  [31:0]  plain_word_w; 
 wire          result_xor_w;
 
 generate
@@ -302,8 +305,11 @@ begin : secure_zone
             ,.data0_o(otp_data_w)
         );
     end
- 
-    assign result_xor_w = mem_d_rd_q ? (((enc_data_w ^ otp_data_w) == data_r_w) ? 1'b1: 1'b0): 1'b1;
+    
+    assign enc_word_w = muxed_hi_q ? enc_data_w[63:32] : enc_data_w[31:0]; 
+    assign otp_word_w = muxed_hi_q ? otp_data_w[63:32] : otp_data_w[31:0]; 
+    assign plain_word_w = muxed_hi_q ? data_r_w[63:32] : data_r_w[31:0]; 
+    assign result_xor_w = mem_d_rd_q ? (((enc_word_w ^ otp_word_w) == plain_word_w) ? 1'b1: 1'b0): 1'b1;
 end
 else
 begin

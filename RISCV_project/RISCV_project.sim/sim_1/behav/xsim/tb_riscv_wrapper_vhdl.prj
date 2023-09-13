@@ -2,6 +2,7 @@
 vhdl xil_defaultlib  \
 "../../../../RISCV_project.ip_user_files/bd/RISCV_demonstrator/ip/RISCV_demonstrator_axi_gpio_0_1/sim/RISCV_demonstrator_axi_gpio_0_1.vhd" \
 "../../../../RISCV_project.ip_user_files/bd/RISCV_demonstrator/ip/RISCV_demonstrator_rst_clk_wiz_100M_1/sim/RISCV_demonstrator_rst_clk_wiz_100M_1.vhd" \
+"../../../../RISCV_project.ip_user_files/bd/RISCV_demonstrator/ip/RISCV_demonstrator_axi_gpio_1_0/sim/RISCV_demonstrator_axi_gpio_1_0.vhd" \
 
 # Do not sort compile order
 nosort
