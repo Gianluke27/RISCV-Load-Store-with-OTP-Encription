@@ -12,13 +12,13 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="3,116.519 ns"></ZoomStartTime>
-      <ZoomEndTime time="4,300.520 ns"></ZoomEndTime>
-      <Cursor1Time time="3,436.250 ns"></Cursor1Time>
+      <ZoomStartTime time="284,949.925 ns"></ZoomStartTime>
+      <ZoomEndTime time="287,549.926 ns"></ZoomEndTime>
+      <Cursor1Time time="286,019.925 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="319"></NameColumnWidth>
-      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+      <NameColumnWidth column_width="306"></NameColumnWidth>
+      <ValueColumnWidth column_width="149"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="12" />
    <wvobject fp_name="/tb_riscv_wrapper/tb_ACLK" type="logic">
@@ -3511,6 +3511,7 @@
       <wvobject fp_name="group729" type="group">
          <obj_property name="label">RANDOM GENERATOR</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
          <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/muxed_hi_w" type="logic">
             <obj_property name="ElementShortName">muxed_hi_w</obj_property>
             <obj_property name="ObjectShortName">muxed_hi_w</obj_property>
@@ -3594,6 +3595,7 @@
          <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x14_a4_w " type="array">
             <obj_property name="ElementShortName">\REGFILE.x14_a4_w [31:0]</obj_property>
             <obj_property name="ObjectShortName">\REGFILE.x14_a4_w [31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
          </wvobject>
          <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x15_a5_w " type="array">
             <obj_property name="ElementShortName">\REGFILE.x15_a5_w [31:0]</obj_property>
@@ -3852,7 +3854,6 @@
    <wvobject fp_name="group2971" type="group">
       <obj_property name="label">AXI_PERIPH</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="group4001" type="group">
          <obj_property name="label">Internal</obj_property>
          <obj_property name="DisplayName">label</obj_property>
@@ -5012,7 +5013,6 @@
       <wvobject fp_name="group3597" type="group">
          <obj_property name="label">S00</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <obj_property name="isExpanded"></obj_property>
          <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/s00_couplers/M_ACLK" type="logic">
             <obj_property name="ElementShortName">M_ACLK</obj_property>
             <obj_property name="ObjectShortName">M_ACLK</obj_property>

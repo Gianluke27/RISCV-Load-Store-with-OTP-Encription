@@ -68,7 +68,7 @@ reg [63:0] ram_read1_q;
 //*
 initial begin
     //$display("Loading RAM.");
-    $readmemh("test_01.mif", ram);//, 0, (MEM_DIM_KB * 128)-1);
+    $readmemh("RISCV_demonstrator_01_TEST.mif", ram);//, 0, (MEM_DIM_KB * 128)-1);
 end
 //*/
 

@@ -1,0 +1,9 @@
+verilog xil_defaultlib --include "H:/TesiMagistrale/Software/Xilinx/Vivado/2021.2/data/xilinx_vip/include" --include "../../../../RISCV_project.gen/sources_1/bd/RISCV_bd/ipshared/62b6" \
+"../../../bd/RISCV_bd/ip/RISCV_bd_clk_wiz_0_0/RISCV_bd_clk_wiz_0_0_clk_wiz.v" \
+"../../../bd/RISCV_bd/ip/RISCV_bd_clk_wiz_0_0/RISCV_bd_clk_wiz_0_0.v" \
+"../../../bd/RISCV_bd/ip/RISCV_bd_riscv_wrapper_0_0/sim/RISCV_bd_riscv_wrapper_0_0.v" \
+"../../../bd/RISCV_bd/sim/RISCV_bd.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

@@ -156,8 +156,12 @@ u_conv
 //-------------------------------------------------------------
 
 // Mux access to the 2nd port between external access and CPU data access
-wire                 muxed_hi_w   = ext_accept_w ? ext_addr_w[2] : mem_d_addr_i[2];
-wire [($clog2(MEM_DIM_KB * 1024)-4):0] muxed_addr_w = ext_accept_w ? ext_addr_w[($clog2(MEM_DIM_KB * 1024)-1):3] : mem_d_addr_i[($clog2(MEM_DIM_KB * 1024)-1):3];
+
+wire [($clog2(MEM_DIM_KB * 1024)-4):0] mem_addr_w = mem_d_addr_i[($clog2(MEM_DIM_KB * 1024)-1):3];
+wire mem_hi_w = mem_d_addr_i[2];
+
+wire muxed_hi_w = ext_accept_w ? ext_addr_w[2] : mem_hi_w;
+wire [($clog2(MEM_DIM_KB * 1024)-4):0] muxed_addr_w = ext_accept_w ? ext_addr_w[($clog2(MEM_DIM_KB * 1024)-1):3] : mem_addr_w;
 wire [31:0] muxed_data_w = ext_accept_w ? ext_write_data_w : mem_d_data_wr_i;
 wire [3:0]  muxed_wr_w   = ext_accept_w ? ext_wr_w         : mem_d_wr_i;
 wire [63:0] data_r_w;
@@ -218,9 +222,9 @@ begin : secure_zone
             // Data access - Load/Store Operation
             .clk0_i(clk_i)
             ,.rst0_i(rst_i)
-            ,.addr0_i(muxed_addr_w)
-            ,.data0_i(muxed_hi_w? {random_num_i ^ muxed_data_w, 32'b0} : {32'b0, random_num_i ^ muxed_data_w})
-            ,.wr0_i(muxed_hi_w? {muxed_wr_w, 4'b0} : {4'b0, muxed_wr_w})
+            ,.addr0_i(mem_addr_w)
+            ,.data0_i(mem_hi_w? {random_num_i ^ mem_d_data_wr_i, 32'b0} : {32'b0, random_num_i ^ mem_d_data_wr_i})
+            ,.wr0_i(mem_hi_w? {mem_d_wr_i, 4'b0} : {4'b0, mem_d_wr_i})
                     
             // Data access - EncUpdate Module
             // to do
@@ -247,9 +251,9 @@ begin : secure_zone
             // Data access - Load/Store Operation
             .clk0_i(clk_i)
             ,.rst0_i(rst_i)
-            ,.addr0_i(muxed_addr_w)
-            ,.data0_i(muxed_hi_w? {random_num_i, 32'b0} : {32'b0, random_num_i})
-            ,.wr0_i(muxed_hi_w? {muxed_wr_w, 4'b0} : {4'b0, muxed_wr_w})
+            ,.addr0_i(mem_addr_w)
+            ,.data0_i(mem_hi_w? {random_num_i, 32'b0} : {32'b0, random_num_i})
+            ,.wr0_i(mem_hi_w? {mem_d_wr_i, 4'b0} : {4'b0, mem_d_wr_i})
             
              // Data access - EncUpdate Module
             ,.clk1_i(clk_i)
@@ -277,9 +281,9 @@ begin : secure_zone
             // Data access - Load/Store Operation
             .clk0_i(clk_i)
             ,.rst0_i(rst_i)
-            ,.addr0_i(muxed_addr_w)
-            ,.data0_i(muxed_hi_w? {random_num_i ^ muxed_data_w, 32'b0} : {32'b0, random_num_i ^ muxed_data_w})
-            ,.wr0_i(muxed_hi_w? {muxed_wr_w, 4'b0} : {4'b0, muxed_wr_w})
+            ,.addr0_i(mem_addr_w)
+            ,.data0_i(mem_hi_w? {random_num_i ^ mem_d_data_wr_i, 32'b0} : {32'b0, random_num_i ^ mem_d_data_wr_i})
+            ,.wr0_i(mem_hi_w? {mem_d_wr_i, 4'b0} : {4'b0, mem_d_wr_i})
     
             // Outputs
             ,.data0_o(enc_data_w)
@@ -297,9 +301,9 @@ begin : secure_zone
             // Data access
             .clk0_i(clk_i)
             ,.rst0_i(rst_i)
-            ,.addr0_i(muxed_addr_w)
-            ,.data0_i(muxed_hi_w? {random_num_i, 32'b0} : {32'b0, random_num_i})
-            ,.wr0_i(muxed_hi_w? {muxed_wr_w, 4'b0} : {4'b0, muxed_wr_w})
+            ,.addr0_i(mem_addr_w)
+            ,.data0_i(mem_hi_w? {random_num_i, 32'b0} : {32'b0, random_num_i})
+            ,.wr0_i(mem_hi_w? {mem_d_wr_i, 4'b0} : {4'b0, mem_d_wr_i})
         
             // Outputs
             ,.data0_o(otp_data_w)

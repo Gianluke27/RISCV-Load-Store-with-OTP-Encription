@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_riscv_wrapper_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="ipif_pkg" />
+            <top_module name="tb_riscv_wrapper" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0 ps"></ZoomStartTime>
+      <ZoomEndTime time="8 ps"></ZoomEndTime>
+      <Cursor1Time time="6 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="306"></NameColumnWidth>
+      <ValueColumnWidth column_width="141"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="16" />
+   <wvobject fp_name="/tb_riscv_wrapper/tb_ACLK" type="logic">
+      <obj_property name="ElementShortName">tb_ACLK</obj_property>
+      <obj_property name="ObjectShortName">tb_ACLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/clk0_i" type="logic">
+      <obj_property name="ElementShortName">clk0_i</obj_property>
+      <obj_property name="ObjectShortName">clk0_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/rst0_i" type="logic">
+      <obj_property name="ElementShortName">rst0_i</obj_property>
+      <obj_property name="ObjectShortName">rst0_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/addr0_i" type="array">
+      <obj_property name="ElementShortName">addr0_i[12:0]</obj_property>
+      <obj_property name="ObjectShortName">addr0_i[12:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/data0_i" type="array">
+      <obj_property name="ElementShortName">data0_i[63:0]</obj_property>
+      <obj_property name="ObjectShortName">data0_i[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/wr0_i" type="array">
+      <obj_property name="ElementShortName">wr0_i[7:0]</obj_property>
+      <obj_property name="ObjectShortName">wr0_i[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/clk1_i" type="logic">
+      <obj_property name="ElementShortName">clk1_i</obj_property>
+      <obj_property name="ObjectShortName">clk1_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/rst1_i" type="logic">
+      <obj_property name="ElementShortName">rst1_i</obj_property>
+      <obj_property name="ObjectShortName">rst1_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/addr1_i" type="array">
+      <obj_property name="ElementShortName">addr1_i[12:0]</obj_property>
+      <obj_property name="ObjectShortName">addr1_i[12:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/data1_i" type="array">
+      <obj_property name="ElementShortName">data1_i[63:0]</obj_property>
+      <obj_property name="ObjectShortName">data1_i[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/wr1_i" type="array">
+      <obj_property name="ElementShortName">wr1_i[7:0]</obj_property>
+      <obj_property name="ObjectShortName">wr1_i[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/data0_o" type="array">
+      <obj_property name="ElementShortName">data0_o[63:0]</obj_property>
+      <obj_property name="ObjectShortName">data0_o[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/data1_o" type="array">
+      <obj_property name="ElementShortName">data1_o[63:0]</obj_property>
+      <obj_property name="ObjectShortName">data1_o[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/ram_read0_q" type="array">
+      <obj_property name="ElementShortName">ram_read0_q[63:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_read0_q[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/ram_read1_q" type="array">
+      <obj_property name="ElementShortName">ram_read1_q[63:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_read1_q[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/MEM_DIM_KB" type="array">
+      <obj_property name="ElementShortName">MEM_DIM_KB[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MEM_DIM_KB[31:0]</obj_property>
+   </wvobject>
+</wave_config>

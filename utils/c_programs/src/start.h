@@ -1,3 +1,5 @@
+#include "axi_gpio.h"
+
 int main(void);
 
 __attribute__((section(".start")))
@@ -26,6 +28,7 @@ void _start(void){
 //*
 void _exit_loop(void){
     asm volatile ("csrw dscratch0, zero");
+    AXIGPIO_ERROR_writeData(1);
     while(1)
         ;
 }

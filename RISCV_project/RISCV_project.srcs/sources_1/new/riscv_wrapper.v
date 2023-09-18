@@ -142,7 +142,7 @@ module riscv_wrapper(
         .axi_t_bready_i(s_axil_bready),
         .axi_t_rready_i(s_axil_rready),
         .axi_t_wdata_i(s_axil_wdata),
-        .axi_t_wlast_i(1'b0),
+        .axi_t_wlast_i(1'b1),
         .axi_t_wstrb_i(s_axil_wstrb),
         .axi_t_wvalid_i(s_axil_wvalid),
         .axi_t_awready_o(s_axil_awready),

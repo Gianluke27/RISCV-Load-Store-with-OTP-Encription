@@ -4,7 +4,6 @@
 */
 
 #include "start.h"
-#include "axi_gpio.h"
 
 #define DATA_MASK 0x0000000a
 #define DATA_MAX  0xffffffff

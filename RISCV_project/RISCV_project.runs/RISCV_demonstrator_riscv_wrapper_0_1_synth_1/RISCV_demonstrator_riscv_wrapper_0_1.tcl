@@ -70,7 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "RISCV_demonstrator_riscv_wrapper_0_1_synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 4
 set_msg_config -id {HDL-1065} -limit 10000
 set_param project.vivado.isBlockSynthRun true
 OPTRACE "Creating in-memory project" START { }
@@ -93,7 +92,7 @@ set_property ip_output_repo h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_mem H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.srcs/sources_1/imports/output/test_01.mif
+read_mem H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.srcs/sources_1/imports/output/RISCV_demonstrator_01_TEST.mif
 read_verilog -library xil_defaultlib {
   H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.srcs/sources_1/imports/src/tcm/RandomGenerator.v
   H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.srcs/sources_1/imports/src/core/biriscv_defs.v

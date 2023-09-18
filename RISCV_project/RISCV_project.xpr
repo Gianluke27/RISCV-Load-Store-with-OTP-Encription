@@ -56,20 +56,20 @@
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSABoardId" Val="zybo-z7-20"/>
-    <Option Name="WTXSimLaunchSim" Val="153"/>
+    <Option Name="WTXSimLaunchSim" Val="220"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="21"/>
-    <Option Name="WTModelSimExportSim" Val="21"/>
-    <Option Name="WTQuestaExportSim" Val="21"/>
+    <Option Name="WTXSimExportSim" Val="32"/>
+    <Option Name="WTModelSimExportSim" Val="32"/>
+    <Option Name="WTQuestaExportSim" Val="32"/>
     <Option Name="WTIesExportSim" Val="0"/>
-    <Option Name="WTVcsExportSim" Val="21"/>
-    <Option Name="WTRivieraExportSim" Val="21"/>
-    <Option Name="WTActivehdlExportSim" Val="21"/>
+    <Option Name="WTVcsExportSim" Val="32"/>
+    <Option Name="WTRivieraExportSim" Val="32"/>
+    <Option Name="WTActivehdlExportSim" Val="32"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -345,20 +345,20 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="RISCV_demonstrator.bd" FileRelPathName="ip/RISCV_demonstrator_xbar_0/RISCV_demonstrator_xbar_0.xci">
-          <Proxy FileSetName="RISCV_demonstrator_xbar_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="RISCV_demonstrator.bd" FileRelPathName="ip/RISCV_demonstrator_riscv_wrapper_0_1/RISCV_demonstrator_riscv_wrapper_0_1.xci">
-          <Proxy FileSetName="RISCV_demonstrator_riscv_wrapper_0_1"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="RISCV_demonstrator.bd" FileRelPathName="ip/RISCV_demonstrator_axi_gpio_1_0/RISCV_demonstrator_axi_gpio_1_0.xci">
           <Proxy FileSetName="RISCV_demonstrator_axi_gpio_1_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="RISCV_demonstrator.bd" FileRelPathName="ip/RISCV_demonstrator_decoder2to4_0_0/RISCV_demonstrator_decoder2to4_0_0.xci">
-          <Proxy FileSetName="RISCV_demonstrator_decoder2to4_0_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="RISCV_demonstrator.bd" FileRelPathName="ip/RISCV_demonstrator_decoder1to2_0_0/RISCV_demonstrator_decoder1to2_0_0.xci">
           <Proxy FileSetName="RISCV_demonstrator_decoder1to2_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="RISCV_demonstrator.bd" FileRelPathName="ip/RISCV_demonstrator_axi_gpio_0_1/RISCV_demonstrator_axi_gpio_0_1.xci">
+          <Proxy FileSetName="RISCV_demonstrator_axi_gpio_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="RISCV_demonstrator.bd" FileRelPathName="ip/RISCV_demonstrator_xbar_0/RISCV_demonstrator_xbar_0.xci">
+          <Proxy FileSetName="RISCV_demonstrator_xbar_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="RISCV_demonstrator.bd" FileRelPathName="ip/RISCV_demonstrator_decoder2to4_0_0/RISCV_demonstrator_decoder2to4_0_0.xci">
+          <Proxy FileSetName="RISCV_demonstrator_decoder2to4_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="RISCV_demonstrator.bd" FileRelPathName="ip/RISCV_demonstrator_clk_wiz_0/RISCV_demonstrator_clk_wiz_0.xci">
           <Proxy FileSetName="RISCV_demonstrator_clk_wiz_0"/>
@@ -366,12 +366,31 @@
         <CompFileExtendedInfo CompFileName="RISCV_demonstrator.bd" FileRelPathName="ip/RISCV_demonstrator_rst_clk_wiz_100M_1/RISCV_demonstrator_rst_clk_wiz_100M_1.xci">
           <Proxy FileSetName="RISCV_demonstrator_rst_clk_wiz_100M_1"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="RISCV_demonstrator.bd" FileRelPathName="ip/RISCV_demonstrator_axi_gpio_0_1/RISCV_demonstrator_axi_gpio_0_1.xci">
-          <Proxy FileSetName="RISCV_demonstrator_axi_gpio_0_1"/>
+        <CompFileExtendedInfo CompFileName="RISCV_demonstrator.bd" FileRelPathName="ip/RISCV_demonstrator_processing_system7_0_0/RISCV_demonstrator_processing_system7_0_0.xci">
+          <Proxy FileSetName="RISCV_demonstrator_processing_system7_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="RISCV_demonstrator.bd" FileRelPathName="ip/RISCV_demonstrator_riscv_wrapper_0_1/RISCV_demonstrator_riscv_wrapper_0_1.xci">
+          <Proxy FileSetName="RISCV_demonstrator_riscv_wrapper_0_1"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PGENDIR/sources_1/bd/RISCV_demonstrator/hdl/RISCV_demonstrator_wrapper.v">
         <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/RISCV_bd/RISCV_bd.bd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PGENDIR/sources_1/bd/RISCV_bd/hdl/RISCV_bd_wrapper.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -387,10 +406,10 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/output/test_01.mif">
+      <File Path="$PSRCDIR/sources_1/imports/output/RISCV_demonstrator_01_TEST.mif">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../RISCV/Script_Vari/bin_2_mem/output/test_01.mif"/>
-          <Attr Name="ImportTime" Val="1694455292"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../utils/python_scripts/bin_2_mem/output/RISCV_demonstrator_01_TEST.mif"/>
+          <Attr Name="ImportTime" Val="1695028925"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -588,6 +607,27 @@
       </File>
       <File Path="$PSRCDIR/sim_1/waveform/tb_riscv_wrapper_behav.wcfg">
         <FileInfo>
+          <Attr Name="UserDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/waveform/tb_waveform_config_test_01.wcfg">
+        <FileInfo>
+          <Attr Name="UserDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/imports/waveform/tb_RISCV_behav.wcfg">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/waveform/tb_RISCV_behav.wcfg"/>
+          <Attr Name="ImportTime" Val="1694774670"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/imports/waveform/tb_RISCV_demonstrator_behav.wcfg">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/waveform/tb_RISCV_demonstrator_behav.wcfg"/>
+          <Attr Name="ImportTime" Val="1694819350"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
@@ -604,6 +644,7 @@
         <Option Name="PamPseudoTop" Val="pseudo_tb"/>
         <Option Name="SrcSet" Val="sources_1"/>
         <Option Name="XSimWcfgFile" Val="$PSRCDIR/sim_1/waveform/tb_riscv_wrapper_behav.wcfg"/>
+        <Option Name="XSimWcfgFile" Val="$PSRCDIR/sim_1/waveform/tb_waveform_config_test_01.wcfg"/>
         <Option Name="NLNetlistMode" Val="funcsim"/>
       </Config>
     </FileSet>
@@ -660,6 +701,12 @@
     <FileSet Name="RISCV_demonstrator_decoder1to2_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RISCV_demonstrator_decoder1to2_0_0" RelGenDir="$PGENDIR/RISCV_demonstrator_decoder1to2_0_0">
       <Config>
         <Option Name="TopModule" Val="RISCV_demonstrator_decoder1to2_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="RISCV_demonstrator_processing_system7_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RISCV_demonstrator_processing_system7_0_0" RelGenDir="$PGENDIR/RISCV_demonstrator_processing_system7_0_0">
+      <Config>
+        <Option Name="TopModule" Val="RISCV_demonstrator_processing_system7_0_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -769,9 +816,21 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="RISCV_demonstrator_riscv_wrapper_0_1_synth_1" Type="Ft3:Synth" SrcSet="RISCV_demonstrator_riscv_wrapper_0_1" Part="xc7z020clg400-1" ConstrsSet="RISCV_demonstrator_riscv_wrapper_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/RISCV_demonstrator_riscv_wrapper_0_1_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_demonstrator_riscv_wrapper_0_1_synth_1">
+    <Run Id="RISCV_demonstrator_processing_system7_0_0_synth_1" Type="Ft3:Synth" SrcSet="RISCV_demonstrator_processing_system7_0_0" Part="xc7z020clg400-1" ConstrsSet="RISCV_demonstrator_processing_system7_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/RISCV_demonstrator_processing_system7_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_demonstrator_processing_system7_0_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2021"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RISCV_demonstrator_riscv_wrapper_0_1_synth_1" Type="Ft3:Synth" SrcSet="RISCV_demonstrator_riscv_wrapper_0_1" Part="xc7z020clg400-1" ConstrsSet="RISCV_demonstrator_riscv_wrapper_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/RISCV_demonstrator_riscv_wrapper_0_1_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_demonstrator_riscv_wrapper_0_1_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -916,9 +975,28 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="RISCV_demonstrator_riscv_wrapper_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="RISCV_demonstrator_riscv_wrapper_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="RISCV_demonstrator_riscv_wrapper_0_1_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_demonstrator_riscv_wrapper_0_1_impl_1">
+    <Run Id="RISCV_demonstrator_processing_system7_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="RISCV_demonstrator_processing_system7_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="RISCV_demonstrator_processing_system7_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_demonstrator_processing_system7_0_0_impl_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2021"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2021"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RISCV_demonstrator_riscv_wrapper_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="RISCV_demonstrator_riscv_wrapper_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="RISCV_demonstrator_riscv_wrapper_0_1_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_demonstrator_riscv_wrapper_0_1_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2021">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

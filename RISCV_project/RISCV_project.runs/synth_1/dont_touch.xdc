@@ -15,9 +15,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==RISCV_demon
 # IP: bd/RISCV_demonstrator/ip/RISCV_demonstrator_rst_clk_wiz_100M_1/RISCV_demonstrator_rst_clk_wiz_100M_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==RISCV_demonstrator_rst_clk_wiz_100M_1 || ORIG_REF_NAME==RISCV_demonstrator_rst_clk_wiz_100M_1} -quiet] -quiet
 
-# IP: bd/RISCV_demonstrator/ip/RISCV_demonstrator_riscv_wrapper_0_1/RISCV_demonstrator_riscv_wrapper_0_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==RISCV_demonstrator_riscv_wrapper_0_1 || ORIG_REF_NAME==RISCV_demonstrator_riscv_wrapper_0_1} -quiet] -quiet
-
 # IP: bd/RISCV_demonstrator/ip/RISCV_demonstrator_axi_gpio_1_0/RISCV_demonstrator_axi_gpio_1_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==RISCV_demonstrator_axi_gpio_1_0 || ORIG_REF_NAME==RISCV_demonstrator_axi_gpio_1_0} -quiet] -quiet
 
@@ -32,5 +29,17 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==RISCV_demon
 
 # IP: bd/RISCV_demonstrator/ip/RISCV_demonstrator_decoder1to2_0_0/RISCV_demonstrator_decoder1to2_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==RISCV_demonstrator_decoder1to2_0_0 || ORIG_REF_NAME==RISCV_demonstrator_decoder1to2_0_0} -quiet] -quiet
+
+# IP: bd/RISCV_demonstrator/ip/RISCV_demonstrator_processing_system7_0_0/RISCV_demonstrator_processing_system7_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==RISCV_demonstrator_processing_system7_0_0 || ORIG_REF_NAME==RISCV_demonstrator_processing_system7_0_0} -quiet] -quiet
+
+# IP: bd/RISCV_demonstrator/ip/RISCV_demonstrator_ps7_0_axi_periph_1/RISCV_demonstrator_ps7_0_axi_periph_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==RISCV_demonstrator_ps7_0_axi_periph_1 || ORIG_REF_NAME==RISCV_demonstrator_ps7_0_axi_periph_1} -quiet] -quiet
+
+# IP: bd/RISCV_demonstrator/ip/RISCV_demonstrator_riscv_wrapper_0_1/RISCV_demonstrator_riscv_wrapper_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==RISCV_demonstrator_riscv_wrapper_0_1 || ORIG_REF_NAME==RISCV_demonstrator_riscv_wrapper_0_1} -quiet] -quiet
+
+# IP: bd/RISCV_demonstrator/ip/RISCV_demonstrator_auto_pc_0/RISCV_demonstrator_auto_pc_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==RISCV_demonstrator_auto_pc_0 || ORIG_REF_NAME==RISCV_demonstrator_auto_pc_0} -quiet] -quiet
 
 # XDC: h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/RISCV_demonstrator_ooc.xdc

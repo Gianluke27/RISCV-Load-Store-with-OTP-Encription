@@ -1,3 +1,91 @@
 Time resolution is 1 ps
-Warning: [Unisim MMCME2_ADV-20] Input CLKIN1 period and attribute CLKIN1_PERIOD are not same. Instance tb_riscv_wrapper.UUT.RISCV_demonstrator_i.clk_wiz.inst.mmcm_adv_inst 
-$finish called at time : 21597500 ps : File "H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.srcs/sim_1/new/tb_riscv_wrapper.v" Line 148
+XilinxAXIVIP: Found at Path: tb_riscv_wrapper.UUT_demonstrator.RISCV_demonstrator_i.processing_system7_0.inst.M_AXI_GP0.master
+[0] : *ZYNQ_VIP_INFO : M_AXI_GP0 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: tb_riscv_wrapper.UUT_demonstrator.RISCV_demonstrator_i.processing_system7_0.inst.M_AXI_GP1.master
+[0] : *ZYNQ_VIP_INFO : M_AXI_GP1 : Port is ENABLED.
+XilinxAXIVIP: Found at Path: tb_riscv_wrapper.UUT_demonstrator.RISCV_demonstrator_i.processing_system7_0.inst.S_AXI_GP0.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_GP0 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: tb_riscv_wrapper.UUT_demonstrator.RISCV_demonstrator_i.processing_system7_0.inst.S_AXI_GP1.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_GP1 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: tb_riscv_wrapper.UUT_demonstrator.RISCV_demonstrator_i.processing_system7_0.inst.S_AXI_HP0.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_HP0 : Port is DISABLED.
+                   0 BEFORE checking line ...... x
+                   0 AFTER checking line ...... x
+XilinxAXIVIP: Found at Path: tb_riscv_wrapper.UUT_demonstrator.RISCV_demonstrator_i.processing_system7_0.inst.S_AXI_HP1.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_HP1 : Port is DISABLED.
+                   0 BEFORE checking line ...... x
+                   0 AFTER checking line ...... x
+XilinxAXIVIP: Found at Path: tb_riscv_wrapper.UUT_demonstrator.RISCV_demonstrator_i.processing_system7_0.inst.S_AXI_HP2.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_HP2 : Port is DISABLED.
+                   0 BEFORE checking line ...... x
+                   0 AFTER checking line ...... x
+XilinxAXIVIP: Found at Path: tb_riscv_wrapper.UUT_demonstrator.RISCV_demonstrator_i.processing_system7_0.inst.S_AXI_HP3.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_HP3 : Port is DISABLED.
+                   0 BEFORE checking line ...... x
+                   0 AFTER checking line ...... x
+XilinxAXIVIP: Found at Path: tb_riscv_wrapper.UUT_demonstrator.RISCV_demonstrator_i.processing_system7_0.inst.S_AXI_ACP.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_ACP : Port is DISABLED.
+Starting testbench
+Test_Demonstator!
+after -> rdata:
+         47:00000000f9dff06f
+         46:ecdff0effe442503
+         45:fae7dce300900793
+         44:fec42703fef42623
+         43:00178793fec42783
+         42:fce7dce300900793
+         41:fe842703fef42423
+         40:00178793fe842783
+         39:0000001300000013
+         38:0000001300000013
+         37:000000130240006f
+         36:fe0424230440006f
+         35:fe042623fea42223
+         34:fb5ff0eff8dff0ef
+         33:0201041300812c23
+         32:00112e23fe010113
+         31:0000006ff79ff0ef
+         30:001005137b201073
+         29:0000806701010113
+         28:00c1240300078513
+         27:000307930002a303
+         26:400002b701010413
+         25:00812623ff010113
+         24:0000806701010113
+         23:00c1240300000013
+         22:0062a023fff00313
+         21:00478293400007b7
+         20:0101041300812623
+         19:ff01011300008067
+         18:0201011301c12403
+         17:000000130062a023
+         16:fec42303410002b7
+         15:fea4262302010413
+         14:00812e23fe010113
+         13:0000806702010113
+         12:01c1240300000013
+         11:0062a023fec42303
+         10:00878293400007b7
+          9:fea4262302010413
+          8:00812e23fe010113
+          7:000000130b8000ef
+          6:0cc000ef006282b3
+          5:00078293df878793
+          4:0002879320078293
+          3:800027b7df878313
+          2:800027b730529073
+          1:0f078293800007b7
+          0:e401011380003137
+                   0 else checking line ......x
+WARNING: 2 ns tb_riscv_wrapper.UUT_demonstrator.RISCV_demonstrator_i.processing_system7_0.inst.M_AXI_GP1.master.IF : ARESET_N can't be X/Z after 1 cycle of clock. To downgrade, use <hierarchy_path to VIP>.IF.set_enable_xchecks_to_warn(), or filter using clr_enable_xchecks.
+Warning: [Unisim MMCME2_ADV-20] Input CLKIN1 period and attribute CLKIN1_PERIOD are not same. Instance tb_riscv_wrapper.UUT_demonstrator.RISCV_demonstrator_i.clk_wiz.inst.mmcm_adv_inst 
+Warning: [Unisim MMCME2_ADV-20] Input CLKIN1 period and attribute CLKIN1_PERIOD are not same. Instance tb_riscv_wrapper.UUT.RISCV_bd_i.clk_wiz_0.inst.mmcm_adv_inst 
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
