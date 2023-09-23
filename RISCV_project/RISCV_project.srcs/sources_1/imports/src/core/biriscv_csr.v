@@ -50,11 +50,10 @@ module biriscv_csr
     ,input  [  4:0]  opcode_rb_idx_i
     ,input  [ 31:0]  opcode_ra_operand_i
     ,input  [ 31:0]  opcode_rb_operand_i
-    ,input           csr_mem_d_enc_error_i          // ADDED INPUT - memory data encryption error
     ,input           csr_writeback_write_i
     ,input  [ 11:0]  csr_writeback_waddr_i
     ,input  [ 31:0]  csr_writeback_wdata_i
-    ,input  [  5:0]  csr_writeback_exception_i
+    ,input  [  6:0]  csr_writeback_exception_i
     ,input  [ 31:0]  csr_writeback_exception_pc_i
     ,input  [ 31:0]  csr_writeback_exception_addr_i
     ,input  [ 31:0]  cpu_id_i
@@ -65,7 +64,7 @@ module biriscv_csr
     ,output [ 31:0]  csr_result_e1_value_o
     ,output          csr_result_e1_write_o
     ,output [ 31:0]  csr_result_e1_wdata_o
-    ,output [  5:0]  csr_result_e1_exception_o
+    ,output [  6:0]  csr_result_e1_exception_o
     ,output          branch_csr_request_o
     ,output [ 31:0]  branch_csr_pc_o
     ,output [  1:0]  branch_csr_priv_o
@@ -176,7 +175,6 @@ u_csrfile
     ,.exception_i(csr_writeback_exception_i)
     ,.exception_pc_i(csr_writeback_exception_pc_i)
     ,.exception_addr_i(csr_writeback_exception_addr_i)
-    ,.exception_enc_mem_d_i(csr_mem_d_enc_error_i)
 
     // CSR register writes (WB)
     ,.csr_waddr_i(csr_writeback_write_i ? csr_writeback_waddr_i : 12'b0)

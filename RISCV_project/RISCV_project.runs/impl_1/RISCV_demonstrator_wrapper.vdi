@@ -2,8 +2,8 @@
 # Vivado v2021.2 (64-bit)
 # SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
 # IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
-# Start of session at: Mon Sep 18 12:02:28 2023
-# Process ID: 23520
+# Start of session at: Tue Sep 19 00:05:56 2023
+# Process ID: 28712
 # Current directory: H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.runs/impl_1
 # Command line: vivado.exe -log RISCV_demonstrator_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source RISCV_demonstrator_wrapper.tcl -notrace
 # Log file: H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.runs/impl_1/RISCV_demonstrator_wrapper.vdi
@@ -11,16 +11,1129 @@
 # Running On: Gianluca, OS: Windows, CPU Frequency: 3800 MHz, CPU Physical cores: 16, Host memory: 34266 MB
 #-----------------------------------------------------------
 source RISCV_demonstrator_wrapper.tcl -notrace
-Command: open_checkpoint RISCV_demonstrator_wrapper_routed.dcp
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'H:/TesiMagistrale/Software/Xilinx/Vivado/2021.2/data/ip'.
+Command: link_design -top RISCV_demonstrator_wrapper -part xc7z020clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-454] Reading design checkpoint 'h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_axi_gpio_0_1/RISCV_demonstrator_axi_gpio_0_1.dcp' for cell 'RISCV_demonstrator_i/axi_gpio_0'
+INFO: [Project 1-454] Reading design checkpoint 'h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_axi_gpio_1_0/RISCV_demonstrator_axi_gpio_1_0.dcp' for cell 'RISCV_demonstrator_i/axi_gpio_1'
+INFO: [Project 1-454] Reading design checkpoint 'h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_clk_wiz_0/RISCV_demonstrator_clk_wiz_0.dcp' for cell 'RISCV_demonstrator_i/clk_wiz'
+INFO: [Project 1-454] Reading design checkpoint 'h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_decoder1to2_0_0/RISCV_demonstrator_decoder1to2_0_0.dcp' for cell 'RISCV_demonstrator_i/decoder1to2_0'
+INFO: [Project 1-454] Reading design checkpoint 'h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_decoder2to4_0_0/RISCV_demonstrator_decoder2to4_0_0.dcp' for cell 'RISCV_demonstrator_i/decoder2to4_0'
+INFO: [Project 1-454] Reading design checkpoint 'h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_processing_system7_0_0/RISCV_demonstrator_processing_system7_0_0.dcp' for cell 'RISCV_demonstrator_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_riscv_wrapper_0_1/RISCV_demonstrator_riscv_wrapper_0_1.dcp' for cell 'RISCV_demonstrator_i/riscv_wrapper_0'
+INFO: [Project 1-454] Reading design checkpoint 'h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_rst_clk_wiz_100M_1/RISCV_demonstrator_rst_clk_wiz_100M_1.dcp' for cell 'RISCV_demonstrator_i/rst_clk_wiz_100M'
+INFO: [Project 1-454] Reading design checkpoint 'h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_auto_pc_0/RISCV_demonstrator_auto_pc_0.dcp' for cell 'RISCV_demonstrator_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_xbar_0/RISCV_demonstrator_xbar_0.dcp' for cell 'RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/xbar'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.340 . Memory (MB): peak = 1243.609 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1590 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_axi_gpio_0_1/RISCV_demonstrator_axi_gpio_0_1_board.xdc] for cell 'RISCV_demonstrator_i/axi_gpio_0/U0'
+Finished Parsing XDC File [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_axi_gpio_0_1/RISCV_demonstrator_axi_gpio_0_1_board.xdc] for cell 'RISCV_demonstrator_i/axi_gpio_0/U0'
+Parsing XDC File [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_axi_gpio_0_1/RISCV_demonstrator_axi_gpio_0_1.xdc] for cell 'RISCV_demonstrator_i/axi_gpio_0/U0'
+Finished Parsing XDC File [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_axi_gpio_0_1/RISCV_demonstrator_axi_gpio_0_1.xdc] for cell 'RISCV_demonstrator_i/axi_gpio_0/U0'
+Parsing XDC File [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_clk_wiz_0/RISCV_demonstrator_clk_wiz_0_board.xdc] for cell 'RISCV_demonstrator_i/clk_wiz/inst'
+Finished Parsing XDC File [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_clk_wiz_0/RISCV_demonstrator_clk_wiz_0_board.xdc] for cell 'RISCV_demonstrator_i/clk_wiz/inst'
+Parsing XDC File [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_clk_wiz_0/RISCV_demonstrator_clk_wiz_0.xdc] for cell 'RISCV_demonstrator_i/clk_wiz/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_clk_wiz_0/RISCV_demonstrator_clk_wiz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_clk_wiz_0/RISCV_demonstrator_clk_wiz_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1537.250 ; gain = 293.641
+Finished Parsing XDC File [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_clk_wiz_0/RISCV_demonstrator_clk_wiz_0.xdc] for cell 'RISCV_demonstrator_i/clk_wiz/inst'
+Parsing XDC File [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_rst_clk_wiz_100M_1/RISCV_demonstrator_rst_clk_wiz_100M_1_board.xdc] for cell 'RISCV_demonstrator_i/rst_clk_wiz_100M/U0'
+Finished Parsing XDC File [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_rst_clk_wiz_100M_1/RISCV_demonstrator_rst_clk_wiz_100M_1_board.xdc] for cell 'RISCV_demonstrator_i/rst_clk_wiz_100M/U0'
+Parsing XDC File [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_rst_clk_wiz_100M_1/RISCV_demonstrator_rst_clk_wiz_100M_1.xdc] for cell 'RISCV_demonstrator_i/rst_clk_wiz_100M/U0'
+Finished Parsing XDC File [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_rst_clk_wiz_100M_1/RISCV_demonstrator_rst_clk_wiz_100M_1.xdc] for cell 'RISCV_demonstrator_i/rst_clk_wiz_100M/U0'
+Parsing XDC File [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_axi_gpio_1_0/RISCV_demonstrator_axi_gpio_1_0_board.xdc] for cell 'RISCV_demonstrator_i/axi_gpio_1/U0'
+Finished Parsing XDC File [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_axi_gpio_1_0/RISCV_demonstrator_axi_gpio_1_0_board.xdc] for cell 'RISCV_demonstrator_i/axi_gpio_1/U0'
+Parsing XDC File [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_axi_gpio_1_0/RISCV_demonstrator_axi_gpio_1_0.xdc] for cell 'RISCV_demonstrator_i/axi_gpio_1/U0'
+Finished Parsing XDC File [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_axi_gpio_1_0/RISCV_demonstrator_axi_gpio_1_0.xdc] for cell 'RISCV_demonstrator_i/axi_gpio_1/U0'
+Parsing XDC File [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_processing_system7_0_0/RISCV_demonstrator_processing_system7_0_0.xdc] for cell 'RISCV_demonstrator_i/processing_system7_0/inst'
+Finished Parsing XDC File [h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_processing_system7_0_0/RISCV_demonstrator_processing_system7_0_0.xdc] for cell 'RISCV_demonstrator_i/processing_system7_0/inst'
+Parsing XDC File [H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.srcs/constrs_1/new/Zybo_Z7_Master.xdc]
+Finished Parsing XDC File [H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.srcs/constrs_1/new/Zybo_Z7_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1537.250 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+22 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 1537.250 ; gain = 293.641
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1537.250 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-2] Deriving generated clocks
+Ending Cache Timing Information Task | Checksum: 1a95513d8
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.896 . Memory (MB): peak = 1562.258 ; gain = 25.008
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-1287] Pulled Inverter RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/branch_ntaken_q_i_1 into driver instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/valid_e1_q_i_3, which resulted in an inversion of 50 pins
+INFO: [Opt 31-1287] Pulled Inverter RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/branch_taken_q_i_1__0 into driver instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/branch_ntaken_q_i_3__0, which resulted in an inversion of 34 pins
+INFO: [Opt 31-1287] Pulled Inverter RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/pc_x_q[13]_i_4__0 into driver instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/result_q[29]_i_8, which resulted in an inversion of 35 pins
+INFO: [Opt 31-1287] Pulled Inverter RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/result_r0_carry__0_i_2__0 into driver instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/result_r0_carry__0_i_11__0, which resulted in an inversion of 19 pins
+INFO: [Opt 31-1287] Pulled Inverter RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/result_r0_carry__1_i_1__0 into driver instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/result_r0_carry__1_i_9__0, which resulted in an inversion of 18 pins
+INFO: [Opt 31-1287] Pulled Inverter RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/result_r0_carry__1_i_2__0 into driver instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/result_r0_carry__1_i_10__0, which resulted in an inversion of 19 pins
+INFO: [Opt 31-1287] Pulled Inverter RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/result_r0_carry__1_i_4__0 into driver instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/result_r0_carry__1_i_12__0, which resulted in an inversion of 18 pins
+INFO: [Opt 31-1287] Pulled Inverter RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/result_r0_carry__2_i_2__0 into driver instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/result_r0_carry__2_i_11__0, which resulted in an inversion of 18 pins
+INFO: [Opt 31-1287] Pulled Inverter RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/result_r0_carry__2_i_4__0 into driver instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/result_r0_carry__2_i_14__0, which resulted in an inversion of 18 pins
+INFO: [Opt 31-1287] Pulled Inverter RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/result_r0_carry__3_i_1 into driver instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/result_r0_carry__3_i_9__0, which resulted in an inversion of 16 pins
+INFO: [Opt 31-1287] Pulled Inverter RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/result_r0_carry__3_i_1__0 into driver instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/result_r0_carry__3_i_9, which resulted in an inversion of 16 pins
+INFO: [Opt 31-1287] Pulled Inverter RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/result_r0_carry__4_i_2 into driver instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/result_r0_carry__4_i_10, which resulted in an inversion of 17 pins
+INFO: [Opt 31-1287] Pulled Inverter RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/result_r0_carry__4_i_2__0 into driver instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/result_r0_carry__4_i_11__0, which resulted in an inversion of 17 pins
+INFO: [Opt 31-1287] Pulled Inverter RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/result_r0_carry__4_i_4__0 into driver instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/result_r0_carry__4_i_12__0, which resulted in an inversion of 18 pins
+INFO: [Opt 31-1287] Pulled Inverter RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/result_r0_carry__5_i_4__0 into driver instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/result_r0_carry__5_i_15__0, which resulted in an inversion of 17 pins
+INFO: [Opt 31-1287] Pulled Inverter RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/result_r0_carry__6_i_2__0 into driver instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/result_r0_carry__6_i_10, which resulted in an inversion of 18 pins
+INFO: [Opt 31-1287] Pulled Inverter RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/result_r0_carry_i_1__0 into driver instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/result_r0_carry_i_9__0, which resulted in an inversion of 19 pins
+INFO: [Opt 31-1287] Pulled Inverter RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_fetch/BRANCH_PREDICTION.ras_stack_q[7][4]_i_8 into driver instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_fetch/pred_d_q[0]_i_4, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/branch_taken_q_i_1 into driver instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/branch_ntaken_q_i_8__0, which resulted in an inversion of 34 pins
+INFO: [Opt 31-1287] Pulled Inverter RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/dividend_q[3]_i_2 into driver instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/last_b_q[31]_i_3, which resulted in an inversion of 98 pins
+INFO: [Opt 31-1287] Pulled Inverter RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/exception_e1_q[4]_i_1 into driver instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/exception_e1_q[4]_i_4, which resulted in an inversion of 16 pins
+INFO: [Opt 31-1287] Pulled Inverter RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/pc_m_q[2]_i_1 into driver instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/opcode_e1_q[25]_i_5, which resulted in an inversion of 87 pins
+INFO: [Opt 31-1287] Pulled Inverter RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/pc_m_q[2]_i_1__0 into driver instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/ctrl_e1_q[6]_i_3, which resulted in an inversion of 67 pins
+INFO: [Opt 31-1287] Pulled Inverter RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/pc_x_q[1]_i_8 into driver instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/ctrl_e1_q[7]_i_3, which resulted in an inversion of 101 pins
+INFO: [Opt 31-1287] Pulled Inverter RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/pc_x_q[5]_i_7__0 into driver instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/pc_m_q[31]_i_2, which resulted in an inversion of 101 pins
+INFO: [Opt 31-1287] Pulled Inverter RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/result_r0_carry__0_i_2 into driver instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/result_r0_carry__0_i_10__0, which resulted in an inversion of 19 pins
+INFO: [Opt 31-1287] Pulled Inverter RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/result_r0_carry__1_i_1 into driver instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/result_r0_carry__1_i_9, which resulted in an inversion of 18 pins
+INFO: [Opt 31-1287] Pulled Inverter RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/result_r0_carry__1_i_2 into driver instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/result_r0_carry__1_i_10, which resulted in an inversion of 19 pins
+INFO: [Opt 31-1287] Pulled Inverter RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/result_r0_carry__1_i_4 into driver instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/result_r0_carry__1_i_11__0, which resulted in an inversion of 18 pins
+INFO: [Opt 31-1287] Pulled Inverter RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/result_r0_carry__2_i_2 into driver instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/result_r0_carry__2_i_10, which resulted in an inversion of 18 pins
+INFO: [Opt 31-1287] Pulled Inverter RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/result_r0_carry__2_i_4 into driver instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/result_r0_carry__2_i_13, which resulted in an inversion of 18 pins
+INFO: [Opt 31-1287] Pulled Inverter RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/result_r0_carry__4_i_4 into driver instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/result_r0_carry__4_i_11, which resulted in an inversion of 18 pins
+INFO: [Opt 31-1287] Pulled Inverter RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/result_r0_carry__5_i_4 into driver instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/result_r0_carry__5_i_12, which resulted in an inversion of 17 pins
+INFO: [Opt 31-1287] Pulled Inverter RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/result_r0_carry__6_i_2 into driver instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/result_r0_carry__6_i_9, which resulted in an inversion of 18 pins
+INFO: [Opt 31-1287] Pulled Inverter RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/result_r0_carry_i_1 into driver instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/result_r0_carry_i_9, which resulted in an inversion of 19 pins
+INFO: [Opt 31-1287] Pulled Inverter RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/result_r0_carry_i_2 into driver instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/result_r0_carry_i_10, which resulted in an inversion of 18 pins
+INFO: [Opt 31-1287] Pulled Inverter RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/result_r0_carry_i_2__0 into driver instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/result_r0_carry_i_10__0, which resulted in an inversion of 18 pins
+INFO: [Opt 31-1287] Pulled Inverter RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/m_atarget_enc[1]_i_1 into driver instance RISCV_demonstrator_i/riscv_wrapper_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/m_atarget_hot[2]_i_2, which resulted in an inversion of 5 pins
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1a32cf2fb
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1852.617 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 35 cells and removed 155 cells
+INFO: [Opt 31-1021] In phase Retarget, 3 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 1f621d8be
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1852.617 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 19 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 1a38ad6d5
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1852.617 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 4 cells and removed 265 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 1a38ad6d5
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1852.617 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 1a38ad6d5
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1852.617 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 1b1b07f93
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1852.617 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |              35  |             155  |                                              3  |
+|  Constant propagation         |               0  |              19  |                                              0  |
+|  Sweep                        |               4  |             265  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 1852.617 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 1771c8e53
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1852.617 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 48 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 96
+Ending PowerOpt Patch Enables Task | Checksum: 1771c8e53
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.244 . Memory (MB): peak = 2029.707 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 1771c8e53
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:29 . Memory (MB): peak = 2029.707 ; gain = 177.090
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 1771c8e53
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2029.707 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2029.707 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 1771c8e53
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2029.707 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+84 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:37 . Memory (MB): peak = 2029.707 ; gain = 492.457
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.062 . Memory (MB): peak = 2029.707 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.runs/impl_1/RISCV_demonstrator_wrapper_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file RISCV_demonstrator_wrapper_drc_opted.rpt -pb RISCV_demonstrator_wrapper_drc_opted.pb -rpx RISCV_demonstrator_wrapper_drc_opted.rpx
+Command: report_drc -file RISCV_demonstrator_wrapper_drc_opted.rpt -pb RISCV_demonstrator_wrapper_drc_opted.pb -rpx RISCV_demonstrator_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.runs/impl_1/RISCV_demonstrator_wrapper_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/ADDRARDADDR[10] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ADDRARDADDR[8]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_q_reg[11]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/ADDRARDADDR[11] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ADDRARDADDR[9]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_q_reg[12]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/ADDRARDADDR[12] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ADDRARDADDR[10]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_q_reg[13]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/ADDRARDADDR[13] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ADDRARDADDR[11]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_q_reg[14]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/ADDRARDADDR[14] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ADDRARDADDR[12]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_q_reg[15]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/ADDRARDADDR[2] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ADDRARDADDR[0]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_q_reg[3]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/ADDRARDADDR[3] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ADDRARDADDR[1]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_q_reg[4]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/ADDRARDADDR[4] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ADDRARDADDR[2]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_q_reg[5]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/ADDRARDADDR[5] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ADDRARDADDR[3]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_q_reg[6]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/ADDRARDADDR[6] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ADDRARDADDR[4]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_q_reg[7]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/ADDRARDADDR[7] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ADDRARDADDR[5]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_q_reg[8]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/ADDRARDADDR[8] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ADDRARDADDR[6]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_q_reg[9]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/ADDRARDADDR[9] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ADDRARDADDR[7]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_q_reg[10]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/WEA[0] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_1_1[0]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_q_reg[16]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/WEA[0] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_1_1[0]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_q_reg[17]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/WEA[0] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_1_1[0]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_q_reg[18]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/WEA[0] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_1_1[0]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_q_reg[19]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/WEA[0] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_1_1[0]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_q_reg[20]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/WEA[0] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_1_1[0]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_q_reg[21]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/WEA[0] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_1_1[0]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_q_reg[22]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 21 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2029.707 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: e3d33bef
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.079 . Memory (MB): peak = 2029.707 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2029.707 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: f4710f93
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2029.707 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 192c54113
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2029.707 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 192c54113
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2029.707 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 192c54113
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2029.707 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 213f2f90a
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 2029.707 ; gain = 0.000
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 17cbd11f4
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 2029.707 ; gain = 0.000
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 17cbd11f4
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 2029.707 ; gain = 0.000
+
+Phase 2.4 Global Placement Core
+
+Phase 2.4.1 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 216 LUTNM shape to break, 396 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 120, two critical 96, total 216, new lutff created 1
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 391 nets or LUTs. Breaked 216 LUTs, combined 175 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2029.707 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |          216  |            175  |                   391  |           0  |           1  |  00:00:01  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |          216  |            175  |                   391  |           0  |           9  |  00:00:01  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.4.1 Physical Synthesis In Placer | Checksum: 11ca6eba5
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:27 . Memory (MB): peak = 2029.707 ; gain = 0.000
+Phase 2.4 Global Placement Core | Checksum: 1e487c169
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:28 . Memory (MB): peak = 2029.707 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 1e487c169
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:28 . Memory (MB): peak = 2029.707 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 117b8ff0b
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:29 . Memory (MB): peak = 2029.707 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1718d4775
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:32 . Memory (MB): peak = 2029.707 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1c3cf4089
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:32 . Memory (MB): peak = 2029.707 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 14a6bb025
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:32 . Memory (MB): peak = 2029.707 ; gain = 0.000
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 1c42ecc28
+
+Time (s): cpu = 00:00:59 ; elapsed = 00:00:45 . Memory (MB): peak = 2029.707 ; gain = 0.000
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 19b03eb10
+
+Time (s): cpu = 00:01:08 ; elapsed = 00:00:55 . Memory (MB): peak = 2029.707 ; gain = 0.000
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 198b87133
+
+Time (s): cpu = 00:01:09 ; elapsed = 00:00:57 . Memory (MB): peak = 2029.707 ; gain = 0.000
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 1a71c60ef
+
+Time (s): cpu = 00:01:09 ; elapsed = 00:00:57 . Memory (MB): peak = 2029.707 ; gain = 0.000
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 1b1ae229d
+
+Time (s): cpu = 00:01:22 ; elapsed = 00:01:08 . Memory (MB): peak = 2029.707 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 1b1ae229d
+
+Time (s): cpu = 00:01:22 ; elapsed = 00:01:08 . Memory (MB): peak = 2029.707 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: d4e22880
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.287 | TNS=-118.617 |
+Phase 1 Physical Synthesis Initialization | Checksum: ed1afcfd
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.948 . Memory (MB): peak = 2029.707 ; gain = 0.000
+INFO: [Place 46-33] Processed net RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_npc/BRANCH_PREDICTION.u_lru/AR[0], BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-56] BUFG insertion identified 1 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 1, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: 150b0f00f
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2029.707 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: d4e22880
+
+Time (s): cpu = 00:01:31 ; elapsed = 00:01:14 . Memory (MB): peak = 2029.707 ; gain = 0.000
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.604. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 11d77ba25
+
+Time (s): cpu = 00:02:28 ; elapsed = 00:01:49 . Memory (MB): peak = 2029.707 ; gain = 0.000
+
+Time (s): cpu = 00:02:28 ; elapsed = 00:01:49 . Memory (MB): peak = 2029.707 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 11d77ba25
+
+Time (s): cpu = 00:02:28 ; elapsed = 00:01:49 . Memory (MB): peak = 2029.707 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 11d77ba25
+
+Time (s): cpu = 00:02:29 ; elapsed = 00:01:49 . Memory (MB): peak = 2029.707 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                2x2|                8x8|
+|___________|___________________|___________________|
+|      South|                1x1|                4x4|
+|___________|___________________|___________________|
+|       East|                4x4|                4x4|
+|___________|___________________|___________________|
+|       West|                8x8|                8x8|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 11d77ba25
+
+Time (s): cpu = 00:02:29 ; elapsed = 00:01:50 . Memory (MB): peak = 2029.707 ; gain = 0.000
+Phase 4.3 Placer Reporting | Checksum: 11d77ba25
+
+Time (s): cpu = 00:02:29 ; elapsed = 00:01:50 . Memory (MB): peak = 2029.707 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2029.707 ; gain = 0.000
+
+Time (s): cpu = 00:02:29 ; elapsed = 00:01:50 . Memory (MB): peak = 2029.707 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 15bb80cc6
+
+Time (s): cpu = 00:02:29 ; elapsed = 00:01:50 . Memory (MB): peak = 2029.707 ; gain = 0.000
+Ending Placer Task | Checksum: e674460a
+
+Time (s): cpu = 00:02:29 ; elapsed = 00:01:50 . Memory (MB): peak = 2029.707 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+125 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:02:32 ; elapsed = 00:01:51 . Memory (MB): peak = 2029.707 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 2029.707 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.runs/impl_1/RISCV_demonstrator_wrapper_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2029.707 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_io -file RISCV_demonstrator_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 2029.707 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file RISCV_demonstrator_wrapper_utilization_placed.rpt -pb RISCV_demonstrator_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file RISCV_demonstrator_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 2029.707 ; gain = 0.000
+Command: phys_opt_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Vivado_Tcl 4-137] Directive used for phys_opt_design is: Explore
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+135 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 2029.707 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 2029.707 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.runs/impl_1/RISCV_demonstrator_wrapper_physopt.dcp' has been generated.
+Command: route_design -tns_cleanup
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 65dcd3a5 ConstDB: 0 ShapeSum: 80977265 RouteDB: 0
+Post Restoration Checksum: NetGraph: ea8aa71f NumContArr: e876c9b4 Constraints: 0 Timing: 0
+Phase 1 Build RT Design | Checksum: 1d30170d3
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:21 . Memory (MB): peak = 2127.844 ; gain = 79.879
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 1d30170d3
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:21 . Memory (MB): peak = 2127.867 ; gain = 79.902
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 1d30170d3
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:22 . Memory (MB): peak = 2133.898 ; gain = 85.934
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 1d30170d3
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:22 . Memory (MB): peak = 2133.898 ; gain = 85.934
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 15d1f2449
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:28 . Memory (MB): peak = 2150.113 ; gain = 102.148
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.102  | TNS=0.000  | WHS=-0.323 | THS=-401.865|
+
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 16949
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 16949
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 1b7acc0b8
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:31 . Memory (MB): peak = 2216.285 ; gain = 168.320
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 1b7acc0b8
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:31 . Memory (MB): peak = 2216.285 ; gain = 168.320
+Phase 3 Initial Routing | Checksum: 17f846cc1
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:38 . Memory (MB): peak = 2235.340 ; gain = 187.375
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 10652
+ Number of Nodes with overlaps = 4149
+ Number of Nodes with overlaps = 2365
+ Number of Nodes with overlaps = 1343
+ Number of Nodes with overlaps = 594
+ Number of Nodes with overlaps = 302
+ Number of Nodes with overlaps = 133
+ Number of Nodes with overlaps = 63
+ Number of Nodes with overlaps = 58
+ Number of Nodes with overlaps = 19
+ Number of Nodes with overlaps = 10
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 14
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.048 | TNS=-79.965| WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 19d505734
+
+Time (s): cpu = 00:06:35 ; elapsed = 00:03:10 . Memory (MB): peak = 2235.340 ; gain = 187.375
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 2648
+ Number of Nodes with overlaps = 1170
+ Number of Nodes with overlaps = 570
+ Number of Nodes with overlaps = 300
+ Number of Nodes with overlaps = 149
+ Number of Nodes with overlaps = 120
+ Number of Nodes with overlaps = 61
+ Number of Nodes with overlaps = 27
+ Number of Nodes with overlaps = 28
+ Number of Nodes with overlaps = 10
+ Number of Nodes with overlaps = 13
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.678 | TNS=-31.127| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 1c2d01432
+
+Time (s): cpu = 00:10:08 ; elapsed = 00:05:08 . Memory (MB): peak = 2250.039 ; gain = 202.074
+
+Phase 4.3 Global Iteration 2
+ Number of Nodes with overlaps = 1648
+Phase 4.3 Global Iteration 2 | Checksum: 155321e6c
+
+Time (s): cpu = 00:10:12 ; elapsed = 00:05:12 . Memory (MB): peak = 2250.039 ; gain = 202.074
+Phase 4 Rip-up And Reroute | Checksum: 155321e6c
+
+Time (s): cpu = 00:10:12 ; elapsed = 00:05:12 . Memory (MB): peak = 2250.039 ; gain = 202.074
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 TNS Cleanup
+
+Phase 5.1.1 Delay CleanUp
+
+Phase 5.1.1.1 Update Timing
+Phase 5.1.1.1 Update Timing | Checksum: 177b10b15
+
+Time (s): cpu = 00:10:15 ; elapsed = 00:05:14 . Memory (MB): peak = 2250.039 ; gain = 202.074
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.665 | TNS=-29.320| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+
+Phase 5.1.1.2 Update Timing
+Phase 5.1.1.2 Update Timing | Checksum: dac0f842
+
+Time (s): cpu = 00:10:17 ; elapsed = 00:05:15 . Memory (MB): peak = 2250.039 ; gain = 202.074
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.665 | TNS=-28.968| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+
+Phase 5.1.1.3 Update Timing
+Phase 5.1.1.3 Update Timing | Checksum: 113849f5c
+
+Time (s): cpu = 00:10:18 ; elapsed = 00:05:16 . Memory (MB): peak = 2250.039 ; gain = 202.074
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.665 | TNS=-28.968| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+
+Phase 5.1.1.4 Update Timing
+Phase 5.1.1.4 Update Timing | Checksum: 89479020
+
+Time (s): cpu = 00:10:19 ; elapsed = 00:05:17 . Memory (MB): peak = 2250.039 ; gain = 202.074
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.665 | TNS=-28.968| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+
+Phase 5.1.1.5 Update Timing
+Phase 5.1.1.5 Update Timing | Checksum: 80cce667
+
+Time (s): cpu = 00:10:20 ; elapsed = 00:05:18 . Memory (MB): peak = 2250.039 ; gain = 202.074
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.665 | TNS=-28.968| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+
+Phase 5.1.1.6 Update Timing
+Phase 5.1.1.6 Update Timing | Checksum: 7345b4e0
+
+Time (s): cpu = 00:10:22 ; elapsed = 00:05:20 . Memory (MB): peak = 2250.039 ; gain = 202.074
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.665 | TNS=-28.968| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+
+Phase 5.1.1.7 Update Timing
+Phase 5.1.1.7 Update Timing | Checksum: 1337f7846
+
+Time (s): cpu = 00:10:24 ; elapsed = 00:05:21 . Memory (MB): peak = 2250.039 ; gain = 202.074
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.665 | TNS=-28.968| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+
+Phase 5.1.1.8 Update Timing
+Phase 5.1.1.8 Update Timing | Checksum: 1ef530809
+
+Time (s): cpu = 00:10:25 ; elapsed = 00:05:22 . Memory (MB): peak = 2250.039 ; gain = 202.074
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.665 | TNS=-28.374| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+
+Phase 5.1.1.9 Update Timing
+Phase 5.1.1.9 Update Timing | Checksum: 18b520143
+
+Time (s): cpu = 00:10:27 ; elapsed = 00:05:24 . Memory (MB): peak = 2250.039 ; gain = 202.074
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.665 | TNS=-28.374| WHS=N/A    | THS=N/A    |
+
+Phase 5.1.1 Delay CleanUp | Checksum: 2048a1a44
+
+Time (s): cpu = 00:10:29 ; elapsed = 00:05:25 . Memory (MB): peak = 2250.039 ; gain = 202.074
+Phase 5.1 TNS Cleanup | Checksum: 2048a1a44
+
+Time (s): cpu = 00:10:29 ; elapsed = 00:05:26 . Memory (MB): peak = 2250.039 ; gain = 202.074
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 2048a1a44
+
+Time (s): cpu = 00:10:29 ; elapsed = 00:05:26 . Memory (MB): peak = 2250.039 ; gain = 202.074
+Phase 5 Delay and Skew Optimization | Checksum: 2048a1a44
+
+Time (s): cpu = 00:10:29 ; elapsed = 00:05:26 . Memory (MB): peak = 2250.039 ; gain = 202.074
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1835b109a
+
+Time (s): cpu = 00:10:33 ; elapsed = 00:05:28 . Memory (MB): peak = 2250.039 ; gain = 202.074
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.665 | TNS=-28.374| WHS=0.015  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 1c87335a8
+
+Time (s): cpu = 00:10:33 ; elapsed = 00:05:28 . Memory (MB): peak = 2250.039 ; gain = 202.074
+Phase 6 Post Hold Fix | Checksum: 1c87335a8
+
+Time (s): cpu = 00:10:33 ; elapsed = 00:05:28 . Memory (MB): peak = 2250.039 ; gain = 202.074
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 9.75598 %
+  Global Horizontal Routing Utilization  = 12.1735 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 92.7928%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X32Y74 -> INT_L_X32Y74
+   INT_R_X45Y35 -> INT_R_X45Y35
+   INT_L_X42Y32 -> INT_L_X42Y32
+   INT_L_X42Y31 -> INT_L_X42Y31
+   INT_L_X42Y30 -> INT_L_X42Y30
+South Dir 2x2 Area, Max Cong = 87.1622%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X32Y52 -> INT_R_X33Y53
+East Dir 8x8 Area, Max Cong = 86.7647%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X32Y22 -> INT_R_X39Y29
+West Dir 4x4 Area, Max Cong = 90.9927%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X44Y26 -> INT_R_X47Y29
+   INT_L_X48Y26 -> INT_R_X51Y29
+   INT_L_X44Y22 -> INT_R_X47Y25
+   INT_L_X48Y22 -> INT_R_X51Y25
+   INT_L_X44Y18 -> INT_R_X47Y21
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 1 Aspect Ratio: 0.666667 Sparse Ratio: 1
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 2 Aspect Ratio: 0.8 Sparse Ratio: 0.6875
+Direction: East
+----------------
+Congested clusters found at Level 2
+Effective congestion level: 3 Aspect Ratio: 0.666667 Sparse Ratio: 1
+Direction: West
+----------------
+Congested clusters found at Level 1
+Effective congestion level: 3 Aspect Ratio: 0.666667 Sparse Ratio: 2.25
+
+Phase 7 Route finalize | Checksum: 1e02f92f4
+
+Time (s): cpu = 00:10:34 ; elapsed = 00:05:29 . Memory (MB): peak = 2250.039 ; gain = 202.074
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1e02f92f4
+
+Time (s): cpu = 00:10:34 ; elapsed = 00:05:29 . Memory (MB): peak = 2250.039 ; gain = 202.074
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 21031bc37
+
+Time (s): cpu = 00:10:36 ; elapsed = 00:05:32 . Memory (MB): peak = 2250.039 ; gain = 202.074
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-0.665 | TNS=-28.374| WHS=0.015  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 21031bc37
+
+Time (s): cpu = 00:10:39 ; elapsed = 00:05:34 . Memory (MB): peak = 2250.039 ; gain = 202.074
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:10:39 ; elapsed = 00:05:34 . Memory (MB): peak = 2250.039 ; gain = 202.074
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+158 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:10:48 ; elapsed = 00:05:39 . Memory (MB): peak = 2250.039 ; gain = 220.332
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 2250.039 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.runs/impl_1/RISCV_demonstrator_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2250.039 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file RISCV_demonstrator_wrapper_drc_routed.rpt -pb RISCV_demonstrator_wrapper_drc_routed.pb -rpx RISCV_demonstrator_wrapper_drc_routed.rpx
+Command: report_drc -file RISCV_demonstrator_wrapper_drc_routed.rpt -pb RISCV_demonstrator_wrapper_drc_routed.pb -rpx RISCV_demonstrator_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.runs/impl_1/RISCV_demonstrator_wrapper_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 2250.039 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_methodology -file RISCV_demonstrator_wrapper_methodology_drc_routed.rpt -pb RISCV_demonstrator_wrapper_methodology_drc_routed.pb -rpx RISCV_demonstrator_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file RISCV_demonstrator_wrapper_methodology_drc_routed.rpt -pb RISCV_demonstrator_wrapper_methodology_drc_routed.pb -rpx RISCV_demonstrator_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.runs/impl_1/RISCV_demonstrator_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 2250.039 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_power -file RISCV_demonstrator_wrapper_power_routed.rpt -pb RISCV_demonstrator_wrapper_power_summary_routed.pb -rpx RISCV_demonstrator_wrapper_power_routed.rpx
+Command: report_power -file RISCV_demonstrator_wrapper_power_routed.rpt -pb RISCV_demonstrator_wrapper_power_summary_routed.pb -rpx RISCV_demonstrator_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+170 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 2254.930 ; gain = 4.891
+INFO: [runtcl-4] Executing : report_route_status -file RISCV_demonstrator_wrapper_route_status.rpt -pb RISCV_demonstrator_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -report_unconstrained -file RISCV_demonstrator_wrapper_timing_summary_routed.rpt -pb RISCV_demonstrator_wrapper_timing_summary_routed.pb -rpx RISCV_demonstrator_wrapper_timing_summary_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [runtcl-4] Executing : report_incremental_reuse -file RISCV_demonstrator_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file RISCV_demonstrator_wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file RISCV_demonstrator_wrapper_bus_skew_routed.rpt -pb RISCV_demonstrator_wrapper_bus_skew_routed.pb -rpx RISCV_demonstrator_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Vivado_Tcl 4-241] Physical synthesis in post route mode ( 100.0% nets are fully routed)
+INFO: [Vivado_Tcl 4-1435] PhysOpt_Tcl_Interface Runtime Before Starting Physical Synthesis Task | CPU: 4.00s |  WALL: 2.05s
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2261.762 ; gain = 0.000
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-0.665 | TNS=-28.204 | WHS=0.020 | THS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 2670fc1b1
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 2275.105 ; gain = 13.344
+WARNING: [Physopt 32-745] Physical Optimization has determined that the magnitude of the negative slack is too large and it is highly unlikely that slack will be improved. Post-Route Physical Optimization is most effective when WNS is above -0.5ns
+
+Phase 2 Critical Path Optimization
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-0.665 | TNS=-28.204 | WHS=0.020 | THS=0.000 |
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/Q[26].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/clk_wiz/inst/clk_out1_RISCV_demonstrator_clk_wiz_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/mem_unaligned_e2_q_reg.
+INFO: [Physopt 32-710] Processed net RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/mem_unaligned_e2_q_reg. Critical path length was reduced through logic transformation on cell RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/mem_data_wr_q[31]_i_4_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.567. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/_inferred__0/i__carry_1.
+INFO: [Physopt 32-710] Processed net RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/mem_unaligned_e2_q_reg. Critical path length was reduced through logic transformation on cell RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/mem_data_wr_q[31]_i_4_comp_1.
+INFO: [Physopt 32-952] Improved path group WNS = -0.561. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/_inferred__0/i__carry.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_fetch/pc_f_q[5].
+INFO: [Physopt 32-710] Processed net RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_npc/BRANCH_PREDICTION.ras_index_q_reg[2]_1[4]. Critical path length was reduced through logic transformation on cell RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_npc/pc_f_q[5]_i_1_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.554. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_npc/pc_f_q[5]_i_3_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/Q[3].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/take_interrupt_q_reg_5.
+INFO: [Physopt 32-710] Processed net RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/take_interrupt_q_reg_5. Critical path length was reduced through logic transformation on cell RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/mem_data_wr_q[23]_i_3_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.467. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/_inferred__0/i__carry.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/Q[11].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/mem_data_wr_q[31]_i_6_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/_inferred__0/i__carry.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/O[1].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/mem_writeback_q_i_2[0].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/take_interrupt_q_reg_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/mem_xh_q_i_2_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/ram_q_reg[0][46]_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/i__carry_i_13_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/valid_e1_q_reg_i_12_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/valid_e1_q_i_31_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/valid_e1_q_i_38_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/branch_ntaken_q_i_3_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/branch_ntaken_q_reg_i_10_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/branch_ntaken_q_i_23_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/branch_ntaken_q_i_51_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/branch_ntaken_q_i_69_n_0.
+INFO: [Physopt 32-710] Processed net RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/branch_ntaken_q_i_69_n_0. Critical path length was reduced through logic transformation on cell RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/branch_ntaken_q_i_69_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.462. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/pipe1_squash_e1_e2_w.
+INFO: [Physopt 32-663] Processed net RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_npc/pc_f_q[5]_i_3_n_0_repN.  Re-placed instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_npc/pc_f_q[5]_i_3_comp_1
+INFO: [Physopt 32-952] Improved path group WNS = -0.442. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_npc/pc_f_q[5]_i_3_n_0_repN.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_fetch/pc_f_q[28].
+INFO: [Physopt 32-710] Processed net RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_npc/BRANCH_PREDICTION.ras_index_q_reg[2]_1[27]. Critical path length was reduced through logic transformation on cell RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_npc/pc_f_q[28]_i_1_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.441. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_npc/pc_f_q[28]_i_3_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/pc_x_q_reg[31]_0[26].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/pc_x_q[26]_i_3_n_0.
+INFO: [Physopt 32-710] Processed net RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/pc_x_q[26]_i_3_n_0. Critical path length was reduced through logic transformation on cell RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/pc_x_q[26]_i_3_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.419. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/pc_x_q[31]_i_11_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/pc_x_q_reg[31]_0[5].
+INFO: [Physopt 32-710] Processed net RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/pc_x_q_reg[31][5]. Critical path length was reduced through logic transformation on cell RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/pc_x_q[5]_i_1_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.414. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/pc_x_q[5]_i_4_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/pc_x_q_reg[31]_0[10].
+INFO: [Physopt 32-710] Processed net RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/pc_x_q_reg[31][10]. Critical path length was reduced through logic transformation on cell RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/pc_x_q[10]_i_1_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.394. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/pc_x_q[10]_i_3_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_fetch/pc_f_q[22].
+INFO: [Physopt 32-710] Processed net RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_npc/BRANCH_PREDICTION.ras_index_q_reg[2]_1[21]. Critical path length was reduced through logic transformation on cell RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_npc/pc_f_q[22]_i_1_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.381. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_npc/pc_f_q[22]_i_3_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_fetch/pc_f_q[8].
+INFO: [Physopt 32-710] Processed net RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_npc/BRANCH_PREDICTION.ras_index_q_reg[2]_1[7]. Critical path length was reduced through logic transformation on cell RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_npc/pc_f_q[8]_i_1_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.368. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_npc/pc_f_q[8]_i_3_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_npc/pc_f_q[22]_i_3_n_0_repN.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_npc/pc_f_q[22]_i_7_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_npc/pc_f_q[22]_i_12_n_0.
+INFO: [Physopt 32-710] Processed net RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_npc/pc_f_q[22]_i_12_n_0. Critical path length was reduced through logic transformation on cell RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_npc/pc_f_q[22]_i_12_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.368. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_fetch/pc_f_q_reg[31]_i_63_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/pc_x_q_reg[31]_0[7].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/pc_x_q[7]_i_3_n_0.
+INFO: [Physopt 32-710] Processed net RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/pc_x_q[7]_i_3_n_0. Critical path length was reduced through logic transformation on cell RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/pc_x_q[7]_i_3_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.364. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/pc_x_q[31]_i_11_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_npc/pc_f_q[22]_i_8_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_npc/pc_f_q[22]_i_13_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_npc/pc_f_q[22]_i_29_n_0.
+INFO: [Physopt 32-710] Processed net RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_npc/pc_f_q[22]_i_29_n_0. Critical path length was reduced through logic transformation on cell RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_npc/pc_f_q[22]_i_29_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.361. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_npc/pc_f_q[22]_i_42_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/pc_x_q_reg[31]_0[23].
+INFO: [Physopt 32-710] Processed net RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/pc_x_q_reg[31][23]. Critical path length was reduced through logic transformation on cell RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/pc_x_q[23]_i_1_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.358. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/pc_x_q[23]_i_3_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_fetch/pc_f_q[7].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_npc/pc_f_q[7]_i_3_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_npc/pc_f_q_reg[31]_i_17_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_npc/pc_f_q_reg[31]_i_50_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_npc/pc_f_q[31]_i_126_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_npc/pc_f_q_reg[31]_i_305_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_npc/pc_f_q_reg[31]_i_534_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_npc/pc_f_q[31]_i_748_n_0.
+INFO: [Physopt 32-952] Improved path group WNS = -0.355. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_fetch/pc_f_q_reg[2]_2.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/squash_e1_e2_q_i_4_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_dmux/dport_error_w.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/CO[0].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/exception_wb_q[4]_i_25_n_0.
+INFO: [Physopt 32-663] Processed net RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/exception_wb_q[4]_i_47_n_0.  Re-placed instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/exception_wb_q[4]_i_47
+INFO: [Physopt 32-952] Improved path group WNS = -0.335. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/exception_wb_q[4]_i_47_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/pc_x_q_reg[31]_0[9].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/pc_x_q[9]_i_4_n_0.
+INFO: [Physopt 32-710] Processed net RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/pc_x_q[9]_i_4_n_0. Critical path length was reduced through logic transformation on cell RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/pc_x_q[9]_i_4_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.321. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/pc_x_q[31]_i_11_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_fetch/pc_f_q[27].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_npc/pc_f_q[27]_i_3_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_npc/pc_f_q_reg[31]_i_18_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_npc/pc_f_q_reg[31]_i_52_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_npc/pc_f_q[31]_i_131_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_npc/pc_f_q_reg[31]_i_324_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_npc/pc_f_q_reg[31]_i_572_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_npc/pc_f_q[31]_i_823_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_fetch/pc_f_q_reg[2]_2.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_fetch/pc_f_q[31]_i_877_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_fetch/pc_f_q[31]_i_879_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_fetch/BRANCH_PREDICTION.ras_index_q_reg[1]_i_20.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_npc/BRANCH_PREDICTION.btb_pc_q_reg[26][30]_0[0].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_fetch/BRANCH_PREDICTION.ras_index_q[1]_i_153_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_fetch/branch_pc_q_reg[0]_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_fetch/fetch_pc_f_w[1].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/branch_request_w.
+INFO: [Physopt 32-710] Processed net RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/branch_request_w. Critical path length was reduced through logic transformation on cell RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/count_q[1]_i_4_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.319. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/div_pending_q_i_3_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/pc_x_q_reg[31]_0[24].
+INFO: [Physopt 32-710] Processed net RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/pc_x_q_reg[31][24]. Critical path length was reduced through logic transformation on cell RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/pc_x_q[24]_i_1_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.317. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/pc_x_q[24]_i_3_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/pc_x_q_reg[31]_0[8].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/pc_x_q[8]_i_3_n_0.
+INFO: [Physopt 32-710] Processed net RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/pc_x_q[8]_i_3_n_0. Critical path length was reduced through logic transformation on cell RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/pc_x_q[8]_i_3_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.303. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/pc_x_q[31]_i_11_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/pc_x_q[23]_i_3_n_0_repN.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/branch_d_exec0_request_w.
+INFO: [Physopt 32-710] Processed net RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/branch_d_exec0_request_w. Critical path length was reduced through logic transformation on cell RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_frontend/u_decode/u_fifo/exception_e1_q[4]_i_6_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.272. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/branch_taken_q0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/exception_wb_q[4]_i_12_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/exception_wb_q[4]_i_39_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/D[11].
+INFO: [Physopt 32-703] Processed net RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/data_r_w[16]. Clock skew was adjusted for instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/ram_reg_2_0.
+INFO: [Physopt 32-952] Improved path group WNS = -0.229. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/data_r_w[16].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/exception_wb_q[4]_i_10_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/exception_wb_q[4]_i_31_n_0.
+INFO: [Physopt 32-703] Processed net RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/data_r_w[22]. Clock skew was adjusted for instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/ram_reg_2_1.
+INFO: [Physopt 32-952] Improved path group WNS = -0.197. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/data_r_w[22].
+INFO: [Physopt 32-703] Processed net RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_otp_ram/ram_read0_q[15]. Clock skew was adjusted for instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_otp_ram/ram_reg_1_1.
+INFO: [Physopt 32-952] Improved path group WNS = -0.175. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_otp_ram/ram_read0_q[15].
+INFO: [Physopt 32-663] Processed net RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/exception_wb_q[4]_i_45_n_0.  Re-placed instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/exception_wb_q[4]_i_45
+INFO: [Physopt 32-952] Improved path group WNS = -0.155. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/exception_wb_q[4]_i_45_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/exception_wb_q[4]_i_27_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/exception_wb_q[4]_i_55_n_0.
+INFO: [Physopt 32-703] Processed net RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_read0_q[3]. Clock skew was adjusted for instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_1.
+INFO: [Physopt 32-952] Improved path group WNS = -0.150. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_read0_q[3].
+INFO: [Physopt 32-703] Processed net RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_read0_q[14]. Clock skew was adjusted for instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_2_1.
+INFO: [Physopt 32-952] Improved path group WNS = -0.113. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_read0_q[14].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/exception_wb_q[4]_i_8_n_0.
+INFO: [Physopt 32-663] Processed net RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/exception_wb_q[4]_i_21_n_0.  Re-placed instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/exception_wb_q[4]_i_21
+INFO: [Physopt 32-952] Improved path group WNS = -0.106. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/exception_wb_q[4]_i_21_n_0.
+INFO: [Physopt 32-703] Processed net RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/data_r_w[22]. Clock skew was adjusted for instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/ram_reg_2_1.
+INFO: [Physopt 32-952] Improved path group WNS = -0.078. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/data_r_w[22].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_5_0_1.
+INFO: [Physopt 32-703] Processed net RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_otp_ram/ram_read0_q[43]. Clock skew was adjusted for instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_otp_ram/ram_reg_5_0.
+INFO: [Physopt 32-952] Improved path group WNS = -0.059. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_otp_ram/ram_read0_q[43].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/exception_wb_q[4]_i_23_n_0.
+INFO: [Physopt 32-703] Processed net RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_otp_ram/ram_read0_q[24]. Clock skew was adjusted for instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_otp_ram/ram_reg_3_0.
+INFO: [Physopt 32-952] Improved path group WNS = -0.054. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_otp_ram/ram_read0_q[24].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/exception_wb_q[4]_i_11_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_6_1_0.
+INFO: [Physopt 32-703] Processed net RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_otp_ram/ram_read0_q[52]. Clock skew was adjusted for instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_otp_ram/ram_reg_6_1.
+INFO: [Physopt 32-952] Improved path group WNS = -0.044. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_otp_ram/ram_read0_q[52].
+INFO: [Physopt 32-703] Processed net RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_read0_q[10]. Clock skew was adjusted for instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_1_1.
+INFO: [Physopt 32-952] Improved path group WNS = -0.039. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_read0_q[10].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/exception_wb_q[4]_i_37_n_0.
+INFO: [Physopt 32-703] Processed net RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/data_r_w[47]. Clock skew was adjusted for instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/ram_reg_5_1.
+INFO: [Physopt 32-952] Improved path group WNS = -0.034. Path group: clk_out1_RISCV_demonstrator_clk_wiz_0. Processed net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/data_r_w[47].
+INFO: [Physopt 32-703] Processed net RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/data_r_w[16]. Clock skew was adjusted for instance RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/ram_reg_2_0.
+INFO: [Physopt 32-735] Processed net RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/data_r_w[16]. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=0.006 | TNS=0.000 | WHS=0.020 | THS=0.000 |
+INFO: [Physopt 32-668] Current Timing Summary | WNS=0.006 | TNS=0.000 | WHS=0.020 | THS=0.000 |
+Phase 2 Critical Path Optimization | Checksum: 2670fc1b1
+
+Time (s): cpu = 00:14:32 ; elapsed = 00:09:11 . Memory (MB): peak = 2550.523 ; gain = 288.762
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2550.523 ; gain = 0.000
+INFO: [Physopt 32-669] Post Physical Optimization Timing Summary | WNS=0.006 | TNS=0.000 | WHS=0.020 | THS=0.000 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Critical Path  |          0.672  |         28.204  |            0  |              0  |                    37  |           0  |           1  |  00:09:05  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2550.523 ; gain = 0.000
+Ending Physical Synthesis Task | Checksum: 2c7a30354
+
+Time (s): cpu = 00:14:32 ; elapsed = 00:09:11 . Memory (MB): peak = 2550.523 ; gain = 288.762
+INFO: [Common 17-83] Releasing license: Implementation
+174 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:14:37 ; elapsed = 00:09:14 . Memory (MB): peak = 2550.523 ; gain = 288.762
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 2550.523 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.runs/impl_1/RISCV_demonstrator_wrapper_postroute_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 2550.523 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -report_unconstrained -warn_on_violation -file RISCV_demonstrator_wrapper_timing_summary_postroute_physopted.rpt -pb RISCV_demonstrator_wrapper_timing_summary_postroute_physopted.pb -rpx RISCV_demonstrator_wrapper_timing_summary_postroute_physopted.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary: Time (s): cpu = 00:00:22 ; elapsed = 00:00:12 . Memory (MB): peak = 2550.523 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file RISCV_demonstrator_wrapper_bus_skew_postroute_physopted.rpt -pb RISCV_demonstrator_wrapper_bus_skew_postroute_physopted.pb -rpx RISCV_demonstrator_wrapper_bus_skew_postroute_physopted.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 19 00:25:08 2023...
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Tue Sep 19 00:58:56 2023
+# Process ID: 25980
+# Current directory: H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.runs/impl_1
+# Command line: vivado.exe -log RISCV_demonstrator_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source RISCV_demonstrator_wrapper.tcl -notrace
+# Log file: H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.runs/impl_1/RISCV_demonstrator_wrapper.vdi
+# Journal file: H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.runs/impl_1\vivado.jou
+# Running On: Gianluca, OS: Windows, CPU Frequency: 3800 MHz, CPU Physical cores: 16, Host memory: 34266 MB
+#-----------------------------------------------------------
+source RISCV_demonstrator_wrapper.tcl -notrace
+Command: open_checkpoint RISCV_demonstrator_wrapper_postroute_physopt.dcp
 
 Starting open_checkpoint Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1233.961 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 743.105 ; gain = 3.625
 CRITICAL WARNING: [Board 49-67] The board_part definition was not found for digilentinc.com:zybo-z7-20:part0:1.0. This can happen sometimes when you use custom board part. You can resolve this issue by setting 'board.repoPaths' parameter, pointing to the location of custom board files. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.
 CRITICAL WARNING: [Board 49-67] The board_part definition was not found for digilentinc.com:zybo-z7-20:part0:1.0. This can happen sometimes when you use custom board part. You can resolve this issue by setting 'board.repoPaths' parameter, pointing to the location of custom board files. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.
 INFO: [Device 21-403] Loading part xc7z020clg400-1
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.273 . Memory (MB): peak = 1233.961 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 1622 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.283 . Memory (MB): peak = 1458.219 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1590 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2021.2
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -31,15 +1144,15 @@ INFO: [Project 1-853] Binary constraint restore complete.
 Reading XDEF placement.
 Reading placer database...
 Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1498.500 ; gain = 12.887
+Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1500.973 ; gain = 11.586
 Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1498.500 ; gain = 12.887
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1498.500 ; gain = 0.000
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1500.973 ; gain = 11.586
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1500.973 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Project 1-604] Checkpoint was created with Vivado v2021.2 (64-bit) build 3367213
-open_checkpoint: Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1502.516 ; gain = 268.555
+open_checkpoint: Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1505.031 ; gain = 775.816
 Command: write_bitstream -force RISCV_demonstrator_wrapper.bit
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -56,14 +1169,21 @@ WARNING: [DRC DPIP-1] Input pipelining: DSP RISCV_demonstrator_i/riscv_wrapper_0
 WARNING: [DRC DPIP-1] Input pipelining: DSP RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w__1 input RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 WARNING: [DRC DPIP-1] Input pipelining: DSP RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w__1 input RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 WARNING: [DRC DPIP-1] Input pipelining: DSP RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w__2 input RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_rand_gen/x1 input RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_rand_gen/x1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 WARNING: [DRC DPOP-1] PREG Output pipelining: DSP RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w output RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 WARNING: [DRC DPOP-1] PREG Output pipelining: DSP RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w__0 output RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 WARNING: [DRC DPOP-1] PREG Output pipelining: DSP RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w__1 output RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 WARNING: [DRC DPOP-1] PREG Output pipelining: DSP RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w__2 output RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_rand_gen/x1 output RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_rand_gen/x1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_rand_gen/x1__0 output RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_rand_gen/x1__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w multiplier stage RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w__0 multiplier stage RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w__1 multiplier stage RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w__2 multiplier stage RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_mul/mult_result_w__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_rand_gen/x1 multiplier stage RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_rand_gen/x1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_rand_gen/x1__0 multiplier stage RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_rand_gen/x1__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC PLBUFGOPT-1] Non-Optimal connections to BUFG: A non-muxed BUFG RISCV_demonstrator_i/clk_wiz/inst/clkout1_buf is driven by another global buffer RISCV_demonstrator_i/clk_wiz/inst/clkout1_buf_replica. Remove non-muxed BUFG if it is not desired
+WARNING: [DRC PLBUFGOPT-1] Non-Optimal connections to BUFG: A non-muxed BUFG RISCV_demonstrator_i/clk_wiz/inst/clkout1_buf_replica is driven by another global buffer RISCV_demonstrator_i/clk_wiz/inst/clkout1_buf_replica_1. Remove non-muxed BUFG if it is not desired
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/ADDRARDADDR[10] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ADDRARDADDR[8]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_q_reg[11]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/ADDRARDADDR[11] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ADDRARDADDR[9]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_q_reg[12]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/ADDRARDADDR[12] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ADDRARDADDR[10]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_q_reg[13]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
@@ -77,14 +1197,14 @@ WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 RISCV_demonstr
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/ADDRARDADDR[7] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ADDRARDADDR[5]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_q_reg[8]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/ADDRARDADDR[8] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ADDRARDADDR[6]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_q_reg[9]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/ADDRARDADDR[9] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ADDRARDADDR[7]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_q_reg[10]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/WEA[0] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_1_1[0]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_q_reg[2]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/WEA[0] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_1_1[0]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_q_reg[16]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/WEA[0] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_1_1[0]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_dmux/pending_q_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/WEA[0] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_1_1[0]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_dmux/pending_q_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/WEA[0] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_1_1[0]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_dmux/pending_q_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/WEA[0] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_1_1[0]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_dmux/pending_q_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/WEA[0] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_1_1[0]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_dmux/pending_q_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0 has an input control pin RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_0/WEA[0] (net: RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/secure_zone.no_enc_updater.u_enc_ram/ram_reg_0_1_1[0]) which is driven by a register (RISCV_demonstrator_i/riscv_wrapper_0/inst/rv_tcm_top/u_dmux/tcm_access_q_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-INFO: [Vivado 12-3199] DRC finished with 0 Errors, 36 Warnings
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 43 Warnings
 INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
 INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
 Loading data files...
@@ -97,7 +1217,7 @@ Writing bitstream ./RISCV_demonstrator_wrapper.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-1876] WebTalk data collection is mandatory when using a ULT device. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
 INFO: [Common 17-83] Releasing license: Implementation
-22 Infos, 36 Warnings, 2 Critical Warnings and 0 Errors encountered.
+22 Infos, 43 Warnings, 2 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:25 ; elapsed = 00:00:18 . Memory (MB): peak = 2137.289 ; gain = 634.773
-INFO: [Common 17-206] Exiting Vivado at Mon Sep 18 12:03:13 2023...
+write_bitstream: Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 2192.000 ; gain = 686.969
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 19 00:59:36 2023...

@@ -342,16 +342,18 @@
 `define CSR_MEPC          12'h341
 `define CSR_MEPC_MASK     32'hFFFFFFFF
 `define CSR_MCAUSE        12'h342
-`define CSR_MCAUSE_MASK   32'h8000000F
+`define CSR_MCAUSE_MASK   32'h8000001F
 `define CSR_MTVAL         12'h343
 `define CSR_MTVAL_MASK    32'hFFFFFFFF
 `define CSR_MIP           12'h344
 `define CSR_MIP_MASK      `IRQ_MASK
-`define CSR_MCYCLE        12'hc00
+`define CSR_MCYCLE        12'hb00       //was c00, it's an error
 `define CSR_MCYCLE_MASK   32'hFFFFFFFF
-`define CSR_MTIME         12'hc01
+`define CSR_MTIME         12'hb01       //was c01, it's an error
 `define CSR_MTIME_MASK    32'hFFFFFFFF
-`define CSR_MTIMEH        12'hc81
+`define CSR_MCYCLEH       12'hb80       //add new csr code
+`define CSR_MCYCLEH_MASK  32'hFFFFFFFF
+`define CSR_MTIMEH        12'hb81       //was c81, it's an error
 `define CSR_MTIMEH_MASK   32'hFFFFFFFF
 `define CSR_MHARTID       12'hF14
 `define CSR_MHARTID_MASK  32'hFFFFFFFF
@@ -465,32 +467,34 @@
 //--------------------------------------------------------------------
 // Exception Causes
 //--------------------------------------------------------------------
-`define EXCEPTION_W                        6
-`define EXCEPTION_MISALIGNED_FETCH         6'h10
-`define EXCEPTION_FAULT_FETCH              6'h11
-`define EXCEPTION_ILLEGAL_INSTRUCTION      6'h12
-`define EXCEPTION_BREAKPOINT               6'h13
-`define EXCEPTION_MISALIGNED_LOAD          6'h14
-`define EXCEPTION_FAULT_LOAD               6'h15
-`define EXCEPTION_MISALIGNED_STORE         6'h16
-`define EXCEPTION_FAULT_STORE              6'h17
-`define EXCEPTION_ECALL                    6'h18
-`define EXCEPTION_ECALL_U                  6'h18
-`define EXCEPTION_ECALL_S                  6'h19
-`define EXCEPTION_ECALL_H                  6'h1a
-`define EXCEPTION_ECALL_M                  6'h1b
-`define EXCEPTION_PAGE_FAULT_INST          6'h1c
-`define EXCEPTION_PAGE_FAULT_LOAD          6'h1d
-`define EXCEPTION_PAGE_FAULT_STORE         6'h1f
-`define EXCEPTION_EXCEPTION                6'h10
-`define EXCEPTION_INTERRUPT                6'h20
-`define EXCEPTION_ERET_U                   6'h30
-`define EXCEPTION_ERET_S                   6'h31
-`define EXCEPTION_ERET_H                   6'h32
-`define EXCEPTION_ERET_M                   6'h33
-`define EXCEPTION_FENCE                    6'h34
-`define EXCEPTION_TYPE_MASK                6'h30
-`define EXCEPTION_SUBTYPE_R                3:0
+`define EXCEPTION_W                        7        // 6        ->  7
+`define EXCEPTION_MISALIGNED_FETCH         7'h20    // 001_0000 ->  010_0000    |   6'h10   ->  7'h20
+`define EXCEPTION_FAULT_FETCH              7'h21    // 001_0001 ->  010_0001    |   6'h11   ->  7'h21
+`define EXCEPTION_ILLEGAL_INSTRUCTION      7'h22    // 001_0010 ->  010_0010    |   6'h12   ->  7'h22
+`define EXCEPTION_BREAKPOINT               7'h23    // 001_0011 ->  010_0011    |   6'h13   ->  7'h23
+`define EXCEPTION_MISALIGNED_LOAD          7'h24    // 001_0100 ->  010_0100    |   6'h14   ->  7'h24
+`define EXCEPTION_FAULT_LOAD               7'h25    // 001_0101 ->  010_0101    |   6'h15   ->  7'h25
+`define EXCEPTION_ENC_FAULT_LOAD           7'h3d    // NEW      ->  011_1101    |           ->  7'h3d 
+`define EXCEPTION_MISALIGNED_STORE         7'h26    // 001_0110 ->  010_0110    |   6'h16   ->  7'h26
+`define EXCEPTION_FAULT_STORE              7'h27    // 001_0111 ->  010_0111    |   6'h17   ->  7'h27
+`define EXCEPTION_ENC_FAULT_STORE          7'h3f    // NEW      ->  011_1111    |           ->  7'h3f 
+`define EXCEPTION_ECALL                    7'h28    // 001_1000 ->  010_1000    |   6'h18   ->  7'h28
+`define EXCEPTION_ECALL_U                  7'h28    // 001_1000 ->  010_1000    |   6'h18   ->  7'h28
+`define EXCEPTION_ECALL_S                  7'h29    // 001_1001 ->  010_1001    |   6'h19   ->  7'h29
+`define EXCEPTION_ECALL_H                  7'h2a    // 001_1010 ->  010_1010    |   6'h1a   ->  7'h2a
+`define EXCEPTION_ECALL_M                  7'h2b    // 001_1011 ->  010_1011    |   6'h1b   ->  7'h2b
+`define EXCEPTION_PAGE_FAULT_INST          7'h2c    // 001_1100 ->  010_1100    |   6'h1c   ->  7'h2c
+`define EXCEPTION_PAGE_FAULT_LOAD          7'h2d    // 001_1101 ->  010_1101    |   6'h1d   ->  7'h2d
+`define EXCEPTION_PAGE_FAULT_STORE         7'h2f    // 001_1111 ->  010_1111    |   6'h1f   ->  7'h2f
+`define EXCEPTION_EXCEPTION                7'h20    // 001_0000 ->  010_0000    |   6'h10   ->  7'h20
+`define EXCEPTION_INTERRUPT                7'h40    // 010_0000 ->  100_0000    |   6'h20   ->  7'h40
+`define EXCEPTION_ERET_U                   7'h60    // 011_0000 ->  110_0000    |   6'h30   ->  7'h60
+`define EXCEPTION_ERET_S                   7'h61    // 011_0001 ->  110_0001    |   6'h31   ->  7'h61
+`define EXCEPTION_ERET_H                   7'h62    // 011_0010 ->  110_0010    |   6'h32   ->  7'h62
+`define EXCEPTION_ERET_M                   7'h63    // 011_0011 ->  110_0011    |   6'h33   ->  7'h63
+`define EXCEPTION_FENCE                    7'h64    // 011_0100 ->  110_0100    |   6'h34   ->  7'h64
+`define EXCEPTION_TYPE_MASK                7'h60    // 011_0000 ->  110_0000    |   6'h30   ->  7'h60
+`define EXCEPTION_SUBTYPE_R                4:0      // 3:0      ->  4:0
 
 `define MCAUSE_INT                      31
 `define MCAUSE_MISALIGNED_FETCH         ((0 << `MCAUSE_INT) | 0)
@@ -508,8 +512,9 @@
 `define MCAUSE_PAGE_FAULT_INST          ((0 << `MCAUSE_INT) | 12)
 `define MCAUSE_PAGE_FAULT_LOAD          ((0 << `MCAUSE_INT) | 13)
 `define MCAUSE_PAGE_FAULT_STORE         ((0 << `MCAUSE_INT) | 15)
-`define MCAUSE_FAULT_LOAD_ENC           ((0 << `MCAUSE_INT) | 21)   //  10101
-`define MCAUSE_FAULT_STORE_ENC          ((0 << `MCAUSE_INT) | 23)   //  10111
+// According to riscv_privileged_spec, page 37, the choosed range is 24-31
+`define MCAUSE_FAULT_LOAD_ENC           ((0 << `MCAUSE_INT) | 29)   //  11101
+`define MCAUSE_FAULT_STORE_ENC          ((0 << `MCAUSE_INT) | 31)   //  11111
 `define MCAUSE_INTERRUPT                (1 << `MCAUSE_INT)
 
 //--------------------------------------------------------------------

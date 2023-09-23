@@ -7,8 +7,7 @@
       "name": "RISCV_demonstrator",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2021.2",
-      "validated": "true"
+      "tool_version": "2021.2"
     },
     "design_tree": {
       "axi_gpio_0": "",
@@ -35,68 +34,12 @@
       "DDR": {
         "mode": "Master",
         "vlnv_bus_definition": "xilinx.com:interface:ddrx:1.0",
-        "vlnv": "xilinx.com:interface:ddrx_rtl:1.0",
-        "parameters": {
-          "AXI_ARBITRATION_SCHEME": {
-            "value": "TDM",
-            "value_src": "default"
-          },
-          "BURST_LENGTH": {
-            "value": "8",
-            "value_src": "default"
-          },
-          "CAN_DEBUG": {
-            "value": "false",
-            "value_src": "default"
-          },
-          "CAS_LATENCY": {
-            "value": "11",
-            "value_src": "default"
-          },
-          "CAS_WRITE_LATENCY": {
-            "value": "11",
-            "value_src": "default"
-          },
-          "CS_ENABLED": {
-            "value": "true",
-            "value_src": "default"
-          },
-          "DATA_MASK_ENABLED": {
-            "value": "true",
-            "value_src": "default"
-          },
-          "DATA_WIDTH": {
-            "value": "8",
-            "value_src": "default"
-          },
-          "MEMORY_TYPE": {
-            "value": "COMPONENTS",
-            "value_src": "default"
-          },
-          "MEM_ADDR_MAP": {
-            "value": "ROW_COLUMN_BANK",
-            "value_src": "default"
-          },
-          "SLOT": {
-            "value": "Single",
-            "value_src": "default"
-          },
-          "TIMEPERIOD_PS": {
-            "value": "1250",
-            "value_src": "default"
-          }
-        }
+        "vlnv": "xilinx.com:interface:ddrx_rtl:1.0"
       },
       "FIXED_IO": {
         "mode": "Master",
         "vlnv_bus_definition": "xilinx.com:display_processing_system7:fixedio:1.0",
-        "vlnv": "xilinx.com:display_processing_system7:fixedio_rtl:1.0",
-        "parameters": {
-          "CAN_DEBUG": {
-            "value": "false",
-            "value_src": "default"
-          }
-        }
+        "vlnv": "xilinx.com:display_processing_system7:fixedio_rtl:1.0"
       }
     },
     "ports": {
@@ -114,20 +57,8 @@
         "type": "clk",
         "direction": "I",
         "parameters": {
-          "CLK_DOMAIN": {
-            "value": "RISCV_demonstrator_sys_clock",
-            "value_src": "default"
-          },
           "FREQ_HZ": {
             "value": "125000000"
-          },
-          "FREQ_TOLERANCE_HZ": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
           },
           "PHASE": {
             "value": "0.0"
@@ -138,10 +69,6 @@
         "type": "rst",
         "direction": "I",
         "parameters": {
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
           "POLARITY": {
             "value": "ACTIVE_HIGH"
           }
@@ -193,22 +120,25 @@
         "inst_hier_path": "clk_wiz",
         "parameters": {
           "CLKOUT1_JITTER": {
-            "value": "172.798"
+            "value": "312.659"
           },
           "CLKOUT1_PHASE_ERROR": {
-            "value": "96.948"
+            "value": "245.713"
           },
           "CLKOUT1_REQUESTED_OUT_FREQ": {
-            "value": "20.000"
+            "value": "25.000"
           },
           "CLK_IN1_BOARD_INTERFACE": {
             "value": "sys_clock"
           },
           "MMCM_CLKFBOUT_MULT_F": {
-            "value": "8.000"
+            "value": "36.500"
           },
           "MMCM_CLKOUT0_DIVIDE_F": {
-            "value": "50.000"
+            "value": "36.500"
+          },
+          "MMCM_DIVCLK_DIVIDE": {
+            "value": "5"
           },
           "USE_BOARD_FLOW": {
             "value": "true"
@@ -805,119 +735,11 @@
           "PCW_IRQ_F2P_MODE": {
             "value": "DIRECT"
           },
-          "PCW_MIO_28_IOTYPE": {
-            "value": "LVCMOS 1.8V"
-          },
-          "PCW_MIO_28_PULLUP": {
-            "value": "enabled"
-          },
-          "PCW_MIO_28_SLEW": {
-            "value": "fast"
-          },
-          "PCW_MIO_29_IOTYPE": {
-            "value": "LVCMOS 1.8V"
-          },
-          "PCW_MIO_29_PULLUP": {
-            "value": "enabled"
-          },
-          "PCW_MIO_29_SLEW": {
-            "value": "fast"
-          },
-          "PCW_MIO_30_IOTYPE": {
-            "value": "LVCMOS 1.8V"
-          },
-          "PCW_MIO_30_PULLUP": {
-            "value": "enabled"
-          },
-          "PCW_MIO_30_SLEW": {
-            "value": "fast"
-          },
-          "PCW_MIO_31_IOTYPE": {
-            "value": "LVCMOS 1.8V"
-          },
-          "PCW_MIO_31_PULLUP": {
-            "value": "enabled"
-          },
-          "PCW_MIO_31_SLEW": {
-            "value": "fast"
-          },
-          "PCW_MIO_32_IOTYPE": {
-            "value": "LVCMOS 1.8V"
-          },
-          "PCW_MIO_32_PULLUP": {
-            "value": "enabled"
-          },
-          "PCW_MIO_32_SLEW": {
-            "value": "fast"
-          },
-          "PCW_MIO_33_IOTYPE": {
-            "value": "LVCMOS 1.8V"
-          },
-          "PCW_MIO_33_PULLUP": {
-            "value": "enabled"
-          },
-          "PCW_MIO_33_SLEW": {
-            "value": "fast"
-          },
-          "PCW_MIO_34_IOTYPE": {
-            "value": "LVCMOS 1.8V"
-          },
-          "PCW_MIO_34_PULLUP": {
-            "value": "enabled"
-          },
-          "PCW_MIO_34_SLEW": {
-            "value": "fast"
-          },
-          "PCW_MIO_35_IOTYPE": {
-            "value": "LVCMOS 1.8V"
-          },
-          "PCW_MIO_35_PULLUP": {
-            "value": "enabled"
-          },
-          "PCW_MIO_35_SLEW": {
-            "value": "fast"
-          },
-          "PCW_MIO_36_IOTYPE": {
-            "value": "LVCMOS 1.8V"
-          },
-          "PCW_MIO_36_PULLUP": {
-            "value": "enabled"
-          },
-          "PCW_MIO_36_SLEW": {
-            "value": "fast"
-          },
-          "PCW_MIO_37_IOTYPE": {
-            "value": "LVCMOS 1.8V"
-          },
-          "PCW_MIO_37_PULLUP": {
-            "value": "enabled"
-          },
-          "PCW_MIO_37_SLEW": {
-            "value": "fast"
-          },
-          "PCW_MIO_38_IOTYPE": {
-            "value": "LVCMOS 1.8V"
-          },
-          "PCW_MIO_38_PULLUP": {
-            "value": "enabled"
-          },
-          "PCW_MIO_38_SLEW": {
-            "value": "fast"
-          },
-          "PCW_MIO_39_IOTYPE": {
-            "value": "LVCMOS 1.8V"
-          },
-          "PCW_MIO_39_PULLUP": {
-            "value": "enabled"
-          },
-          "PCW_MIO_39_SLEW": {
-            "value": "fast"
-          },
           "PCW_MIO_TREE_PERIPHERALS": {
-            "value": "unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned"
+            "value": "unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned"
           },
           "PCW_MIO_TREE_SIGNALS": {
-            "value": "unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#data[4]#dir#stp#nxt#data[0]#data[1]#data[2]#data[3]#clk#data[5]#data[6]#data[7]#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned"
+            "value": "unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned"
           },
           "PCW_NAND_PERIPHERAL_ENABLE": {
             "value": "0"
@@ -1567,10 +1389,6 @@
                 "value": "AXI4LITE",
                 "value_src": "constant"
               },
-              "FREQ_HZ": {
-                "value": "20000000",
-                "value_src": "ip_prop"
-              },
               "ID_WIDTH": {
                 "value": "0",
                 "value_src": "constant"
@@ -1654,14 +1472,6 @@
               "MAX_BURST_LENGTH": {
                 "value": "1",
                 "value_src": "auto"
-              },
-              "PHASE": {
-                "value": "0.0",
-                "value_src": "ip_prop"
-              },
-              "CLK_DOMAIN": {
-                "value": "/clk_wiz_clk_out1",
-                "value_src": "ip_prop"
               }
             },
             "address_space_ref": "m_axil",
@@ -1800,10 +1610,6 @@
                 "value": "AXI4LITE",
                 "value_src": "constant"
               },
-              "FREQ_HZ": {
-                "value": "20000000",
-                "value_src": "ip_prop"
-              },
               "ID_WIDTH": {
                 "value": "0",
                 "value_src": "constant"
@@ -1887,22 +1693,6 @@
               "MAX_BURST_LENGTH": {
                 "value": "1",
                 "value_src": "auto"
-              },
-              "PHASE": {
-                "value": "0.0",
-                "value_src": "ip_prop"
-              },
-              "CLK_DOMAIN": {
-                "value": "/clk_wiz_clk_out1",
-                "value_src": "ip_prop"
-              },
-              "NUM_READ_THREADS": {
-                "value": "4",
-                "value_src": "const_prop"
-              },
-              "NUM_WRITE_THREADS": {
-                "value": "4",
-                "value_src": "const_prop"
               }
             },
             "port_maps": {
@@ -2031,29 +1821,11 @@
               "ASSOCIATED_BUSIF": {
                 "value": "m_axil:s_axil",
                 "value_src": "constant"
-              },
-              "FREQ_HZ": {
-                "value": "20000000",
-                "value_src": "ip_prop"
-              },
-              "PHASE": {
-                "value": "0.0",
-                "value_src": "ip_prop"
-              },
-              "CLK_DOMAIN": {
-                "value": "/clk_wiz_clk_out1",
-                "value_src": "ip_prop"
               }
             }
           },
           "arstn": {
-            "direction": "I",
-            "parameters": {
-              "POLARITY": {
-                "value": "ACTIVE_LOW",
-                "value_src": "const_prop"
-              }
-            }
+            "direction": "I"
           }
         },
         "addressing": {

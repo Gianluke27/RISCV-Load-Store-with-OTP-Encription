@@ -1,7 +1,7 @@
 //Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
-//Date        : Sun Sep 17 01:20:11 2023
+//Date        : Fri Sep 22 15:31:25 2023
 //Host        : Gianluca running 64-bit major release  (build 9200)
 //Command     : generate_target RISCV_demonstrator.bd
 //Design      : RISCV_demonstrator

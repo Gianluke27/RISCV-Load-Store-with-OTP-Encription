@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
 -- Date        : Tue Sep 12 16:00:44 2023
 -- Host        : Gianluca running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_decoder2to4_0_0/RISCV_demonstrator_decoder2to4_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top RISCV_demonstrator_decoder2to4_0_0 -prefix
+--               RISCV_demonstrator_decoder2to4_0_0_ RISCV_demonstrator_decoder2to4_0_0_sim_netlist.vhdl
 -- Design      : RISCV_demonstrator_decoder2to4_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.

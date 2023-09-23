@@ -1,7 +1,7 @@
 -- Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
--- Date        : Sat Sep  9 18:51:31 2023
+-- Date        : Mon Sep 18 17:22:20 2023
 -- Host        : Gianluca running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_axi_gpio_0_1/RISCV_demonstrator_axi_gpio_0_1_sim_netlist.vhdl

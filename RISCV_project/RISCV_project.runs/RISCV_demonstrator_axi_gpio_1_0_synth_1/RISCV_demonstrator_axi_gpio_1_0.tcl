@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "RISCV_demonstrator_axi_gpio_1_0_synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 4
 set_msg_config -id {HDL-1065} -limit 10000
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
@@ -91,7 +92,7 @@ set_property ip_output_repo h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.srcs/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_axi_gpio_1_0/RISCV_demonstrator_axi_gpio_1_0.xci
+read_ip -quiet H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.srcs/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_axi_gpio_1_0/RISCV_demonstrator_axi_gpio_1_0.xci
 set_property used_in_implementation false [get_files -all h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_axi_gpio_1_0/RISCV_demonstrator_axi_gpio_1_0_board.xdc]
 set_property used_in_implementation false [get_files -all h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_axi_gpio_1_0/RISCV_demonstrator_axi_gpio_1_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_axi_gpio_1_0/RISCV_demonstrator_axi_gpio_1_0.xdc]

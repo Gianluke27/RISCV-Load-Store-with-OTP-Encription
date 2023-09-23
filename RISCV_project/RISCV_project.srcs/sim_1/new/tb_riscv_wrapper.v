@@ -33,11 +33,12 @@
 /* 
     CLK freq: 1/period (GHz)
     period: 5   ->  200 MHz
+    period: 8   ->  125 MHz
     period: 10  ->  100 MHz
     period: 20  ->   50 MHz
     period: 50  ->   20 MHz
     //*/
-`define CLK_PERIOD              (5)
+`define CLK_PERIOD              (8)
 
 // TB Type
 `define TB_TYPE                 ("Test_Demonstator")                    //"Test" or "Test_Demonstator"
@@ -47,7 +48,7 @@ Tests:
 RISCV_test_01.mif
 test_01.mif
 */
-`define FILE_NAME               ("RISCV_demonstrator_test_01_sim.mif")   
+`define FILE_NAME               ("RISCV_demonstrator_03_ASM_test_sim.mif")   
 
 module tb_riscv_wrapper();
     reg tb_ACLK;    // PS clock
@@ -172,9 +173,9 @@ module tb_riscv_wrapper();
         repeat (1000) @(posedge temp_clk);
         SW=2'b11;
         repeat (19000) @(posedge temp_clk);
-        write_demonstrator(1476, 64'h0123456789abcdef);
+        write_demonstrator(1471, 64'h0123456789abcdef);
         SW=2'b00;
-        repeat (20000) @(posedge temp_clk);
+        repeat (200) @(posedge temp_clk);
         $finish;
         //$stop;
     end

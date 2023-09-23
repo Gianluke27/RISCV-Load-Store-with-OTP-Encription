@@ -45,16 +45,25 @@
         "inst_hier_path": "clk_wiz_0",
         "parameters": {
           "CLKOUT1_JITTER": {
-            "value": "172.798"
+            "value": "312.659"
+          },
+          "CLKOUT1_PHASE_ERROR": {
+            "value": "245.713"
           },
           "CLKOUT1_REQUESTED_OUT_FREQ": {
-            "value": "20.000"
+            "value": "25.000"
           },
           "CLK_IN1_BOARD_INTERFACE": {
             "value": "sys_clock"
           },
+          "MMCM_CLKFBOUT_MULT_F": {
+            "value": "36.500"
+          },
           "MMCM_CLKOUT0_DIVIDE_F": {
-            "value": "50.000"
+            "value": "36.500"
+          },
+          "MMCM_DIVCLK_DIVIDE": {
+            "value": "5"
           },
           "USE_BOARD_FLOW": {
             "value": "true"

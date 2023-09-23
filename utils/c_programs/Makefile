@@ -1,7 +1,7 @@
 # Compiler settings
 CC := riscv32-unknown-elf-gcc
 #CFLAGS := -march=rv32i_zicsr -mabi=ilp32 -nostartfiles -nostdlib
-CFLAGS := -march=rv32i_zicsr -mabi=ilp32 -nostdlib
+CFLAGS := -march=rv32im_zicsr -mabi=ilp32 -nostdlib
 #CFLAGS := -march=rv32i_zicsr -mabi=ilp32
 
 # Directories

@@ -96,14 +96,14 @@ module biriscv_issue
     ,input  [ 31:0]  writeback_exec1_value_i
     ,input           writeback_mem_valid_i
     ,input  [ 31:0]  writeback_mem_value_i
-    ,input  [  5:0]  writeback_mem_exception_i
+    ,input  [  6:0]  writeback_mem_exception_i
     ,input  [ 31:0]  writeback_mul_value_i
     ,input           writeback_div_valid_i
     ,input  [ 31:0]  writeback_div_value_i
     ,input  [ 31:0]  csr_result_e1_value_i
     ,input           csr_result_e1_write_i
     ,input  [ 31:0]  csr_result_e1_wdata_i
-    ,input  [  5:0]  csr_result_e1_exception_i
+    ,input  [  6:0]  csr_result_e1_exception_i
     ,input           lsu_stall_i
     ,input           take_interrupt_i
 
@@ -170,7 +170,7 @@ module biriscv_issue
     ,output          csr_writeback_write_o
     ,output [ 11:0]  csr_writeback_waddr_o
     ,output [ 31:0]  csr_writeback_wdata_o
-    ,output [  5:0]  csr_writeback_exception_o
+    ,output [  6:0]  csr_writeback_exception_o
     ,output [ 31:0]  csr_writeback_exception_pc_o
     ,output [ 31:0]  csr_writeback_exception_addr_o
     ,output          exec0_hold_o

@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "start.h": "c"
+        "start.h": "c",
+        "axi_gpio.h": "c"
     }
 }

@@ -70,8 +70,7 @@ module biriscv_lsu
     ,output          mem_flush_o
     ,output          writeback_valid_o
     ,output [ 31:0]  writeback_value_o
-    ,output [  5:0]  writeback_exception_o
-    ,output          mem_enc_error_o
+    ,output [  6:0]  writeback_exception_o
     ,output          stall_o
 );
 
@@ -407,20 +406,25 @@ assign writeback_value_o    = wb_result_r;
 
 wire fault_load_align_w     = mem_unaligned_e2_q & resp_load_w;
 wire fault_store_align_w    = mem_unaligned_e2_q & ~resp_load_w;
-wire fault_load_bus_w       = mem_error_i &&  resp_load_w;
-wire fault_store_bus_w      = mem_error_i && ~resp_load_w;
+wire fault_load_bus_w       = mem_error_i &&  resp_load_w && ~mem_enc_error_i;
+wire fault_store_bus_w      = mem_error_i && ~resp_load_w && ~mem_enc_error_i;
+wire fault_enc_load_bus_w   = mem_error_i &&  resp_load_w &&  mem_enc_error_i;
+wire fault_enc_store_bus_w  = mem_error_i && ~resp_load_w &&  mem_enc_error_i;
 wire fault_load_page_w      = mem_error_i && mem_load_fault_i;
 wire fault_store_page_w     = mem_error_i && mem_store_fault_i;
 
 
-assign writeback_exception_o         = fault_load_align_w  ? `EXCEPTION_MISALIGNED_LOAD:
-                                       fault_store_align_w ? `EXCEPTION_MISALIGNED_STORE:
-                                       fault_load_page_w   ? `EXCEPTION_PAGE_FAULT_LOAD:
-                                       fault_store_page_w  ? `EXCEPTION_PAGE_FAULT_STORE:
-                                       fault_load_bus_w    ? `EXCEPTION_FAULT_LOAD:
-                                       fault_store_bus_w   ? `EXCEPTION_FAULT_STORE:
+assign writeback_exception_o         = fault_load_align_w       ? `EXCEPTION_MISALIGNED_LOAD:
+                                       fault_store_align_w      ? `EXCEPTION_MISALIGNED_STORE:
+                                       fault_load_page_w        ? `EXCEPTION_PAGE_FAULT_LOAD:
+                                       fault_store_page_w       ? `EXCEPTION_PAGE_FAULT_STORE:
+                                       fault_load_bus_w         ? `EXCEPTION_FAULT_LOAD:
+                                       fault_store_bus_w        ? `EXCEPTION_FAULT_STORE:
+                                       fault_enc_load_bus_w     ? `EXCEPTION_ENC_FAULT_LOAD:
+                                       fault_enc_store_bus_w    ? `EXCEPTION_ENC_FAULT_STORE:
                                        `EXCEPTION_W'b0;
 
+/*
 generate
 if(SUPPORT_ENCRYPTION)
 begin
@@ -436,6 +440,7 @@ begin
     assign mem_enc_error_o = mem_enc_error_q;
 end
 endgenerate
+//*/
 
 endmodule 
 

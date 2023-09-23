@@ -38,8 +38,8 @@ module RandomGenerator
 wire [31:0] x1,x2;
 reg [ 31:0] random_num_q;
 
-localparam [31:0]Q = 32'd8005;
-localparam [31:0]C = 32'd23;
+localparam [31:0]Q = 32'd1664525;
+localparam [31:0]C = 32'd1013904223;
 
 assign x1 = (Q * random_num_o);
 assign x2 = (x1 + C);
@@ -49,7 +49,7 @@ assign random_num_o = random_num_q;
 always @(posedge clk_i)
 begin
 	if(rst_i == 1'd1)
-		random_num_q <= 32'd17;
+		random_num_q <= 32'd1013904223;
 	else
 		if(en_i)
 			random_num_q = x2;

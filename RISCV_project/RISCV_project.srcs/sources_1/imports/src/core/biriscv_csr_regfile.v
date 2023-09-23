@@ -45,10 +45,9 @@ module biriscv_csr_regfile
     ,input [31:0]    cpu_id_i
     ,input [31:0]    misa_i
 
-    ,input [5:0]     exception_i
+    ,input [6:0]     exception_i
     ,input [31:0]    exception_pc_i
     ,input [31:0]    exception_addr_i
-    ,input           exception_enc_mem_d_i      // ADDED INPUT - memory data encryption exception
 
     // CSR read port
     ,input           csr_ren_i
@@ -178,6 +177,7 @@ begin
     `CSR_MIE:      rdata_r = csr_mie_q & `CSR_MIE_MASK;
     `CSR_MCYCLE,
     `CSR_MTIME:    rdata_r = csr_mcycle_q;
+    `CSR_MCYCLEH,
     `CSR_MTIMEH:   rdata_r = csr_mcycle_h_q;
     `CSR_MHARTID:  rdata_r = cpu_id_i;
     `CSR_MISA:     rdata_r = misa_i;
@@ -375,12 +375,14 @@ begin
         `EXCEPTION_MISALIGNED_STORE,
         `EXCEPTION_FAULT_STORE,
         `EXCEPTION_PAGE_FAULT_LOAD,
-        `EXCEPTION_PAGE_FAULT_STORE:    csr_stval_r = exception_addr_i;
+        `EXCEPTION_PAGE_FAULT_STORE,
+        `EXCEPTION_ENC_FAULT_STORE,
+        `EXCEPTION_ENC_FAULT_LOAD:      csr_stval_r = exception_addr_i;
         default:                        csr_stval_r = 32'b0;
         endcase
 
         // Fault cause
-        csr_scause_r = {28'b0, exception_i[3:0]};
+        csr_scause_r = {27'b0, exception_i[4:0]};
     end
     // Exception - handled in machine mode
     else if (is_exception_w)
@@ -409,19 +411,13 @@ begin
         `EXCEPTION_MISALIGNED_STORE,
         `EXCEPTION_FAULT_STORE,
         `EXCEPTION_PAGE_FAULT_LOAD,
-        `EXCEPTION_PAGE_FAULT_STORE:    csr_mtval_r = exception_addr_i;
+        `EXCEPTION_PAGE_FAULT_STORE,
+        `EXCEPTION_ENC_FAULT_STORE,
+        `EXCEPTION_ENC_FAULT_LOAD:      csr_mtval_r = exception_addr_i;
         default:                        csr_mtval_r = 32'b0;
         endcase        
 
-        // Fault cause 
-        if(SUPPORT_ENCRYPTION)
-        begin
-            csr_mcause_r = {26'b0, exception_enc_mem_d_i, 1'b0, exception_i[3:0]};
-        end
-        else
-        begin
-            csr_mcause_r = {28'b0, exception_i[3:0]};
-        end
+        csr_mcause_r = {27'b0, exception_i[4:0]};
     end
     else
     begin

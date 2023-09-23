@@ -48,7 +48,7 @@ module biriscv_pipe_ctrl
     ,input           issue_branch_i
     ,input           issue_rd_valid_i
     ,input  [4:0]    issue_rd_i
-    ,input  [5:0]    issue_exception_i
+    ,input  [6:0]    issue_exception_i
     ,input           take_interrupt_i
     ,input           issue_branch_taken_i
     ,input [31:0]    issue_branch_target_i
@@ -64,7 +64,7 @@ module biriscv_pipe_ctrl
     ,input [ 31:0]   csr_result_value_e1_i
     ,input           csr_result_write_e1_i
     ,input [ 31:0]   csr_result_wdata_e1_i
-    ,input [  5:0]   csr_result_exception_e1_i
+    ,input [  6:0]   csr_result_exception_e1_i
 
     // Execution stage 1
     ,output          load_e1_o
@@ -80,7 +80,7 @@ module biriscv_pipe_ctrl
     // Execution stage 2: Other results
     ,input           mem_complete_i
     ,input [31:0]    mem_result_e2_i
-    ,input  [5:0]    mem_exception_e2_i
+    ,input  [6:0]    mem_exception_e2_i
     ,input [31:0]    mul_result_e2_i
 
     // Execution stage 2
@@ -102,7 +102,7 @@ module biriscv_pipe_ctrl
     ,output [31:0]   opcode_wb_o
     ,output [31:0]   operand_ra_wb_o
     ,output [31:0]   operand_rb_wb_o
-    ,output [5:0]    exception_wb_o
+    ,output [6:0]    exception_wb_o
     ,output          csr_write_wb_o
     ,output [11:0]   csr_waddr_wb_o
     ,output [31:0]   csr_wdata_wb_o
@@ -392,7 +392,9 @@ begin
     `EXCEPTION_MISALIGNED_STORE,
     `EXCEPTION_FAULT_STORE,
     `EXCEPTION_PAGE_FAULT_LOAD,
-    `EXCEPTION_PAGE_FAULT_STORE:
+    `EXCEPTION_PAGE_FAULT_STORE,
+    `EXCEPTION_ENC_FAULT_STORE,
+    `EXCEPTION_ENC_FAULT_LOAD:
         valid_wb_q      <= 1'b0;
     default:
         valid_wb_q      <= valid_e2_q;

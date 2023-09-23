@@ -1,7 +1,7 @@
-Running: xsim.dir/tb_riscv_wrapper_behav/xsimk.exe -simmode gui -wdb tb_riscv_wrapper_behav.wdb -simrunnum 0 -socket 6478
+Running: xsim.dir/tb_riscv_wrapper_behav/xsimk.exe -simmode gui -wdb tb_riscv_wrapper_behav.wdb -simrunnum 0 -socket 9893
 Design successfully loaded
-Design Loading Memory Usage: 20540 KB (Peak: 20540 KB)
-Design Loading CPU Usage: 61 ms
+Design Loading Memory Usage: 20560 KB (Peak: 20560 KB)
+Design Loading CPU Usage: 46 ms
 Simulation completed
-Simulation Memory Usage: 34056 KB (Peak: 34056 KB)
-Simulation CPU Usage: 374 ms
+Simulation Memory Usage: 44120 KB (Peak: 44120 KB)
+Simulation CPU Usage: 11312 ms

@@ -115,7 +115,6 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
-set_msg_config -id {HDL-1065} -limit 10000
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Write Bitstream" START { ROLLUP_AUTO }
@@ -125,7 +124,7 @@ set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
   set_param chipscope.maxJobs 4
-  open_checkpoint RISCV_demonstrator_wrapper_routed.dcp
+  open_checkpoint RISCV_demonstrator_wrapper_postroute_physopt.dcp
   set_property webtalk.parent_dir H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.cache/wt [current_project]
 set_property TOP RISCV_demonstrator_wrapper [current_fileset]
 OPTRACE "read constraints: write_bitstream" START { }

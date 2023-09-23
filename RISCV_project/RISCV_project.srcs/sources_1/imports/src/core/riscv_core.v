@@ -114,7 +114,7 @@ wire  [ 31:0]  opcode0_pc_w;
 wire  [ 31:0]  opcode0_ra_operand_w;
 wire           mmu_ifetch_valid_w;
 wire           csr_opcode_invalid_w;
-wire  [  5:0]  csr_writeback_exception_w;
+wire  [  6:0]  csr_writeback_exception_w;
 wire           branch_exec1_is_call_w;
 wire           branch_exec1_is_not_taken_w;
 wire  [  1:0]  branch_d_exec0_priv_w;
@@ -131,7 +131,7 @@ wire           branch_request_w;
 wire  [ 31:0]  csr_opcode_pc_w;
 wire           mmu_lsu_ack_w;
 wire           writeback_mem_valid_w;
-wire  [  5:0]  csr_result_e1_exception_w;
+wire  [  6:0]  csr_result_e1_exception_w;
 wire           fetch0_instr_div_w;
 wire           fetch0_fault_fetch_w;
 wire  [ 31:0]  branch_info_pc_w;
@@ -184,7 +184,7 @@ wire           interrupt_inhibit_w;
 wire           mmu_ifetch_error_w;
 wire  [ 31:0]  branch_exec1_pc_w;
 wire           fetch0_instr_csr_w;
-wire  [  5:0]  writeback_mem_exception_w;
+wire  [  6:0]  writeback_mem_exception_w;
 wire           fetch1_instr_branch_w;
 wire           fetch0_valid_w;
 wire           csr_result_e1_write_w;
@@ -254,7 +254,6 @@ wire  [  4:0]  lsu_opcode_ra_idx_w;
 wire  [ 31:0]  csr_writeback_exception_pc_w;
 wire           fetch1_instr_mul_w;
 wire           mmu_store_fault_w;
-wire           mem_enc_error_w;
 
 
 biriscv_frontend
@@ -445,7 +444,6 @@ u_lsu
     ,.writeback_valid_o(writeback_mem_valid_w)
     ,.writeback_value_o(writeback_mem_value_w)
     ,.writeback_exception_o(writeback_mem_exception_w)
-    ,.mem_enc_error_o(mem_enc_error_w)
     ,.stall_o(lsu_stall_w)
 );
 
@@ -472,7 +470,6 @@ u_csr
     ,.opcode_rb_idx_i(csr_opcode_rb_idx_w)
     ,.opcode_ra_operand_i(csr_opcode_ra_operand_w)
     ,.opcode_rb_operand_i(csr_opcode_rb_operand_w)
-    ,.csr_mem_d_enc_error_i(mem_enc_error_w)
     ,.csr_writeback_write_i(csr_writeback_write_w)
     ,.csr_writeback_waddr_i(csr_writeback_waddr_w)
     ,.csr_writeback_wdata_i(csr_writeback_wdata_w)

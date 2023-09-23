@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1695029091" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/RISCV_demonstrator_wrapper.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1695074634" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/RISCV_demonstrator_wrapper.dcp">
   <File Type="PA-TCL" Name="RISCV_demonstrator_wrapper.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="RISCV_demonstrator_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="RISCV_demonstrator_wrapper_reports.tcl"/>
   <File Type="RDS-RDS" Name="RISCV_demonstrator_wrapper.vds"/>
   <File Type="RDS-UTIL" Name="RISCV_demonstrator_wrapper_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="RISCV_demonstrator_wrapper_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="RISCV_demonstrator_wrapper.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="RISCV_demonstrator_wrapper_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="RISCV_demonstrator_wrapper_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/decoder2to4.v">
@@ -347,13 +344,12 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="RISCV_demonstrator_processing_system7_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="RISCV_demonstrator_decoder1to2_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="RISCV_demonstrator_clk_wiz_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="RISCV_demonstrator_rst_clk_wiz_100M_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="RISCV_demonstrator_decoder2to4_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="RISCV_demonstrator_axi_gpio_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="RISCV_demonstrator_axi_gpio_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="RISCV_demonstrator_xbar_0"/>
   <BlockFileSet Type="BlockSrcs" Name="RISCV_demonstrator_riscv_wrapper_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="RISCV_demonstrator_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="RISCV_demonstrator_rst_clk_wiz_100M_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="RISCV_demonstrator_clk_wiz_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="RISCV_demonstrator_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="RISCV_demonstrator_auto_pc_0"/>
 </GenRun>
