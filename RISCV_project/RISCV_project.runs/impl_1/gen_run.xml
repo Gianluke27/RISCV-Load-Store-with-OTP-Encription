@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1695074640">
-  <File Type="ROUTE-PWR" Name="RISCV_demonstrator_wrapper_power_routed.rpt"/>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1695466065">
   <File Type="PA-TCL" Name="RISCV_demonstrator_wrapper.tcl"/>
-  <File Type="ROUTE-PWR-SUM" Name="RISCV_demonstrator_wrapper_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="RISCV_demonstrator_wrapper_reports.tcl"/>
   <File Type="BITSTR-MSK" Name="RISCV_demonstrator_wrapper.msk"/>
-  <File Type="ROUTE-CLK" Name="RISCV_demonstrator_wrapper_clock_utilization_routed.rpt"/>
   <File Type="RDI-RDI" Name="RISCV_demonstrator_wrapper.vdi"/>
   <File Type="BG-BIT" Name="RISCV_demonstrator_wrapper.bit"/>
   <File Type="BG-DRC" Name="RISCV_demonstrator_wrapper.drc"/>
@@ -15,33 +12,16 @@
   <File Type="BITSTR-NKY" Name="RISCV_demonstrator_wrapper.nky"/>
   <File Type="BITSTR-BMM" Name="RISCV_demonstrator_wrapper_bd.bmm"/>
   <File Type="BITSTR-MMI" Name="RISCV_demonstrator_wrapper.mmi"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="RISCV_demonstrator_wrapper_methodology_drc_routed.rpt"/>
   <File Type="BITSTR-SYSDEF" Name="RISCV_demonstrator_wrapper.sysdef"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="RISCV_demonstrator_wrapper_methodology_drc_routed.pb"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="RISCV_demonstrator_wrapper.ltx"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="OPT-DRC" Name="RISCV_demonstrator_wrapper_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="RISCV_demonstrator_wrapper.hwdef"/>
-  <File Type="PLACE-IO" Name="RISCV_demonstrator_wrapper_io_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="RISCV_demonstrator_wrapper_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="RISCV_demonstrator_wrapper_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="RISCV_demonstrator_wrapper_control_sets_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="RISCV_demonstrator_wrapper_incremental_reuse_pre_placed.rpt"/>
-  <File Type="ROUTE-DRC" Name="RISCV_demonstrator_wrapper_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="RISCV_demonstrator_wrapper_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="RISCV_demonstrator_wrapper_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="RISCV_demonstrator_wrapper_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="RISCV_demonstrator_wrapper_route_status.pb"/>
   <File Type="ROUTE-DCP" Name="RISCV_demonstrator_wrapper_routed.dcp"/>
   <File Type="ROUTE-ERROR-DCP" Name="RISCV_demonstrator_wrapper_routed_error.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="RISCV_demonstrator_wrapper_routed_bb.dcp"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="RISCV_demonstrator_wrapper_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="RISCV_demonstrator_wrapper_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="RISCV_demonstrator_wrapper_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-BUS-SKEW" Name="RISCV_demonstrator_wrapper_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="RISCV_demonstrator_wrapper_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="RISCV_demonstrator_wrapper_bus_skew_routed.rpx"/>
   <File Type="OPT-DCP" Name="RISCV_demonstrator_wrapper_opt.dcp"/>
   <File Type="PLACE-DCP" Name="RISCV_demonstrator_wrapper_placed.dcp"/>
   <File Type="PWROPT-DCP" Name="RISCV_demonstrator_wrapper_pwropt.dcp"/>
@@ -49,8 +29,6 @@
   <File Type="PHYSOPT-DCP" Name="RISCV_demonstrator_wrapper_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="RISCV_demonstrator_wrapper_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="RISCV_demonstrator_wrapper_postroute_physopt_bb.dcp"/>
-  <File Type="ROUTE-DRC-RPX" Name="RISCV_demonstrator_wrapper_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="RISCV_demonstrator_wrapper_methodology_drc_routed.rpx"/>
   <File Type="PDI-FILE" Name="RISCV_demonstrator_wrapper.pdi"/>
   <File Type="RCFI_FILE" Name="RISCV_demonstrator_wrapper.rcfi"/>
   <File Type="CFI_FILE" Name="RISCV_demonstrator_wrapper.cfi"/>
@@ -360,6 +338,38 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/imports/output/RISCV_demonstrator_01_sim.mif">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../utils/python_scripts/bin_2_mem/output/RISCV_demonstrator_01_sim.mif"/>
+        <Attr Name="ImportTime" Val="1695140407"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/output/RISCV_demonstrator_02_ASM_test_sim.mif">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../utils/python_scripts/bin_2_mem/output/RISCV_demonstrator_02_ASM_test_sim.mif"/>
+        <Attr Name="ImportTime" Val="1695252147"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/output/RISCV_demonstrator_03_ASM_test_sim.mif">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../utils/python_scripts/bin_2_mem/output/RISCV_demonstrator_03_ASM_test_sim.mif"/>
+        <Attr Name="ImportTime" Val="1695422662"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/output/RISCV_dem_01.mif">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../utils/python_scripts/bin_2_mem/output/RISCV_dem_01.mif"/>
+        <Attr Name="ImportTime" Val="1695465881"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="RISCV_demonstrator_wrapper"/>
@@ -392,28 +402,23 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Flow_RunPostRoutePhysOpt" Flow="Vivado Implementation 2021"/>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2021"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>
     <Step Id="place_design"/>
     <Step Id="post_place_power_opt_design"/>
-    <Step Id="phys_opt_design">
-      <Option Id="Directive">0</Option>
-    </Step>
-    <Step Id="route_design">
-      <Option Id="MoreOptsStr"><![CDATA[-tns_cleanup]]></Option>
-    </Step>
-    <Step Id="post_route_phys_opt_design" EnableStepBool="1"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
     <Step Id="write_device_image"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="RISCV_demonstrator_axi_gpio_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="RISCV_demonstrator_axi_gpio_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="RISCV_demonstrator_riscv_wrapper_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="RISCV_demonstrator_axi_gpio_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="RISCV_demonstrator_xbar_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="RISCV_demonstrator_rst_clk_wiz_100M_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="RISCV_demonstrator_clk_wiz_0"/>
   <BlockFileSet Type="BlockSrcs" Name="RISCV_demonstrator_processing_system7_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="RISCV_demonstrator_auto_pc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="RISCV_demonstrator_clk_wiz_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="RISCV_demonstrator_rst_clk_wiz_100M_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="RISCV_demonstrator_riscv_wrapper_0_1"/>
 </GenRun>

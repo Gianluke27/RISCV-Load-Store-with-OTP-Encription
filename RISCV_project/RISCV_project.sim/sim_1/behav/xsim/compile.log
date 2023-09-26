@@ -86,10 +86,10 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "H:/TesiMagistrale/Github/RISCV_Enc_
 INFO: [VRFC 10-311] analyzing module RISCV_demonstrator_decoder1to2_0_0
 INFO: [VRFC 10-2263] Analyzing Verilog file "H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.ip_user_files/bd/RISCV_demonstrator/ip/RISCV_demonstrator_processing_system7_0_0/sim/RISCV_demonstrator_processing_system7_0_0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module RISCV_demonstrator_processing_system7_0_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.ip_user_files/bd/RISCV_demonstrator/ip/RISCV_demonstrator_riscv_wrapper_0_1/sim/RISCV_demonstrator_riscv_wrapper_0_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module RISCV_demonstrator_riscv_wrapper_0_1
 INFO: [VRFC 10-2263] Analyzing Verilog file "H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.ip_user_files/bd/RISCV_demonstrator/ip/RISCV_demonstrator_auto_pc_0/sim/RISCV_demonstrator_auto_pc_0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module RISCV_demonstrator_auto_pc_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.ip_user_files/bd/RISCV_demonstrator/ip/RISCV_demonstrator_riscv_wrapper_0_1/sim/RISCV_demonstrator_riscv_wrapper_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISCV_demonstrator_riscv_wrapper_0_1
 INFO: [VRFC 10-2263] Analyzing Verilog file "H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.ip_user_files/bd/RISCV_demonstrator/sim/RISCV_demonstrator.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module RISCV_demonstrator
 INFO: [VRFC 10-311] analyzing module RISCV_demonstrator_ps7_0_axi_periph_1

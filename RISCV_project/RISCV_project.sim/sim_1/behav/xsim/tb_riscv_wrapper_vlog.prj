@@ -1,5 +1,5 @@
 # compile verilog/system verilog design source files
-verilog xil_defaultlib  --include "../../../../RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ipshared/62b6" --include "../../../../RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ipshared/ec67/hdl" --include "../../../../RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ipshared/3007/hdl" --include "../../../../RISCV_project.gen/sources_1/bd/RISCV_bd/ipshared/62b6" --include "../../../../RISCV_project.srcs/sim_1/tb/tb_tcm" --include "../../../../RISCV_project.srcs/sim_1/tb/tb_top" --include "H:/TesiMagistrale/Software/Xilinx/Vivado/2021.2/data/xilinx_vip/include" \
+verilog xil_defaultlib  --include "../../../../RISCV_project.gen/sources_1/bd/RISCV_bd/ipshared/62b6" --include "../../../../RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ipshared/62b6" --include "../../../../RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ipshared/ec67/hdl" --include "../../../../RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ipshared/3007/hdl" --include "../../../../RISCV_project.srcs/sim_1/tb/tb_tcm" --include "../../../../RISCV_project.srcs/sim_1/tb/tb_top" --include "H:/TesiMagistrale/Software/Xilinx/Vivado/2021.2/data/xilinx_vip/include" \
 "../../../../RISCV_project.srcs/sources_1/imports/src/tcm/RandomGenerator.v" \
 "../../../../RISCV_project.srcs/sources_1/imports/src/core/biriscv_defs.v" \
 "../../../../RISCV_project.srcs/sources_1/imports/src/core/biriscv_alu.v" \
@@ -39,8 +39,8 @@ verilog xil_defaultlib  --include "../../../../RISCV_project.gen/sources_1/bd/RI
 "../../../../RISCV_project.ip_user_files/bd/RISCV_demonstrator/ip/RISCV_demonstrator_decoder2to4_0_0/sim/RISCV_demonstrator_decoder2to4_0_0.v" \
 "../../../../RISCV_project.ip_user_files/bd/RISCV_demonstrator/ip/RISCV_demonstrator_decoder1to2_0_0/sim/RISCV_demonstrator_decoder1to2_0_0.v" \
 "../../../../RISCV_project.ip_user_files/bd/RISCV_demonstrator/ip/RISCV_demonstrator_processing_system7_0_0/sim/RISCV_demonstrator_processing_system7_0_0.v" \
-"../../../../RISCV_project.ip_user_files/bd/RISCV_demonstrator/ip/RISCV_demonstrator_riscv_wrapper_0_1/sim/RISCV_demonstrator_riscv_wrapper_0_1.v" \
 "../../../../RISCV_project.ip_user_files/bd/RISCV_demonstrator/ip/RISCV_demonstrator_auto_pc_0/sim/RISCV_demonstrator_auto_pc_0.v" \
+"../../../../RISCV_project.ip_user_files/bd/RISCV_demonstrator/ip/RISCV_demonstrator_riscv_wrapper_0_1/sim/RISCV_demonstrator_riscv_wrapper_0_1.v" \
 "../../../../RISCV_project.ip_user_files/bd/RISCV_demonstrator/sim/RISCV_demonstrator.v" \
 "../../../../RISCV_project.gen/sources_1/bd/RISCV_bd/hdl/RISCV_bd_wrapper.v" \
 "../../../../RISCV_project.gen/sources_1/bd/RISCV_demonstrator/hdl/RISCV_demonstrator_wrapper.v" \

@@ -5,20 +5,23 @@
    <db_ref_list>
       <db_ref path="tb_riscv_wrapper_behav.wdb" id="1">
          <top_modules>
+            <top_module name="axi_vip_pkg" />
             <top_module name="glbl" />
             <top_module name="ipif_pkg" />
+            <top_module name="std" />
             <top_module name="tb_riscv_wrapper" />
+            <top_module name="xil_common_vip_pkg" />
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="509,765.291 ns"></ZoomStartTime>
-      <ZoomEndTime time="512,065.292 ns"></ZoomEndTime>
-      <Cursor1Time time="507,570.760 ns"></Cursor1Time>
+      <ZoomStartTime time="8,411,333.593 ns"></ZoomStartTime>
+      <ZoomEndTime time="8,412,731.594 ns"></ZoomEndTime>
+      <Cursor1Time time="8,411,998.593 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="306"></NameColumnWidth>
-      <ValueColumnWidth column_width="145"></ValueColumnWidth>
+      <ValueColumnWidth column_width="137"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="12" />
    <wvobject fp_name="/tb_riscv_wrapper/tb_ACLK" type="logic">
@@ -568,7 +571,6 @@
       <wvobject fp_name="group364" type="group">
          <obj_property name="label">Input</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <obj_property name="isExpanded"></obj_property>
          <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/mem_d_data_rd_i" type="array">
             <obj_property name="ElementShortName">mem_d_data_rd_i[31:0]</obj_property>
             <obj_property name="ObjectShortName">mem_d_data_rd_i[31:0]</obj_property>
@@ -893,6 +895,7 @@
       <wvobject fp_name="group452" type="group">
          <obj_property name="label">LSU</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
          <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/clk_i" type="logic">
             <obj_property name="ElementShortName">clk_i</obj_property>
             <obj_property name="ObjectShortName">clk_i</obj_property>
@@ -901,129 +904,362 @@
             <obj_property name="ElementShortName">rst_i</obj_property>
             <obj_property name="ObjectShortName">rst_i</obj_property>
          </wvobject>
-         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/opcode_valid_i" type="logic">
-            <obj_property name="ElementShortName">opcode_valid_i</obj_property>
-            <obj_property name="ObjectShortName">opcode_valid_i</obj_property>
+         <wvobject fp_name="group5388" type="group">
+            <obj_property name="label">Input</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/opcode_valid_i" type="logic">
+               <obj_property name="ElementShortName">opcode_valid_i</obj_property>
+               <obj_property name="ObjectShortName">opcode_valid_i</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/opcode_opcode_i" type="array">
+               <obj_property name="ElementShortName">opcode_opcode_i[31:0]</obj_property>
+               <obj_property name="ObjectShortName">opcode_opcode_i[31:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/opcode_pc_i" type="array">
+               <obj_property name="ElementShortName">opcode_pc_i[31:0]</obj_property>
+               <obj_property name="ObjectShortName">opcode_pc_i[31:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/opcode_invalid_i" type="logic">
+               <obj_property name="ElementShortName">opcode_invalid_i</obj_property>
+               <obj_property name="ObjectShortName">opcode_invalid_i</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/opcode_rd_idx_i" type="array">
+               <obj_property name="ElementShortName">opcode_rd_idx_i[4:0]</obj_property>
+               <obj_property name="ObjectShortName">opcode_rd_idx_i[4:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/opcode_ra_idx_i" type="array">
+               <obj_property name="ElementShortName">opcode_ra_idx_i[4:0]</obj_property>
+               <obj_property name="ObjectShortName">opcode_ra_idx_i[4:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/opcode_rb_idx_i" type="array">
+               <obj_property name="ElementShortName">opcode_rb_idx_i[4:0]</obj_property>
+               <obj_property name="ObjectShortName">opcode_rb_idx_i[4:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/opcode_ra_operand_i" type="array">
+               <obj_property name="ElementShortName">opcode_ra_operand_i[31:0]</obj_property>
+               <obj_property name="ObjectShortName">opcode_ra_operand_i[31:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/opcode_rb_operand_i" type="array">
+               <obj_property name="ElementShortName">opcode_rb_operand_i[31:0]</obj_property>
+               <obj_property name="ObjectShortName">opcode_rb_operand_i[31:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_data_rd_i" type="array">
+               <obj_property name="ElementShortName">mem_data_rd_i[31:0]</obj_property>
+               <obj_property name="ObjectShortName">mem_data_rd_i[31:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_accept_i" type="logic">
+               <obj_property name="ElementShortName">mem_accept_i</obj_property>
+               <obj_property name="ObjectShortName">mem_accept_i</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_ack_i" type="logic">
+               <obj_property name="ElementShortName">mem_ack_i</obj_property>
+               <obj_property name="ObjectShortName">mem_ack_i</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_error_i" type="logic">
+               <obj_property name="ElementShortName">mem_error_i</obj_property>
+               <obj_property name="ObjectShortName">mem_error_i</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_enc_error_i" type="logic">
+               <obj_property name="ElementShortName">mem_enc_error_i</obj_property>
+               <obj_property name="ObjectShortName">mem_enc_error_i</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_resp_tag_i" type="array">
+               <obj_property name="ElementShortName">mem_resp_tag_i[10:0]</obj_property>
+               <obj_property name="ObjectShortName">mem_resp_tag_i[10:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_load_fault_i" type="logic">
+               <obj_property name="ElementShortName">mem_load_fault_i</obj_property>
+               <obj_property name="ObjectShortName">mem_load_fault_i</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_store_fault_i" type="logic">
+               <obj_property name="ElementShortName">mem_store_fault_i</obj_property>
+               <obj_property name="ObjectShortName">mem_store_fault_i</obj_property>
+            </wvobject>
          </wvobject>
-         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/opcode_opcode_i" type="array">
-            <obj_property name="ElementShortName">opcode_opcode_i[31:0]</obj_property>
-            <obj_property name="ObjectShortName">opcode_opcode_i[31:0]</obj_property>
+         <wvobject fp_name="group5389" type="group">
+            <obj_property name="label">Output</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_o" type="array">
+               <obj_property name="ElementShortName">mem_addr_o[31:0]</obj_property>
+               <obj_property name="ObjectShortName">mem_addr_o[31:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_data_wr_o" type="array">
+               <obj_property name="ElementShortName">mem_data_wr_o[31:0]</obj_property>
+               <obj_property name="ObjectShortName">mem_data_wr_o[31:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_rd_o" type="logic">
+               <obj_property name="ElementShortName">mem_rd_o</obj_property>
+               <obj_property name="ObjectShortName">mem_rd_o</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_wr_o" type="array">
+               <obj_property name="ElementShortName">mem_wr_o[3:0]</obj_property>
+               <obj_property name="ObjectShortName">mem_wr_o[3:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_cacheable_o" type="logic">
+               <obj_property name="ElementShortName">mem_cacheable_o</obj_property>
+               <obj_property name="ObjectShortName">mem_cacheable_o</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_req_tag_o" type="array">
+               <obj_property name="ElementShortName">mem_req_tag_o[10:0]</obj_property>
+               <obj_property name="ObjectShortName">mem_req_tag_o[10:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_invalidate_o" type="logic">
+               <obj_property name="ElementShortName">mem_invalidate_o</obj_property>
+               <obj_property name="ObjectShortName">mem_invalidate_o</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_writeback_o" type="logic">
+               <obj_property name="ElementShortName">mem_writeback_o</obj_property>
+               <obj_property name="ObjectShortName">mem_writeback_o</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_flush_o" type="logic">
+               <obj_property name="ElementShortName">mem_flush_o</obj_property>
+               <obj_property name="ObjectShortName">mem_flush_o</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/writeback_valid_o" type="logic">
+               <obj_property name="ElementShortName">writeback_valid_o</obj_property>
+               <obj_property name="ObjectShortName">writeback_valid_o</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/writeback_value_o" type="array">
+               <obj_property name="ElementShortName">writeback_value_o[31:0]</obj_property>
+               <obj_property name="ObjectShortName">writeback_value_o[31:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/writeback_exception_o" type="array">
+               <obj_property name="ElementShortName">writeback_exception_o[6:0]</obj_property>
+               <obj_property name="ObjectShortName">writeback_exception_o[6:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/stall_o" type="logic">
+               <obj_property name="ElementShortName">stall_o</obj_property>
+               <obj_property name="ObjectShortName">stall_o</obj_property>
+            </wvobject>
          </wvobject>
-         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/opcode_pc_i" type="array">
-            <obj_property name="ElementShortName">opcode_pc_i[31:0]</obj_property>
-            <obj_property name="ObjectShortName">opcode_pc_i[31:0]</obj_property>
-         </wvobject>
-         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/opcode_invalid_i" type="logic">
-            <obj_property name="ElementShortName">opcode_invalid_i</obj_property>
-            <obj_property name="ObjectShortName">opcode_invalid_i</obj_property>
-         </wvobject>
-         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/opcode_rd_idx_i" type="array">
-            <obj_property name="ElementShortName">opcode_rd_idx_i[4:0]</obj_property>
-            <obj_property name="ObjectShortName">opcode_rd_idx_i[4:0]</obj_property>
-         </wvobject>
-         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/opcode_ra_idx_i" type="array">
-            <obj_property name="ElementShortName">opcode_ra_idx_i[4:0]</obj_property>
-            <obj_property name="ObjectShortName">opcode_ra_idx_i[4:0]</obj_property>
-         </wvobject>
-         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/opcode_rb_idx_i" type="array">
-            <obj_property name="ElementShortName">opcode_rb_idx_i[4:0]</obj_property>
-            <obj_property name="ObjectShortName">opcode_rb_idx_i[4:0]</obj_property>
-         </wvobject>
-         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/opcode_ra_operand_i" type="array">
-            <obj_property name="ElementShortName">opcode_ra_operand_i[31:0]</obj_property>
-            <obj_property name="ObjectShortName">opcode_ra_operand_i[31:0]</obj_property>
-         </wvobject>
-         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/opcode_rb_operand_i" type="array">
-            <obj_property name="ElementShortName">opcode_rb_operand_i[31:0]</obj_property>
-            <obj_property name="ObjectShortName">opcode_rb_operand_i[31:0]</obj_property>
-         </wvobject>
-         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_data_rd_i" type="array">
-            <obj_property name="ElementShortName">mem_data_rd_i[31:0]</obj_property>
-            <obj_property name="ObjectShortName">mem_data_rd_i[31:0]</obj_property>
-         </wvobject>
-         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_accept_i" type="logic">
-            <obj_property name="ElementShortName">mem_accept_i</obj_property>
-            <obj_property name="ObjectShortName">mem_accept_i</obj_property>
-         </wvobject>
-         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_ack_i" type="logic">
-            <obj_property name="ElementShortName">mem_ack_i</obj_property>
-            <obj_property name="ObjectShortName">mem_ack_i</obj_property>
-         </wvobject>
-         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_error_i" type="logic">
-            <obj_property name="ElementShortName">mem_error_i</obj_property>
-            <obj_property name="ObjectShortName">mem_error_i</obj_property>
-         </wvobject>
-         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_enc_error_i" type="logic">
-            <obj_property name="ElementShortName">mem_enc_error_i</obj_property>
-            <obj_property name="ObjectShortName">mem_enc_error_i</obj_property>
-         </wvobject>
-         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_resp_tag_i" type="array">
-            <obj_property name="ElementShortName">mem_resp_tag_i[10:0]</obj_property>
-            <obj_property name="ObjectShortName">mem_resp_tag_i[10:0]</obj_property>
-         </wvobject>
-         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_load_fault_i" type="logic">
-            <obj_property name="ElementShortName">mem_load_fault_i</obj_property>
-            <obj_property name="ObjectShortName">mem_load_fault_i</obj_property>
-         </wvobject>
-         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_store_fault_i" type="logic">
-            <obj_property name="ElementShortName">mem_store_fault_i</obj_property>
-            <obj_property name="ObjectShortName">mem_store_fault_i</obj_property>
-         </wvobject>
-         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_o" type="array">
-            <obj_property name="ElementShortName">mem_addr_o[31:0]</obj_property>
-            <obj_property name="ObjectShortName">mem_addr_o[31:0]</obj_property>
-         </wvobject>
-         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_data_wr_o" type="array">
-            <obj_property name="ElementShortName">mem_data_wr_o[31:0]</obj_property>
-            <obj_property name="ObjectShortName">mem_data_wr_o[31:0]</obj_property>
-         </wvobject>
-         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_rd_o" type="logic">
-            <obj_property name="ElementShortName">mem_rd_o</obj_property>
-            <obj_property name="ObjectShortName">mem_rd_o</obj_property>
-         </wvobject>
-         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_wr_o" type="array">
-            <obj_property name="ElementShortName">mem_wr_o[3:0]</obj_property>
-            <obj_property name="ObjectShortName">mem_wr_o[3:0]</obj_property>
-         </wvobject>
-         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_cacheable_o" type="logic">
-            <obj_property name="ElementShortName">mem_cacheable_o</obj_property>
-            <obj_property name="ObjectShortName">mem_cacheable_o</obj_property>
-         </wvobject>
-         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_req_tag_o" type="array">
-            <obj_property name="ElementShortName">mem_req_tag_o[10:0]</obj_property>
-            <obj_property name="ObjectShortName">mem_req_tag_o[10:0]</obj_property>
-         </wvobject>
-         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_invalidate_o" type="logic">
-            <obj_property name="ElementShortName">mem_invalidate_o</obj_property>
-            <obj_property name="ObjectShortName">mem_invalidate_o</obj_property>
-         </wvobject>
-         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_writeback_o" type="logic">
-            <obj_property name="ElementShortName">mem_writeback_o</obj_property>
-            <obj_property name="ObjectShortName">mem_writeback_o</obj_property>
-         </wvobject>
-         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_flush_o" type="logic">
-            <obj_property name="ElementShortName">mem_flush_o</obj_property>
-            <obj_property name="ObjectShortName">mem_flush_o</obj_property>
-         </wvobject>
-         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/writeback_valid_o" type="logic">
-            <obj_property name="ElementShortName">writeback_valid_o</obj_property>
-            <obj_property name="ObjectShortName">writeback_valid_o</obj_property>
-         </wvobject>
-         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/writeback_value_o" type="array">
-            <obj_property name="ElementShortName">writeback_value_o[31:0]</obj_property>
-            <obj_property name="ObjectShortName">writeback_value_o[31:0]</obj_property>
-         </wvobject>
-         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/writeback_exception_o" type="array">
-            <obj_property name="ElementShortName">writeback_exception_o[5:0]</obj_property>
-            <obj_property name="ObjectShortName">writeback_exception_o[5:0]</obj_property>
-         </wvobject>
-         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_enc_error_o" type="logic">
-            <obj_property name="ElementShortName">mem_enc_error_o</obj_property>
-            <obj_property name="ObjectShortName">mem_enc_error_o</obj_property>
-         </wvobject>
-         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/stall_o" type="logic">
-            <obj_property name="ElementShortName">stall_o</obj_property>
-            <obj_property name="ObjectShortName">stall_o</obj_property>
+         <wvobject fp_name="group5446" type="group">
+            <obj_property name="label">Internal</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_q" type="array">
+               <obj_property name="ElementShortName">mem_addr_q[31:0]</obj_property>
+               <obj_property name="ObjectShortName">mem_addr_q[31:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_data_wr_q" type="array">
+               <obj_property name="ElementShortName">mem_data_wr_q[31:0]</obj_property>
+               <obj_property name="ObjectShortName">mem_data_wr_q[31:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_rd_q" type="logic">
+               <obj_property name="ElementShortName">mem_rd_q</obj_property>
+               <obj_property name="ObjectShortName">mem_rd_q</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_wr_q" type="array">
+               <obj_property name="ElementShortName">mem_wr_q[3:0]</obj_property>
+               <obj_property name="ObjectShortName">mem_wr_q[3:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_cacheable_q" type="logic">
+               <obj_property name="ElementShortName">mem_cacheable_q</obj_property>
+               <obj_property name="ObjectShortName">mem_cacheable_q</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_invalidate_q" type="logic">
+               <obj_property name="ElementShortName">mem_invalidate_q</obj_property>
+               <obj_property name="ObjectShortName">mem_invalidate_q</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_writeback_q" type="logic">
+               <obj_property name="ElementShortName">mem_writeback_q</obj_property>
+               <obj_property name="ObjectShortName">mem_writeback_q</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_flush_q" type="logic">
+               <obj_property name="ElementShortName">mem_flush_q</obj_property>
+               <obj_property name="ObjectShortName">mem_flush_q</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_unaligned_e1_q" type="logic">
+               <obj_property name="ElementShortName">mem_unaligned_e1_q</obj_property>
+               <obj_property name="ObjectShortName">mem_unaligned_e1_q</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_unaligned_e2_q" type="logic">
+               <obj_property name="ElementShortName">mem_unaligned_e2_q</obj_property>
+               <obj_property name="ObjectShortName">mem_unaligned_e2_q</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_load_q" type="logic">
+               <obj_property name="ElementShortName">mem_load_q</obj_property>
+               <obj_property name="ObjectShortName">mem_load_q</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_xb_q" type="logic">
+               <obj_property name="ElementShortName">mem_xb_q</obj_property>
+               <obj_property name="ObjectShortName">mem_xb_q</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_xh_q" type="logic">
+               <obj_property name="ElementShortName">mem_xh_q</obj_property>
+               <obj_property name="ObjectShortName">mem_xh_q</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_ls_q" type="logic">
+               <obj_property name="ElementShortName">mem_ls_q</obj_property>
+               <obj_property name="ObjectShortName">mem_ls_q</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/pending_lsu_e2_q" type="logic">
+               <obj_property name="ElementShortName">pending_lsu_e2_q</obj_property>
+               <obj_property name="ObjectShortName">pending_lsu_e2_q</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/issue_lsu_e1_w" type="logic">
+               <obj_property name="ElementShortName">issue_lsu_e1_w</obj_property>
+               <obj_property name="ObjectShortName">issue_lsu_e1_w</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/complete_ok_e2_w" type="logic">
+               <obj_property name="ElementShortName">complete_ok_e2_w</obj_property>
+               <obj_property name="ObjectShortName">complete_ok_e2_w</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/complete_err_e2_w" type="logic">
+               <obj_property name="ElementShortName">complete_err_e2_w</obj_property>
+               <obj_property name="ObjectShortName">complete_err_e2_w</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/delay_lsu_e2_w" type="logic">
+               <obj_property name="ElementShortName">delay_lsu_e2_w</obj_property>
+               <obj_property name="ObjectShortName">delay_lsu_e2_w</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/load_inst_w" type="logic">
+               <obj_property name="ElementShortName">load_inst_w</obj_property>
+               <obj_property name="ObjectShortName">load_inst_w</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/load_signed_inst_w" type="logic">
+               <obj_property name="ElementShortName">load_signed_inst_w</obj_property>
+               <obj_property name="ObjectShortName">load_signed_inst_w</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/store_inst_w" type="logic">
+               <obj_property name="ElementShortName">store_inst_w</obj_property>
+               <obj_property name="ObjectShortName">store_inst_w</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/req_lb_w" type="logic">
+               <obj_property name="ElementShortName">req_lb_w</obj_property>
+               <obj_property name="ObjectShortName">req_lb_w</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/req_lh_w" type="logic">
+               <obj_property name="ElementShortName">req_lh_w</obj_property>
+               <obj_property name="ObjectShortName">req_lh_w</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/req_lw_w" type="logic">
+               <obj_property name="ElementShortName">req_lw_w</obj_property>
+               <obj_property name="ObjectShortName">req_lw_w</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/req_sb_w" type="logic">
+               <obj_property name="ElementShortName">req_sb_w</obj_property>
+               <obj_property name="ObjectShortName">req_sb_w</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/req_sh_w" type="logic">
+               <obj_property name="ElementShortName">req_sh_w</obj_property>
+               <obj_property name="ObjectShortName">req_sh_w</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/req_sw_w" type="logic">
+               <obj_property name="ElementShortName">req_sw_w</obj_property>
+               <obj_property name="ObjectShortName">req_sw_w</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/req_sw_lw_w" type="logic">
+               <obj_property name="ElementShortName">req_sw_lw_w</obj_property>
+               <obj_property name="ObjectShortName">req_sw_lw_w</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/req_sh_lh_w" type="logic">
+               <obj_property name="ElementShortName">req_sh_lh_w</obj_property>
+               <obj_property name="ObjectShortName">req_sh_lh_w</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_r" type="array">
+               <obj_property name="ElementShortName">mem_addr_r[31:0]</obj_property>
+               <obj_property name="ObjectShortName">mem_addr_r[31:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_unaligned_r" type="logic">
+               <obj_property name="ElementShortName">mem_unaligned_r</obj_property>
+               <obj_property name="ObjectShortName">mem_unaligned_r</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_data_r" type="array">
+               <obj_property name="ElementShortName">mem_data_r[31:0]</obj_property>
+               <obj_property name="ObjectShortName">mem_data_r[31:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_rd_r" type="logic">
+               <obj_property name="ElementShortName">mem_rd_r</obj_property>
+               <obj_property name="ObjectShortName">mem_rd_r</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_wr_r" type="array">
+               <obj_property name="ElementShortName">mem_wr_r[3:0]</obj_property>
+               <obj_property name="ObjectShortName">mem_wr_r[3:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/dcache_flush_w" type="logic">
+               <obj_property name="ElementShortName">dcache_flush_w</obj_property>
+               <obj_property name="ObjectShortName">dcache_flush_w</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/dcache_writeback_w" type="logic">
+               <obj_property name="ElementShortName">dcache_writeback_w</obj_property>
+               <obj_property name="ObjectShortName">dcache_writeback_w</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/dcache_invalidate_w" type="logic">
+               <obj_property name="ElementShortName">dcache_invalidate_w</obj_property>
+               <obj_property name="ObjectShortName">dcache_invalidate_w</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/resp_load_w" type="logic">
+               <obj_property name="ElementShortName">resp_load_w</obj_property>
+               <obj_property name="ObjectShortName">resp_load_w</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/resp_addr_w" type="array">
+               <obj_property name="ElementShortName">resp_addr_w[31:0]</obj_property>
+               <obj_property name="ObjectShortName">resp_addr_w[31:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/resp_byte_w" type="logic">
+               <obj_property name="ElementShortName">resp_byte_w</obj_property>
+               <obj_property name="ObjectShortName">resp_byte_w</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/resp_half_w" type="logic">
+               <obj_property name="ElementShortName">resp_half_w</obj_property>
+               <obj_property name="ObjectShortName">resp_half_w</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/resp_signed_w" type="logic">
+               <obj_property name="ElementShortName">resp_signed_w</obj_property>
+               <obj_property name="ObjectShortName">resp_signed_w</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/addr_lsb_r" type="array">
+               <obj_property name="ElementShortName">addr_lsb_r[1:0]</obj_property>
+               <obj_property name="ObjectShortName">addr_lsb_r[1:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/load_byte_r" type="logic">
+               <obj_property name="ElementShortName">load_byte_r</obj_property>
+               <obj_property name="ObjectShortName">load_byte_r</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/load_half_r" type="logic">
+               <obj_property name="ElementShortName">load_half_r</obj_property>
+               <obj_property name="ObjectShortName">load_half_r</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/load_signed_r" type="logic">
+               <obj_property name="ElementShortName">load_signed_r</obj_property>
+               <obj_property name="ObjectShortName">load_signed_r</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/wb_result_r" type="array">
+               <obj_property name="ElementShortName">wb_result_r[31:0]</obj_property>
+               <obj_property name="ObjectShortName">wb_result_r[31:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/fault_load_align_w" type="logic">
+               <obj_property name="ElementShortName">fault_load_align_w</obj_property>
+               <obj_property name="ObjectShortName">fault_load_align_w</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/fault_store_align_w" type="logic">
+               <obj_property name="ElementShortName">fault_store_align_w</obj_property>
+               <obj_property name="ObjectShortName">fault_store_align_w</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/fault_load_bus_w" type="logic">
+               <obj_property name="ElementShortName">fault_load_bus_w</obj_property>
+               <obj_property name="ObjectShortName">fault_load_bus_w</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/fault_store_bus_w" type="logic">
+               <obj_property name="ElementShortName">fault_store_bus_w</obj_property>
+               <obj_property name="ObjectShortName">fault_store_bus_w</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/fault_enc_load_bus_w" type="logic">
+               <obj_property name="ElementShortName">fault_enc_load_bus_w</obj_property>
+               <obj_property name="ObjectShortName">fault_enc_load_bus_w</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/fault_enc_store_bus_w" type="logic">
+               <obj_property name="ElementShortName">fault_enc_store_bus_w</obj_property>
+               <obj_property name="ObjectShortName">fault_enc_store_bus_w</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/fault_load_page_w" type="logic">
+               <obj_property name="ElementShortName">fault_load_page_w</obj_property>
+               <obj_property name="ObjectShortName">fault_load_page_w</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/fault_store_page_w" type="logic">
+               <obj_property name="ElementShortName">fault_store_page_w</obj_property>
+               <obj_property name="ObjectShortName">fault_store_page_w</obj_property>
+            </wvobject>
          </wvobject>
       </wvobject>
       <wvobject fp_name="group489" type="group">
@@ -1080,10 +1316,6 @@
                <obj_property name="ElementShortName">opcode_rb_operand_i[31:0]</obj_property>
                <obj_property name="ObjectShortName">opcode_rb_operand_i[31:0]</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_csr/csr_mem_d_enc_error_i" type="logic">
-               <obj_property name="ElementShortName">csr_mem_d_enc_error_i</obj_property>
-               <obj_property name="ObjectShortName">csr_mem_d_enc_error_i</obj_property>
-            </wvobject>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_csr/csr_writeback_write_i" type="logic">
                <obj_property name="ElementShortName">csr_writeback_write_i</obj_property>
                <obj_property name="ObjectShortName">csr_writeback_write_i</obj_property>
@@ -1097,8 +1329,8 @@
                <obj_property name="ObjectShortName">csr_writeback_wdata_i[31:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_csr/csr_writeback_exception_i" type="array">
-               <obj_property name="ElementShortName">csr_writeback_exception_i[5:0]</obj_property>
-               <obj_property name="ObjectShortName">csr_writeback_exception_i[5:0]</obj_property>
+               <obj_property name="ElementShortName">csr_writeback_exception_i[6:0]</obj_property>
+               <obj_property name="ObjectShortName">csr_writeback_exception_i[6:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_csr/csr_writeback_exception_pc_i" type="array">
                <obj_property name="ElementShortName">csr_writeback_exception_pc_i[31:0]</obj_property>
@@ -1137,8 +1369,8 @@
                <obj_property name="ObjectShortName">csr_result_e1_wdata_o[31:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_csr/csr_result_e1_exception_o" type="array">
-               <obj_property name="ElementShortName">csr_result_e1_exception_o[5:0]</obj_property>
-               <obj_property name="ObjectShortName">csr_result_e1_exception_o[5:0]</obj_property>
+               <obj_property name="ElementShortName">csr_result_e1_exception_o[6:0]</obj_property>
+               <obj_property name="ObjectShortName">csr_result_e1_exception_o[6:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_csr/branch_csr_request_o" type="logic">
                <obj_property name="ElementShortName">branch_csr_request_o</obj_property>
@@ -1184,6 +1416,7 @@
          <wvobject fp_name="group753" type="group">
             <obj_property name="label">CSR_FILE</obj_property>
             <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="isExpanded"></obj_property>
             <wvobject fp_name="group754" type="group">
                <obj_property name="label">Input</obj_property>
                <obj_property name="DisplayName">label</obj_property>
@@ -1204,8 +1437,8 @@
                   <obj_property name="ObjectShortName">misa_i[31:0]</obj_property>
                </wvobject>
                <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_csr/u_csrfile/exception_i" type="array">
-                  <obj_property name="ElementShortName">exception_i[5:0]</obj_property>
-                  <obj_property name="ObjectShortName">exception_i[5:0]</obj_property>
+                  <obj_property name="ElementShortName">exception_i[6:0]</obj_property>
+                  <obj_property name="ObjectShortName">exception_i[6:0]</obj_property>
                </wvobject>
                <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_csr/u_csrfile/exception_pc_i" type="array">
                   <obj_property name="ElementShortName">exception_pc_i[31:0]</obj_property>
@@ -1214,10 +1447,6 @@
                <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_csr/u_csrfile/exception_addr_i" type="array">
                   <obj_property name="ElementShortName">exception_addr_i[31:0]</obj_property>
                   <obj_property name="ObjectShortName">exception_addr_i[31:0]</obj_property>
-               </wvobject>
-               <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_csr/u_csrfile/exception_enc_mem_d_i" type="logic">
-                  <obj_property name="ElementShortName">exception_enc_mem_d_i</obj_property>
-                  <obj_property name="ObjectShortName">exception_enc_mem_d_i</obj_property>
                </wvobject>
                <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_csr/u_csrfile/csr_ren_i" type="logic">
                   <obj_property name="ElementShortName">csr_ren_i</obj_property>
@@ -1741,8 +1970,8 @@
                <obj_property name="ObjectShortName">writeback_mem_value_i[31:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/writeback_mem_exception_i" type="array">
-               <obj_property name="ElementShortName">writeback_mem_exception_i[5:0]</obj_property>
-               <obj_property name="ObjectShortName">writeback_mem_exception_i[5:0]</obj_property>
+               <obj_property name="ElementShortName">writeback_mem_exception_i[6:0]</obj_property>
+               <obj_property name="ObjectShortName">writeback_mem_exception_i[6:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/writeback_mul_value_i" type="array">
                <obj_property name="ElementShortName">writeback_mul_value_i[31:0]</obj_property>
@@ -1769,8 +1998,8 @@
                <obj_property name="ObjectShortName">csr_result_e1_wdata_i[31:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/csr_result_e1_exception_i" type="array">
-               <obj_property name="ElementShortName">csr_result_e1_exception_i[5:0]</obj_property>
-               <obj_property name="ObjectShortName">csr_result_e1_exception_i[5:0]</obj_property>
+               <obj_property name="ElementShortName">csr_result_e1_exception_i[6:0]</obj_property>
+               <obj_property name="ObjectShortName">csr_result_e1_exception_i[6:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/lsu_stall_i" type="logic">
                <obj_property name="ElementShortName">lsu_stall_i</obj_property>
@@ -2033,8 +2262,8 @@
                <obj_property name="ObjectShortName">csr_writeback_wdata_o[31:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/csr_writeback_exception_o" type="array">
-               <obj_property name="ElementShortName">csr_writeback_exception_o[5:0]</obj_property>
-               <obj_property name="ObjectShortName">csr_writeback_exception_o[5:0]</obj_property>
+               <obj_property name="ElementShortName">csr_writeback_exception_o[6:0]</obj_property>
+               <obj_property name="ObjectShortName">csr_writeback_exception_o[6:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/csr_writeback_exception_pc_o" type="array">
                <obj_property name="ElementShortName">csr_writeback_exception_pc_o[31:0]</obj_property>
@@ -2113,8 +2342,8 @@
                <obj_property name="ObjectShortName">issue_rd_i[4:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe0_ctrl/issue_exception_i" type="array">
-               <obj_property name="ElementShortName">issue_exception_i[5:0]</obj_property>
-               <obj_property name="ObjectShortName">issue_exception_i[5:0]</obj_property>
+               <obj_property name="ElementShortName">issue_exception_i[6:0]</obj_property>
+               <obj_property name="ObjectShortName">issue_exception_i[6:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe0_ctrl/take_interrupt_i" type="logic">
                <obj_property name="ElementShortName">take_interrupt_i</obj_property>
@@ -2161,8 +2390,8 @@
                <obj_property name="ObjectShortName">csr_result_wdata_e1_i[31:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe0_ctrl/csr_result_exception_e1_i" type="array">
-               <obj_property name="ElementShortName">csr_result_exception_e1_i[5:0]</obj_property>
-               <obj_property name="ObjectShortName">csr_result_exception_e1_i[5:0]</obj_property>
+               <obj_property name="ElementShortName">csr_result_exception_e1_i[6:0]</obj_property>
+               <obj_property name="ObjectShortName">csr_result_exception_e1_i[6:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe0_ctrl/load_e1_o" type="logic">
                <obj_property name="ElementShortName">load_e1_o</obj_property>
@@ -2209,8 +2438,8 @@
                <obj_property name="ObjectShortName">mem_result_e2_i[31:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe0_ctrl/mem_exception_e2_i" type="array">
-               <obj_property name="ElementShortName">mem_exception_e2_i[5:0]</obj_property>
-               <obj_property name="ObjectShortName">mem_exception_e2_i[5:0]</obj_property>
+               <obj_property name="ElementShortName">mem_exception_e2_i[6:0]</obj_property>
+               <obj_property name="ObjectShortName">mem_exception_e2_i[6:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe0_ctrl/mul_result_e2_i" type="array">
                <obj_property name="ElementShortName">mul_result_e2_i[31:0]</obj_property>
@@ -2273,8 +2502,8 @@
                <obj_property name="ObjectShortName">operand_rb_wb_o[31:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe0_ctrl/exception_wb_o" type="array">
-               <obj_property name="ElementShortName">exception_wb_o[5:0]</obj_property>
-               <obj_property name="ObjectShortName">exception_wb_o[5:0]</obj_property>
+               <obj_property name="ElementShortName">exception_wb_o[6:0]</obj_property>
+               <obj_property name="ObjectShortName">exception_wb_o[6:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe0_ctrl/csr_write_wb_o" type="logic">
                <obj_property name="ElementShortName">csr_write_wb_o</obj_property>
@@ -2341,8 +2570,8 @@
                <obj_property name="ObjectShortName">operand_rb_e1_q[31:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe0_ctrl/exception_e1_q" type="array">
-               <obj_property name="ElementShortName">exception_e1_q[5:0]</obj_property>
-               <obj_property name="ObjectShortName">exception_e1_q[5:0]</obj_property>
+               <obj_property name="ElementShortName">exception_e1_q[6:0]</obj_property>
+               <obj_property name="ObjectShortName">exception_e1_q[6:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe0_ctrl/alu_e1_w" type="logic">
                <obj_property name="ElementShortName">alu_e1_w</obj_property>
@@ -2397,8 +2626,8 @@
                <obj_property name="ObjectShortName">operand_rb_e2_q[31:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe0_ctrl/exception_e2_q" type="array">
-               <obj_property name="ElementShortName">exception_e2_q[5:0]</obj_property>
-               <obj_property name="ObjectShortName">exception_e2_q[5:0]</obj_property>
+               <obj_property name="ElementShortName">exception_e2_q[6:0]</obj_property>
+               <obj_property name="ObjectShortName">exception_e2_q[6:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe0_ctrl/result_e2_r" type="array">
                <obj_property name="ElementShortName">result_e2_r[31:0]</obj_property>
@@ -2413,8 +2642,8 @@
                <obj_property name="ObjectShortName">load_store_e2_w</obj_property>
             </wvobject>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe0_ctrl/exception_e2_r" type="array">
-               <obj_property name="ElementShortName">exception_e2_r[5:0]</obj_property>
-               <obj_property name="ObjectShortName">exception_e2_r[5:0]</obj_property>
+               <obj_property name="ElementShortName">exception_e2_r[6:0]</obj_property>
+               <obj_property name="ObjectShortName">exception_e2_r[6:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe0_ctrl/squash_e1_e2_q" type="logic">
                <obj_property name="ElementShortName">squash_e1_e2_q</obj_property>
@@ -2461,8 +2690,8 @@
                <obj_property name="ObjectShortName">operand_rb_wb_q[31:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe0_ctrl/exception_wb_q" type="array">
-               <obj_property name="ElementShortName">exception_wb_q[5:0]</obj_property>
-               <obj_property name="ObjectShortName">exception_wb_q[5:0]</obj_property>
+               <obj_property name="ElementShortName">exception_wb_q[6:0]</obj_property>
+               <obj_property name="ObjectShortName">exception_wb_q[6:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe0_ctrl/complete_wb_w" type="logic">
                <obj_property name="ElementShortName">complete_wb_w</obj_property>
@@ -2521,8 +2750,8 @@
                <obj_property name="ObjectShortName">issue_rd_i[4:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/issue_exception_i" type="array">
-               <obj_property name="ElementShortName">issue_exception_i[5:0]</obj_property>
-               <obj_property name="ObjectShortName">issue_exception_i[5:0]</obj_property>
+               <obj_property name="ElementShortName">issue_exception_i[6:0]</obj_property>
+               <obj_property name="ObjectShortName">issue_exception_i[6:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/take_interrupt_i" type="logic">
                <obj_property name="ElementShortName">take_interrupt_i</obj_property>
@@ -2569,8 +2798,8 @@
                <obj_property name="ObjectShortName">csr_result_wdata_e1_i[31:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/csr_result_exception_e1_i" type="array">
-               <obj_property name="ElementShortName">csr_result_exception_e1_i[5:0]</obj_property>
-               <obj_property name="ObjectShortName">csr_result_exception_e1_i[5:0]</obj_property>
+               <obj_property name="ElementShortName">csr_result_exception_e1_i[6:0]</obj_property>
+               <obj_property name="ObjectShortName">csr_result_exception_e1_i[6:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/load_e1_o" type="logic">
                <obj_property name="ElementShortName">load_e1_o</obj_property>
@@ -2617,8 +2846,8 @@
                <obj_property name="ObjectShortName">mem_result_e2_i[31:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/mem_exception_e2_i" type="array">
-               <obj_property name="ElementShortName">mem_exception_e2_i[5:0]</obj_property>
-               <obj_property name="ObjectShortName">mem_exception_e2_i[5:0]</obj_property>
+               <obj_property name="ElementShortName">mem_exception_e2_i[6:0]</obj_property>
+               <obj_property name="ObjectShortName">mem_exception_e2_i[6:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/mul_result_e2_i" type="array">
                <obj_property name="ElementShortName">mul_result_e2_i[31:0]</obj_property>
@@ -2681,8 +2910,8 @@
                <obj_property name="ObjectShortName">operand_rb_wb_o[31:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/exception_wb_o" type="array">
-               <obj_property name="ElementShortName">exception_wb_o[5:0]</obj_property>
-               <obj_property name="ObjectShortName">exception_wb_o[5:0]</obj_property>
+               <obj_property name="ElementShortName">exception_wb_o[6:0]</obj_property>
+               <obj_property name="ObjectShortName">exception_wb_o[6:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/csr_write_wb_o" type="logic">
                <obj_property name="ElementShortName">csr_write_wb_o</obj_property>
@@ -2749,8 +2978,8 @@
                <obj_property name="ObjectShortName">operand_rb_e1_q[31:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/exception_e1_q" type="array">
-               <obj_property name="ElementShortName">exception_e1_q[5:0]</obj_property>
-               <obj_property name="ObjectShortName">exception_e1_q[5:0]</obj_property>
+               <obj_property name="ElementShortName">exception_e1_q[6:0]</obj_property>
+               <obj_property name="ObjectShortName">exception_e1_q[6:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/alu_e1_w" type="logic">
                <obj_property name="ElementShortName">alu_e1_w</obj_property>
@@ -2805,8 +3034,8 @@
                <obj_property name="ObjectShortName">operand_rb_e2_q[31:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/exception_e2_q" type="array">
-               <obj_property name="ElementShortName">exception_e2_q[5:0]</obj_property>
-               <obj_property name="ObjectShortName">exception_e2_q[5:0]</obj_property>
+               <obj_property name="ElementShortName">exception_e2_q[6:0]</obj_property>
+               <obj_property name="ObjectShortName">exception_e2_q[6:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/result_e2_r" type="array">
                <obj_property name="ElementShortName">result_e2_r[31:0]</obj_property>
@@ -2821,8 +3050,8 @@
                <obj_property name="ObjectShortName">load_store_e2_w</obj_property>
             </wvobject>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/exception_e2_r" type="array">
-               <obj_property name="ElementShortName">exception_e2_r[5:0]</obj_property>
-               <obj_property name="ObjectShortName">exception_e2_r[5:0]</obj_property>
+               <obj_property name="ElementShortName">exception_e2_r[6:0]</obj_property>
+               <obj_property name="ObjectShortName">exception_e2_r[6:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/squash_e1_e2_q" type="logic">
                <obj_property name="ElementShortName">squash_e1_e2_q</obj_property>
@@ -2869,8 +3098,8 @@
                <obj_property name="ObjectShortName">operand_rb_wb_q[31:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/exception_wb_q" type="array">
-               <obj_property name="ElementShortName">exception_wb_q[5:0]</obj_property>
-               <obj_property name="ObjectShortName">exception_wb_q[5:0]</obj_property>
+               <obj_property name="ElementShortName">exception_wb_q[6:0]</obj_property>
+               <obj_property name="ObjectShortName">exception_wb_q[6:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_pipe1_ctrl/complete_wb_w" type="logic">
                <obj_property name="ElementShortName">complete_wb_w</obj_property>
@@ -3077,7 +3306,6 @@
       <wvobject fp_name="group724" type="group">
          <obj_property name="label">TCM</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <obj_property name="isExpanded"></obj_property>
          <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/clk_i" type="logic">
             <obj_property name="ElementShortName">clk_i</obj_property>
             <obj_property name="ObjectShortName">clk_i</obj_property>
@@ -3093,6 +3321,7 @@
          <wvobject fp_name="group17838" type="group">
             <obj_property name="label">MEM I</obj_property>
             <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="isExpanded"></obj_property>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/mem_i_rd_i" type="logic">
                <obj_property name="ElementShortName">mem_i_rd_i</obj_property>
                <obj_property name="ObjectShortName">mem_i_rd_i</obj_property>
@@ -3322,7 +3551,6 @@
          <wvobject fp_name="group20127" type="group">
             <obj_property name="label">SECURE ZONE</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <obj_property name="isExpanded"></obj_property>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/u_ram/data0_o" type="array">
                <obj_property name="DisplayName">label</obj_property>
                <obj_property name="ElementShortName">data0_o[63:0]</obj_property>
@@ -3504,7 +3732,6 @@
       <wvobject fp_name="group729" type="group">
          <obj_property name="label">RANDOM GENERATOR</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <obj_property name="isExpanded"></obj_property>
          <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/muxed_hi_w" type="logic">
             <obj_property name="ElementShortName">muxed_hi_w</obj_property>
             <obj_property name="ObjectShortName">muxed_hi_w</obj_property>
@@ -3594,7 +3821,6 @@
          <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x15_a5_w " type="array">
             <obj_property name="ElementShortName">\REGFILE.x15_a5_w [31:0]</obj_property>
             <obj_property name="ObjectShortName">\REGFILE.x15_a5_w [31:0]</obj_property>
-            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
          </wvobject>
          <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x16_a6_w " type="array">
             <obj_property name="ElementShortName">\REGFILE.x16_a6_w [31:0]</obj_property>

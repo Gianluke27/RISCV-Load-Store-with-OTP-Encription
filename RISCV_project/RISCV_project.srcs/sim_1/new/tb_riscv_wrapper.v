@@ -41,14 +41,14 @@
 `define CLK_PERIOD              (8)
 
 // TB Type
-`define TB_TYPE                 ("Test_Demonstator")                    //"Test" or "Test_Demonstator"
+`define TB_TYPE                 ("Test")                    //"Test" or "Test_Demonstator"
 
 /*
 Tests:
 RISCV_test_01.mif
 test_01.mif
 */
-`define FILE_NAME               ("RISCV_demonstrator_03_ASM_test_sim.mif")   
+`define FILE_NAME               ("RISCV_power_01.mif")   
 
 module tb_riscv_wrapper();
     reg tb_ACLK;    // PS clock
@@ -159,23 +159,32 @@ module tb_riscv_wrapper();
     
     initial
     begin
-        SW=2'b00; 
-        tb_ARESETn = 1'b1;#(20*`CLK_PERIOD);
-        tb_ARESETn = 1'b0;#(300*`CLK_PERIOD);
-        
-        SW=2'b00; 
-        
-        repeat (1000) @(posedge temp_clk);
-        SW=2'b01;
-        repeat (1000) @(posedge temp_clk);
-        //write(512, 8'd27);
-        SW=2'b10;
-        repeat (1000) @(posedge temp_clk);
-        SW=2'b11;
-        repeat (19000) @(posedge temp_clk);
-        write_demonstrator(1471, 64'h0123456789abcdef);
-        SW=2'b00;
-        repeat (200) @(posedge temp_clk);
+        if(`TB_TYPE == "Test")
+        begin
+            tb_ARESETn = 1'b1;#(20*`CLK_PERIOD);
+            tb_ARESETn = 1'b0;#(100*`CLK_PERIOD);
+            repeat (100) @(posedge temp_clk);
+        end
+        else if(`TB_TYPE == "Test_Demonstator")
+        begin
+            SW=2'b00; 
+            tb_ARESETn = 1'b1;#(20*`CLK_PERIOD);
+            tb_ARESETn = 1'b0;#(300*`CLK_PERIOD);
+            
+            SW=2'b00; 
+            
+            repeat (1000) @(posedge temp_clk);
+            SW=2'b01;
+            repeat (1000) @(posedge temp_clk);
+            //write(512, 8'd27);
+            SW=2'b10;
+            repeat (1000) @(posedge temp_clk);
+            SW=2'b11;
+            repeat (19000) @(posedge temp_clk);
+            write_demonstrator(1471, 64'h0123456789abcdef);
+            SW=2'b00;
+            repeat (200) @(posedge temp_clk);
+        end
         $finish;
         //$stop;
     end
