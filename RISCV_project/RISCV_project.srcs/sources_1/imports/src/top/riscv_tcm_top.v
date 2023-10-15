@@ -163,6 +163,7 @@ wire           dport_tcm_writeback_w;
 wire  [  3:0]  dport_axi_wr_w;
 wire           dport_axi_flush_w;
 wire           dport_tcm_error_w;
+wire           dport_tcm_enc_error_w;
 wire           dport_accept_w;
 
 
@@ -201,11 +202,11 @@ u_core
     ,.mem_d_ack_i(dport_ack_w)
     ,.mem_d_error_i(dport_error_w)
     ,.mem_d_resp_tag_i(dport_resp_tag_w)
+    ,.mem_d_enc_error_i(dport_tcm_enc_error_w)
     ,.mem_i_accept_i(ifetch_accept_w)
     ,.mem_i_valid_i(ifetch_valid_w)
     ,.mem_i_error_i(ifetch_error_w)
     ,.mem_i_inst_i(ifetch_inst_w)
-    ,.mem_d_enc_error_i(dport_error_w)
     ,.intr_i(|intr_i)
     ,.reset_vector_i(boot_vector_w)
     ,.cpu_id_i(cpu_id_w)
@@ -335,6 +336,7 @@ u_tcm
     ,.mem_d_accept_o(dport_tcm_accept_w)
     ,.mem_d_ack_o(dport_tcm_ack_w)
     ,.mem_d_error_o(dport_tcm_error_w)
+    ,.mem_d_enc_error_o(dport_tcm_enc_error_w)
     ,.mem_d_resp_tag_o(dport_tcm_resp_tag_w)
     ,.axi_awready_o(axi_t_awready_o)
     ,.axi_wready_o(axi_t_wready_o)

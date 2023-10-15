@@ -4,8 +4,11 @@ connect
 
 fpga -f {H:\TesiMagistrale\Github\RISCV_Enc_Load_Store\RISCV-Load-Store-with-OTP-Encription\RISCV_project\RISCV_project.runs\impl_1\RISCV_demonstrator_wrapper.bit}
 
-targets -set -filter {name =~ "ARM*#1"}
-configparams -context $::xsdb::curtarget disable-access 1
+fpga -f {H:\TesiMagistrale\Github\RISCV_Enc_Load_Store\RISCV-Load-Store-with-OTP-Encription\BitStreams\Secure_Design\25MHz\median_rvtests_pwr_OTP.bit}
+
+fpga -f {H:\TesiMagistrale\Github\RISCV_Enc_Load_Store\RISCV-Load-Store-with-OTP-Encription\BitStreams\empty.bit}
+
+fpga -f {H:\TesiMagistrale\Github\RISCV_Enc_Load_Store\RISCV-Load-Store-with-OTP-Encription\BitStreams\Naive_Design\25MHz\median_rvtests_pwr.bit}
 
 target 2
 

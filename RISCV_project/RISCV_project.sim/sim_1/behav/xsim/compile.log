@@ -47,14 +47,11 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "H:/TesiMagistrale/Github/RISCV_Enc_
 INFO: [VRFC 10-311] analyzing module riscv_core
 INFO: [VRFC 10-2263] Analyzing Verilog file "H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.srcs/sources_1/imports/src/top/riscv_tcm_top.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module riscv_tcm_top
-INFO: [VRFC 10-2458] undeclared symbol random_num_w, assumed default net type wire [H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.srcs/sources_1/imports/src/top/riscv_tcm_top.v:311]
-WARNING: [VRFC 10-2938] 'random_num_w' is already implicitly declared on line 311 [H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.srcs/sources_1/imports/src/top/riscv_tcm_top.v:396]
+INFO: [VRFC 10-2458] undeclared symbol random_num_w, assumed default net type wire [H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.srcs/sources_1/imports/src/top/riscv_tcm_top.v:312]
+WARNING: [VRFC 10-2938] 'random_num_w' is already implicitly declared on line 312 [H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.srcs/sources_1/imports/src/top/riscv_tcm_top.v:398]
 INFO: [VRFC 10-2263] Analyzing Verilog file "H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.srcs/sources_1/imports/src/tcm/tcm_mem.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module tcm_mem
-WARNING: [VRFC 10-3380] identifier 'muxed_hi_q' is used before its declaration [H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.srcs/sources_1/imports/src/tcm/tcm_mem.v:313]
-WARNING: [VRFC 10-3380] identifier 'muxed_hi_q' is used before its declaration [H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.srcs/sources_1/imports/src/tcm/tcm_mem.v:314]
-WARNING: [VRFC 10-3380] identifier 'muxed_hi_q' is used before its declaration [H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.srcs/sources_1/imports/src/tcm/tcm_mem.v:315]
-WARNING: [VRFC 10-3380] identifier 'mem_d_rd_q' is used before its declaration [H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.srcs/sources_1/imports/src/tcm/tcm_mem.v:316]
+WARNING: [VRFC 10-3380] identifier 'muxed_hi_q' is used before its declaration [H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.srcs/sources_1/imports/src/tcm/tcm_mem.v:333]
 INFO: [VRFC 10-2263] Analyzing Verilog file "H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.srcs/sources_1/imports/src/tcm/tcm_mem_pmem.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module tcm_mem_pmem
 INFO: [VRFC 10-311] analyzing module tcm_mem_pmem_fifo2
@@ -70,8 +67,8 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "H:/TesiMagistrale/Github/RISCV_Enc_
 INFO: [VRFC 10-311] analyzing module RISCV_bd_clk_wiz_0_0_clk_wiz
 INFO: [VRFC 10-2263] Analyzing Verilog file "H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.ip_user_files/bd/RISCV_bd/ip/RISCV_bd_clk_wiz_0_0/RISCV_bd_clk_wiz_0_0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module RISCV_bd_clk_wiz_0_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.ip_user_files/bd/RISCV_bd/ip/RISCV_bd_riscv_wrapper_0_0/sim/RISCV_bd_riscv_wrapper_0_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module RISCV_bd_riscv_wrapper_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.ip_user_files/bd/RISCV_bd/ip/RISCV_bd_riscv_wrapper_0_1/sim/RISCV_bd_riscv_wrapper_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISCV_bd_riscv_wrapper_0_1
 INFO: [VRFC 10-2263] Analyzing Verilog file "H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.ip_user_files/bd/RISCV_bd/sim/RISCV_bd.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module RISCV_bd
 INFO: [VRFC 10-2263] Analyzing Verilog file "H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.ip_user_files/bd/RISCV_demonstrator/ip/RISCV_demonstrator_clk_wiz_0/RISCV_demonstrator_clk_wiz_0_clk_wiz.v" into library xil_defaultlib

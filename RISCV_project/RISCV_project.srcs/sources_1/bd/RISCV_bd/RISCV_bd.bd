@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x910E571E1756A2D8",
+      "boundary_crc": "0x77E234ACB327FB24",
       "device": "xc7z020clg400-1",
       "gen_directory": "../../../../RISCV_project.gen/sources_1/bd/RISCV_bd",
       "name": "RISCV_bd",
@@ -13,6 +13,7 @@
     "design_tree": {
       "clk_wiz_0": "",
       "proc_sys_reset_0": "",
+      "axi_gpio_0": "",
       "riscv_wrapper_0": ""
     },
     "ports": {
@@ -52,6 +53,11 @@
             "value": "ACTIVE_HIGH"
           }
         }
+      },
+      "LED": {
+        "direction": "O",
+        "left": "2",
+        "right": "0"
       }
     },
     "components": {
@@ -93,10 +99,27 @@
         "xci_path": "ip\\RISCV_bd_proc_sys_reset_0_0\\RISCV_bd_proc_sys_reset_0_0.xci",
         "inst_hier_path": "proc_sys_reset_0"
       },
+      "axi_gpio_0": {
+        "vlnv": "xilinx.com:ip:axi_gpio:2.0",
+        "xci_name": "RISCV_bd_axi_gpio_0_0",
+        "xci_path": "ip\\RISCV_bd_axi_gpio_0_0\\RISCV_bd_axi_gpio_0_0.xci",
+        "inst_hier_path": "axi_gpio_0",
+        "parameters": {
+          "C_ALL_OUTPUTS": {
+            "value": "1"
+          },
+          "C_GPIO_WIDTH": {
+            "value": "3"
+          },
+          "GPIO_BOARD_INTERFACE": {
+            "value": "Custom"
+          }
+        }
+      },
       "riscv_wrapper_0": {
         "vlnv": "xilinx.com:module_ref:riscv_wrapper:1.0",
-        "xci_name": "RISCV_bd_riscv_wrapper_0_0",
-        "xci_path": "ip\\RISCV_bd_riscv_wrapper_0_0\\RISCV_bd_riscv_wrapper_0_0.xci",
+        "xci_name": "RISCV_bd_riscv_wrapper_0_1",
+        "xci_path": "ip\\RISCV_bd_riscv_wrapper_0_1\\RISCV_bd_riscv_wrapper_0_1.xci",
         "inst_hier_path": "riscv_wrapper_0",
         "reference_info": {
           "ref_type": "hdl",
@@ -608,11 +631,26 @@
         }
       }
     },
+    "interface_nets": {
+      "riscv_wrapper_0_m_axil": {
+        "interface_ports": [
+          "riscv_wrapper_0/m_axil",
+          "axi_gpio_0/S_AXI"
+        ]
+      }
+    },
     "nets": {
+      "axi_gpio_0_gpio_io_o": {
+        "ports": [
+          "axi_gpio_0/gpio_io_o",
+          "LED"
+        ]
+      },
       "clk_wiz_0_clk_out1": {
         "ports": [
           "clk_wiz_0/clk_out1",
           "proc_sys_reset_0/slowest_sync_clk",
+          "axi_gpio_0/s_axi_aclk",
           "riscv_wrapper_0/clk"
         ]
       },
@@ -625,6 +663,7 @@
       "proc_sys_reset_0_peripheral_aresetn": {
         "ports": [
           "proc_sys_reset_0/peripheral_aresetn",
+          "axi_gpio_0/s_axi_aresetn",
           "riscv_wrapper_0/arstn"
         ]
       },

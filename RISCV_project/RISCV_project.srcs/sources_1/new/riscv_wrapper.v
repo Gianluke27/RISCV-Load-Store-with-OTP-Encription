@@ -100,7 +100,7 @@ module riscv_wrapper(
         , .BHT_ENABLE(1)
         , .NUM_RAS_ENTRIES(8)
         , .NUM_RAS_ENTRIES_W(3)
-        , .SUPPORT_ENCRYPTION(1)
+        , .SUPPORT_ENCRYPTION(0)
         , .SUPPORT_ENC_UPDATER(0)
     ) rv_tcm_top
     //-----------------------------------------------------------------

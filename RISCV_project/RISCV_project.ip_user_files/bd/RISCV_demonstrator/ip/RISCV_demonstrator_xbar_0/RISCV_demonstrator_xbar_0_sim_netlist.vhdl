@@ -1,10 +1,10 @@
 -- Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
--- Date        : Wed Sep 20 14:32:18 2023
+-- Date        : Wed Sep 20 14:32:17 2023
 -- Host        : Gianluca running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               h:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ip/RISCV_demonstrator_xbar_0/RISCV_demonstrator_xbar_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top RISCV_demonstrator_xbar_0 -prefix
+--               RISCV_demonstrator_xbar_0_ RISCV_demonstrator_xbar_0_sim_netlist.vhdl
 -- Design      : RISCV_demonstrator_xbar_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -72,8 +72,6 @@ entity RISCV_demonstrator_xbar_0_axi_crossbar_v2_1_26_addr_arbiter_sasd is
     \gen_no_arbiter.m_valid_i_reg_1\ : in STD_LOGIC;
     mi_bvalid : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of RISCV_demonstrator_xbar_0_axi_crossbar_v2_1_26_addr_arbiter_sasd : entity is "axi_crossbar_v2_1_26_addr_arbiter_sasd";
 end RISCV_demonstrator_xbar_0_axi_crossbar_v2_1_26_addr_arbiter_sasd;
 
 architecture STRUCTURE of RISCV_demonstrator_xbar_0_axi_crossbar_v2_1_26_addr_arbiter_sasd is
@@ -1417,8 +1415,6 @@ entity RISCV_demonstrator_xbar_0_axi_crossbar_v2_1_26_decerr_slave is
     \gen_axilite.s_axi_bvalid_i_reg_1\ : in STD_LOGIC;
     aa_rready : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of RISCV_demonstrator_xbar_0_axi_crossbar_v2_1_26_decerr_slave : entity is "axi_crossbar_v2_1_26_decerr_slave";
 end RISCV_demonstrator_xbar_0_axi_crossbar_v2_1_26_decerr_slave;
 
 architecture STRUCTURE of RISCV_demonstrator_xbar_0_axi_crossbar_v2_1_26_decerr_slave is
@@ -1594,8 +1590,6 @@ entity RISCV_demonstrator_xbar_0_axi_crossbar_v2_1_26_splitter is
     aresetn_d : in STD_LOGIC;
     aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of RISCV_demonstrator_xbar_0_axi_crossbar_v2_1_26_splitter : entity is "axi_crossbar_v2_1_26_splitter";
 end RISCV_demonstrator_xbar_0_axi_crossbar_v2_1_26_splitter;
 
 architecture STRUCTURE of RISCV_demonstrator_xbar_0_axi_crossbar_v2_1_26_splitter is
@@ -1795,8 +1789,6 @@ entity RISCV_demonstrator_xbar_0_axi_register_slice_v2_1_25_axic_register_slice 
     SR : in STD_LOGIC_VECTOR ( 0 to 0 );
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of RISCV_demonstrator_xbar_0_axi_register_slice_v2_1_25_axic_register_slice : entity is "axi_register_slice_v2_1_25_axic_register_slice";
 end RISCV_demonstrator_xbar_0_axi_register_slice_v2_1_25_axic_register_slice;
 
 architecture STRUCTURE of RISCV_demonstrator_xbar_0_axi_register_slice_v2_1_25_axic_register_slice is
@@ -2974,8 +2966,6 @@ entity RISCV_demonstrator_xbar_0_axi_crossbar_v2_1_26_crossbar_sasd is
     s_axi_araddr : in STD_LOGIC_VECTOR ( 31 downto 0 );
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of RISCV_demonstrator_xbar_0_axi_crossbar_v2_1_26_crossbar_sasd : entity is "axi_crossbar_v2_1_26_crossbar_sasd";
 end RISCV_demonstrator_xbar_0_axi_crossbar_v2_1_26_crossbar_sasd;
 
 architecture STRUCTURE of RISCV_demonstrator_xbar_0_axi_crossbar_v2_1_26_crossbar_sasd is
@@ -3394,8 +3384,6 @@ entity RISCV_demonstrator_xbar_0_axi_crossbar_v2_1_26_axi_crossbar is
   attribute C_S_AXI_WRITE_ACCEPTANCE of RISCV_demonstrator_xbar_0_axi_crossbar_v2_1_26_axi_crossbar : entity is 1;
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of RISCV_demonstrator_xbar_0_axi_crossbar_v2_1_26_axi_crossbar : entity is "yes";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of RISCV_demonstrator_xbar_0_axi_crossbar_v2_1_26_axi_crossbar : entity is "axi_crossbar_v2_1_26_axi_crossbar";
   attribute P_ADDR_DECODE : integer;
   attribute P_ADDR_DECODE of RISCV_demonstrator_xbar_0_axi_crossbar_v2_1_26_axi_crossbar : entity is 1;
   attribute P_AXI3 : integer;

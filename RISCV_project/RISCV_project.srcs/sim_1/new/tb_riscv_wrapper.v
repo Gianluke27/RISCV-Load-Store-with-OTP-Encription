@@ -44,11 +44,9 @@
 `define TB_TYPE                 ("Test")                    //"Test" or "Test_Demonstator"
 
 /*
-Tests:
-RISCV_test_01.mif
-test_01.mif
+    Tests
 */
-`define FILE_NAME               ("RISCV_power_01.mif")   
+`define FILE_NAME               ("median_rvtests.mif")   
 
 module tb_riscv_wrapper();
     reg tb_ACLK;    // PS clock
@@ -90,22 +88,18 @@ module tb_riscv_wrapper();
      .sysclk(temp_clk)
     );
     
+    reg [31:0] inst_prev = 32'b0;
+    integer inst_count = 0;
+    
     initial
     begin
         $display("Starting testbench");
         
+        //-------------------------------------------------------------
         // Load TCM memory
+        //------------------------------------------------------------- 
         for (i=0;i<mem_dim;i=i+1)
             mem[i] = 0;
-            
-        for (i=0;i<mem_dim;i=i+1)
-        begin
-            write_enc(i, 0);
-            write_otp(i, 0);
-            write_enc_demonstrator(i, 0);
-            write_otp_demonstrator(i, 0);
-        end
-    
         
         if(`TB_TYPE == "Test")
         begin
@@ -123,7 +117,10 @@ module tb_riscv_wrapper();
             for (i=0;i<mem_dim;i=i+1)
             begin
                 write(i, mem[i]);
-                write_demonstrator(i, 0);
+                //*
+                write_enc(i, mem[i]);
+                write_otp(i, 0);
+                //*/
             end
             
             $display("after -> rdata:");
@@ -146,8 +143,11 @@ module tb_riscv_wrapper();
                 
             for (i=0;i<mem_dim;i=i+1)
             begin
-                write(i, 0);
-                write_demonstrator(i, mem[i]);
+                write(i, mem[i]);
+                //*
+                write_enc_demonstrator(i, mem[i]);
+                write_otp_demonstrator(i, 0);
+                //*/
             end
             
             $display("after -> rdata:");
@@ -159,19 +159,34 @@ module tb_riscv_wrapper();
     
     initial
     begin
+        tb_ARESETn = 1'b1;#(5*`CLK_PERIOD);
+        tb_ARESETn = 1'b0;#(5*`CLK_PERIOD);
         if(`TB_TYPE == "Test")
         begin
-            tb_ARESETn = 1'b1;#(20*`CLK_PERIOD);
-            tb_ARESETn = 1'b0;#(100*`CLK_PERIOD);
-            repeat (100) @(posedge temp_clk);
+            while(UUT.RISCV_bd_i.riscv_wrapper_0.inst.rv_tcm_top.rst_i == 1)
+            begin
+                repeat (1) @(posedge temp_clk); 
+            end
+            
+            while(inst_count != 50)
+            begin
+                if(UUT.RISCV_bd_i.riscv_wrapper_0.inst.rv_tcm_top.u_core.u_frontend.u_fetch.fetch_pc_o != inst_prev)
+                    inst_count = 0;
+                else begin
+                    inst_count = inst_count + 1;
+                end
+                inst_prev = UUT.RISCV_bd_i.riscv_wrapper_0.inst.rv_tcm_top.u_core.u_frontend.u_fetch.fetch_pc_o;
+                repeat (1) @(posedge temp_clk);   
+            end
         end
         else if(`TB_TYPE == "Test_Demonstator")
         begin
             SW=2'b00; 
-            tb_ARESETn = 1'b1;#(20*`CLK_PERIOD);
-            tb_ARESETn = 1'b0;#(300*`CLK_PERIOD);
             
-            SW=2'b00; 
+            while(UUT_demonstrator.RISCV_demonstrator_i.riscv_wrapper_0.inst.rv_tcm_top.rst_i == 1)
+            begin
+                repeat (1) @(posedge temp_clk); 
+            end
             
             repeat (1000) @(posedge temp_clk);
             SW=2'b01;
@@ -184,6 +199,17 @@ module tb_riscv_wrapper();
             write_demonstrator(1471, 64'h0123456789abcdef);
             SW=2'b00;
             repeat (200) @(posedge temp_clk);
+            
+            while(inst_count != 50)
+            begin
+                if(UUT_demonstrator.RISCV_demonstrator_i.riscv_wrapper_0.inst.rv_tcm_top.u_core.u_frontend.u_fetch.fetch_pc_o != inst_prev)
+                    inst_count = 0;
+                else begin
+                    inst_count = inst_count + 1;
+                end
+                inst_prev = UUT_demonstrator.RISCV_demonstrator_i.riscv_wrapper_0.inst.rv_tcm_top.u_core.u_frontend.u_fetch.fetch_pc_o;
+                repeat (1) @(posedge temp_clk);   
+            end
         end
         $finish;
         //$stop;

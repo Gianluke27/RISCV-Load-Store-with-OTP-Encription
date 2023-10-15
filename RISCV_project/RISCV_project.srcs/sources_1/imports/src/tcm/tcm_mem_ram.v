@@ -27,8 +27,17 @@ module tcm_mem_ram
 //-----------------------------------------------------------------
 // Params
 //-----------------------------------------------------------------
+/*
+median_rvtests_pwr
+multiply_rvtests_pwr
+qsort_rvtests_pwr
+towers_rvtests_pwr
+vvadd_rvtests_pwr
+*/
 #(
-     parameter MEM_DIM_KB = 64
+     parameter MEM_DIM_KB = 64,
+     parameter TYPE = "PLAIN",
+     parameter MEM_FILE = "vvadd_rvtests_pwr.mif"
 )
 //-----------------------------------------------------------------
 // Ports
@@ -66,9 +75,20 @@ reg [63:0] ram_read1_q;
 
 // Popolate RAMs 
 //*
+integer i;
 initial begin
-    //$display("Loading RAM.");
-    $readmemh("RISCV_dem_01.mif", ram);//, 0, (MEM_DIM_KB * 128)-1);
+    $display("Loading RAM for %s.", TYPE);
+    
+    for (i=0;i<(MEM_DIM_KB * 128);i=i+1)
+            ram[i] = 0;
+    
+    if(TYPE == "PLAIN" | TYPE == "ENC")
+    begin
+        $display("Loading %s file", MEM_FILE);
+        $readmemh(MEM_FILE, ram);
+    end
+    
+    $display("Load RAM completed!");
 end
 //*/
 

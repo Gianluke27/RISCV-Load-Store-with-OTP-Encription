@@ -1,25 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1695466063" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/RISCV_demonstrator_wrapper.dcp">
-  <File Type="PA-TCL" Name="RISCV_demonstrator_wrapper.tcl"/>
-  <File Type="REPORTS-TCL" Name="RISCV_demonstrator_wrapper_reports.tcl"/>
-  <File Type="RDS-RDS" Name="RISCV_demonstrator_wrapper.vds"/>
-  <File Type="RDS-DCP" Name="RISCV_demonstrator_wrapper.dcp"/>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1697227673" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/RISCV_demonstrator_wrapper.dcp">
+  <File Type="PA-TCL" Name="RISCV_bd_wrapper.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="RISCV_bd_wrapper_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="RISCV_bd_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="RISCV_bd_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="RISCV_bd_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="RISCV_bd_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="RISCV_bd_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="RISCV_bd_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="RISCV_bd_wrapper_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/new/decoder2to4.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/decoder1to2.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/imports/src/tcm/RandomGenerator.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -259,21 +250,21 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/bd/RISCV_demonstrator/RISCV_demonstrator.bd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PGENDIR/sources_1/bd/RISCV_demonstrator/hdl/RISCV_demonstrator_wrapper.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/bd/RISCV_bd/RISCV_bd.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/RISCV_bd/hdl/RISCV_bd_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/decoder2to4.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -281,7 +272,23 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PGENDIR/sources_1/bd/RISCV_bd/hdl/RISCV_bd_wrapper.v">
+    <File Path="$PSRCDIR/sources_1/new/decoder1to2.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/RISCV_demonstrator/RISCV_demonstrator.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/RISCV_demonstrator/hdl/RISCV_demonstrator_wrapper.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -299,55 +306,110 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/output/RISCV_demonstrator_01_TEST.mif">
+    <File Path="$PSRCDIR/sources_1/imports/output/RISCV_Dummy_Program.mif">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../utils/python_scripts/bin_2_mem/output/RISCV_demonstrator_01_TEST.mif"/>
-        <Attr Name="ImportTime" Val="1695028925"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../utils/python_scripts/bin_2_mem/output/RISCV_Dummy_Program.mif"/>
+        <Attr Name="ImportTime" Val="1696781045"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/output/RISCV_demonstrator_01_sim.mif">
+    <File Path="$PSRCDIR/sources_1/imports/output/median_rvtests.mif">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../utils/python_scripts/bin_2_mem/output/RISCV_demonstrator_01_sim.mif"/>
-        <Attr Name="ImportTime" Val="1695140407"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../utils/python_scripts/bin_2_mem/output/median_rvtests.mif"/>
+        <Attr Name="ImportTime" Val="1696958777"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/output/RISCV_demonstrator_02_ASM_test_sim.mif">
+    <File Path="$PSRCDIR/sources_1/imports/output/median_rvtests_pwr.mif">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../utils/python_scripts/bin_2_mem/output/RISCV_demonstrator_02_ASM_test_sim.mif"/>
-        <Attr Name="ImportTime" Val="1695252147"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../utils/python_scripts/bin_2_mem/output/median_rvtests_pwr.mif"/>
+        <Attr Name="ImportTime" Val="1697029867"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/output/RISCV_demonstrator_03_ASM_test_sim.mif">
+    <File Path="$PSRCDIR/sources_1/imports/output/vvadd_rvtests_pwr.mif">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../utils/python_scripts/bin_2_mem/output/RISCV_demonstrator_03_ASM_test_sim.mif"/>
-        <Attr Name="ImportTime" Val="1695422662"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../utils/python_scripts/bin_2_mem/output/vvadd_rvtests_pwr.mif"/>
+        <Attr Name="ImportTime" Val="1697029867"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/output/RISCV_dem_01.mif">
+    <File Path="$PSRCDIR/sources_1/imports/output/towers_rvtests_pwr.mif">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../utils/python_scripts/bin_2_mem/output/RISCV_dem_01.mif"/>
-        <Attr Name="ImportTime" Val="1695465881"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../utils/python_scripts/bin_2_mem/output/towers_rvtests_pwr.mif"/>
+        <Attr Name="ImportTime" Val="1697029867"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/output/vvadd_rvtests.mif">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../utils/python_scripts/bin_2_mem/output/vvadd_rvtests.mif"/>
+        <Attr Name="ImportTime" Val="1697029867"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/output/qsort_rvtests_pwr.mif">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../utils/python_scripts/bin_2_mem/output/qsort_rvtests_pwr.mif"/>
+        <Attr Name="ImportTime" Val="1697029867"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/output/towers_rvtests.mif">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../utils/python_scripts/bin_2_mem/output/towers_rvtests.mif"/>
+        <Attr Name="ImportTime" Val="1697029867"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/output/multiply_rvtests.mif">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../utils/python_scripts/bin_2_mem/output/multiply_rvtests.mif"/>
+        <Attr Name="ImportTime" Val="1697029867"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/output/multiply_rvtests_pwr.mif">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../utils/python_scripts/bin_2_mem/output/multiply_rvtests_pwr.mif"/>
+        <Attr Name="ImportTime" Val="1697029867"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/output/qsort_rvtests.mif">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../utils/python_scripts/bin_2_mem/output/qsort_rvtests.mif"/>
+        <Attr Name="ImportTime" Val="1697029867"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="RISCV_demonstrator_wrapper"/>
+      <Option Name="TopModule" Val="RISCV_bd_wrapper"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
     <File Path="$PSRCDIR/constrs_1/new/Zybo_Z7_Master.xdc">
       <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/new/Zybo_Z7_Demonstrator.xdc">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
@@ -371,14 +433,20 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021"/>
-    <Step Id="synth_design"/>
+    <StratHandle Name="Flow_PerfThresholdCarry" Flow="Vivado Synthesis 2021"/>
+    <Step Id="synth_design">
+      <Option Id="NoCombineLuts">1</Option>
+      <Option Id="KeepEquivalentRegisters">1</Option>
+      <Option Id="ResourceSharing">2</Option>
+      <Option Id="Directive">6</Option>
+    </Step>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="RISCV_demonstrator_axi_gpio_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="RISCV_demonstrator_axi_gpio_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="RISCV_demonstrator_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="RISCV_bd_riscv_wrapper_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="RISCV_demonstrator_processing_system7_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="RISCV_demonstrator_clk_wiz_0"/>
   <BlockFileSet Type="BlockSrcs" Name="RISCV_demonstrator_rst_clk_wiz_100M_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="RISCV_demonstrator_riscv_wrapper_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="RISCV_bd_axi_gpio_0_0"/>
 </GenRun>

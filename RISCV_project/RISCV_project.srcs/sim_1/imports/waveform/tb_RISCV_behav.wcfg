@@ -15,13 +15,13 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="8,411,333.593 ns"></ZoomStartTime>
-      <ZoomEndTime time="8,412,731.594 ns"></ZoomEndTime>
-      <Cursor1Time time="8,411,998.593 ns"></Cursor1Time>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="2,102.331 ns"></ZoomEndTime>
+      <Cursor1Time time="1,700,060.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="306"></NameColumnWidth>
-      <ValueColumnWidth column_width="137"></ValueColumnWidth>
+      <ValueColumnWidth column_width="129"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="12" />
    <wvobject fp_name="/tb_riscv_wrapper/tb_ACLK" type="logic">
@@ -3306,6 +3306,7 @@
       <wvobject fp_name="group724" type="group">
          <obj_property name="label">TCM</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
          <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/clk_i" type="logic">
             <obj_property name="ElementShortName">clk_i</obj_property>
             <obj_property name="ObjectShortName">clk_i</obj_property>
@@ -3321,7 +3322,6 @@
          <wvobject fp_name="group17838" type="group">
             <obj_property name="label">MEM I</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <obj_property name="isExpanded"></obj_property>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/mem_i_rd_i" type="logic">
                <obj_property name="ElementShortName">mem_i_rd_i</obj_property>
                <obj_property name="ObjectShortName">mem_i_rd_i</obj_property>
@@ -3358,7 +3358,6 @@
          <wvobject fp_name="group17837" type="group">
             <obj_property name="label">MEM D</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <obj_property name="isExpanded"></obj_property>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_tcm/mem_d_addr_i" type="array">
                <obj_property name="ElementShortName">mem_d_addr_i[31:0]</obj_property>
                <obj_property name="ObjectShortName">mem_d_addr_i[31:0]</obj_property>
@@ -3756,7 +3755,6 @@
       <wvobject fp_name="group4442" type="group">
          <obj_property name="label">REGISTRI</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <obj_property name="isExpanded"></obj_property>
          <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x0_zero_w " type="array">
             <obj_property name="ElementShortName">\REGFILE.x0_zero_w [31:0]</obj_property>
             <obj_property name="ObjectShortName">\REGFILE.x0_zero_w [31:0]</obj_property>

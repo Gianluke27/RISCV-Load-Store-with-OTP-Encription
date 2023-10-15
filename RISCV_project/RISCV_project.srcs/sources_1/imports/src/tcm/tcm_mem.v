@@ -79,6 +79,7 @@ module tcm_mem
     ,output          mem_d_accept_o
     ,output          mem_d_ack_o
     ,output          mem_d_error_o
+    ,output          mem_d_enc_error_o
     ,output [ 10:0]  mem_d_resp_tag_o
     ,output          axi_awready_o
     ,output          axi_wready_o
@@ -172,7 +173,8 @@ wire [($clog2(MEM_DIM_KB * 1024)-4):0] enc_updater_addr_w = 0;
 
 tcm_mem_ram
 #(
-     .MEM_DIM_KB(MEM_DIM_KB)
+      .MEM_DIM_KB(MEM_DIM_KB)
+     ,.TYPE("PLAIN")
 )
 u_ram
 (
@@ -203,6 +205,10 @@ wire  [31:0]  otp_word_w;
 wire  [31:0]  plain_word_w; 
 wire          result_xor_w;
 
+
+//wire  [31:0]  result_xor_w_h;
+//wire  [31:0]  result_xor_w_l;
+
 generate
 if (SUPPORT_ENCRYPTION)
 begin : secure_zone
@@ -215,7 +221,8 @@ begin : secure_zone
         //-------------------------------------------------------------
         tcm_mem_ram
         #(
-             .MEM_DIM_KB(MEM_DIM_KB)
+              .MEM_DIM_KB(MEM_DIM_KB)
+             ,.TYPE("ENC")
         )
         u_enc_ram
         (
@@ -244,7 +251,8 @@ begin : secure_zone
         //-------------------------------------------------------------
         tcm_mem_ram
         #(
-             .MEM_DIM_KB(MEM_DIM_KB)
+              .MEM_DIM_KB(MEM_DIM_KB)
+             ,.TYPE("OTP")
         )
         u_otp_ram
         (
@@ -274,7 +282,8 @@ begin : secure_zone
         //-------------------------------------------------------------
         tcm_mem_ram
         #(
-             .MEM_DIM_KB(MEM_DIM_KB)
+              .MEM_DIM_KB(MEM_DIM_KB)
+             ,.TYPE("ENC")
         )
         u_enc_ram
         (
@@ -294,7 +303,8 @@ begin : secure_zone
         //-------------------------------------------------------------
         tcm_mem_ram
         #(
-             .MEM_DIM_KB(MEM_DIM_KB)
+              .MEM_DIM_KB(MEM_DIM_KB)
+             ,.TYPE("OTP")
         )
         u_otp_ram
         (
@@ -310,10 +320,18 @@ begin : secure_zone
         );
     end
     
+    //* // ORIGINAL
     assign enc_word_w = muxed_hi_q ? enc_data_w[63:32] : enc_data_w[31:0]; 
     assign otp_word_w = muxed_hi_q ? otp_data_w[63:32] : otp_data_w[31:0]; 
     assign plain_word_w = muxed_hi_q ? data_r_w[63:32] : data_r_w[31:0]; 
     assign result_xor_w = mem_d_rd_q ? (((enc_word_w ^ otp_word_w) == plain_word_w) ? 1'b1: 1'b0): 1'b1;
+    //*/
+    /* // TEST FOR DELAY    
+    assign result_xor_w_h = (enc_data_w[63:32] ^ otp_data_w[63:32] == data_r_w[63:32])? 1'b1: 1'b0;
+    assign result_xor_w_l = (enc_data_w[31:0] ^ otp_data_w[31:0] == data_r_w[31:0])? 1'b1: 1'b0;
+    
+    assign result_xor_w = muxed_hi_q ? result_xor_w_h: result_xor_w_l;
+    //*/
 end
 else
 begin
@@ -403,8 +421,8 @@ else
 assign mem_d_ack_o          = mem_d_ack_q;
 assign mem_d_resp_tag_o     = mem_d_tag_q;
 assign mem_d_data_rd_o      = muxed_hi_q ? data_r_w[63:32] : data_r_w[31:0];
-//assign mem_d_error_o        = mem_d_error_q;//1'b0;
-assign mem_d_error_o        = !result_xor_w;
+assign mem_d_enc_error_o    = !result_xor_w; //& mem_d_rd_q;
+assign mem_d_error_o        = mem_d_enc_error_o;
 
 assign mem_d_accept_o       = mem_d_accept_q;
 assign ext_accept_w         = !mem_d_accept_q;

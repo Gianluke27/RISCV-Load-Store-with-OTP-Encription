@@ -56,20 +56,20 @@
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSABoardId" Val="zybo-z7-20"/>
-    <Option Name="WTXSimLaunchSim" Val="267"/>
+    <Option Name="WTXSimLaunchSim" Val="333"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="40"/>
-    <Option Name="WTModelSimExportSim" Val="40"/>
-    <Option Name="WTQuestaExportSim" Val="40"/>
+    <Option Name="WTXSimExportSim" Val="48"/>
+    <Option Name="WTModelSimExportSim" Val="48"/>
+    <Option Name="WTQuestaExportSim" Val="48"/>
     <Option Name="WTIesExportSim" Val="0"/>
-    <Option Name="WTVcsExportSim" Val="40"/>
-    <Option Name="WTRivieraExportSim" Val="40"/>
-    <Option Name="WTActivehdlExportSim" Val="40"/>
+    <Option Name="WTVcsExportSim" Val="48"/>
+    <Option Name="WTRivieraExportSim" Val="48"/>
+    <Option Name="WTActivehdlExportSim" Val="48"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -331,6 +331,12 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+        <CompFileExtendedInfo CompFileName="RISCV_bd.bd" FileRelPathName="ip/RISCV_bd_riscv_wrapper_0_1/RISCV_bd_riscv_wrapper_0_1.xci">
+          <Proxy FileSetName="RISCV_bd_riscv_wrapper_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="RISCV_bd.bd" FileRelPathName="ip/RISCV_bd_axi_gpio_0_0/RISCV_bd_axi_gpio_0_0.xci">
+          <Proxy FileSetName="RISCV_bd_axi_gpio_0_0"/>
+        </CompFileExtendedInfo>
       </File>
       <File Path="$PGENDIR/sources_1/bd/RISCV_bd/hdl/RISCV_bd_wrapper.v">
         <FileInfo>
@@ -362,6 +368,12 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+        <CompFileExtendedInfo CompFileName="RISCV_demonstrator.bd" FileRelPathName="ip/RISCV_demonstrator_clk_wiz_0/RISCV_demonstrator_clk_wiz_0.xci">
+          <Proxy FileSetName="RISCV_demonstrator_clk_wiz_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="RISCV_demonstrator.bd" FileRelPathName="ip/RISCV_demonstrator_axi_gpio_1_0/RISCV_demonstrator_axi_gpio_1_0.xci">
+          <Proxy FileSetName="RISCV_demonstrator_axi_gpio_1_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="RISCV_demonstrator.bd" FileRelPathName="ip/RISCV_demonstrator_rst_clk_wiz_100M_1/RISCV_demonstrator_rst_clk_wiz_100M_1.xci">
           <Proxy FileSetName="RISCV_demonstrator_rst_clk_wiz_100M_1"/>
         </CompFileExtendedInfo>
@@ -371,17 +383,8 @@
         <CompFileExtendedInfo CompFileName="RISCV_demonstrator.bd" FileRelPathName="ip/RISCV_demonstrator_axi_gpio_0_1/RISCV_demonstrator_axi_gpio_0_1.xci">
           <Proxy FileSetName="RISCV_demonstrator_axi_gpio_0_1"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="RISCV_demonstrator.bd" FileRelPathName="ip/RISCV_demonstrator_clk_wiz_0/RISCV_demonstrator_clk_wiz_0.xci">
-          <Proxy FileSetName="RISCV_demonstrator_clk_wiz_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="RISCV_demonstrator.bd" FileRelPathName="ip/RISCV_demonstrator_processing_system7_0_0/RISCV_demonstrator_processing_system7_0_0.xci">
           <Proxy FileSetName="RISCV_demonstrator_processing_system7_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="RISCV_demonstrator.bd" FileRelPathName="ip/RISCV_demonstrator_riscv_wrapper_0_1/RISCV_demonstrator_riscv_wrapper_0_1.xci">
-          <Proxy FileSetName="RISCV_demonstrator_riscv_wrapper_0_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="RISCV_demonstrator.bd" FileRelPathName="ip/RISCV_demonstrator_axi_gpio_1_0/RISCV_demonstrator_axi_gpio_1_0.xci">
-          <Proxy FileSetName="RISCV_demonstrator_axi_gpio_1_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PGENDIR/sources_1/bd/RISCV_demonstrator/hdl/RISCV_demonstrator_wrapper.v">
@@ -402,50 +405,90 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/output/RISCV_demonstrator_01_TEST.mif">
+      <File Path="$PSRCDIR/sources_1/imports/output/RISCV_Dummy_Program.mif">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../utils/python_scripts/bin_2_mem/output/RISCV_demonstrator_01_TEST.mif"/>
-          <Attr Name="ImportTime" Val="1695028925"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../utils/python_scripts/bin_2_mem/output/RISCV_Dummy_Program.mif"/>
+          <Attr Name="ImportTime" Val="1696781045"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/output/RISCV_demonstrator_01_sim.mif">
+      <File Path="$PSRCDIR/sources_1/imports/output/median_rvtests.mif">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../utils/python_scripts/bin_2_mem/output/RISCV_demonstrator_01_sim.mif"/>
-          <Attr Name="ImportTime" Val="1695140407"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../utils/python_scripts/bin_2_mem/output/median_rvtests.mif"/>
+          <Attr Name="ImportTime" Val="1696958777"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/output/RISCV_demonstrator_02_ASM_test_sim.mif">
+      <File Path="$PSRCDIR/sources_1/imports/output/median_rvtests_pwr.mif">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../utils/python_scripts/bin_2_mem/output/RISCV_demonstrator_02_ASM_test_sim.mif"/>
-          <Attr Name="ImportTime" Val="1695252147"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../utils/python_scripts/bin_2_mem/output/median_rvtests_pwr.mif"/>
+          <Attr Name="ImportTime" Val="1697029867"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/output/RISCV_demonstrator_03_ASM_test_sim.mif">
+      <File Path="$PSRCDIR/sources_1/imports/output/vvadd_rvtests_pwr.mif">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../utils/python_scripts/bin_2_mem/output/RISCV_demonstrator_03_ASM_test_sim.mif"/>
-          <Attr Name="ImportTime" Val="1695422662"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../utils/python_scripts/bin_2_mem/output/vvadd_rvtests_pwr.mif"/>
+          <Attr Name="ImportTime" Val="1697029867"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/output/RISCV_dem_01.mif">
+      <File Path="$PSRCDIR/sources_1/imports/output/towers_rvtests_pwr.mif">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../utils/python_scripts/bin_2_mem/output/RISCV_dem_01.mif"/>
-          <Attr Name="ImportTime" Val="1695465881"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../utils/python_scripts/bin_2_mem/output/towers_rvtests_pwr.mif"/>
+          <Attr Name="ImportTime" Val="1697029867"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/output/RISCV_power_01.mif">
+      <File Path="$PSRCDIR/sources_1/imports/output/vvadd_rvtests.mif">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../utils/python_scripts/bin_2_mem/output/RISCV_power_01.mif"/>
-          <Attr Name="ImportTime" Val="1695489052"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../utils/python_scripts/bin_2_mem/output/vvadd_rvtests.mif"/>
+          <Attr Name="ImportTime" Val="1697029867"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/output/qsort_rvtests_pwr.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../utils/python_scripts/bin_2_mem/output/qsort_rvtests_pwr.mif"/>
+          <Attr Name="ImportTime" Val="1697029867"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/output/towers_rvtests.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../utils/python_scripts/bin_2_mem/output/towers_rvtests.mif"/>
+          <Attr Name="ImportTime" Val="1697029867"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/output/multiply_rvtests.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../utils/python_scripts/bin_2_mem/output/multiply_rvtests.mif"/>
+          <Attr Name="ImportTime" Val="1697029867"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/output/multiply_rvtests_pwr.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../utils/python_scripts/bin_2_mem/output/multiply_rvtests_pwr.mif"/>
+          <Attr Name="ImportTime" Val="1697029867"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/output/qsort_rvtests.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../utils/python_scripts/bin_2_mem/output/qsort_rvtests.mif"/>
+          <Attr Name="ImportTime" Val="1697029867"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -463,6 +506,13 @@
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/constrs_1/new/Zybo_Z7_Demonstrator.xdc">
+        <FileInfo>
+          <Attr Name="UserDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
       <Config>
         <Option Name="ConstrsType" Val="XDC"/>
       </Config>
@@ -476,6 +526,14 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sim_1/new/tb_tcm_top.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sim_1/tb/tb_core_icarus/tb_top.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
@@ -484,9 +542,10 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sim_1/waveform/tb_top_behav.wcfg">
+      <File Path="$PSRCDIR/sim_1/imports/waveform/tb_top_behav.wcfg">
         <FileInfo>
-          <Attr Name="UserDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/waveform/tb_top_behav.wcfg"/>
+          <Attr Name="ImportTime" Val="1693521362"/>
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sim_1/tb/tb_tcm/elf_load.h">
@@ -633,14 +692,6 @@
           <Attr Name="IsVisible" Val="1"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sim_1/bin_files/test_01.bin"/>
-      <File Path="$PSRCDIR/sim_1/bin_files/test_02.bin"/>
-      <File Path="$PSRCDIR/sim_1/imports/bin/test_03.bin">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../RISCV/VM_files/c_programs/bin/test_03.bin"/>
-          <Attr Name="ImportTime" Val="1694277635"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sim_1/waveform/tb_riscv_wrapper_behav.wcfg">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
@@ -664,6 +715,22 @@
         <FileInfo>
           <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/waveform/tb_RISCV_demonstrator_behav.wcfg"/>
           <Attr Name="ImportTime" Val="1694819350"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/imports/output/RISCV_TCM_test.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../utils/python_scripts/bin_2_mem/output/RISCV_TCM_test.mif"/>
+          <Attr Name="ImportTime" Val="1696433949"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/imports/output/RISCV_TCM_test2.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../utils/python_scripts/bin_2_mem/output/RISCV_TCM_test2.mif"/>
+          <Attr Name="ImportTime" Val="1696441269"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
@@ -734,9 +801,15 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="RISCV_demonstrator_riscv_wrapper_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RISCV_demonstrator_riscv_wrapper_0_1" RelGenDir="$PGENDIR/RISCV_demonstrator_riscv_wrapper_0_1">
+    <FileSet Name="RISCV_bd_axi_gpio_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RISCV_bd_axi_gpio_0_0" RelGenDir="$PGENDIR/RISCV_bd_axi_gpio_0_0">
       <Config>
-        <Option Name="TopModule" Val="RISCV_demonstrator_riscv_wrapper_0_1"/>
+        <Option Name="TopModule" Val="RISCV_bd_axi_gpio_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="RISCV_bd_riscv_wrapper_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RISCV_bd_riscv_wrapper_0_1" RelGenDir="$PGENDIR/RISCV_bd_riscv_wrapper_0_1">
+      <Config>
+        <Option Name="TopModule" Val="RISCV_bd_riscv_wrapper_0_1"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -760,10 +833,15 @@
     </Simulator>
   </Simulators>
   <Runs Version="1" Minor="15">
-    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7z020clg400-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="true" IncrementalCheckpoint="$PSRCDIR/utils_1/imports/synth_1/RISCV_demonstrator_wrapper.dcp" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/synth_1">
+    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7z020clg400-1" ConstrsSet="constrs_1" Description="Default options plus the FewerCarryChains directive for less inference of carry chains, turning off the LUT combining, resource sharing off, retaining equivalent registers" AutoIncrementalCheckpoint="true" IncrementalCheckpoint="$PSRCDIR/utils_1/imports/synth_1/RISCV_demonstrator_wrapper.dcp" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021"/>
-        <Step Id="synth_design"/>
+        <StratHandle Name="Flow_PerfThresholdCarry" Flow="Vivado Synthesis 2021"/>
+        <Step Id="synth_design">
+          <Option Id="NoCombineLuts">1</Option>
+          <Option Id="KeepEquivalentRegisters">1</Option>
+          <Option Id="ResourceSharing">2</Option>
+          <Option Id="Directive">6</Option>
+        </Step>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2021"/>
@@ -830,7 +908,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="RISCV_demonstrator_riscv_wrapper_0_1_synth_1" Type="Ft3:Synth" SrcSet="RISCV_demonstrator_riscv_wrapper_0_1" Part="xc7z020clg400-1" ConstrsSet="RISCV_demonstrator_riscv_wrapper_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/RISCV_demonstrator_riscv_wrapper_0_1_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_demonstrator_riscv_wrapper_0_1_synth_1">
+    <Run Id="RISCV_bd_axi_gpio_0_0_synth_1" Type="Ft3:Synth" SrcSet="RISCV_bd_axi_gpio_0_0" Part="xc7z020clg400-1" ConstrsSet="RISCV_bd_axi_gpio_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/RISCV_bd_axi_gpio_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_bd_axi_gpio_0_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021"/>
         <Step Id="synth_design"/>
@@ -840,17 +918,33 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/impl_1">
+    <Run Id="RISCV_bd_riscv_wrapper_0_1_synth_1" Type="Ft3:Synth" SrcSet="RISCV_bd_riscv_wrapper_0_1" Part="xc7z020clg400-1" ConstrsSet="RISCV_bd_riscv_wrapper_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/RISCV_bd_riscv_wrapper_0_1_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_bd_riscv_wrapper_0_1_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2021"/>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2021"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="constrs_1" Description="Similar to the Implementation Run Defaults, but enables the physical optimization step (phys_opt_design) before and after routing." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Flow_RunPostRoutePhysOpt" Flow="Vivado Implementation 2021"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
         <Step Id="place_design"/>
         <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="phys_opt_design">
+          <Option Id="Directive">0</Option>
+        </Step>
+        <Step Id="route_design">
+          <Option Id="MoreOptsStr"><![CDATA[-tns_cleanup]]></Option>
+        </Step>
+        <Step Id="post_route_phys_opt_design" EnableStepBool="1"/>
         <Step Id="write_bitstream"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -889,287 +983,6 @@
         <Step Id="write_bitstream"/>
       </Strategy>
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2021"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="impl_1_copy_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="constrs_1" Description="Similar to Performance_ExplorePostRoutePhysOpt, but enables logic optimization step (opt_design) with the ExploreWithRemap directive." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="synth_1" IncludeInArchive="true" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/impl_1/impl_1_copy_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Performance_ExploreWithRemap" Flow="Vivado Implementation 2021"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design">
-          <Option Id="Directive">6</Option>
-        </Step>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design">
-          <Option Id="Directive">0</Option>
-        </Step>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design">
-          <Option Id="Directive">0</Option>
-        </Step>
-        <Step Id="route_design">
-          <Option Id="Directive">1</Option>
-          <Option Id="MoreOptsStr"><![CDATA[-tns_cleanup]]></Option>
-        </Step>
-        <Step Id="post_route_phys_opt_design" EnableStepBool="1">
-          <Option Id="Directive">0</Option>
-        </Step>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2021" CtrlBit="true">
-        <ReportConfig DisplayName="Timing Summary" Name="impl_1_copy_1_init_report_timing_summary_0" Spec="report_timing_summary" RunStep="init_design" Version="1" Minor="0" IsDisabled="true">
-          <ReportConfigOption Name="max_paths" Type="" Value="10"/>
-          <ReportConfigOption Name="report_unconstrained" Type="" Value="true"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
-        </ReportConfig>
-        <ReportConfig DisplayName="DRC" Name="impl_1_copy_1_opt_report_drc_0" Spec="report_drc" RunStep="opt_design" Version="1" Minor="0">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Timing Summary" Name="impl_1_copy_1_opt_report_timing_summary_0" Spec="report_timing_summary" RunStep="opt_design" Version="1" Minor="0" IsDisabled="true">
-          <ReportConfigOption Name="max_paths" Type="" Value="10"/>
-          <ReportConfigOption Name="report_unconstrained" Type="" Value="true"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Timing Summary" Name="impl_1_copy_1_power_opt_report_timing_summary_0" Spec="report_timing_summary" RunStep="power_opt_design" Version="1" Minor="0" IsDisabled="true">
-          <ReportConfigOption Name="max_paths" Type="" Value="10"/>
-          <ReportConfigOption Name="report_unconstrained" Type="" Value="true"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
-        </ReportConfig>
-        <ReportConfig DisplayName="IO" Name="impl_1_copy_1_place_report_io_0" Spec="report_io" RunStep="place_design" Version="1" Minor="0">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Utilization" Name="impl_1_copy_1_place_report_utilization_0" Spec="report_utilization" RunStep="place_design" Version="1" Minor="0">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Control Sets" Name="impl_1_copy_1_place_report_control_sets_0" Spec="report_control_sets" RunStep="place_design" Version="1" Minor="0">
-          <ReportConfigOption Name="verbose" Type="" Value="true"/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Incremental Reuse" Name="impl_1_copy_1_place_report_incremental_reuse_0" Spec="report_incremental_reuse" RunStep="place_design" Version="1" Minor="0" IsDisabled="true">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Incremental Reuse" Name="impl_1_copy_1_place_report_incremental_reuse_1" Spec="report_incremental_reuse" RunStep="place_design" Version="1" Minor="0" IsDisabled="true">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Timing Summary" Name="impl_1_copy_1_place_report_timing_summary_0" Spec="report_timing_summary" RunStep="place_design" Version="1" Minor="0" IsDisabled="true">
-          <ReportConfigOption Name="max_paths" Type="" Value="10"/>
-          <ReportConfigOption Name="report_unconstrained" Type="" Value="true"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Timing Summary" Name="impl_1_copy_1_post_place_power_opt_report_timing_summary_0" Spec="report_timing_summary" RunStep="post_place_power_opt_design" Version="1" Minor="0" IsDisabled="true">
-          <ReportConfigOption Name="max_paths" Type="" Value="10"/>
-          <ReportConfigOption Name="report_unconstrained" Type="" Value="true"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Timing Summary" Name="impl_1_copy_1_phys_opt_report_timing_summary_0" Spec="report_timing_summary" RunStep="phys_opt_design" Version="1" Minor="0" IsDisabled="true">
-          <ReportConfigOption Name="max_paths" Type="" Value="10"/>
-          <ReportConfigOption Name="report_unconstrained" Type="" Value="true"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
-        </ReportConfig>
-        <ReportConfig DisplayName="implementation_log" Name="impl_1_copy_1_route_implementation_log_0" Spec="" RunStep="route_design">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
-        </ReportConfig>
-        <ReportConfig DisplayName="DRC" Name="impl_1_copy_1_route_report_drc_0" Spec="report_drc" RunStep="route_design" Version="1" Minor="0">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Methodology" Name="impl_1_copy_1_route_report_methodology_0" Spec="report_methodology" RunStep="route_design" Version="1" Minor="0">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Power" Name="impl_1_copy_1_route_report_power_0" Spec="report_power" RunStep="route_design" Version="1" Minor="0">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Route Status" Name="impl_1_copy_1_route_report_route_status_0" Spec="report_route_status" RunStep="route_design" Version="1" Minor="0">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Timing Summary" Name="impl_1_copy_1_route_report_timing_summary_0" Spec="report_timing_summary" RunStep="route_design" Version="1" Minor="0">
-          <ReportConfigOption Name="max_paths" Type="" Value="10"/>
-          <ReportConfigOption Name="report_unconstrained" Type="" Value="true"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Incremental Reuse" Name="impl_1_copy_1_route_report_incremental_reuse_0" Spec="report_incremental_reuse" RunStep="route_design" Version="1" Minor="0">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Clock Utilization" Name="impl_1_copy_1_route_report_clock_utilization_0" Spec="report_clock_utilization" RunStep="route_design" Version="1" Minor="0">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Bus Skew" Name="impl_1_copy_1_route_report_bus_skew_0" Spec="report_bus_skew" RunStep="route_design" Version="1" Minor="1">
-          <ReportConfigOption Name="warn_on_violation" Type="" Value="true"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Timing Summary" Name="impl_1_copy_1_post_route_phys_opt_report_timing_summary_0" Spec="report_timing_summary" RunStep="post_route_phys_opt_design" Version="1" Minor="0">
-          <ReportConfigOption Name="max_paths" Type="" Value="10"/>
-          <ReportConfigOption Name="report_unconstrained" Type="" Value="true"/>
-          <ReportConfigOption Name="warn_on_violation" Type="" Value="true"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Bus Skew" Name="impl_1_copy_1_post_route_phys_opt_report_bus_skew_0" Spec="report_bus_skew" RunStep="post_route_phys_opt_design" Version="1" Minor="1">
-          <ReportConfigOption Name="warn_on_violation" Type="" Value="true"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
-        </ReportConfig>
-        <ReportConfig DisplayName="report_webtalk" Name="impl_1_copy_1_bitstream_report_webtalk_0" Spec="" RunStep="write_bitstream">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
-        </ReportConfig>
-        <ReportConfig DisplayName="implementation_log" Name="impl_1_copy_1_bitstream_implementation_log_0" Spec="" RunStep="write_bitstream">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
-        </ReportConfig>
-      </ReportStrategy>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="impl_1_copy_2" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="constrs_1" Description="Includes alternate algorithms for timing-driven optimization" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="synth_1" IncludeInArchive="true" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/impl_1/impl_1_copy_2">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Performance_ExtraTimingOpt" Flow="Vivado Implementation 2021"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design">
-          <Option Id="Directive">8</Option>
-        </Step>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design">
-          <Option Id="Directive">0</Option>
-        </Step>
-        <Step Id="route_design">
-          <Option Id="Directive">1</Option>
-        </Step>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2021" CtrlBit="true">
-        <ReportConfig DisplayName="Timing Summary" Name="impl_1_copy_2_init_report_timing_summary_0" Spec="report_timing_summary" RunStep="init_design" Version="1" Minor="0" IsDisabled="true">
-          <ReportConfigOption Name="max_paths" Type="" Value="10"/>
-          <ReportConfigOption Name="report_unconstrained" Type="" Value="true"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
-        </ReportConfig>
-        <ReportConfig DisplayName="DRC" Name="impl_1_copy_2_opt_report_drc_0" Spec="report_drc" RunStep="opt_design" Version="1" Minor="0">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Timing Summary" Name="impl_1_copy_2_opt_report_timing_summary_0" Spec="report_timing_summary" RunStep="opt_design" Version="1" Minor="0" IsDisabled="true">
-          <ReportConfigOption Name="max_paths" Type="" Value="10"/>
-          <ReportConfigOption Name="report_unconstrained" Type="" Value="true"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Timing Summary" Name="impl_1_copy_2_power_opt_report_timing_summary_0" Spec="report_timing_summary" RunStep="power_opt_design" Version="1" Minor="0" IsDisabled="true">
-          <ReportConfigOption Name="max_paths" Type="" Value="10"/>
-          <ReportConfigOption Name="report_unconstrained" Type="" Value="true"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
-        </ReportConfig>
-        <ReportConfig DisplayName="IO" Name="impl_1_copy_2_place_report_io_0" Spec="report_io" RunStep="place_design" Version="1" Minor="0">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Utilization" Name="impl_1_copy_2_place_report_utilization_0" Spec="report_utilization" RunStep="place_design" Version="1" Minor="0">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Control Sets" Name="impl_1_copy_2_place_report_control_sets_0" Spec="report_control_sets" RunStep="place_design" Version="1" Minor="0">
-          <ReportConfigOption Name="verbose" Type="" Value="true"/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Incremental Reuse" Name="impl_1_copy_2_place_report_incremental_reuse_0" Spec="report_incremental_reuse" RunStep="place_design" Version="1" Minor="0" IsDisabled="true">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Incremental Reuse" Name="impl_1_copy_2_place_report_incremental_reuse_1" Spec="report_incremental_reuse" RunStep="place_design" Version="1" Minor="0" IsDisabled="true">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Timing Summary" Name="impl_1_copy_2_place_report_timing_summary_0" Spec="report_timing_summary" RunStep="place_design" Version="1" Minor="0" IsDisabled="true">
-          <ReportConfigOption Name="max_paths" Type="" Value="10"/>
-          <ReportConfigOption Name="report_unconstrained" Type="" Value="true"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Timing Summary" Name="impl_1_copy_2_post_place_power_opt_report_timing_summary_0" Spec="report_timing_summary" RunStep="post_place_power_opt_design" Version="1" Minor="0" IsDisabled="true">
-          <ReportConfigOption Name="max_paths" Type="" Value="10"/>
-          <ReportConfigOption Name="report_unconstrained" Type="" Value="true"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Timing Summary" Name="impl_1_copy_2_phys_opt_report_timing_summary_0" Spec="report_timing_summary" RunStep="phys_opt_design" Version="1" Minor="0" IsDisabled="true">
-          <ReportConfigOption Name="max_paths" Type="" Value="10"/>
-          <ReportConfigOption Name="report_unconstrained" Type="" Value="true"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
-        </ReportConfig>
-        <ReportConfig DisplayName="implementation_log" Name="impl_1_copy_2_route_implementation_log_0" Spec="" RunStep="route_design">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
-        </ReportConfig>
-        <ReportConfig DisplayName="DRC" Name="impl_1_copy_2_route_report_drc_0" Spec="report_drc" RunStep="route_design" Version="1" Minor="0">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Methodology" Name="impl_1_copy_2_route_report_methodology_0" Spec="report_methodology" RunStep="route_design" Version="1" Minor="0">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Power" Name="impl_1_copy_2_route_report_power_0" Spec="report_power" RunStep="route_design" Version="1" Minor="0">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Route Status" Name="impl_1_copy_2_route_report_route_status_0" Spec="report_route_status" RunStep="route_design" Version="1" Minor="0">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Timing Summary" Name="impl_1_copy_2_route_report_timing_summary_0" Spec="report_timing_summary" RunStep="route_design" Version="1" Minor="0">
-          <ReportConfigOption Name="max_paths" Type="" Value="10"/>
-          <ReportConfigOption Name="report_unconstrained" Type="" Value="true"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Incremental Reuse" Name="impl_1_copy_2_route_report_incremental_reuse_0" Spec="report_incremental_reuse" RunStep="route_design" Version="1" Minor="0">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Clock Utilization" Name="impl_1_copy_2_route_report_clock_utilization_0" Spec="report_clock_utilization" RunStep="route_design" Version="1" Minor="0">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Bus Skew" Name="impl_1_copy_2_route_report_bus_skew_0" Spec="report_bus_skew" RunStep="route_design" Version="1" Minor="1">
-          <ReportConfigOption Name="warn_on_violation" Type="" Value="true"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Timing Summary" Name="impl_1_copy_2_post_route_phys_opt_report_timing_summary_0" Spec="report_timing_summary" RunStep="post_route_phys_opt_design" Version="1" Minor="0">
-          <ReportConfigOption Name="max_paths" Type="" Value="10"/>
-          <ReportConfigOption Name="report_unconstrained" Type="" Value="true"/>
-          <ReportConfigOption Name="warn_on_violation" Type="" Value="true"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Bus Skew" Name="impl_1_copy_2_post_route_phys_opt_report_bus_skew_0" Spec="report_bus_skew" RunStep="post_route_phys_opt_design" Version="1" Minor="1">
-          <ReportConfigOption Name="warn_on_violation" Type="" Value="true"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
-        </ReportConfig>
-        <ReportConfig DisplayName="report_webtalk" Name="impl_1_copy_2_bitstream_report_webtalk_0" Spec="" RunStep="write_bitstream">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
-        </ReportConfig>
-        <ReportConfig DisplayName="implementation_log" Name="impl_1_copy_2_bitstream_implementation_log_0" Spec="" RunStep="write_bitstream">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
-        </ReportConfig>
-      </ReportStrategy>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
@@ -1241,145 +1054,28 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="impl_1_copy_3" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="constrs_1" Description="Similar to the Implementation Run Defaults, but enables the physical optimization step (phys_opt_design) before and after routing." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="synth_1" IncludeInArchive="true" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/impl_1/impl_1_copy_3">
+    <Run Id="RISCV_bd_axi_gpio_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="RISCV_bd_axi_gpio_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="RISCV_bd_axi_gpio_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_bd_axi_gpio_0_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Flow_RunPostRoutePhysOpt" Flow="Vivado Implementation 2021"/>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2021"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
         <Step Id="place_design"/>
         <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design">
-          <Option Id="Directive">0</Option>
-        </Step>
-        <Step Id="route_design">
-          <Option Id="MoreOptsStr"><![CDATA[-tns_cleanup]]></Option>
-        </Step>
-        <Step Id="post_route_phys_opt_design" EnableStepBool="1"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
         <Step Id="write_bitstream"/>
       </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2021" CtrlBit="true">
-        <ReportConfig DisplayName="Timing Summary - Design Initialization" Name="impl_1_copy_3_init_report_timing_summary_0" Spec="report_timing_summary" RunStep="init_design" Version="1" Minor="0" IsDisabled="true">
-          <ReportConfigOption Name="max_paths" Type="" Value="10"/>
-          <ReportConfigOption Name="report_unconstrained" Type="" Value="true"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
-        </ReportConfig>
-        <ReportConfig DisplayName="DRC - Opt Design" Name="impl_1_copy_3_opt_report_drc_0" Spec="report_drc" RunStep="opt_design" Version="1" Minor="0">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Timing Summary - Opt Design" Name="impl_1_copy_3_opt_report_timing_summary_0" Spec="report_timing_summary" RunStep="opt_design" Version="1" Minor="0" IsDisabled="true">
-          <ReportConfigOption Name="max_paths" Type="" Value="10"/>
-          <ReportConfigOption Name="report_unconstrained" Type="" Value="true"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Timing Summary - Power Opt Design" Name="impl_1_copy_3_power_opt_report_timing_summary_0" Spec="report_timing_summary" RunStep="power_opt_design" Version="1" Minor="0" IsDisabled="true">
-          <ReportConfigOption Name="max_paths" Type="" Value="10"/>
-          <ReportConfigOption Name="report_unconstrained" Type="" Value="true"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
-        </ReportConfig>
-        <ReportConfig DisplayName="IO - Place Design" Name="impl_1_copy_3_place_report_io_0" Spec="report_io" RunStep="place_design" Version="1" Minor="0">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Utilization - Place Design" Name="impl_1_copy_3_place_report_utilization_0" Spec="report_utilization" RunStep="place_design" Version="1" Minor="0">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Control Sets - Place Design" Name="impl_1_copy_3_place_report_control_sets_0" Spec="report_control_sets" RunStep="place_design" Version="1" Minor="0">
-          <ReportConfigOption Name="verbose" Type="" Value="true"/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Incremental Reuse - Place Design" Name="impl_1_copy_3_place_report_incremental_reuse_0" Spec="report_incremental_reuse" RunStep="place_design" Version="1" Minor="0" IsDisabled="true">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Incremental Reuse - Place Design" Name="impl_1_copy_3_place_report_incremental_reuse_1" Spec="report_incremental_reuse" RunStep="place_design" Version="1" Minor="0" IsDisabled="true">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Timing Summary - Place Design" Name="impl_1_copy_3_place_report_timing_summary_0" Spec="report_timing_summary" RunStep="place_design" Version="1" Minor="0" IsDisabled="true">
-          <ReportConfigOption Name="max_paths" Type="" Value="10"/>
-          <ReportConfigOption Name="report_unconstrained" Type="" Value="true"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Timing Summary - Post-Place Power Opt Design" Name="impl_1_copy_3_post_place_power_opt_report_timing_summary_0" Spec="report_timing_summary" RunStep="post_place_power_opt_design" Version="1" Minor="0" IsDisabled="true">
-          <ReportConfigOption Name="max_paths" Type="" Value="10"/>
-          <ReportConfigOption Name="report_unconstrained" Type="" Value="true"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Timing Summary - Post-Place Phys Opt Design" Name="impl_1_copy_3_phys_opt_report_timing_summary_0" Spec="report_timing_summary" RunStep="phys_opt_design" Version="1" Minor="0" IsDisabled="true">
-          <ReportConfigOption Name="max_paths" Type="" Value="10"/>
-          <ReportConfigOption Name="report_unconstrained" Type="" Value="true"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
-        </ReportConfig>
-        <ReportConfig DisplayName="implementation_log" Name="impl_1_copy_3_route_implementation_log_0" Spec="" RunStep="route_design">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
-        </ReportConfig>
-        <ReportConfig DisplayName="DRC - Route Design" Name="impl_1_copy_3_route_report_drc_0" Spec="report_drc" RunStep="route_design" Version="1" Minor="0">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Methodology - Route Design" Name="impl_1_copy_3_route_report_methodology_0" Spec="report_methodology" RunStep="route_design" Version="1" Minor="0">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Power - Route Design" Name="impl_1_copy_3_route_report_power_0" Spec="report_power" RunStep="route_design" Version="1" Minor="0">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Route Status - Route Design" Name="impl_1_copy_3_route_report_route_status_0" Spec="report_route_status" RunStep="route_design" Version="1" Minor="0">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Timing Summary - Route Design" Name="impl_1_copy_3_route_report_timing_summary_0" Spec="report_timing_summary" RunStep="route_design" Version="1" Minor="0">
-          <ReportConfigOption Name="max_paths" Type="" Value="10"/>
-          <ReportConfigOption Name="report_unconstrained" Type="" Value="true"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Incremental Reuse - Route Design" Name="impl_1_copy_3_route_report_incremental_reuse_0" Spec="report_incremental_reuse" RunStep="route_design" Version="1" Minor="0">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Clock Utilization - Route Design" Name="impl_1_copy_3_route_report_clock_utilization_0" Spec="report_clock_utilization" RunStep="route_design" Version="1" Minor="0">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Bus Skew - Route Design" Name="impl_1_copy_3_route_report_bus_skew_0" Spec="report_bus_skew" RunStep="route_design" Version="1" Minor="1">
-          <ReportConfigOption Name="warn_on_violation" Type="" Value="true"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Timing Summary - Post-Route Phys Opt Design" Name="impl_1_copy_3_post_route_phys_opt_report_timing_summary_0" Spec="report_timing_summary" RunStep="post_route_phys_opt_design" Version="1" Minor="0">
-          <ReportConfigOption Name="max_paths" Type="" Value="10"/>
-          <ReportConfigOption Name="report_unconstrained" Type="" Value="true"/>
-          <ReportConfigOption Name="warn_on_violation" Type="" Value="true"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
-        </ReportConfig>
-        <ReportConfig DisplayName="Bus Skew - Post-Route Phys Opt Design" Name="impl_1_copy_3_post_route_phys_opt_report_bus_skew_0" Spec="report_bus_skew" RunStep="post_route_phys_opt_design" Version="1" Minor="1">
-          <ReportConfigOption Name="warn_on_violation" Type="" Value="true"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
-        </ReportConfig>
-        <ReportConfig DisplayName="report_webtalk" Name="impl_1_copy_3_bitstream_report_webtalk_0" Spec="" RunStep="write_bitstream">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
-        </ReportConfig>
-        <ReportConfig DisplayName="implementation_log" Name="impl_1_copy_3_bitstream_implementation_log_0" Spec="" RunStep="write_bitstream">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
-        </ReportConfig>
-      </ReportStrategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2021"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="RISCV_demonstrator_riscv_wrapper_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="RISCV_demonstrator_riscv_wrapper_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="RISCV_demonstrator_riscv_wrapper_0_1_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_demonstrator_riscv_wrapper_0_1_impl_1">
+    <Run Id="RISCV_bd_riscv_wrapper_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="RISCV_bd_riscv_wrapper_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="RISCV_bd_riscv_wrapper_0_1_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_bd_riscv_wrapper_0_1_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2021"/>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2021">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

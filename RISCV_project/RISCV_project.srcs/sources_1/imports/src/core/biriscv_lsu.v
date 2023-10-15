@@ -424,24 +424,6 @@ assign writeback_exception_o         = fault_load_align_w       ? `EXCEPTION_MIS
                                        fault_enc_store_bus_w    ? `EXCEPTION_ENC_FAULT_STORE:
                                        `EXCEPTION_W'b0;
 
-/*
-generate
-if(SUPPORT_ENCRYPTION)
-begin
-    // Delayed memory encryption error
-    reg    mem_enc_error_q;
-    
-    always @ (posedge clk_i or posedge rst_i)
-    if (rst_i)
-        mem_enc_error_q <= 1'b0;
-    else
-        mem_enc_error_q <= mem_enc_error_i;
-    
-    assign mem_enc_error_o = mem_enc_error_q;
-end
-endgenerate
-//*/
-
 endmodule 
 
 module biriscv_lsu_fifo
