@@ -164,6 +164,7 @@ wire  [  3:0]  dport_axi_wr_w;
 wire           dport_axi_flush_w;
 wire           dport_tcm_error_w;
 wire           dport_tcm_enc_error_w;
+wire           random_num_request_w;
 wire           dport_accept_w;
 
 
@@ -338,6 +339,7 @@ u_tcm
     ,.mem_d_error_o(dport_tcm_error_w)
     ,.mem_d_enc_error_o(dport_tcm_enc_error_w)
     ,.mem_d_resp_tag_o(dport_tcm_resp_tag_w)
+    ,.random_num_request_o(random_num_request_w)
     ,.axi_awready_o(axi_t_awready_o)
     ,.axi_wready_o(axi_t_wready_o)
     ,.axi_bvalid_o(axi_t_bvalid_o)
@@ -404,7 +406,7 @@ u_rand_gen
     // Inputs
      .clk_i(clk_i)
     ,.rst_i(rst_i)
-    ,.en_i(|dport_wr_w)
+    ,.en_i(random_num_request_w)
     
     //Outputs
     ,.random_num_o(random_num_w)

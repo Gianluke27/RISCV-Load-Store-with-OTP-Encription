@@ -9,12 +9,6 @@
   "H:/TesiMagistrale/Software/Xilinx/Vivado/2021.2/data/xilinx_vip/hdl/clk_vip_if.sv" \
   "H:/TesiMagistrale/Software/Xilinx/Vivado/2021.2/data/xilinx_vip/hdl/rst_vip_if.sv" \
 -endlib
--makelib xcelium_lib/xpm -sv \
-  "H:/TesiMagistrale/Software/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
--endlib
--makelib xcelium_lib/xpm \
-  "H:/TesiMagistrale/Software/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_VCOMP.vhd" \
--endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/RISCV_bd/ip/RISCV_bd_clk_wiz_0_0/RISCV_bd_clk_wiz_0_0_clk_wiz.v" \
   "../../../bd/RISCV_bd/ip/RISCV_bd_clk_wiz_0_0/RISCV_bd_clk_wiz_0_0.v" \
@@ -41,8 +35,8 @@
   "../../../bd/RISCV_bd/ip/RISCV_bd_axi_gpio_0_0/sim/RISCV_bd_axi_gpio_0_0.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/RISCV_bd/sim/RISCV_bd.v" \
   "../../../bd/RISCV_bd/ip/RISCV_bd_riscv_wrapper_0_1/sim/RISCV_bd_riscv_wrapper_0_1.v" \
+  "../../../bd/RISCV_bd/sim/RISCV_bd.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   glbl.v

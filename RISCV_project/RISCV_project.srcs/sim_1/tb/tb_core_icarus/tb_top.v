@@ -30,7 +30,7 @@
 `define MEMORY_ADDRESS_SIZE     ($clog2(`MEMORY_SIZE_B))
 
 // ENC SUPPORT
-`define ENC_SUPPORT             (0)
+`define ENC_SUPPORT             (1)
 
 /* 
     CLK freq: 1/period (GHz)
@@ -45,7 +45,7 @@
 /*
     Tests
 */
-`define FILE_NAME               ("median_rvtests.mif")   
+`define FILE_NAME               ("RISCV_Dummy_Program.mif")   
 
 module tb_top();
     reg tb_ACLK;    // PS clock
@@ -121,6 +121,13 @@ module tb_top();
                 inst_count = inst_count + 1;
             end
             inst_prev = riscv.u_core.u_frontend.u_fetch.fetch_pc_o;
+            
+            if(riscv.u_tcm.secure_zone.u_encryptor.plain_data_i == 32'h7)
+            begin
+                repeat (1) @(posedge temp_clk);  
+                write(7933, 64'h0123456789abcdef);
+            end
+                
             repeat (1) @(posedge temp_clk);   
         end
         

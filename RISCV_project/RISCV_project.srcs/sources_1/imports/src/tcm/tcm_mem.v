@@ -81,6 +81,7 @@ module tcm_mem
     ,output          mem_d_error_o
     ,output          mem_d_enc_error_o
     ,output [ 10:0]  mem_d_resp_tag_o
+    ,output          random_num_request_o
     ,output          axi_awready_o
     ,output          axi_wready_o
     ,output          axi_bvalid_o
@@ -198,16 +199,42 @@ u_ram
 );
 
 // Encryption 
-wire  [63:0]  enc_data_w;
+wire          data_valid_w;
+wire  [ 7:0]  write_byte_otp_w;
+wire  [ 7:0]  write_byte_enc_w;
+wire  [($clog2(MEM_DIM_KB * 1024)-4):0]  otp_address_w; 
+wire  [($clog2(MEM_DIM_KB * 1024)-4):0]  enc_address_w;
 wire  [63:0]  otp_data_w; 
-wire  [31:0]  enc_word_w;
-wire  [31:0]  otp_word_w;
-wire  [31:0]  plain_word_w; 
-wire          result_xor_w;
+wire  [63:0]  enc_data_w;
+wire  [63:0]  otp_data_write_w; 
+wire  [63:0]  enc_data_write_w;
 
 
-//wire  [31:0]  result_xor_w_h;
-//wire  [31:0]  result_xor_w_l;
+//-------------------------------------------------------------
+// Sequential for Encryption
+//-------------------------------------------------------------
+// Save last read request
+reg mem_d_rd_q; 
+
+always @ (posedge clk_i or posedge rst_i)
+if (rst_i)
+    mem_d_rd_q <= 1'b0;
+else
+    mem_d_rd_q <= mem_d_rd_i;
+
+reg muxed_hi_q;
+
+always @ (posedge clk_i or posedge rst_i)
+if (rst_i)
+    muxed_hi_q <= 1'b0;
+else
+    muxed_hi_q <= muxed_hi_w;
+
+assign ext_read_data_w = muxed_hi_q ? data_r_w[63:32] : data_r_w[31:0];
+
+//-------------------------------------------------------------
+// END Sequential for Encryption
+//-------------------------------------------------------------
 
 generate
 if (SUPPORT_ENCRYPTION)
@@ -229,9 +256,9 @@ begin : secure_zone
             // Data access - Load/Store Operation
             .clk0_i(clk_i)
             ,.rst0_i(rst_i)
-            ,.addr0_i(mem_addr_w)
-            ,.data0_i(mem_hi_w? {random_num_i ^ mem_d_data_wr_i, 32'b0} : {32'b0, random_num_i ^ mem_d_data_wr_i})
-            ,.wr0_i(mem_hi_w? {mem_d_wr_i, 4'b0} : {4'b0, mem_d_wr_i})
+            ,.addr0_i(enc_address_w)
+            ,.data0_i(enc_data_write_w)
+            ,.wr0_i(write_byte_enc_w)
                     
             // Data access - EncUpdate Module
             // to do
@@ -259,9 +286,9 @@ begin : secure_zone
             // Data access - Load/Store Operation
             .clk0_i(clk_i)
             ,.rst0_i(rst_i)
-            ,.addr0_i(mem_addr_w)
-            ,.data0_i(mem_hi_w? {random_num_i, 32'b0} : {32'b0, random_num_i})
-            ,.wr0_i(mem_hi_w? {mem_d_wr_i, 4'b0} : {4'b0, mem_d_wr_i})
+            ,.addr0_i(otp_address_w)
+            ,.data0_i(otp_data_write_w)
+            ,.wr0_i(write_byte_otp_w)
             
              // Data access - EncUpdate Module
             ,.clk1_i(clk_i)
@@ -290,9 +317,9 @@ begin : secure_zone
             // Data access - Load/Store Operation
             .clk0_i(clk_i)
             ,.rst0_i(rst_i)
-            ,.addr0_i(mem_addr_w)
-            ,.data0_i(mem_hi_w? {random_num_i ^ mem_d_data_wr_i, 32'b0} : {32'b0, random_num_i ^ mem_d_data_wr_i})
-            ,.wr0_i(mem_hi_w? {mem_d_wr_i, 4'b0} : {4'b0, mem_d_wr_i})
+            ,.addr0_i(enc_address_w)
+            ,.data0_i(enc_data_write_w)
+            ,.wr0_i(write_byte_enc_w)
     
             // Outputs
             ,.data0_o(enc_data_w)
@@ -311,55 +338,58 @@ begin : secure_zone
             // Data access
             .clk0_i(clk_i)
             ,.rst0_i(rst_i)
-            ,.addr0_i(mem_addr_w)
-            ,.data0_i(mem_hi_w? {random_num_i, 32'b0} : {32'b0, random_num_i})
-            ,.wr0_i(mem_hi_w? {mem_d_wr_i, 4'b0} : {4'b0, mem_d_wr_i})
+            ,.addr0_i(otp_address_w)
+            ,.data0_i(otp_data_write_w)
+            ,.wr0_i(write_byte_otp_w)
         
             // Outputs
             ,.data0_o(otp_data_w)
         );
     end
     
-    //* // ORIGINAL
-    assign enc_word_w = muxed_hi_q ? enc_data_w[63:32] : enc_data_w[31:0]; 
-    assign otp_word_w = muxed_hi_q ? otp_data_w[63:32] : otp_data_w[31:0]; 
-    assign plain_word_w = muxed_hi_q ? data_r_w[63:32] : data_r_w[31:0]; 
-    assign result_xor_w = mem_d_rd_q ? (((enc_word_w ^ otp_word_w) == plain_word_w) ? 1'b1: 1'b0): 1'b1;
-    //*/
-    /* // TEST FOR DELAY    
-    assign result_xor_w_h = (enc_data_w[63:32] ^ otp_data_w[63:32] == data_r_w[63:32])? 1'b1: 1'b0;
-    assign result_xor_w_l = (enc_data_w[31:0] ^ otp_data_w[31:0] == data_r_w[31:0])? 1'b1: 1'b0;
+    validator u_validator
+    (
+        // Inputs
+         .enc_data_i(enc_data_w)
+        ,.otp_data_i(otp_data_w)
+        ,.plain_data_i(data_r_w)
+        ,.data_hi_i(muxed_hi_q)
+        ,.mem_d_rd_i(mem_d_rd_q)   
+         
+        // Outputs
+        ,.data_valid_o(data_valid_w)
+    );
     
-    assign result_xor_w = muxed_hi_q ? result_xor_w_h: result_xor_w_l;
-    //*/
+    encryptor
+    #(
+        .MEM_DIM_KB(MEM_DIM_KB)
+    )
+    u_encryptor
+    (
+        // Inputs
+         .data_hi_i(mem_hi_w) 
+        ,.data_wr_i(mem_d_wr_i)
+        ,.mem_addr_i(mem_addr_w) 
+        ,.random_num_i(random_num_i)
+        ,.plain_data_i(mem_d_data_wr_i)
+         
+        // Outputs
+        ,.random_num_request_o(random_num_request_o)
+        ,.write_byte_otp_o(write_byte_otp_w)
+        ,.otp_address_o(otp_address_w)
+        ,.otp_data_o(otp_data_write_w)
+        ,.write_byte_enc_o(write_byte_enc_w)
+        ,.enc_address_o(enc_address_w)
+        ,.enc_data_o(enc_data_write_w)
+    );
+    
+    
 end
 else
 begin
-    assign result_xor_w = 1'b1;
+    assign data_valid_w = 1'b1;
 end
 endgenerate
-
-//-------------------------------------------------------------
-// Sequential for Encryption
-//-------------------------------------------------------------
-// Save last read request
-reg mem_d_rd_q; 
-
-always @ (posedge clk_i or posedge rst_i)
-if (rst_i)
-    mem_d_rd_q <= 1'b0;
-else
-    mem_d_rd_q <= mem_d_rd_i;
-
-reg muxed_hi_q;
-
-always @ (posedge clk_i or posedge rst_i)
-if (rst_i)
-    muxed_hi_q <= 1'b0;
-else
-    muxed_hi_q <= muxed_hi_w;
-
-assign ext_read_data_w = muxed_hi_q ? data_r_w[63:32] : data_r_w[31:0];
 
 //-------------------------------------------------------------
 // Instruction Fetch
@@ -421,7 +451,7 @@ else
 assign mem_d_ack_o          = mem_d_ack_q;
 assign mem_d_resp_tag_o     = mem_d_tag_q;
 assign mem_d_data_rd_o      = muxed_hi_q ? data_r_w[63:32] : data_r_w[31:0];
-assign mem_d_enc_error_o    = !result_xor_w; //& mem_d_rd_q;
+assign mem_d_enc_error_o    = !data_valid_w; //& mem_d_rd_q;
 assign mem_d_error_o        = mem_d_enc_error_o;
 
 assign mem_d_accept_o       = mem_d_accept_q;

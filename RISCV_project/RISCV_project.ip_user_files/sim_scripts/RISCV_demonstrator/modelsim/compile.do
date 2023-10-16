@@ -2,7 +2,6 @@ vlib modelsim_lib/work
 vlib modelsim_lib/msim
 
 vlib modelsim_lib/msim/xilinx_vip
-vlib modelsim_lib/msim/xpm
 vlib modelsim_lib/msim/axi_lite_ipif_v3_0_4
 vlib modelsim_lib/msim/lib_cdc_v1_0_2
 vlib modelsim_lib/msim/interrupt_control_v3_1_4
@@ -20,7 +19,6 @@ vlib modelsim_lib/msim/processing_system7_vip_v1_0_13
 vlib modelsim_lib/msim/axi_protocol_converter_v2_1_25
 
 vmap xilinx_vip modelsim_lib/msim/xilinx_vip
-vmap xpm modelsim_lib/msim/xpm
 vmap axi_lite_ipif_v3_0_4 modelsim_lib/msim/axi_lite_ipif_v3_0_4
 vmap lib_cdc_v1_0_2 modelsim_lib/msim/lib_cdc_v1_0_2
 vmap interrupt_control_v3_1_4 modelsim_lib/msim/interrupt_control_v3_1_4
@@ -47,12 +45,6 @@ vlog -work xilinx_vip  -incr -mfcu -sv -L axi_vip_v1_1_11 -L processing_system7_
 "H:/TesiMagistrale/Software/Xilinx/Vivado/2021.2/data/xilinx_vip/hdl/axi_vip_if.sv" \
 "H:/TesiMagistrale/Software/Xilinx/Vivado/2021.2/data/xilinx_vip/hdl/clk_vip_if.sv" \
 "H:/TesiMagistrale/Software/Xilinx/Vivado/2021.2/data/xilinx_vip/hdl/rst_vip_if.sv" \
-
-vlog -work xpm  -incr -mfcu -sv -L axi_vip_v1_1_11 -L processing_system7_vip_v1_0_13 -L xilinx_vip "+incdir+../../../../RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ipshared/62b6" "+incdir+../../../../RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ipshared/ec67/hdl" "+incdir+../../../../RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ipshared/3007/hdl" "+incdir+H:/TesiMagistrale/Software/Xilinx/Vivado/2021.2/data/xilinx_vip/include" \
-"H:/TesiMagistrale/Software/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
-
-vcom -work xpm  -93 \
-"H:/TesiMagistrale/Software/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_VCOMP.vhd" \
 
 vcom -work axi_lite_ipif_v3_0_4  -93 \
 "../../../../RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd" \

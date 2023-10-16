@@ -2,7 +2,6 @@ vlib questa_lib/work
 vlib questa_lib/msim
 
 vlib questa_lib/msim/xilinx_vip
-vlib questa_lib/msim/xpm
 vlib questa_lib/msim/xil_defaultlib
 vlib questa_lib/msim/lib_cdc_v1_0_2
 vlib questa_lib/msim/proc_sys_reset_v5_0_13
@@ -11,7 +10,6 @@ vlib questa_lib/msim/interrupt_control_v3_1_4
 vlib questa_lib/msim/axi_gpio_v2_0_27
 
 vmap xilinx_vip questa_lib/msim/xilinx_vip
-vmap xpm questa_lib/msim/xpm
 vmap xil_defaultlib questa_lib/msim/xil_defaultlib
 vmap lib_cdc_v1_0_2 questa_lib/msim/lib_cdc_v1_0_2
 vmap proc_sys_reset_v5_0_13 questa_lib/msim/proc_sys_reset_v5_0_13
@@ -29,12 +27,6 @@ vlog -work xilinx_vip  -incr -mfcu -sv -L axi_vip_v1_1_11 -L processing_system7_
 "H:/TesiMagistrale/Software/Xilinx/Vivado/2021.2/data/xilinx_vip/hdl/axi_vip_if.sv" \
 "H:/TesiMagistrale/Software/Xilinx/Vivado/2021.2/data/xilinx_vip/hdl/clk_vip_if.sv" \
 "H:/TesiMagistrale/Software/Xilinx/Vivado/2021.2/data/xilinx_vip/hdl/rst_vip_if.sv" \
-
-vlog -work xpm  -incr -mfcu -sv -L axi_vip_v1_1_11 -L processing_system7_vip_v1_0_13 -L xilinx_vip "+incdir+../../../../RISCV_project.gen/sources_1/bd/RISCV_bd/ipshared/62b6" "+incdir+H:/TesiMagistrale/Software/Xilinx/Vivado/2021.2/data/xilinx_vip/include" \
-"H:/TesiMagistrale/Software/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
-
-vcom -work xpm  -93 \
-"H:/TesiMagistrale/Software/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_VCOMP.vhd" \
 
 vlog -work xil_defaultlib  -incr -mfcu "+incdir+../../../../RISCV_project.gen/sources_1/bd/RISCV_bd/ipshared/62b6" "+incdir+H:/TesiMagistrale/Software/Xilinx/Vivado/2021.2/data/xilinx_vip/include" \
 "../../../bd/RISCV_bd/ip/RISCV_bd_clk_wiz_0_0/RISCV_bd_clk_wiz_0_0_clk_wiz.v" \
@@ -62,8 +54,8 @@ vcom -work xil_defaultlib  -93 \
 "../../../bd/RISCV_bd/ip/RISCV_bd_axi_gpio_0_0/sim/RISCV_bd_axi_gpio_0_0.vhd" \
 
 vlog -work xil_defaultlib  -incr -mfcu "+incdir+../../../../RISCV_project.gen/sources_1/bd/RISCV_bd/ipshared/62b6" "+incdir+H:/TesiMagistrale/Software/Xilinx/Vivado/2021.2/data/xilinx_vip/include" \
-"../../../bd/RISCV_bd/sim/RISCV_bd.v" \
 "../../../bd/RISCV_bd/ip/RISCV_bd_riscv_wrapper_0_1/sim/RISCV_bd_riscv_wrapper_0_1.v" \
+"../../../bd/RISCV_bd/sim/RISCV_bd.v" \
 
 vlog -work xil_defaultlib \
 "glbl.v"
