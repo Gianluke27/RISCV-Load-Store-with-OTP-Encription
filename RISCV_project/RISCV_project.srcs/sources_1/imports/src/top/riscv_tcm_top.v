@@ -286,13 +286,13 @@ u_dmux
 );
 
 
-tcm_mem
+SecureZone
 #(
      .MEM_DIM_KB(MEM_DIM_KB)
     ,.SUPPORT_ENCRYPTION(SUPPORT_ENCRYPTION)
     ,.SUPPORT_ENC_UPDATER(SUPPORT_ENC_UPDATER)
 )
-u_tcm
+u_secure_zone
 (
     // Inputs
      .clk_i(clk_i)
@@ -310,7 +310,6 @@ u_tcm
     ,.mem_d_invalidate_i(dport_tcm_invalidate_w)
     ,.mem_d_writeback_i(dport_tcm_writeback_w)
     ,.mem_d_flush_i(dport_tcm_flush_w)
-    ,.random_num_i(random_num_w)
     ,.axi_awvalid_i(axi_t_awvalid_i)
     ,.axi_awaddr_i(axi_t_awaddr_i)
     ,.axi_awid_i(axi_t_awid_i)
@@ -339,7 +338,6 @@ u_tcm
     ,.mem_d_error_o(dport_tcm_error_w)
     ,.mem_d_enc_error_o(dport_tcm_enc_error_w)
     ,.mem_d_resp_tag_o(dport_tcm_resp_tag_w)
-    ,.random_num_request_o(random_num_request_w)
     ,.axi_awready_o(axi_t_awready_o)
     ,.axi_wready_o(axi_t_wready_o)
     ,.axi_bvalid_o(axi_t_bvalid_o)
@@ -393,23 +391,6 @@ u_axi
     ,.axi_arvalid_o(axi_i_arvalid_o)
     ,.axi_araddr_o(axi_i_araddr_o)
     ,.axi_rready_o(axi_i_rready_o)
-);
-
-// Added PseudoRandomGenerator
-// To implement a quantum random generator in the future
-wire [31:0] random_num_w;
-
-// PseudoRandomGenerator module
-RandomGenerator
-u_rand_gen
-(
-    // Inputs
-     .clk_i(clk_i)
-    ,.rst_i(rst_i)
-    ,.en_i(random_num_request_w)
-    
-    //Outputs
-    ,.random_num_o(random_num_w)
 );
 
 endmodule

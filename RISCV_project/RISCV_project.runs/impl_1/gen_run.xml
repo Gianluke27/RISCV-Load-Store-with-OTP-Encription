@@ -475,12 +475,12 @@
     <Step Id="write_bitstream"/>
     <Step Id="write_device_image"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="RISCV_demonstrator_axi_gpio_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="RISCV_demonstrator_axi_gpio_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="RISCV_demonstrator_axi_gpio_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="RISCV_demonstrator_xbar_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="RISCV_bd_riscv_wrapper_0_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="RISCV_demonstrator_processing_system7_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="RISCV_demonstrator_clk_wiz_0"/>
   <BlockFileSet Type="BlockSrcs" Name="RISCV_demonstrator_rst_clk_wiz_100M_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="RISCV_demonstrator_clk_wiz_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="RISCV_demonstrator_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="RISCV_bd_riscv_wrapper_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="RISCV_bd_axi_gpio_0_0"/>
 </GenRun>

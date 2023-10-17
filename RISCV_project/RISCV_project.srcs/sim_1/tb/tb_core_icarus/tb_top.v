@@ -45,7 +45,7 @@
 /*
     Tests
 */
-`define FILE_NAME               ("RISCV_Dummy_Program.mif")   
+`define FILE_NAME               ("RISCV_load_store_01.mif")   
 
 module tb_top();
     reg tb_ACLK;    // PS clock
@@ -87,7 +87,7 @@ module tb_top();
         
         mem_empty = 1;
         for (i=mem_dim-1; i >= 0; i=i-1)
-            if(riscv.u_tcm.u_ram.ram[i] != 64'd0)
+            if(riscv.u_secure_zone.u_secure_memories.u_ram.ram[i] != 64'd0)
                 mem_empty = 0;
                 
         if(mem_empty)
@@ -104,8 +104,8 @@ module tb_top();
         
         $display("after -> rdata:");
         for (i=mem_dim-1; i >= 0; i=i-1)
-            if(riscv.u_tcm.u_ram.ram[i] != 64'd0)
-                $display("%d:%h",i,riscv.u_tcm.u_ram.ram[i]);  
+            if(riscv.u_secure_zone.u_secure_memories.u_ram.ram[i] != 64'd0)
+                $display("%d:%h",i,riscv.u_secure_zone.u_secure_memories.u_ram.ram[i]);  
                      
         //-------------------------------------------------------------
         // Begin testbench
@@ -122,10 +122,10 @@ module tb_top();
             end
             inst_prev = riscv.u_core.u_frontend.u_fetch.fetch_pc_o;
             
-            if(riscv.u_tcm.secure_zone.u_encryptor.plain_data_i == 32'h7)
+            if(riscv.u_secure_zone.u_secure_memories.secure_zone.u_encryptor.plain_data_i == 32'h7)
             begin
                 repeat (1) @(posedge temp_clk);  
-                write(7933, 64'h0123456789abcdef);
+                //write(7933, 64'h0123456789abcdef);
             end
                 
             repeat (1) @(posedge temp_clk);   
@@ -141,7 +141,7 @@ task write;
     input [31:0] addr;
     input [63:0]  data;
 begin   
-    riscv.u_tcm.u_ram.ram[addr][63:0]  = data;    
+    riscv.u_secure_zone.u_secure_memories.u_ram.ram[addr][63:0]  = data;    
 end
 endtask
 
@@ -150,7 +150,7 @@ task write_otp;
     input [31:0] addr;
     input [63:0]  data;
 begin
-    riscv.u_tcm.secure_zone.no_enc_updater.u_otp_ram.ram[addr][63:0] = data;
+    riscv.u_secure_zone.u_secure_memories.secure_zone.no_enc_updater.u_otp_ram.ram[addr][63:0] = data;
 end
 endtask
 
@@ -158,7 +158,7 @@ task write_enc;
     input [31:0] addr;
     input [63:0]  data;
 begin
-    riscv.u_tcm.secure_zone.no_enc_updater.u_enc_ram.ram[addr][63:0] = data;
+    riscv.u_secure_zone.u_secure_memories.secure_zone.no_enc_updater.u_enc_ram.ram[addr][63:0] = data;
 end
 endtask
 //*/

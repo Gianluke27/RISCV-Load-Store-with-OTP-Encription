@@ -1,12 +1,12 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer:    Gianluca Canzolino 
+// Company: UNISA
+// Engineer: GIANLUCA CANZOLINO (g.canzolino3@studenti.unisa.it)
 // 
-// Create Date: 15.09.2023 18:22:08
+// Create Date: 14.08.2023 11:32:53
 // Design Name: 
 // Module Name: Encryptor
-// Project Name: 
+// Project Name: Secured biRISCV
 // Target Devices: 
 // Tool Versions: 
 // Description: 
@@ -65,6 +65,10 @@ assign enc_address_o = mem_addr_i;
 assign otp_data_o = data_hi_i? {random_num_i, 32'b0} : {32'b0, random_num_i};
 
 // ENC data is a XOR result
-assign enc_data_o = data_hi_i? {random_num_i ^ plain_data_i, 32'b0} : {32'b0, random_num_i ^ plain_data_i};
+wire  [ 31:0] enc_data_w;
+assign enc_data_w = random_num_i ^ plain_data_i;
+
+// The data must be 64 bits
+assign enc_data_o = data_hi_i? {enc_data_w, 32'b0} : {32'b0, enc_data_w};
 
 endmodule

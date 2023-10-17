@@ -4394,59 +4394,59 @@
             <obj_property name="label">Input</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="isExpanded"></obj_property>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/mem_i_rd_i" type="logic">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/mem_i_rd_i" type="logic">
                <obj_property name="ElementShortName">mem_i_rd_i</obj_property>
                <obj_property name="ObjectShortName">mem_i_rd_i</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/mem_i_flush_i" type="logic">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/mem_i_flush_i" type="logic">
                <obj_property name="ElementShortName">mem_i_flush_i</obj_property>
                <obj_property name="ObjectShortName">mem_i_flush_i</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/mem_i_invalidate_i" type="logic">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/mem_i_invalidate_i" type="logic">
                <obj_property name="ElementShortName">mem_i_invalidate_i</obj_property>
                <obj_property name="ObjectShortName">mem_i_invalidate_i</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/mem_i_pc_i" type="array">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/mem_i_pc_i" type="array">
                <obj_property name="ElementShortName">mem_i_pc_i[31:0]</obj_property>
                <obj_property name="ObjectShortName">mem_i_pc_i[31:0]</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/mem_d_addr_i" type="array">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/mem_d_addr_i" type="array">
                <obj_property name="ElementShortName">mem_d_addr_i[31:0]</obj_property>
                <obj_property name="ObjectShortName">mem_d_addr_i[31:0]</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/mem_d_data_wr_i" type="array">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/mem_d_data_wr_i" type="array">
                <obj_property name="ElementShortName">mem_d_data_wr_i[31:0]</obj_property>
                <obj_property name="ObjectShortName">mem_d_data_wr_i[31:0]</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/mem_d_rd_i" type="logic">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/mem_d_rd_i" type="logic">
                <obj_property name="ElementShortName">mem_d_rd_i</obj_property>
                <obj_property name="ObjectShortName">mem_d_rd_i</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/mem_d_wr_i" type="array">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/mem_d_wr_i" type="array">
                <obj_property name="ElementShortName">mem_d_wr_i[3:0]</obj_property>
                <obj_property name="ObjectShortName">mem_d_wr_i[3:0]</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/mem_d_cacheable_i" type="logic">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/mem_d_cacheable_i" type="logic">
                <obj_property name="ElementShortName">mem_d_cacheable_i</obj_property>
                <obj_property name="ObjectShortName">mem_d_cacheable_i</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/mem_d_req_tag_i" type="array">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/mem_d_req_tag_i" type="array">
                <obj_property name="ElementShortName">mem_d_req_tag_i[10:0]</obj_property>
                <obj_property name="ObjectShortName">mem_d_req_tag_i[10:0]</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/mem_d_invalidate_i" type="logic">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/mem_d_invalidate_i" type="logic">
                <obj_property name="ElementShortName">mem_d_invalidate_i</obj_property>
                <obj_property name="ObjectShortName">mem_d_invalidate_i</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/mem_d_writeback_i" type="logic">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/mem_d_writeback_i" type="logic">
                <obj_property name="ElementShortName">mem_d_writeback_i</obj_property>
                <obj_property name="ObjectShortName">mem_d_writeback_i</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/mem_d_flush_i" type="logic">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/mem_d_flush_i" type="logic">
                <obj_property name="ElementShortName">mem_d_flush_i</obj_property>
                <obj_property name="ObjectShortName">mem_d_flush_i</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/random_num_i" type="array">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/random_num_i" type="array">
                <obj_property name="ElementShortName">random_num_i[31:0]</obj_property>
                <obj_property name="ObjectShortName">random_num_i[31:0]</obj_property>
             </wvobject>
@@ -4454,39 +4454,39 @@
          <wvobject fp_name="group111" type="group">
             <obj_property name="label">Output</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/mem_i_accept_o" type="logic">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/mem_i_accept_o" type="logic">
                <obj_property name="ElementShortName">mem_i_accept_o</obj_property>
                <obj_property name="ObjectShortName">mem_i_accept_o</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/mem_i_valid_o" type="logic">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/mem_i_valid_o" type="logic">
                <obj_property name="ElementShortName">mem_i_valid_o</obj_property>
                <obj_property name="ObjectShortName">mem_i_valid_o</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/mem_i_error_o" type="logic">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/mem_i_error_o" type="logic">
                <obj_property name="ElementShortName">mem_i_error_o</obj_property>
                <obj_property name="ObjectShortName">mem_i_error_o</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/mem_i_inst_o" type="array">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/mem_i_inst_o" type="array">
                <obj_property name="ElementShortName">mem_i_inst_o[63:0]</obj_property>
                <obj_property name="ObjectShortName">mem_i_inst_o[63:0]</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/mem_d_data_rd_o" type="array">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/mem_d_data_rd_o" type="array">
                <obj_property name="ElementShortName">mem_d_data_rd_o[31:0]</obj_property>
                <obj_property name="ObjectShortName">mem_d_data_rd_o[31:0]</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/mem_d_accept_o" type="logic">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/mem_d_accept_o" type="logic">
                <obj_property name="ElementShortName">mem_d_accept_o</obj_property>
                <obj_property name="ObjectShortName">mem_d_accept_o</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/mem_d_ack_o" type="logic">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/mem_d_ack_o" type="logic">
                <obj_property name="ElementShortName">mem_d_ack_o</obj_property>
                <obj_property name="ObjectShortName">mem_d_ack_o</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/mem_d_error_o" type="logic">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/mem_d_error_o" type="logic">
                <obj_property name="ElementShortName">mem_d_error_o</obj_property>
                <obj_property name="ObjectShortName">mem_d_error_o</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/mem_d_resp_tag_o" type="array">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/mem_d_resp_tag_o" type="array">
                <obj_property name="ElementShortName">mem_d_resp_tag_o[10:0]</obj_property>
                <obj_property name="ObjectShortName">mem_d_resp_tag_o[10:0]</obj_property>
             </wvobject>
@@ -4494,83 +4494,83 @@
          <wvobject fp_name="group1341" type="group">
             <obj_property name="label">Internal</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/ext_accept_w" type="logic">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/ext_accept_w" type="logic">
                <obj_property name="ElementShortName">ext_accept_w</obj_property>
                <obj_property name="ObjectShortName">ext_accept_w</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/ext_ack_w" type="logic">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/ext_ack_w" type="logic">
                <obj_property name="ElementShortName">ext_ack_w</obj_property>
                <obj_property name="ObjectShortName">ext_ack_w</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/ext_read_data_w" type="array">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/ext_read_data_w" type="array">
                <obj_property name="ElementShortName">ext_read_data_w[31:0]</obj_property>
                <obj_property name="ObjectShortName">ext_read_data_w[31:0]</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/ext_wr_w" type="array">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/ext_wr_w" type="array">
                <obj_property name="ElementShortName">ext_wr_w[3:0]</obj_property>
                <obj_property name="ObjectShortName">ext_wr_w[3:0]</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/ext_rd_w" type="logic">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/ext_rd_w" type="logic">
                <obj_property name="ElementShortName">ext_rd_w</obj_property>
                <obj_property name="ObjectShortName">ext_rd_w</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/ext_len_w" type="array">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/ext_len_w" type="array">
                <obj_property name="ElementShortName">ext_len_w[7:0]</obj_property>
                <obj_property name="ObjectShortName">ext_len_w[7:0]</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/ext_addr_w" type="array">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/ext_addr_w" type="array">
                <obj_property name="ElementShortName">ext_addr_w[31:0]</obj_property>
                <obj_property name="ObjectShortName">ext_addr_w[31:0]</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/ext_write_data_w" type="array">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/ext_write_data_w" type="array">
                <obj_property name="ElementShortName">ext_write_data_w[31:0]</obj_property>
                <obj_property name="ObjectShortName">ext_write_data_w[31:0]</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/muxed_hi_w" type="logic">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/muxed_hi_w" type="logic">
                <obj_property name="ElementShortName">muxed_hi_w</obj_property>
                <obj_property name="ObjectShortName">muxed_hi_w</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/muxed_addr_w" type="array">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/muxed_addr_w" type="array">
                <obj_property name="ElementShortName">muxed_addr_w[12:0]</obj_property>
                <obj_property name="ObjectShortName">muxed_addr_w[12:0]</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/muxed_data_w" type="array">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/muxed_data_w" type="array">
                <obj_property name="ElementShortName">muxed_data_w[31:0]</obj_property>
                <obj_property name="ObjectShortName">muxed_data_w[31:0]</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/muxed_wr_w" type="array">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/muxed_wr_w" type="array">
                <obj_property name="ElementShortName">muxed_wr_w[3:0]</obj_property>
                <obj_property name="ObjectShortName">muxed_wr_w[3:0]</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/data_r_w" type="array">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/data_r_w" type="array">
                <obj_property name="ElementShortName">data_r_w[63:0]</obj_property>
                <obj_property name="ObjectShortName">data_r_w[63:0]</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/muxed_hi_q" type="logic">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/muxed_hi_q" type="logic">
                <obj_property name="ElementShortName">muxed_hi_q</obj_property>
                <obj_property name="ObjectShortName">muxed_hi_q</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/mem_i_valid_q" type="logic">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/mem_i_valid_q" type="logic">
                <obj_property name="ElementShortName">mem_i_valid_q</obj_property>
                <obj_property name="ObjectShortName">mem_i_valid_q</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/mem_d_accept_q" type="logic">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/mem_d_accept_q" type="logic">
                <obj_property name="ElementShortName">mem_d_accept_q</obj_property>
                <obj_property name="ObjectShortName">mem_d_accept_q</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/mem_d_tag_q" type="array">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/mem_d_tag_q" type="array">
                <obj_property name="ElementShortName">mem_d_tag_q[10:0]</obj_property>
                <obj_property name="ObjectShortName">mem_d_tag_q[10:0]</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/mem_d_ack_q" type="logic">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/mem_d_ack_q" type="logic">
                <obj_property name="ElementShortName">mem_d_ack_q</obj_property>
                <obj_property name="ObjectShortName">mem_d_ack_q</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/ext_ack_q" type="logic">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/ext_ack_q" type="logic">
                <obj_property name="ElementShortName">ext_ack_q</obj_property>
                <obj_property name="ObjectShortName">ext_ack_q</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/mem_d_error_q" type="logic">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/mem_d_error_q" type="logic">
                <obj_property name="ElementShortName">mem_d_error_q</obj_property>
                <obj_property name="ObjectShortName">mem_d_error_q</obj_property>
             </wvobject>
@@ -4583,11 +4583,11 @@
          <wvobject fp_name="group96" type="group">
             <obj_property name="label">RAM</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/u_ram/clk1_i" type="logic">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/u_ram/clk1_i" type="logic">
                <obj_property name="ElementShortName">clk1_i</obj_property>
                <obj_property name="ObjectShortName">clk1_i</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/u_ram/rst1_i" type="logic">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/u_ram/rst1_i" type="logic">
                <obj_property name="ElementShortName">rst1_i</obj_property>
                <obj_property name="ObjectShortName">rst1_i</obj_property>
             </wvobject>
@@ -4595,23 +4595,23 @@
                <obj_property name="label">Data 0 - Instructions</obj_property>
                <obj_property name="DisplayName">label</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/u_ram/addr0_i" type="array">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/u_ram/addr0_i" type="array">
                <obj_property name="ElementShortName">addr0_i[12:0]</obj_property>
                <obj_property name="ObjectShortName">addr0_i[12:0]</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/u_ram/data0_i" type="array">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/u_ram/data0_i" type="array">
                <obj_property name="ElementShortName">data0_i[63:0]</obj_property>
                <obj_property name="ObjectShortName">data0_i[63:0]</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/u_ram/wr0_i" type="array">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/u_ram/wr0_i" type="array">
                <obj_property name="ElementShortName">wr0_i[7:0]</obj_property>
                <obj_property name="ObjectShortName">wr0_i[7:0]</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/u_ram/ram_read0_q" type="array">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/u_ram/ram_read0_q" type="array">
                <obj_property name="ElementShortName">ram_read0_q[63:0]</obj_property>
                <obj_property name="ObjectShortName">ram_read0_q[63:0]</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/u_ram/data0_o" type="array">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/u_ram/data0_o" type="array">
                <obj_property name="ElementShortName">data0_o[63:0]</obj_property>
                <obj_property name="ObjectShortName">data0_o[63:0]</obj_property>
                <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
@@ -4620,23 +4620,23 @@
                <obj_property name="label">Data 1 - Data</obj_property>
                <obj_property name="DisplayName">label</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/u_ram/addr1_i" type="array">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/u_ram/addr1_i" type="array">
                <obj_property name="ElementShortName">addr1_i[12:0]</obj_property>
                <obj_property name="ObjectShortName">addr1_i[12:0]</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/u_ram/data1_i" type="array">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/u_ram/data1_i" type="array">
                <obj_property name="ElementShortName">data1_i[63:0]</obj_property>
                <obj_property name="ObjectShortName">data1_i[63:0]</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/u_ram/wr1_i" type="array">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/u_ram/wr1_i" type="array">
                <obj_property name="ElementShortName">wr1_i[7:0]</obj_property>
                <obj_property name="ObjectShortName">wr1_i[7:0]</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/u_ram/ram_read1_q" type="array">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/u_ram/ram_read1_q" type="array">
                <obj_property name="ElementShortName">ram_read1_q[63:0]</obj_property>
                <obj_property name="ObjectShortName">ram_read1_q[63:0]</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/u_ram/data1_o" type="array">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/u_ram/data1_o" type="array">
                <obj_property name="ElementShortName">data1_o[63:0]</obj_property>
                <obj_property name="ObjectShortName">data1_o[63:0]</obj_property>
             </wvobject>
@@ -4645,21 +4645,21 @@
             <obj_property name="label">SECURE_ZONE</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="isExpanded"></obj_property>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/mem_d_addr_i" type="array">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/mem_d_addr_i" type="array">
                <obj_property name="ElementShortName">mem_d_addr_i[31:0]</obj_property>
                <obj_property name="ObjectShortName">mem_d_addr_i[31:0]</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/mem_d_data_wr_i" type="array">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/mem_d_data_wr_i" type="array">
                <obj_property name="ElementShortName">mem_d_data_wr_i[31:0]</obj_property>
                <obj_property name="ObjectShortName">mem_d_data_wr_i[31:0]</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/\secure_zone.no_enc_updater.u_enc_ram /data0_i" type="array">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_enc_ram /data0_i" type="array">
                <obj_property name="DisplayName">label</obj_property>
                <obj_property name="ElementShortName">data0_i[63:0]</obj_property>
                <obj_property name="ObjectShortName">data0_i[63:0]</obj_property>
                <obj_property name="label">ENC_data0_i[63:0]</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_top/riscv/u_tcm/\secure_zone.no_enc_updater.u_otp_ram /data0_i" type="array">
+            <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_otp_ram /data0_i" type="array">
                <obj_property name="DisplayName">label</obj_property>
                <obj_property name="ElementShortName">data0_i[63:0]</obj_property>
                <obj_property name="ObjectShortName">data0_i[63:0]</obj_property>
@@ -4669,19 +4669,19 @@
                <obj_property name="label">Internal</obj_property>
                <obj_property name="DisplayName">label</obj_property>
                <obj_property name="isExpanded"></obj_property>
-               <wvobject fp_name="/tb_top/riscv/u_tcm/enc_data_w" type="array">
+               <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/enc_data_w" type="array">
                   <obj_property name="ElementShortName">enc_data_w[63:0]</obj_property>
                   <obj_property name="ObjectShortName">enc_data_w[63:0]</obj_property>
                </wvobject>
-               <wvobject fp_name="/tb_top/riscv/u_tcm/otp_data_w" type="array">
+               <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/otp_data_w" type="array">
                   <obj_property name="ElementShortName">otp_data_w[63:0]</obj_property>
                   <obj_property name="ObjectShortName">otp_data_w[63:0]</obj_property>
                </wvobject>
-               <wvobject fp_name="/tb_top/riscv/u_tcm/data_r_w" type="array">
+               <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/data_r_w" type="array">
                   <obj_property name="ElementShortName">data_r_w[63:0]</obj_property>
                   <obj_property name="ObjectShortName">data_r_w[63:0]</obj_property>
                </wvobject>
-               <wvobject fp_name="/tb_top/riscv/u_tcm/result_xor_w" type="logic">
+               <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/result_xor_w" type="logic">
                   <obj_property name="ElementShortName">result_xor_w</obj_property>
                   <obj_property name="ObjectShortName">result_xor_w</obj_property>
                </wvobject>
@@ -4689,51 +4689,51 @@
             <wvobject fp_name="group7363" type="group">
                <obj_property name="label">ENC_RAM</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject fp_name="/tb_top/riscv/u_tcm/\secure_zone.no_enc_updater.u_enc_ram /clk0_i" type="logic">
+               <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_enc_ram /clk0_i" type="logic">
                   <obj_property name="ElementShortName">clk0_i</obj_property>
                   <obj_property name="ObjectShortName">clk0_i</obj_property>
                </wvobject>
-               <wvobject fp_name="/tb_top/riscv/u_tcm/\secure_zone.no_enc_updater.u_enc_ram /rst0_i" type="logic">
+               <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_enc_ram /rst0_i" type="logic">
                   <obj_property name="ElementShortName">rst0_i</obj_property>
                   <obj_property name="ObjectShortName">rst0_i</obj_property>
                </wvobject>
-               <wvobject fp_name="/tb_top/riscv/u_tcm/\secure_zone.no_enc_updater.u_enc_ram /addr0_i" type="array">
+               <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_enc_ram /addr0_i" type="array">
                   <obj_property name="ElementShortName">addr0_i[12:0]</obj_property>
                   <obj_property name="ObjectShortName">addr0_i[12:0]</obj_property>
                </wvobject>
-               <wvobject fp_name="/tb_top/riscv/u_tcm/\secure_zone.no_enc_updater.u_enc_ram /data0_i" type="array">
+               <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_enc_ram /data0_i" type="array">
                   <obj_property name="ElementShortName">data0_i[63:0]</obj_property>
                   <obj_property name="ObjectShortName">data0_i[63:0]</obj_property>
                </wvobject>
-               <wvobject fp_name="/tb_top/riscv/u_tcm/\secure_zone.no_enc_updater.u_enc_ram /wr0_i" type="array">
+               <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_enc_ram /wr0_i" type="array">
                   <obj_property name="ElementShortName">wr0_i[7:0]</obj_property>
                   <obj_property name="ObjectShortName">wr0_i[7:0]</obj_property>
                </wvobject>
-               <wvobject fp_name="/tb_top/riscv/u_tcm/\secure_zone.no_enc_updater.u_enc_ram /clk1_i" type="logic">
+               <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_enc_ram /clk1_i" type="logic">
                   <obj_property name="ElementShortName">clk1_i</obj_property>
                   <obj_property name="ObjectShortName">clk1_i</obj_property>
                </wvobject>
-               <wvobject fp_name="/tb_top/riscv/u_tcm/\secure_zone.no_enc_updater.u_enc_ram /rst1_i" type="logic">
+               <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_enc_ram /rst1_i" type="logic">
                   <obj_property name="ElementShortName">rst1_i</obj_property>
                   <obj_property name="ObjectShortName">rst1_i</obj_property>
                </wvobject>
-               <wvobject fp_name="/tb_top/riscv/u_tcm/\secure_zone.no_enc_updater.u_enc_ram /addr1_i" type="array">
+               <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_enc_ram /addr1_i" type="array">
                   <obj_property name="ElementShortName">addr1_i[12:0]</obj_property>
                   <obj_property name="ObjectShortName">addr1_i[12:0]</obj_property>
                </wvobject>
-               <wvobject fp_name="/tb_top/riscv/u_tcm/\secure_zone.no_enc_updater.u_enc_ram /data1_i" type="array">
+               <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_enc_ram /data1_i" type="array">
                   <obj_property name="ElementShortName">data1_i[63:0]</obj_property>
                   <obj_property name="ObjectShortName">data1_i[63:0]</obj_property>
                </wvobject>
-               <wvobject fp_name="/tb_top/riscv/u_tcm/\secure_zone.no_enc_updater.u_enc_ram /wr1_i" type="array">
+               <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_enc_ram /wr1_i" type="array">
                   <obj_property name="ElementShortName">wr1_i[7:0]</obj_property>
                   <obj_property name="ObjectShortName">wr1_i[7:0]</obj_property>
                </wvobject>
-               <wvobject fp_name="/tb_top/riscv/u_tcm/\secure_zone.no_enc_updater.u_enc_ram /data0_o" type="array">
+               <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_enc_ram /data0_o" type="array">
                   <obj_property name="ElementShortName">data0_o[63:0]</obj_property>
                   <obj_property name="ObjectShortName">data0_o[63:0]</obj_property>
                </wvobject>
-               <wvobject fp_name="/tb_top/riscv/u_tcm/\secure_zone.no_enc_updater.u_enc_ram /data1_o" type="array">
+               <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_enc_ram /data1_o" type="array">
                   <obj_property name="ElementShortName">data1_o[63:0]</obj_property>
                   <obj_property name="ObjectShortName">data1_o[63:0]</obj_property>
                </wvobject>
@@ -4741,51 +4741,51 @@
             <wvobject fp_name="group7378" type="group">
                <obj_property name="label">OTP_RAM</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject fp_name="/tb_top/riscv/u_tcm/\secure_zone.no_enc_updater.u_otp_ram /clk0_i" type="logic">
+               <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_otp_ram /clk0_i" type="logic">
                   <obj_property name="ElementShortName">clk0_i</obj_property>
                   <obj_property name="ObjectShortName">clk0_i</obj_property>
                </wvobject>
-               <wvobject fp_name="/tb_top/riscv/u_tcm/\secure_zone.no_enc_updater.u_otp_ram /rst0_i" type="logic">
+               <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_otp_ram /rst0_i" type="logic">
                   <obj_property name="ElementShortName">rst0_i</obj_property>
                   <obj_property name="ObjectShortName">rst0_i</obj_property>
                </wvobject>
-               <wvobject fp_name="/tb_top/riscv/u_tcm/\secure_zone.no_enc_updater.u_otp_ram /addr0_i" type="array">
+               <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_otp_ram /addr0_i" type="array">
                   <obj_property name="ElementShortName">addr0_i[12:0]</obj_property>
                   <obj_property name="ObjectShortName">addr0_i[12:0]</obj_property>
                </wvobject>
-               <wvobject fp_name="/tb_top/riscv/u_tcm/\secure_zone.no_enc_updater.u_otp_ram /data0_i" type="array">
+               <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_otp_ram /data0_i" type="array">
                   <obj_property name="ElementShortName">data0_i[63:0]</obj_property>
                   <obj_property name="ObjectShortName">data0_i[63:0]</obj_property>
                </wvobject>
-               <wvobject fp_name="/tb_top/riscv/u_tcm/\secure_zone.no_enc_updater.u_otp_ram /wr0_i" type="array">
+               <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_otp_ram /wr0_i" type="array">
                   <obj_property name="ElementShortName">wr0_i[7:0]</obj_property>
                   <obj_property name="ObjectShortName">wr0_i[7:0]</obj_property>
                </wvobject>
-               <wvobject fp_name="/tb_top/riscv/u_tcm/\secure_zone.no_enc_updater.u_otp_ram /clk1_i" type="logic">
+               <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_otp_ram /clk1_i" type="logic">
                   <obj_property name="ElementShortName">clk1_i</obj_property>
                   <obj_property name="ObjectShortName">clk1_i</obj_property>
                </wvobject>
-               <wvobject fp_name="/tb_top/riscv/u_tcm/\secure_zone.no_enc_updater.u_otp_ram /rst1_i" type="logic">
+               <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_otp_ram /rst1_i" type="logic">
                   <obj_property name="ElementShortName">rst1_i</obj_property>
                   <obj_property name="ObjectShortName">rst1_i</obj_property>
                </wvobject>
-               <wvobject fp_name="/tb_top/riscv/u_tcm/\secure_zone.no_enc_updater.u_otp_ram /addr1_i" type="array">
+               <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_otp_ram /addr1_i" type="array">
                   <obj_property name="ElementShortName">addr1_i[12:0]</obj_property>
                   <obj_property name="ObjectShortName">addr1_i[12:0]</obj_property>
                </wvobject>
-               <wvobject fp_name="/tb_top/riscv/u_tcm/\secure_zone.no_enc_updater.u_otp_ram /data1_i" type="array">
+               <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_otp_ram /data1_i" type="array">
                   <obj_property name="ElementShortName">data1_i[63:0]</obj_property>
                   <obj_property name="ObjectShortName">data1_i[63:0]</obj_property>
                </wvobject>
-               <wvobject fp_name="/tb_top/riscv/u_tcm/\secure_zone.no_enc_updater.u_otp_ram /wr1_i" type="array">
+               <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_otp_ram /wr1_i" type="array">
                   <obj_property name="ElementShortName">wr1_i[7:0]</obj_property>
                   <obj_property name="ObjectShortName">wr1_i[7:0]</obj_property>
                </wvobject>
-               <wvobject fp_name="/tb_top/riscv/u_tcm/\secure_zone.no_enc_updater.u_otp_ram /data0_o" type="array">
+               <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_otp_ram /data0_o" type="array">
                   <obj_property name="ElementShortName">data0_o[63:0]</obj_property>
                   <obj_property name="ObjectShortName">data0_o[63:0]</obj_property>
                </wvobject>
-               <wvobject fp_name="/tb_top/riscv/u_tcm/\secure_zone.no_enc_updater.u_otp_ram /data1_o" type="array">
+               <wvobject fp_name="/tb_top/riscv/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_otp_ram /data1_o" type="array">
                   <obj_property name="ElementShortName">data1_o[63:0]</obj_property>
                   <obj_property name="ObjectShortName">data1_o[63:0]</obj_property>
                </wvobject>

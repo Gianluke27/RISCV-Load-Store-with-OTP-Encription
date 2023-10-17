@@ -1,12 +1,12 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
+// Company: UNISA
+// Engineer: GIANLUCA CANZOLINO (g.canzolino3@studenti.unisa.it)
 // 
 // Create Date: 13.08.2023 19:11:17
 // Design Name: 
 // Module Name: RandomGenerator
-// Project Name: 
+// Project Name: Secured biRISCV
 // Target Devices: 
 // Tool Versions: 
 // Description: 
