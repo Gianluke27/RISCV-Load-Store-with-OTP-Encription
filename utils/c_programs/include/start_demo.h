@@ -1,5 +1,4 @@
-#include "axi_gpio.h"
-
+__attribute__((section(".start")))
 void _start(void) __attribute__((naked));
 
 void _exception_handler(void) __attribute__((naked));
@@ -9,6 +8,8 @@ void _isr_vector(void) __attribute__((naked));
 void _exit_loop(void) __attribute__((naked));
 
 int main(void);
+
+#include "axi_gpio.h"
 
 // Get Exception Number
 unsigned int get_exno();
@@ -85,9 +86,22 @@ unsigned int is_exception(unsigned int exno){
 }
 
 unsigned int is_otp_load_error_exception(unsigned int exno){
-    return (exno == 37);
+    return (exno == 29);
 }
 
+void _exception_handler(void){
+    unsigned int exno = get_exno();
+    if(is_otp_load_error_exception(exno))
+        AXIGPIO_ERROR_writeData(1);   // RGB LED -> RED
+    else if(is_exception(exno))
+        AXIGPIO_ERROR_writeData(1);   // RGB LED -> BLUE
+    else
+        AXIGPIO_ERROR_writeData(1);   // RGB LED -> GREEN
+    asm volatile ("csrw dscratch0, zero");
+    _exit_loop();
+}
+
+/*
 void _exception_handler(void){
     unsigned int exno = get_exno();
     if(is_otp_load_error_exception(exno))
@@ -99,6 +113,7 @@ void _exception_handler(void){
     asm volatile ("csrw dscratch0, zero");
     _exit_loop();
 }
+*/
 
 void _exit_loop(void){
     asm volatile ("csrw dscratch0, zero");

@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "median_dataset.h": "c"
+        "median_dataset.h": "c",
+        "axi_gpio.h": "c"
     }
 }

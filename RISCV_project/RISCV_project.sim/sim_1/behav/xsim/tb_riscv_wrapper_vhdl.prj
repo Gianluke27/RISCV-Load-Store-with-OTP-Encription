@@ -1,0 +1,27 @@
+# compile vhdl design source files
+vhdl lib_cdc_v1_0_2  \
+"../../../../RISCV_project.gen/sources_1/bd/RISCV_bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd" \
+
+vhdl proc_sys_reset_v5_0_13  \
+"../../../../RISCV_project.gen/sources_1/bd/RISCV_bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../../RISCV_project.ip_user_files/bd/RISCV_bd/ip/RISCV_bd_proc_sys_reset_0_0/sim/RISCV_bd_proc_sys_reset_0_0.vhd" \
+
+vhdl axi_lite_ipif_v3_0_4  \
+"../../../../RISCV_project.gen/sources_1/bd/RISCV_bd/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd" \
+
+vhdl interrupt_control_v3_1_4  \
+"../../../../RISCV_project.gen/sources_1/bd/RISCV_bd/ipshared/a040/hdl/interrupt_control_v3_1_vh_rfs.vhd" \
+
+vhdl axi_gpio_v2_0_27  \
+"../../../../RISCV_project.gen/sources_1/bd/RISCV_bd/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../../RISCV_project.ip_user_files/bd/RISCV_bd/ip/RISCV_bd_axi_gpio_0_0/sim/RISCV_bd_axi_gpio_0_0.vhd" \
+"../../../../RISCV_project.ip_user_files/bd/RISCV_demonstrator/ip/RISCV_demonstrator_axi_gpio_0_1/sim/RISCV_demonstrator_axi_gpio_0_1.vhd" \
+"../../../../RISCV_project.ip_user_files/bd/RISCV_demonstrator/ip/RISCV_demonstrator_rst_clk_wiz_100M_1/sim/RISCV_demonstrator_rst_clk_wiz_100M_1.vhd" \
+"../../../../RISCV_project.ip_user_files/bd/RISCV_demonstrator/ip/RISCV_demonstrator_axi_gpio_1_0/sim/RISCV_demonstrator_axi_gpio_1_0.vhd" \
+
+# Do not sort compile order
+nosort

@@ -37,7 +37,7 @@ vvadd_rvtests_pwr
 #(
      parameter MEM_DIM_KB = 64,
      parameter TYPE = "PLAIN",
-     parameter MEM_FILE = "vvadd_rvtests_pwr.mif"
+     parameter MEM_FILE = "RISCV_Demonstrator.mif"
 )
 //-----------------------------------------------------------------
 // Ports

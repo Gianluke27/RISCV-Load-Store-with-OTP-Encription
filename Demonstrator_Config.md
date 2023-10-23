@@ -10,12 +10,24 @@ fpga -f {H:\TesiMagistrale\Github\RISCV_Enc_Load_Store\RISCV-Load-Store-with-OTP
 
 fpga -f {H:\TesiMagistrale\Github\RISCV_Enc_Load_Store\RISCV-Load-Store-with-OTP-Encription\BitStreams\Naive_Design\25MHz\median_rvtests_pwr.bit}
 
+fpga -f {H:\TesiMagistrale\Github\RISCV_Enc_Load_Store\RISCV-Load-Store-with-OTP-Encription\BitStreams\RISCV_demonstrator.bit}
+
 target 2
 
 source {H:\TesiMagistrale\Github\RISCV_Enc_Load_Store\RISCV-Load-Store-with-OTP-Encription\Vitis_Workspace\RISCV_platform\hw\ps7_init.tcl}
 
 ps7_init
 ps7_post_config
+
+
+// FINAL
+
+mrd -force 0x8000f7ec
+
+mwr -force 0x8000f7ec 0x12345678
+
+// END FINAL
+
 
 mrd -force 0x80000000
 mwr -force 0x80000000 0x00000000

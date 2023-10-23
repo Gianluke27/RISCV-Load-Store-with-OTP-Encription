@@ -1,9 +1,9 @@
 {
    "ActiveEmotionalView":"Default View",
    "Default View_ScaleFactor":"0.928722",
-   "Default View_TopLeft":"-185,51",
+   "Default View_TopLeft":"-153,0",
    "ExpandedHierarchyInLayout":"",
-   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS-threadsafe
 #  -string -flagsOSRD
 preplace port DDR -pg 1 -lvl 7 -x 1940 -y 500 -defaultsOSRD
 preplace port FIXED_IO -pg 1 -lvl 7 -x 1940 -y 520 -defaultsOSRD
@@ -12,16 +12,16 @@ preplace port port-id_reset -pg 1 -lvl 0 -x -120 -y 250 -defaultsOSRD
 preplace portBus A -pg 1 -lvl 0 -x -120 -y 130 -defaultsOSRD
 preplace portBus LED -pg 1 -lvl 7 -x 1940 -y 260 -defaultsOSRD
 preplace portBus ENC_LED -pg 1 -lvl 7 -x 1940 -y 60 -defaultsOSRD
-preplace inst axi_gpio_0 -pg 1 -lvl 6 -x 1680 -y 230 -defaultsOSRD
-preplace inst clk_wiz -pg 1 -lvl 1 -x 0 -y 260 -defaultsOSRD
-preplace inst rst_clk_wiz_100M -pg 1 -lvl 2 -x 280 -y 230 -defaultsOSRD
-preplace inst axi_gpio_1 -pg 1 -lvl 6 -x 1680 -y 380 -defaultsOSRD
 preplace inst riscv_wrapper_0_axi_periph -pg 1 -lvl 5 -x 1308 -y 350 -defaultsOSRD
 preplace inst decoder2to4_0 -pg 1 -lvl 1 -x 0 -y 130 -defaultsOSRD
 preplace inst decoder1to2_0 -pg 1 -lvl 6 -x 1680 -y 60 -defaultsOSRD
-preplace inst processing_system7_0 -pg 1 -lvl 6 -x 1680 -y 560 -defaultsOSRD
 preplace inst ps7_0_axi_periph -pg 1 -lvl 3 -x 720 -y 250 -defaultsOSRD
 preplace inst riscv_wrapper_0 -pg 1 -lvl 4 -x 1018 -y 270 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 6 -x 1680 -y 230 -defaultsOSRD
+preplace inst axi_gpio_1 -pg 1 -lvl 6 -x 1680 -y 380 -defaultsOSRD
+preplace inst clk_wiz -pg 1 -lvl 1 -x 0 -y 260 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 6 -x 1680 -y 560 -defaultsOSRD
+preplace inst rst_clk_wiz_100M -pg 1 -lvl 2 -x 280 -y 230 -defaultsOSRD
 preplace netloc A_1 1 0 1 NJ 130
 preplace netloc axi_gpio_0_gpio2_io_o 1 6 1 NJ 260
 preplace netloc axi_gpio_1_gpio_io_o 1 5 2 1460 140 1880

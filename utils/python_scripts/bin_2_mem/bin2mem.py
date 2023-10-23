@@ -6,12 +6,6 @@ def bin_to_ascii_text(binary_file, output_file, count_filename):
     memory_size = (len(binary_data) + 7) // 8  # Calculate memory size in 64-bit words
     memory_lines = ""
 
-    """
-    with open(count_filename, "w") as count_file:
-        hex_memory_size = format(memory_size, 'x')
-        count_file.write(hex_memory_size)
-    """
-    
     print("Wrote",memory_size,"DW")
 
     for i in range(memory_size):

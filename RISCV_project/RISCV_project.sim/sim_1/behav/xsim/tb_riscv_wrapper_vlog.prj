@@ -1,0 +1,65 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../RISCV_project.gen/sources_1/bd/RISCV_bd/ipshared/62b6" --include "../../../../RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ipshared/62b6" --include "../../../../RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ipshared/ec67/hdl" --include "../../../../RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ipshared/3007/hdl" --include "../../../../RISCV_project.srcs/sim_1/tb/tb_tcm" --include "../../../../RISCV_project.srcs/sim_1/tb/tb_top" --include "H:/TesiMagistrale/Software/Xilinx/Vivado/2021.2/data/xilinx_vip/include" \
+"../../../../RISCV_project.srcs/sources_1/new/Encryptor.v" \
+"../../../../RISCV_project.srcs/sources_1/imports/src/tcm/RandomGenerator.v" \
+"../../../../RISCV_project.srcs/sources_1/new/SecureZone.v" \
+"../../../../RISCV_project.srcs/sources_1/new/Validator.v" \
+"../../../../RISCV_project.srcs/sources_1/imports/src/core/biriscv_defs.v" \
+"../../../../RISCV_project.srcs/sources_1/imports/src/core/biriscv_alu.v" \
+"../../../../RISCV_project.srcs/sources_1/imports/src/core/biriscv_csr.v" \
+"../../../../RISCV_project.srcs/sources_1/imports/src/core/biriscv_csr_regfile.v" \
+"../../../../RISCV_project.srcs/sources_1/imports/src/core/biriscv_decode.v" \
+"../../../../RISCV_project.srcs/sources_1/imports/src/core/biriscv_decoder.v" \
+"../../../../RISCV_project.srcs/sources_1/imports/src/core/biriscv_divider.v" \
+"../../../../RISCV_project.srcs/sources_1/imports/src/core/biriscv_exec.v" \
+"../../../../RISCV_project.srcs/sources_1/imports/src/core/biriscv_fetch.v" \
+"../../../../RISCV_project.srcs/sources_1/imports/src/core/biriscv_frontend.v" \
+"../../../../RISCV_project.srcs/sources_1/imports/src/core/biriscv_issue.v" \
+"../../../../RISCV_project.srcs/sources_1/imports/src/core/biriscv_lsu.v" \
+"../../../../RISCV_project.srcs/sources_1/imports/src/core/biriscv_mmu.v" \
+"../../../../RISCV_project.srcs/sources_1/imports/src/core/biriscv_multiplier.v" \
+"../../../../RISCV_project.srcs/sources_1/imports/src/core/biriscv_npc.v" \
+"../../../../RISCV_project.srcs/sources_1/imports/src/core/biriscv_pipe_ctrl.v" \
+"../../../../RISCV_project.srcs/sources_1/imports/src/core/biriscv_regfile.v" \
+"../../../../RISCV_project.srcs/sources_1/imports/src/core/biriscv_xilinx_2r1w.v" \
+"../../../../RISCV_project.srcs/sources_1/imports/src/tcm/dport_axi.v" \
+"../../../../RISCV_project.srcs/sources_1/imports/src/tcm/dport_mux.v" \
+"../../../../RISCV_project.srcs/sources_1/imports/src/core/riscv_core.v" \
+"../../../../RISCV_project.srcs/sources_1/imports/src/top/riscv_tcm_top.v" \
+"../../../../RISCV_project.srcs/sources_1/imports/src/tcm/tcm_mem.v" \
+"../../../../RISCV_project.srcs/sources_1/imports/src/tcm/tcm_mem_pmem.v" \
+"../../../../RISCV_project.srcs/sources_1/imports/src/tcm/tcm_mem_ram.v" \
+"../../../../RISCV_project.srcs/sources_1/new/riscv_wrapper.v" \
+"../../../../RISCV_project.srcs/sources_1/new/decoder2to4.v" \
+"../../../../RISCV_project.srcs/sources_1/new/decoder1to2.v" \
+"../../../../RISCV_project.ip_user_files/bd/RISCV_bd/ip/RISCV_bd_clk_wiz_0_0/RISCV_bd_clk_wiz_0_0_clk_wiz.v" \
+"../../../../RISCV_project.ip_user_files/bd/RISCV_bd/ip/RISCV_bd_clk_wiz_0_0/RISCV_bd_clk_wiz_0_0.v" \
+"../../../../RISCV_project.ip_user_files/bd/RISCV_demonstrator/ip/RISCV_demonstrator_clk_wiz_0/RISCV_demonstrator_clk_wiz_0_clk_wiz.v" \
+"../../../../RISCV_project.ip_user_files/bd/RISCV_demonstrator/ip/RISCV_demonstrator_clk_wiz_0/RISCV_demonstrator_clk_wiz_0.v" \
+
+verilog axi_infrastructure_v1_1_0  --include "../../../../RISCV_project.gen/sources_1/bd/RISCV_bd/ipshared/62b6" --include "../../../../RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ipshared/62b6" --include "../../../../RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ipshared/ec67/hdl" --include "../../../../RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ipshared/3007/hdl" --include "../../../../RISCV_project.srcs/sim_1/tb/tb_tcm" --include "../../../../RISCV_project.srcs/sim_1/tb/tb_top" --include "H:/TesiMagistrale/Software/Xilinx/Vivado/2021.2/data/xilinx_vip/include" \
+"../../../../RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v" \
+
+verilog xil_defaultlib  --include "../../../../RISCV_project.gen/sources_1/bd/RISCV_bd/ipshared/62b6" --include "../../../../RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ipshared/62b6" --include "../../../../RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ipshared/ec67/hdl" --include "../../../../RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ipshared/3007/hdl" --include "../../../../RISCV_project.srcs/sim_1/tb/tb_tcm" --include "../../../../RISCV_project.srcs/sim_1/tb/tb_top" --include "H:/TesiMagistrale/Software/Xilinx/Vivado/2021.2/data/xilinx_vip/include" \
+"../../../../RISCV_project.ip_user_files/bd/RISCV_demonstrator/ip/RISCV_demonstrator_xbar_0/sim/RISCV_demonstrator_xbar_0.v" \
+"../../../../RISCV_project.ip_user_files/bd/RISCV_demonstrator/ip/RISCV_demonstrator_decoder2to4_0_0/sim/RISCV_demonstrator_decoder2to4_0_0.v" \
+"../../../../RISCV_project.ip_user_files/bd/RISCV_demonstrator/ip/RISCV_demonstrator_decoder1to2_0_0/sim/RISCV_demonstrator_decoder1to2_0_0.v" \
+
+sv axi_vip_v1_1_11  --include "../../../../RISCV_project.gen/sources_1/bd/RISCV_bd/ipshared/62b6" --include "../../../../RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ipshared/62b6" --include "../../../../RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ipshared/ec67/hdl" --include "../../../../RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ipshared/3007/hdl" --include "../../../../RISCV_project.srcs/sim_1/tb/tb_tcm" --include "../../../../RISCV_project.srcs/sim_1/tb/tb_top" --include "H:/TesiMagistrale/Software/Xilinx/Vivado/2021.2/data/xilinx_vip/include" \
+"../../../../RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ipshared/63b7/hdl/axi_vip_v1_1_vl_rfs.sv" \
+
+sv processing_system7_vip_v1_0_13  --include "../../../../RISCV_project.gen/sources_1/bd/RISCV_bd/ipshared/62b6" --include "../../../../RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ipshared/62b6" --include "../../../../RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ipshared/ec67/hdl" --include "../../../../RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ipshared/3007/hdl" --include "../../../../RISCV_project.srcs/sim_1/tb/tb_tcm" --include "../../../../RISCV_project.srcs/sim_1/tb/tb_top" --include "H:/TesiMagistrale/Software/Xilinx/Vivado/2021.2/data/xilinx_vip/include" \
+"../../../../RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ipshared/3007/hdl/processing_system7_vip_v1_0_vl_rfs.sv" \
+
+verilog xil_defaultlib  --include "../../../../RISCV_project.gen/sources_1/bd/RISCV_bd/ipshared/62b6" --include "../../../../RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ipshared/62b6" --include "../../../../RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ipshared/ec67/hdl" --include "../../../../RISCV_project.gen/sources_1/bd/RISCV_demonstrator/ipshared/3007/hdl" --include "../../../../RISCV_project.srcs/sim_1/tb/tb_tcm" --include "../../../../RISCV_project.srcs/sim_1/tb/tb_top" --include "H:/TesiMagistrale/Software/Xilinx/Vivado/2021.2/data/xilinx_vip/include" \
+"../../../../RISCV_project.ip_user_files/bd/RISCV_demonstrator/ip/RISCV_demonstrator_processing_system7_0_0/sim/RISCV_demonstrator_processing_system7_0_0.v" \
+"../../../../RISCV_project.ip_user_files/bd/RISCV_demonstrator/ip/RISCV_demonstrator_auto_pc_0/sim/RISCV_demonstrator_auto_pc_0.v" \
+"../../../../RISCV_project.gen/sources_1/bd/RISCV_bd/hdl/RISCV_bd_wrapper.v" \
+"../../../../RISCV_project.gen/sources_1/bd/RISCV_demonstrator/hdl/RISCV_demonstrator_wrapper.v" \
+"../../../../RISCV_project.srcs/sim_1/new/tb_riscv_wrapper.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

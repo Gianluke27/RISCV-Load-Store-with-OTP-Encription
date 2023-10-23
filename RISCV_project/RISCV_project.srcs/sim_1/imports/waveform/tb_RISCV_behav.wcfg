@@ -15,15 +15,19 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="2,102.331 ns"></ZoomEndTime>
-      <Cursor1Time time="1,700,060.000 ns"></Cursor1Time>
+      <ZoomStartTime time="7,450.154 ns"></ZoomStartTime>
+      <ZoomEndTime time="7,894.081 ns"></ZoomEndTime>
+      <Cursor1Time time="7,598.499 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="306"></NameColumnWidth>
-      <ValueColumnWidth column_width="129"></ValueColumnWidth>
+      <NameColumnWidth column_width="244"></NameColumnWidth>
+      <ValueColumnWidth column_width="131"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="12" />
+   <WVObjectSize size="19" />
+   <wave_markers>
+      <marker time="10252000" label="" />
+      <marker time="10412000" label="" />
+   </wave_markers>
    <wvobject fp_name="/tb_riscv_wrapper/tb_ACLK" type="logic">
       <obj_property name="ElementShortName">tb_ACLK</obj_property>
       <obj_property name="ObjectShortName">tb_ACLK</obj_property>
@@ -447,10 +451,6 @@
          <obj_property name="ElementShortName">dport_accept_w</obj_property>
          <obj_property name="ObjectShortName">dport_accept_w</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/random_num_w" type="array">
-         <obj_property name="ElementShortName">random_num_w[31:0]</obj_property>
-         <obj_property name="ObjectShortName">random_num_w[31:0]</obj_property>
-      </wvobject>
       <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/BOOT_VECTOR" type="array">
          <obj_property name="ElementShortName">BOOT_VECTOR[31:0]</obj_property>
          <obj_property name="ObjectShortName">BOOT_VECTOR[31:0]</obj_property>
@@ -559,7 +559,6 @@
    <wvobject fp_name="group363" type="group">
       <obj_property name="label">CORE</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/clk_i" type="logic">
          <obj_property name="ElementShortName">clk_i</obj_property>
          <obj_property name="ObjectShortName">clk_i</obj_property>
@@ -907,7 +906,6 @@
          <wvobject fp_name="group5388" type="group">
             <obj_property name="label">Input</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <obj_property name="isExpanded"></obj_property>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/opcode_valid_i" type="logic">
                <obj_property name="ElementShortName">opcode_valid_i</obj_property>
                <obj_property name="ObjectShortName">opcode_valid_i</obj_property>
@@ -1265,6 +1263,7 @@
       <wvobject fp_name="group489" type="group">
          <obj_property name="label">CSR</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
          <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_csr/clk_i" type="logic">
             <obj_property name="ElementShortName">clk_i</obj_property>
             <obj_property name="ObjectShortName">clk_i</obj_property>
@@ -1420,6 +1419,7 @@
             <wvobject fp_name="group754" type="group">
                <obj_property name="label">Input</obj_property>
                <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="isExpanded"></obj_property>
                <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_csr/u_csrfile/ext_intr_i" type="logic">
                   <obj_property name="ElementShortName">ext_intr_i</obj_property>
                   <obj_property name="ObjectShortName">ext_intr_i</obj_property>
@@ -1468,6 +1468,7 @@
             <wvobject fp_name="group755" type="group">
                <obj_property name="label">Output</obj_property>
                <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="isExpanded"></obj_property>
                <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_csr/u_csrfile/csr_branch_o" type="logic">
                   <obj_property name="ElementShortName">csr_branch_o</obj_property>
                   <obj_property name="ObjectShortName">csr_branch_o</obj_property>
@@ -3306,7 +3307,6 @@
       <wvobject fp_name="group724" type="group">
          <obj_property name="label">TCM</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <obj_property name="isExpanded"></obj_property>
          <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/clk_i" type="logic">
             <obj_property name="ElementShortName">clk_i</obj_property>
             <obj_property name="ObjectShortName">clk_i</obj_property>
@@ -3574,10 +3574,6 @@
                <obj_property name="ObjectShortName">data0_o[63:0]</obj_property>
                <obj_property name="label">OTPKey</obj_property>
             </wvobject>
-            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/result_xor_w" type="logic">
-               <obj_property name="ElementShortName">result_xor_w</obj_property>
-               <obj_property name="ObjectShortName">result_xor_w</obj_property>
-            </wvobject>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/mem_d_rd_i" type="logic">
                <obj_property name="ElementShortName">mem_d_rd_i</obj_property>
                <obj_property name="ObjectShortName">mem_d_rd_i</obj_property>
@@ -3597,18 +3593,6 @@
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/muxed_hi_w" type="logic">
                <obj_property name="ElementShortName">muxed_hi_w</obj_property>
                <obj_property name="ObjectShortName">muxed_hi_w</obj_property>
-            </wvobject>
-            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/enc_word_w" type="array">
-               <obj_property name="ElementShortName">enc_word_w[31:0]</obj_property>
-               <obj_property name="ObjectShortName">enc_word_w[31:0]</obj_property>
-            </wvobject>
-            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/otp_word_w" type="array">
-               <obj_property name="ElementShortName">otp_word_w[31:0]</obj_property>
-               <obj_property name="ObjectShortName">otp_word_w[31:0]</obj_property>
-            </wvobject>
-            <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/plain_word_w" type="array">
-               <obj_property name="ElementShortName">plain_word_w[31:0]</obj_property>
-               <obj_property name="ObjectShortName">plain_word_w[31:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/mem_d_data_rd_o" type="array">
                <obj_property name="ElementShortName">mem_d_data_rd_o[31:0]</obj_property>
@@ -3758,58 +3742,72 @@
          <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x0_zero_w " type="array">
             <obj_property name="ElementShortName">\REGFILE.x0_zero_w [31:0]</obj_property>
             <obj_property name="ObjectShortName">\REGFILE.x0_zero_w [31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
          </wvobject>
          <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x1_ra_w " type="array">
             <obj_property name="ElementShortName">\REGFILE.x1_ra_w [31:0]</obj_property>
             <obj_property name="ObjectShortName">\REGFILE.x1_ra_w [31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
          </wvobject>
          <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x2_sp_w " type="array">
             <obj_property name="ElementShortName">\REGFILE.x2_sp_w [31:0]</obj_property>
             <obj_property name="ObjectShortName">\REGFILE.x2_sp_w [31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
          </wvobject>
          <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x3_gp_w " type="array">
             <obj_property name="ElementShortName">\REGFILE.x3_gp_w [31:0]</obj_property>
             <obj_property name="ObjectShortName">\REGFILE.x3_gp_w [31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
          </wvobject>
          <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x4_tp_w " type="array">
             <obj_property name="ElementShortName">\REGFILE.x4_tp_w [31:0]</obj_property>
             <obj_property name="ObjectShortName">\REGFILE.x4_tp_w [31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
          </wvobject>
          <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x5_t0_w " type="array">
             <obj_property name="ElementShortName">\REGFILE.x5_t0_w [31:0]</obj_property>
             <obj_property name="ObjectShortName">\REGFILE.x5_t0_w [31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
          </wvobject>
          <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x6_t1_w " type="array">
             <obj_property name="ElementShortName">\REGFILE.x6_t1_w [31:0]</obj_property>
             <obj_property name="ObjectShortName">\REGFILE.x6_t1_w [31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
          </wvobject>
          <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x7_t2_w " type="array">
             <obj_property name="ElementShortName">\REGFILE.x7_t2_w [31:0]</obj_property>
             <obj_property name="ObjectShortName">\REGFILE.x7_t2_w [31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
          </wvobject>
          <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x8_s0_w " type="array">
             <obj_property name="ElementShortName">\REGFILE.x8_s0_w [31:0]</obj_property>
             <obj_property name="ObjectShortName">\REGFILE.x8_s0_w [31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
          </wvobject>
          <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x9_s1_w " type="array">
             <obj_property name="ElementShortName">\REGFILE.x9_s1_w [31:0]</obj_property>
             <obj_property name="ObjectShortName">\REGFILE.x9_s1_w [31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
          </wvobject>
          <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x10_a0_w " type="array">
             <obj_property name="ElementShortName">\REGFILE.x10_a0_w [31:0]</obj_property>
             <obj_property name="ObjectShortName">\REGFILE.x10_a0_w [31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
          </wvobject>
          <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x11_a1_w " type="array">
             <obj_property name="ElementShortName">\REGFILE.x11_a1_w [31:0]</obj_property>
             <obj_property name="ObjectShortName">\REGFILE.x11_a1_w [31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
          </wvobject>
          <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x12_a2_w " type="array">
             <obj_property name="ElementShortName">\REGFILE.x12_a2_w [31:0]</obj_property>
             <obj_property name="ObjectShortName">\REGFILE.x12_a2_w [31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
          </wvobject>
          <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x13_a3_w " type="array">
             <obj_property name="ElementShortName">\REGFILE.x13_a3_w [31:0]</obj_property>
             <obj_property name="ObjectShortName">\REGFILE.x13_a3_w [31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
          </wvobject>
          <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x14_a4_w " type="array">
             <obj_property name="ElementShortName">\REGFILE.x14_a4_w [31:0]</obj_property>
@@ -3819,76 +3817,94 @@
          <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x15_a5_w " type="array">
             <obj_property name="ElementShortName">\REGFILE.x15_a5_w [31:0]</obj_property>
             <obj_property name="ObjectShortName">\REGFILE.x15_a5_w [31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
          </wvobject>
          <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x16_a6_w " type="array">
             <obj_property name="ElementShortName">\REGFILE.x16_a6_w [31:0]</obj_property>
             <obj_property name="ObjectShortName">\REGFILE.x16_a6_w [31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
          </wvobject>
          <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x17_a7_w " type="array">
             <obj_property name="ElementShortName">\REGFILE.x17_a7_w [31:0]</obj_property>
             <obj_property name="ObjectShortName">\REGFILE.x17_a7_w [31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
          </wvobject>
          <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x18_s2_w " type="array">
             <obj_property name="ElementShortName">\REGFILE.x18_s2_w [31:0]</obj_property>
             <obj_property name="ObjectShortName">\REGFILE.x18_s2_w [31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
          </wvobject>
          <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x19_s3_w " type="array">
             <obj_property name="ElementShortName">\REGFILE.x19_s3_w [31:0]</obj_property>
             <obj_property name="ObjectShortName">\REGFILE.x19_s3_w [31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
          </wvobject>
          <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x20_s4_w " type="array">
             <obj_property name="ElementShortName">\REGFILE.x20_s4_w [31:0]</obj_property>
             <obj_property name="ObjectShortName">\REGFILE.x20_s4_w [31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
          </wvobject>
          <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x21_s5_w " type="array">
             <obj_property name="ElementShortName">\REGFILE.x21_s5_w [31:0]</obj_property>
             <obj_property name="ObjectShortName">\REGFILE.x21_s5_w [31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
          </wvobject>
          <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x22_s6_w " type="array">
             <obj_property name="ElementShortName">\REGFILE.x22_s6_w [31:0]</obj_property>
             <obj_property name="ObjectShortName">\REGFILE.x22_s6_w [31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
          </wvobject>
          <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x23_s7_w " type="array">
             <obj_property name="ElementShortName">\REGFILE.x23_s7_w [31:0]</obj_property>
             <obj_property name="ObjectShortName">\REGFILE.x23_s7_w [31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
          </wvobject>
          <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x24_s8_w " type="array">
             <obj_property name="ElementShortName">\REGFILE.x24_s8_w [31:0]</obj_property>
             <obj_property name="ObjectShortName">\REGFILE.x24_s8_w [31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
          </wvobject>
          <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x25_s9_w " type="array">
             <obj_property name="ElementShortName">\REGFILE.x25_s9_w [31:0]</obj_property>
             <obj_property name="ObjectShortName">\REGFILE.x25_s9_w [31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
          </wvobject>
          <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x26_s10_w " type="array">
             <obj_property name="ElementShortName">\REGFILE.x26_s10_w [31:0]</obj_property>
             <obj_property name="ObjectShortName">\REGFILE.x26_s10_w [31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
          </wvobject>
          <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x27_s11_w " type="array">
             <obj_property name="ElementShortName">\REGFILE.x27_s11_w [31:0]</obj_property>
             <obj_property name="ObjectShortName">\REGFILE.x27_s11_w [31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
          </wvobject>
          <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x28_t3_w " type="array">
             <obj_property name="ElementShortName">\REGFILE.x28_t3_w [31:0]</obj_property>
             <obj_property name="ObjectShortName">\REGFILE.x28_t3_w [31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
          </wvobject>
          <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x29_t4_w " type="array">
             <obj_property name="ElementShortName">\REGFILE.x29_t4_w [31:0]</obj_property>
             <obj_property name="ObjectShortName">\REGFILE.x29_t4_w [31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
          </wvobject>
          <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x30_t5_w " type="array">
             <obj_property name="ElementShortName">\REGFILE.x30_t5_w [31:0]</obj_property>
             <obj_property name="ObjectShortName">\REGFILE.x30_t5_w [31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
          </wvobject>
          <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x31_t6_w " type="array">
             <obj_property name="ElementShortName">\REGFILE.x31_t6_w [31:0]</obj_property>
             <obj_property name="ObjectShortName">\REGFILE.x31_t6_w [31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
          </wvobject>
       </wvobject>
    </wvobject>
    <wvobject fp_name="group854" type="group">
       <obj_property name="label">Sequence</obj_property>
       <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
       <wvobject type="divider" fp_name="divider856">
          <obj_property name="label">NPC</obj_property>
          <obj_property name="DisplayName">label</obj_property>
@@ -3985,6 +4001,7 @@
    <wvobject fp_name="group2677" type="group">
       <obj_property name="label">AXI_GPIO</obj_property>
       <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
    </wvobject>
    <wvobject fp_name="group2971" type="group">
       <obj_property name="label">AXI_PERIPH</obj_property>
@@ -3992,18 +4009,22 @@
       <wvobject fp_name="group4001" type="group">
          <obj_property name="label">Internal</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
       </wvobject>
       <wvobject fp_name="group3268" type="group">
          <obj_property name="label">M00</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
       </wvobject>
       <wvobject fp_name="group3483" type="group">
          <obj_property name="label">M01</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
       </wvobject>
       <wvobject fp_name="group3597" type="group">
          <obj_property name="label">S00</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
       </wvobject>
    </wvobject>
    <wvobject fp_name="group8603" type="group">
@@ -4013,5 +4034,1488 @@
    <wvobject fp_name="group13169" type="group">
       <obj_property name="label">CLK WIZARD</obj_property>
       <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="group2391" type="group">
+      <obj_property name="label">DummyProgramWithOTPEnc</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="divider" fp_name="divider3590">
+         <obj_property name="label">lw a4, -20(s0)</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+      <wvobject type="divider" fp_name="divider3484">
+         <obj_property name="label">LSU</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">#FFFF00</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_data_wr_o" type="array">
+         <obj_property name="ElementShortName">mem_data_wr_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_data_wr_o[31:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_o" type="array">
+         <obj_property name="ElementShortName">mem_addr_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_addr_o[31:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_rd_o" type="logic">
+         <obj_property name="ElementShortName">mem_rd_o</obj_property>
+         <obj_property name="ObjectShortName">mem_rd_o</obj_property>
+         <obj_property name="CustomSignalColor">#00FF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_wr_o" type="array">
+         <obj_property name="ElementShortName">mem_wr_o[3:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_wr_o[3:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/writeback_value_o" type="array">
+         <obj_property name="ElementShortName">writeback_value_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">writeback_value_o[31:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="divider" fp_name="divider2392">
+         <obj_property name="label">Registers</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">#FFD700</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x8_s0_w " type="array">
+         <obj_property name="ElementShortName">\REGFILE.x8_s0_w [31:0]</obj_property>
+         <obj_property name="ObjectShortName">\REGFILE.x8_s0_w [31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x10_a0_w " type="array">
+         <obj_property name="ElementShortName">\REGFILE.x10_a0_w [31:0]</obj_property>
+         <obj_property name="ObjectShortName">\REGFILE.x10_a0_w [31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x14_a4_w " type="array">
+         <obj_property name="ElementShortName">\REGFILE.x14_a4_w [31:0]</obj_property>
+         <obj_property name="ObjectShortName">\REGFILE.x14_a4_w [31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x15_a5_w " type="array">
+         <obj_property name="ElementShortName">\REGFILE.x15_a5_w [31:0]</obj_property>
+         <obj_property name="ObjectShortName">\REGFILE.x15_a5_w [31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="divider" fp_name="divider2414">
+         <obj_property name="label">Memories</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">#FFA500</obj_property>
+      </wvobject>
+      <wvobject fp_name="group2418" type="group">
+         <obj_property name="label">PLAIN Memory</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/u_ram/addr1_i" type="array">
+            <obj_property name="ElementShortName">addr1_i[12:0]</obj_property>
+            <obj_property name="ObjectShortName">addr1_i[12:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/u_ram/data1_i" type="array">
+            <obj_property name="ElementShortName">data1_i[63:0]</obj_property>
+            <obj_property name="ObjectShortName">data1_i[63:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/u_ram/wr1_i" type="array">
+            <obj_property name="ElementShortName">wr1_i[7:0]</obj_property>
+            <obj_property name="ObjectShortName">wr1_i[7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/u_ram/data1_o" type="array">
+            <obj_property name="ElementShortName">data1_o[63:0]</obj_property>
+            <obj_property name="ObjectShortName">data1_o[63:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group2419" type="group">
+         <obj_property name="label">OTP Memory</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_otp_ram /addr0_i" type="array">
+            <obj_property name="ElementShortName">addr0_i[12:0]</obj_property>
+            <obj_property name="ObjectShortName">addr0_i[12:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_otp_ram /data0_i" type="array">
+            <obj_property name="ElementShortName">data0_i[63:0]</obj_property>
+            <obj_property name="ObjectShortName">data0_i[63:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_otp_ram /wr0_i" type="array">
+            <obj_property name="ElementShortName">wr0_i[7:0]</obj_property>
+            <obj_property name="ObjectShortName">wr0_i[7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_otp_ram /data0_o" type="array">
+            <obj_property name="ElementShortName">data0_o[63:0]</obj_property>
+            <obj_property name="ObjectShortName">data0_o[63:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group2420" type="group">
+         <obj_property name="label">ENC Memory</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_enc_ram /addr0_i" type="array">
+            <obj_property name="ElementShortName">addr0_i[12:0]</obj_property>
+            <obj_property name="ObjectShortName">addr0_i[12:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_enc_ram /data0_i" type="array">
+            <obj_property name="ElementShortName">data0_i[63:0]</obj_property>
+            <obj_property name="ObjectShortName">data0_i[63:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_enc_ram /wr0_i" type="array">
+            <obj_property name="ElementShortName">wr0_i[7:0]</obj_property>
+            <obj_property name="ObjectShortName">wr0_i[7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_enc_ram /data0_o" type="array">
+            <obj_property name="ElementShortName">data0_o[63:0]</obj_property>
+            <obj_property name="ObjectShortName">data0_o[63:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="divider" fp_name="divider2433">
+         <obj_property name="label">Encryptor</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">#D2691E</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /data_hi_i" type="logic">
+         <obj_property name="ElementShortName">data_hi_i</obj_property>
+         <obj_property name="ObjectShortName">data_hi_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /data_wr_i" type="array">
+         <obj_property name="ElementShortName">data_wr_i[3:0]</obj_property>
+         <obj_property name="ObjectShortName">data_wr_i[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /mem_addr_i" type="array">
+         <obj_property name="ElementShortName">mem_addr_i[12:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_addr_i[12:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /random_num_i" type="array">
+         <obj_property name="ElementShortName">random_num_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">random_num_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /plain_data_i" type="array">
+         <obj_property name="ElementShortName">plain_data_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">plain_data_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /random_num_request_o" type="logic">
+         <obj_property name="ElementShortName">random_num_request_o</obj_property>
+         <obj_property name="ObjectShortName">random_num_request_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /write_byte_otp_o" type="array">
+         <obj_property name="ElementShortName">write_byte_otp_o[7:0]</obj_property>
+         <obj_property name="ObjectShortName">write_byte_otp_o[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /otp_address_o" type="array">
+         <obj_property name="ElementShortName">otp_address_o[12:0]</obj_property>
+         <obj_property name="ObjectShortName">otp_address_o[12:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /otp_data_o" type="array">
+         <obj_property name="ElementShortName">otp_data_o[63:0]</obj_property>
+         <obj_property name="ObjectShortName">otp_data_o[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /write_byte_enc_o" type="array">
+         <obj_property name="ElementShortName">write_byte_enc_o[7:0]</obj_property>
+         <obj_property name="ObjectShortName">write_byte_enc_o[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /enc_address_o" type="array">
+         <obj_property name="ElementShortName">enc_address_o[12:0]</obj_property>
+         <obj_property name="ObjectShortName">enc_address_o[12:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /enc_data_o" type="array">
+         <obj_property name="ElementShortName">enc_data_o[63:0]</obj_property>
+         <obj_property name="ObjectShortName">enc_data_o[63:0]</obj_property>
+      </wvobject>
+      <wvobject type="divider" fp_name="divider2434">
+         <obj_property name="label">Validator</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">#A52A2A</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_validator /enc_data_i" type="array">
+         <obj_property name="ElementShortName">enc_data_i[63:0]</obj_property>
+         <obj_property name="ObjectShortName">enc_data_i[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_validator /otp_data_i" type="array">
+         <obj_property name="ElementShortName">otp_data_i[63:0]</obj_property>
+         <obj_property name="ObjectShortName">otp_data_i[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_validator /plain_data_i" type="array">
+         <obj_property name="ElementShortName">plain_data_i[63:0]</obj_property>
+         <obj_property name="ObjectShortName">plain_data_i[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_validator /data_hi_i" type="logic">
+         <obj_property name="ElementShortName">data_hi_i</obj_property>
+         <obj_property name="ObjectShortName">data_hi_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_validator /mem_d_rd_i" type="logic">
+         <obj_property name="ElementShortName">mem_d_rd_i</obj_property>
+         <obj_property name="ObjectShortName">mem_d_rd_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_validator /data_valid_o" type="logic">
+         <obj_property name="ElementShortName">data_valid_o</obj_property>
+         <obj_property name="ObjectShortName">data_valid_o</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group2391" type="group">
+      <obj_property name="label">DummyProgramWithOTPEnc</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="divider" fp_name="divider3590">
+         <obj_property name="label">lw a4, -20(s0)</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+      <wvobject type="divider" fp_name="divider3484">
+         <obj_property name="label">LSU</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">#FFFF00</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_data_wr_o" type="array">
+         <obj_property name="ElementShortName">mem_data_wr_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_data_wr_o[31:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_o" type="array">
+         <obj_property name="ElementShortName">mem_addr_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_addr_o[31:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_rd_o" type="logic">
+         <obj_property name="ElementShortName">mem_rd_o</obj_property>
+         <obj_property name="ObjectShortName">mem_rd_o</obj_property>
+         <obj_property name="CustomSignalColor">#00FF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_wr_o" type="array">
+         <obj_property name="ElementShortName">mem_wr_o[3:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_wr_o[3:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/writeback_value_o" type="array">
+         <obj_property name="ElementShortName">writeback_value_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">writeback_value_o[31:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="divider" fp_name="divider2392">
+         <obj_property name="label">Registers</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">#FFD700</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x8_s0_w " type="array">
+         <obj_property name="ElementShortName">\REGFILE.x8_s0_w [31:0]</obj_property>
+         <obj_property name="ObjectShortName">\REGFILE.x8_s0_w [31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x10_a0_w " type="array">
+         <obj_property name="ElementShortName">\REGFILE.x10_a0_w [31:0]</obj_property>
+         <obj_property name="ObjectShortName">\REGFILE.x10_a0_w [31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x14_a4_w " type="array">
+         <obj_property name="ElementShortName">\REGFILE.x14_a4_w [31:0]</obj_property>
+         <obj_property name="ObjectShortName">\REGFILE.x14_a4_w [31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x15_a5_w " type="array">
+         <obj_property name="ElementShortName">\REGFILE.x15_a5_w [31:0]</obj_property>
+         <obj_property name="ObjectShortName">\REGFILE.x15_a5_w [31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="divider" fp_name="divider2414">
+         <obj_property name="label">Memories</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">#FFA500</obj_property>
+      </wvobject>
+      <wvobject fp_name="group2418" type="group">
+         <obj_property name="label">PLAIN Memory</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/u_ram/addr1_i" type="array">
+            <obj_property name="ElementShortName">addr1_i[12:0]</obj_property>
+            <obj_property name="ObjectShortName">addr1_i[12:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/u_ram/data1_i" type="array">
+            <obj_property name="ElementShortName">data1_i[63:0]</obj_property>
+            <obj_property name="ObjectShortName">data1_i[63:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/u_ram/wr1_i" type="array">
+            <obj_property name="ElementShortName">wr1_i[7:0]</obj_property>
+            <obj_property name="ObjectShortName">wr1_i[7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/u_ram/data1_o" type="array">
+            <obj_property name="ElementShortName">data1_o[63:0]</obj_property>
+            <obj_property name="ObjectShortName">data1_o[63:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group2419" type="group">
+         <obj_property name="label">OTP Memory</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_otp_ram /addr0_i" type="array">
+            <obj_property name="ElementShortName">addr0_i[12:0]</obj_property>
+            <obj_property name="ObjectShortName">addr0_i[12:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_otp_ram /data0_i" type="array">
+            <obj_property name="ElementShortName">data0_i[63:0]</obj_property>
+            <obj_property name="ObjectShortName">data0_i[63:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_otp_ram /wr0_i" type="array">
+            <obj_property name="ElementShortName">wr0_i[7:0]</obj_property>
+            <obj_property name="ObjectShortName">wr0_i[7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_otp_ram /data0_o" type="array">
+            <obj_property name="ElementShortName">data0_o[63:0]</obj_property>
+            <obj_property name="ObjectShortName">data0_o[63:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group2420" type="group">
+         <obj_property name="label">ENC Memory</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_enc_ram /addr0_i" type="array">
+            <obj_property name="ElementShortName">addr0_i[12:0]</obj_property>
+            <obj_property name="ObjectShortName">addr0_i[12:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_enc_ram /data0_i" type="array">
+            <obj_property name="ElementShortName">data0_i[63:0]</obj_property>
+            <obj_property name="ObjectShortName">data0_i[63:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_enc_ram /wr0_i" type="array">
+            <obj_property name="ElementShortName">wr0_i[7:0]</obj_property>
+            <obj_property name="ObjectShortName">wr0_i[7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_enc_ram /data0_o" type="array">
+            <obj_property name="ElementShortName">data0_o[63:0]</obj_property>
+            <obj_property name="ObjectShortName">data0_o[63:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="divider" fp_name="divider2433">
+         <obj_property name="label">Encryptor</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">#D2691E</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /data_hi_i" type="logic">
+         <obj_property name="ElementShortName">data_hi_i</obj_property>
+         <obj_property name="ObjectShortName">data_hi_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /data_wr_i" type="array">
+         <obj_property name="ElementShortName">data_wr_i[3:0]</obj_property>
+         <obj_property name="ObjectShortName">data_wr_i[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /mem_addr_i" type="array">
+         <obj_property name="ElementShortName">mem_addr_i[12:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_addr_i[12:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /random_num_i" type="array">
+         <obj_property name="ElementShortName">random_num_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">random_num_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /plain_data_i" type="array">
+         <obj_property name="ElementShortName">plain_data_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">plain_data_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /random_num_request_o" type="logic">
+         <obj_property name="ElementShortName">random_num_request_o</obj_property>
+         <obj_property name="ObjectShortName">random_num_request_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /write_byte_otp_o" type="array">
+         <obj_property name="ElementShortName">write_byte_otp_o[7:0]</obj_property>
+         <obj_property name="ObjectShortName">write_byte_otp_o[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /otp_address_o" type="array">
+         <obj_property name="ElementShortName">otp_address_o[12:0]</obj_property>
+         <obj_property name="ObjectShortName">otp_address_o[12:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /otp_data_o" type="array">
+         <obj_property name="ElementShortName">otp_data_o[63:0]</obj_property>
+         <obj_property name="ObjectShortName">otp_data_o[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /write_byte_enc_o" type="array">
+         <obj_property name="ElementShortName">write_byte_enc_o[7:0]</obj_property>
+         <obj_property name="ObjectShortName">write_byte_enc_o[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /enc_address_o" type="array">
+         <obj_property name="ElementShortName">enc_address_o[12:0]</obj_property>
+         <obj_property name="ObjectShortName">enc_address_o[12:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /enc_data_o" type="array">
+         <obj_property name="ElementShortName">enc_data_o[63:0]</obj_property>
+         <obj_property name="ObjectShortName">enc_data_o[63:0]</obj_property>
+      </wvobject>
+      <wvobject type="divider" fp_name="divider2434">
+         <obj_property name="label">Validator</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">#A52A2A</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_validator /enc_data_i" type="array">
+         <obj_property name="ElementShortName">enc_data_i[63:0]</obj_property>
+         <obj_property name="ObjectShortName">enc_data_i[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_validator /otp_data_i" type="array">
+         <obj_property name="ElementShortName">otp_data_i[63:0]</obj_property>
+         <obj_property name="ObjectShortName">otp_data_i[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_validator /plain_data_i" type="array">
+         <obj_property name="ElementShortName">plain_data_i[63:0]</obj_property>
+         <obj_property name="ObjectShortName">plain_data_i[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_validator /data_hi_i" type="logic">
+         <obj_property name="ElementShortName">data_hi_i</obj_property>
+         <obj_property name="ObjectShortName">data_hi_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_validator /mem_d_rd_i" type="logic">
+         <obj_property name="ElementShortName">mem_d_rd_i</obj_property>
+         <obj_property name="ObjectShortName">mem_d_rd_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_validator /data_valid_o" type="logic">
+         <obj_property name="ElementShortName">data_valid_o</obj_property>
+         <obj_property name="ObjectShortName">data_valid_o</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group2391" type="group">
+      <obj_property name="label">DummyProgramWithOTPEnc</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="divider" fp_name="divider3590">
+         <obj_property name="label">lw a4, -20(s0)</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+      <wvobject type="divider" fp_name="divider3484">
+         <obj_property name="label">LSU</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">#FFFF00</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_data_wr_o" type="array">
+         <obj_property name="ElementShortName">mem_data_wr_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_data_wr_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_o" type="array">
+         <obj_property name="ElementShortName">mem_addr_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_addr_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_rd_o" type="logic">
+         <obj_property name="ElementShortName">mem_rd_o</obj_property>
+         <obj_property name="ObjectShortName">mem_rd_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_wr_o" type="array">
+         <obj_property name="ElementShortName">mem_wr_o[3:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_wr_o[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/writeback_value_o" type="array">
+         <obj_property name="ElementShortName">writeback_value_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">writeback_value_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="divider" fp_name="divider2392">
+         <obj_property name="label">Registers</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">#FFD700</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x8_s0_w " type="array">
+         <obj_property name="ElementShortName">\REGFILE.x8_s0_w [31:0]</obj_property>
+         <obj_property name="ObjectShortName">\REGFILE.x8_s0_w [31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x10_a0_w " type="array">
+         <obj_property name="ElementShortName">\REGFILE.x10_a0_w [31:0]</obj_property>
+         <obj_property name="ObjectShortName">\REGFILE.x10_a0_w [31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x14_a4_w " type="array">
+         <obj_property name="ElementShortName">\REGFILE.x14_a4_w [31:0]</obj_property>
+         <obj_property name="ObjectShortName">\REGFILE.x14_a4_w [31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x15_a5_w " type="array">
+         <obj_property name="ElementShortName">\REGFILE.x15_a5_w [31:0]</obj_property>
+         <obj_property name="ObjectShortName">\REGFILE.x15_a5_w [31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="divider" fp_name="divider2414">
+         <obj_property name="label">Memories</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">#FFA500</obj_property>
+      </wvobject>
+      <wvobject fp_name="group2418" type="group">
+         <obj_property name="label">PLAIN Memory</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/u_ram/addr1_i" type="array">
+            <obj_property name="ElementShortName">addr1_i[12:0]</obj_property>
+            <obj_property name="ObjectShortName">addr1_i[12:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/u_ram/data1_i" type="array">
+            <obj_property name="ElementShortName">data1_i[63:0]</obj_property>
+            <obj_property name="ObjectShortName">data1_i[63:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/u_ram/wr1_i" type="array">
+            <obj_property name="ElementShortName">wr1_i[7:0]</obj_property>
+            <obj_property name="ObjectShortName">wr1_i[7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/u_ram/data1_o" type="array">
+            <obj_property name="ElementShortName">data1_o[63:0]</obj_property>
+            <obj_property name="ObjectShortName">data1_o[63:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group2419" type="group">
+         <obj_property name="label">OTP Memory</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_otp_ram /addr0_i" type="array">
+            <obj_property name="ElementShortName">addr0_i[12:0]</obj_property>
+            <obj_property name="ObjectShortName">addr0_i[12:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_otp_ram /data0_i" type="array">
+            <obj_property name="ElementShortName">data0_i[63:0]</obj_property>
+            <obj_property name="ObjectShortName">data0_i[63:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_otp_ram /wr0_i" type="array">
+            <obj_property name="ElementShortName">wr0_i[7:0]</obj_property>
+            <obj_property name="ObjectShortName">wr0_i[7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_otp_ram /data0_o" type="array">
+            <obj_property name="ElementShortName">data0_o[63:0]</obj_property>
+            <obj_property name="ObjectShortName">data0_o[63:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group2420" type="group">
+         <obj_property name="label">ENC Memory</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_enc_ram /addr0_i" type="array">
+            <obj_property name="ElementShortName">addr0_i[12:0]</obj_property>
+            <obj_property name="ObjectShortName">addr0_i[12:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_enc_ram /data0_i" type="array">
+            <obj_property name="ElementShortName">data0_i[63:0]</obj_property>
+            <obj_property name="ObjectShortName">data0_i[63:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_enc_ram /wr0_i" type="array">
+            <obj_property name="ElementShortName">wr0_i[7:0]</obj_property>
+            <obj_property name="ObjectShortName">wr0_i[7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_enc_ram /data0_o" type="array">
+            <obj_property name="ElementShortName">data0_o[63:0]</obj_property>
+            <obj_property name="ObjectShortName">data0_o[63:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="divider" fp_name="divider2433">
+         <obj_property name="label">Encryptor</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">#D2691E</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /data_hi_i" type="logic">
+         <obj_property name="ElementShortName">data_hi_i</obj_property>
+         <obj_property name="ObjectShortName">data_hi_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /data_wr_i" type="array">
+         <obj_property name="ElementShortName">data_wr_i[3:0]</obj_property>
+         <obj_property name="ObjectShortName">data_wr_i[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /mem_addr_i" type="array">
+         <obj_property name="ElementShortName">mem_addr_i[12:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_addr_i[12:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /random_num_i" type="array">
+         <obj_property name="ElementShortName">random_num_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">random_num_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /plain_data_i" type="array">
+         <obj_property name="ElementShortName">plain_data_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">plain_data_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /random_num_request_o" type="logic">
+         <obj_property name="ElementShortName">random_num_request_o</obj_property>
+         <obj_property name="ObjectShortName">random_num_request_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /write_byte_otp_o" type="array">
+         <obj_property name="ElementShortName">write_byte_otp_o[7:0]</obj_property>
+         <obj_property name="ObjectShortName">write_byte_otp_o[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /otp_address_o" type="array">
+         <obj_property name="ElementShortName">otp_address_o[12:0]</obj_property>
+         <obj_property name="ObjectShortName">otp_address_o[12:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /otp_data_o" type="array">
+         <obj_property name="ElementShortName">otp_data_o[63:0]</obj_property>
+         <obj_property name="ObjectShortName">otp_data_o[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /write_byte_enc_o" type="array">
+         <obj_property name="ElementShortName">write_byte_enc_o[7:0]</obj_property>
+         <obj_property name="ObjectShortName">write_byte_enc_o[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /enc_address_o" type="array">
+         <obj_property name="ElementShortName">enc_address_o[12:0]</obj_property>
+         <obj_property name="ObjectShortName">enc_address_o[12:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /enc_data_o" type="array">
+         <obj_property name="ElementShortName">enc_data_o[63:0]</obj_property>
+         <obj_property name="ObjectShortName">enc_data_o[63:0]</obj_property>
+      </wvobject>
+      <wvobject type="divider" fp_name="divider2434">
+         <obj_property name="label">Validator</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">#A52A2A</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_validator /enc_data_i" type="array">
+         <obj_property name="ElementShortName">enc_data_i[63:0]</obj_property>
+         <obj_property name="ObjectShortName">enc_data_i[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_validator /otp_data_i" type="array">
+         <obj_property name="ElementShortName">otp_data_i[63:0]</obj_property>
+         <obj_property name="ObjectShortName">otp_data_i[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_validator /plain_data_i" type="array">
+         <obj_property name="ElementShortName">plain_data_i[63:0]</obj_property>
+         <obj_property name="ObjectShortName">plain_data_i[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_validator /data_hi_i" type="logic">
+         <obj_property name="ElementShortName">data_hi_i</obj_property>
+         <obj_property name="ObjectShortName">data_hi_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_validator /mem_d_rd_i" type="logic">
+         <obj_property name="ElementShortName">mem_d_rd_i</obj_property>
+         <obj_property name="ObjectShortName">mem_d_rd_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_validator /data_valid_o" type="logic">
+         <obj_property name="ElementShortName">data_valid_o</obj_property>
+         <obj_property name="ObjectShortName">data_valid_o</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group2391" type="group">
+      <obj_property name="label">DummyProgramWithOTPEnc</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="divider" fp_name="divider3590">
+         <obj_property name="label">lw a5, -24(s0)</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+      <wvobject type="divider" fp_name="divider3484">
+         <obj_property name="label">LSU</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">#FFFF00</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_data_wr_o" type="array">
+         <obj_property name="ElementShortName">mem_data_wr_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_data_wr_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_o" type="array">
+         <obj_property name="ElementShortName">mem_addr_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_addr_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_rd_o" type="logic">
+         <obj_property name="ElementShortName">mem_rd_o</obj_property>
+         <obj_property name="ObjectShortName">mem_rd_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_wr_o" type="array">
+         <obj_property name="ElementShortName">mem_wr_o[3:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_wr_o[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/writeback_value_o" type="array">
+         <obj_property name="ElementShortName">writeback_value_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">writeback_value_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="divider" fp_name="divider2392">
+         <obj_property name="label">Registers</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">#FFD700</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x8_s0_w " type="array">
+         <obj_property name="ElementShortName">\REGFILE.x8_s0_w [31:0]</obj_property>
+         <obj_property name="ObjectShortName">\REGFILE.x8_s0_w [31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x10_a0_w " type="array">
+         <obj_property name="ElementShortName">\REGFILE.x10_a0_w [31:0]</obj_property>
+         <obj_property name="ObjectShortName">\REGFILE.x10_a0_w [31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x14_a4_w " type="array">
+         <obj_property name="ElementShortName">\REGFILE.x14_a4_w [31:0]</obj_property>
+         <obj_property name="ObjectShortName">\REGFILE.x14_a4_w [31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x15_a5_w " type="array">
+         <obj_property name="ElementShortName">\REGFILE.x15_a5_w [31:0]</obj_property>
+         <obj_property name="ObjectShortName">\REGFILE.x15_a5_w [31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="divider" fp_name="divider2414">
+         <obj_property name="label">Memories</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">#FFA500</obj_property>
+      </wvobject>
+      <wvobject fp_name="group2418" type="group">
+         <obj_property name="label">PLAIN Memory</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/u_ram/addr1_i" type="array">
+            <obj_property name="ElementShortName">addr1_i[12:0]</obj_property>
+            <obj_property name="ObjectShortName">addr1_i[12:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/u_ram/data1_i" type="array">
+            <obj_property name="ElementShortName">data1_i[63:0]</obj_property>
+            <obj_property name="ObjectShortName">data1_i[63:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/u_ram/wr1_i" type="array">
+            <obj_property name="ElementShortName">wr1_i[7:0]</obj_property>
+            <obj_property name="ObjectShortName">wr1_i[7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/u_ram/data1_o" type="array">
+            <obj_property name="ElementShortName">data1_o[63:0]</obj_property>
+            <obj_property name="ObjectShortName">data1_o[63:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group2419" type="group">
+         <obj_property name="label">OTP Memory</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_otp_ram /addr0_i" type="array">
+            <obj_property name="ElementShortName">addr0_i[12:0]</obj_property>
+            <obj_property name="ObjectShortName">addr0_i[12:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_otp_ram /data0_i" type="array">
+            <obj_property name="ElementShortName">data0_i[63:0]</obj_property>
+            <obj_property name="ObjectShortName">data0_i[63:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_otp_ram /wr0_i" type="array">
+            <obj_property name="ElementShortName">wr0_i[7:0]</obj_property>
+            <obj_property name="ObjectShortName">wr0_i[7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_otp_ram /data0_o" type="array">
+            <obj_property name="ElementShortName">data0_o[63:0]</obj_property>
+            <obj_property name="ObjectShortName">data0_o[63:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group2420" type="group">
+         <obj_property name="label">ENC Memory</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_enc_ram /addr0_i" type="array">
+            <obj_property name="ElementShortName">addr0_i[12:0]</obj_property>
+            <obj_property name="ObjectShortName">addr0_i[12:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_enc_ram /data0_i" type="array">
+            <obj_property name="ElementShortName">data0_i[63:0]</obj_property>
+            <obj_property name="ObjectShortName">data0_i[63:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_enc_ram /wr0_i" type="array">
+            <obj_property name="ElementShortName">wr0_i[7:0]</obj_property>
+            <obj_property name="ObjectShortName">wr0_i[7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_enc_ram /data0_o" type="array">
+            <obj_property name="ElementShortName">data0_o[63:0]</obj_property>
+            <obj_property name="ObjectShortName">data0_o[63:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="divider" fp_name="divider2433">
+         <obj_property name="label">Encryptor</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">#D2691E</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /data_hi_i" type="logic">
+         <obj_property name="ElementShortName">data_hi_i</obj_property>
+         <obj_property name="ObjectShortName">data_hi_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /data_wr_i" type="array">
+         <obj_property name="ElementShortName">data_wr_i[3:0]</obj_property>
+         <obj_property name="ObjectShortName">data_wr_i[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /mem_addr_i" type="array">
+         <obj_property name="ElementShortName">mem_addr_i[12:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_addr_i[12:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /random_num_i" type="array">
+         <obj_property name="ElementShortName">random_num_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">random_num_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /plain_data_i" type="array">
+         <obj_property name="ElementShortName">plain_data_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">plain_data_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /random_num_request_o" type="logic">
+         <obj_property name="ElementShortName">random_num_request_o</obj_property>
+         <obj_property name="ObjectShortName">random_num_request_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /write_byte_otp_o" type="array">
+         <obj_property name="ElementShortName">write_byte_otp_o[7:0]</obj_property>
+         <obj_property name="ObjectShortName">write_byte_otp_o[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /otp_address_o" type="array">
+         <obj_property name="ElementShortName">otp_address_o[12:0]</obj_property>
+         <obj_property name="ObjectShortName">otp_address_o[12:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /otp_data_o" type="array">
+         <obj_property name="ElementShortName">otp_data_o[63:0]</obj_property>
+         <obj_property name="ObjectShortName">otp_data_o[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /write_byte_enc_o" type="array">
+         <obj_property name="ElementShortName">write_byte_enc_o[7:0]</obj_property>
+         <obj_property name="ObjectShortName">write_byte_enc_o[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /enc_address_o" type="array">
+         <obj_property name="ElementShortName">enc_address_o[12:0]</obj_property>
+         <obj_property name="ObjectShortName">enc_address_o[12:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /enc_data_o" type="array">
+         <obj_property name="ElementShortName">enc_data_o[63:0]</obj_property>
+         <obj_property name="ObjectShortName">enc_data_o[63:0]</obj_property>
+      </wvobject>
+      <wvobject type="divider" fp_name="divider2434">
+         <obj_property name="label">Validator</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">#A52A2A</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_validator /enc_data_i" type="array">
+         <obj_property name="ElementShortName">enc_data_i[63:0]</obj_property>
+         <obj_property name="ObjectShortName">enc_data_i[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_validator /otp_data_i" type="array">
+         <obj_property name="ElementShortName">otp_data_i[63:0]</obj_property>
+         <obj_property name="ObjectShortName">otp_data_i[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_validator /plain_data_i" type="array">
+         <obj_property name="ElementShortName">plain_data_i[63:0]</obj_property>
+         <obj_property name="ObjectShortName">plain_data_i[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_validator /data_hi_i" type="logic">
+         <obj_property name="ElementShortName">data_hi_i</obj_property>
+         <obj_property name="ObjectShortName">data_hi_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_validator /mem_d_rd_i" type="logic">
+         <obj_property name="ElementShortName">mem_d_rd_i</obj_property>
+         <obj_property name="ObjectShortName">mem_d_rd_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_validator /data_valid_o" type="logic">
+         <obj_property name="ElementShortName">data_valid_o</obj_property>
+         <obj_property name="ObjectShortName">data_valid_o</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group2391" type="group">
+      <obj_property name="label">Encryptor SW</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="divider" fp_name="divider3484">
+         <obj_property name="label">LSU</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">#FFFF00</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_data_wr_o" type="array">
+         <obj_property name="ElementShortName">mem_data_wr_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_data_wr_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_o" type="array">
+         <obj_property name="ElementShortName">mem_addr_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_addr_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_rd_o" type="logic">
+         <obj_property name="ElementShortName">mem_rd_o</obj_property>
+         <obj_property name="ObjectShortName">mem_rd_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_wr_o" type="array">
+         <obj_property name="ElementShortName">mem_wr_o[3:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_wr_o[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/writeback_value_o" type="array">
+         <obj_property name="ElementShortName">writeback_value_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">writeback_value_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="divider" fp_name="divider2392">
+         <obj_property name="label">Registers</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">#FFD700</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x8_s0_w " type="array">
+         <obj_property name="ElementShortName">\REGFILE.x8_s0_w [31:0]</obj_property>
+         <obj_property name="ObjectShortName">\REGFILE.x8_s0_w [31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x5_t0_w " type="array">
+         <obj_property name="ElementShortName">\REGFILE.x5_t0_w [31:0]</obj_property>
+         <obj_property name="ObjectShortName">\REGFILE.x5_t0_w [31:0]</obj_property>
+      </wvobject>
+      <wvobject type="divider" fp_name="divider2433">
+         <obj_property name="label">Encryptor</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">#D2691E</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /data_hi_i" type="logic">
+         <obj_property name="ElementShortName">data_hi_i</obj_property>
+         <obj_property name="ObjectShortName">data_hi_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /data_wr_i" type="array">
+         <obj_property name="ElementShortName">data_wr_i[3:0]</obj_property>
+         <obj_property name="ObjectShortName">data_wr_i[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /mem_addr_i" type="array">
+         <obj_property name="ElementShortName">mem_addr_i[12:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_addr_i[12:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /random_num_i" type="array">
+         <obj_property name="ElementShortName">random_num_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">random_num_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /plain_data_i" type="array">
+         <obj_property name="ElementShortName">plain_data_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">plain_data_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /random_num_request_o" type="logic">
+         <obj_property name="ElementShortName">random_num_request_o</obj_property>
+         <obj_property name="ObjectShortName">random_num_request_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /write_byte_otp_o" type="array">
+         <obj_property name="ElementShortName">write_byte_otp_o[7:0]</obj_property>
+         <obj_property name="ObjectShortName">write_byte_otp_o[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /otp_address_o" type="array">
+         <obj_property name="ElementShortName">otp_address_o[12:0]</obj_property>
+         <obj_property name="ObjectShortName">otp_address_o[12:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /otp_data_o" type="array">
+         <obj_property name="ElementShortName">otp_data_o[63:0]</obj_property>
+         <obj_property name="ObjectShortName">otp_data_o[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /write_byte_enc_o" type="array">
+         <obj_property name="ElementShortName">write_byte_enc_o[7:0]</obj_property>
+         <obj_property name="ObjectShortName">write_byte_enc_o[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /enc_address_o" type="array">
+         <obj_property name="ElementShortName">enc_address_o[12:0]</obj_property>
+         <obj_property name="ObjectShortName">enc_address_o[12:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /enc_data_o" type="array">
+         <obj_property name="ElementShortName">enc_data_o[63:0]</obj_property>
+         <obj_property name="ObjectShortName">enc_data_o[63:0]</obj_property>
+      </wvobject>
+      <wvobject type="divider" fp_name="divider2414">
+         <obj_property name="label">Memories</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">#FFA500</obj_property>
+      </wvobject>
+      <wvobject fp_name="group2418" type="group">
+         <obj_property name="label">PLAIN Memory</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/u_ram/addr1_i" type="array">
+            <obj_property name="ElementShortName">addr1_i[12:0]</obj_property>
+            <obj_property name="ObjectShortName">addr1_i[12:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/u_ram/data1_i" type="array">
+            <obj_property name="ElementShortName">data1_i[63:0]</obj_property>
+            <obj_property name="ObjectShortName">data1_i[63:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/u_ram/wr1_i" type="array">
+            <obj_property name="ElementShortName">wr1_i[7:0]</obj_property>
+            <obj_property name="ObjectShortName">wr1_i[7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/u_ram/data1_o" type="array">
+            <obj_property name="ElementShortName">data1_o[63:0]</obj_property>
+            <obj_property name="ObjectShortName">data1_o[63:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group2419" type="group">
+         <obj_property name="label">OTP Memory</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_otp_ram /addr0_i" type="array">
+            <obj_property name="ElementShortName">addr0_i[12:0]</obj_property>
+            <obj_property name="ObjectShortName">addr0_i[12:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_otp_ram /data0_i" type="array">
+            <obj_property name="ElementShortName">data0_i[63:0]</obj_property>
+            <obj_property name="ObjectShortName">data0_i[63:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_otp_ram /wr0_i" type="array">
+            <obj_property name="ElementShortName">wr0_i[7:0]</obj_property>
+            <obj_property name="ObjectShortName">wr0_i[7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_otp_ram /data0_o" type="array">
+            <obj_property name="ElementShortName">data0_o[63:0]</obj_property>
+            <obj_property name="ObjectShortName">data0_o[63:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group2420" type="group">
+         <obj_property name="label">ENC Memory</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_enc_ram /addr0_i" type="array">
+            <obj_property name="ElementShortName">addr0_i[12:0]</obj_property>
+            <obj_property name="ObjectShortName">addr0_i[12:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_enc_ram /data0_i" type="array">
+            <obj_property name="ElementShortName">data0_i[63:0]</obj_property>
+            <obj_property name="ObjectShortName">data0_i[63:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_enc_ram /wr0_i" type="array">
+            <obj_property name="ElementShortName">wr0_i[7:0]</obj_property>
+            <obj_property name="ObjectShortName">wr0_i[7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_enc_ram /data0_o" type="array">
+            <obj_property name="ElementShortName">data0_o[63:0]</obj_property>
+            <obj_property name="ObjectShortName">data0_o[63:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="divider" fp_name="divider2434">
+         <obj_property name="label">Validator</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">#A52A2A</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_validator /enc_data_i" type="array">
+         <obj_property name="ElementShortName">enc_data_i[63:0]</obj_property>
+         <obj_property name="ObjectShortName">enc_data_i[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_validator /otp_data_i" type="array">
+         <obj_property name="ElementShortName">otp_data_i[63:0]</obj_property>
+         <obj_property name="ObjectShortName">otp_data_i[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_validator /plain_data_i" type="array">
+         <obj_property name="ElementShortName">plain_data_i[63:0]</obj_property>
+         <obj_property name="ObjectShortName">plain_data_i[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_validator /data_hi_i" type="logic">
+         <obj_property name="ElementShortName">data_hi_i</obj_property>
+         <obj_property name="ObjectShortName">data_hi_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_validator /mem_d_rd_i" type="logic">
+         <obj_property name="ElementShortName">mem_d_rd_i</obj_property>
+         <obj_property name="ObjectShortName">mem_d_rd_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_validator /data_valid_o" type="logic">
+         <obj_property name="ElementShortName">data_valid_o</obj_property>
+         <obj_property name="ObjectShortName">data_valid_o</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group2391" type="group">
+      <obj_property name="label">Sim Attack</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="divider" fp_name="divider3484">
+         <obj_property name="label">LSU</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">#FFFF00</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_data_wr_o" type="array">
+         <obj_property name="ElementShortName">mem_data_wr_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_data_wr_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_o" type="array">
+         <obj_property name="ElementShortName">mem_addr_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_addr_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_rd_o" type="logic">
+         <obj_property name="ElementShortName">mem_rd_o</obj_property>
+         <obj_property name="ObjectShortName">mem_rd_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_wr_o" type="array">
+         <obj_property name="ElementShortName">mem_wr_o[3:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_wr_o[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/writeback_value_o" type="array">
+         <obj_property name="ElementShortName">writeback_value_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">writeback_value_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="divider" fp_name="divider2392">
+         <obj_property name="label">Registers</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">#FFD700</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x8_s0_w " type="array">
+         <obj_property name="ElementShortName">\REGFILE.x8_s0_w [31:0]</obj_property>
+         <obj_property name="ObjectShortName">\REGFILE.x8_s0_w [31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x5_t0_w " type="array">
+         <obj_property name="ElementShortName">\REGFILE.x5_t0_w [31:0]</obj_property>
+         <obj_property name="ObjectShortName">\REGFILE.x5_t0_w [31:0]</obj_property>
+      </wvobject>
+      <wvobject type="divider" fp_name="divider2434">
+         <obj_property name="label">Validator</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">#A52A2A</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_validator /enc_data_i" type="array">
+         <obj_property name="ElementShortName">enc_data_i[63:0]</obj_property>
+         <obj_property name="ObjectShortName">enc_data_i[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_validator /otp_data_i" type="array">
+         <obj_property name="ElementShortName">otp_data_i[63:0]</obj_property>
+         <obj_property name="ObjectShortName">otp_data_i[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_validator /plain_data_i" type="array">
+         <obj_property name="ElementShortName">plain_data_i[63:0]</obj_property>
+         <obj_property name="ObjectShortName">plain_data_i[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_validator /data_hi_i" type="logic">
+         <obj_property name="ElementShortName">data_hi_i</obj_property>
+         <obj_property name="ObjectShortName">data_hi_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_validator /mem_d_rd_i" type="logic">
+         <obj_property name="ElementShortName">mem_d_rd_i</obj_property>
+         <obj_property name="ObjectShortName">mem_d_rd_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_validator /data_valid_o" type="logic">
+         <obj_property name="ElementShortName">data_valid_o</obj_property>
+         <obj_property name="ObjectShortName">data_valid_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_validator /enc_word_w" type="array">
+         <obj_property name="ElementShortName">enc_word_w[31:0]</obj_property>
+         <obj_property name="ObjectShortName">enc_word_w[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_validator /otp_word_w" type="array">
+         <obj_property name="ElementShortName">otp_word_w[31:0]</obj_property>
+         <obj_property name="ObjectShortName">otp_word_w[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_validator /plain_word_w" type="array">
+         <obj_property name="ElementShortName">plain_word_w[31:0]</obj_property>
+         <obj_property name="ObjectShortName">plain_word_w[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="divider" fp_name="divider2414">
+         <obj_property name="label">Memories</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">#FFA500</obj_property>
+      </wvobject>
+      <wvobject fp_name="group2418" type="group">
+         <obj_property name="label">PLAIN Memory</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/u_ram/addr1_i" type="array">
+            <obj_property name="ElementShortName">addr1_i[12:0]</obj_property>
+            <obj_property name="ObjectShortName">addr1_i[12:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/u_ram/data1_i" type="array">
+            <obj_property name="ElementShortName">data1_i[63:0]</obj_property>
+            <obj_property name="ObjectShortName">data1_i[63:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/u_ram/wr1_i" type="array">
+            <obj_property name="ElementShortName">wr1_i[7:0]</obj_property>
+            <obj_property name="ObjectShortName">wr1_i[7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/u_ram/data1_o" type="array">
+            <obj_property name="ElementShortName">data1_o[63:0]</obj_property>
+            <obj_property name="ObjectShortName">data1_o[63:0]</obj_property>
+            <obj_property name="CustomSignalColor">#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group2419" type="group">
+         <obj_property name="label">OTP Memory</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_otp_ram /addr0_i" type="array">
+            <obj_property name="ElementShortName">addr0_i[12:0]</obj_property>
+            <obj_property name="ObjectShortName">addr0_i[12:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_otp_ram /data0_i" type="array">
+            <obj_property name="ElementShortName">data0_i[63:0]</obj_property>
+            <obj_property name="ObjectShortName">data0_i[63:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_otp_ram /wr0_i" type="array">
+            <obj_property name="ElementShortName">wr0_i[7:0]</obj_property>
+            <obj_property name="ObjectShortName">wr0_i[7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_otp_ram /data0_o" type="array">
+            <obj_property name="ElementShortName">data0_o[63:0]</obj_property>
+            <obj_property name="ObjectShortName">data0_o[63:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group2420" type="group">
+         <obj_property name="label">ENC Memory</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_enc_ram /addr0_i" type="array">
+            <obj_property name="ElementShortName">addr0_i[12:0]</obj_property>
+            <obj_property name="ObjectShortName">addr0_i[12:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_enc_ram /data0_i" type="array">
+            <obj_property name="ElementShortName">data0_i[63:0]</obj_property>
+            <obj_property name="ObjectShortName">data0_i[63:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_enc_ram /wr0_i" type="array">
+            <obj_property name="ElementShortName">wr0_i[7:0]</obj_property>
+            <obj_property name="ObjectShortName">wr0_i[7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_enc_ram /data0_o" type="array">
+            <obj_property name="ElementShortName">data0_o[63:0]</obj_property>
+            <obj_property name="ObjectShortName">data0_o[63:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="divider" fp_name="divider3484">
+         <obj_property name="label">LSU</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">#FFFF00</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_error_i" type="logic">
+         <obj_property name="ElementShortName">mem_error_i</obj_property>
+         <obj_property name="ObjectShortName">mem_error_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_enc_error_i" type="logic">
+         <obj_property name="ElementShortName">mem_enc_error_i</obj_property>
+         <obj_property name="ObjectShortName">mem_enc_error_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/writeback_valid_o" type="logic">
+         <obj_property name="ElementShortName">writeback_valid_o</obj_property>
+         <obj_property name="ObjectShortName">writeback_valid_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/writeback_exception_o" type="array">
+         <obj_property name="ElementShortName">writeback_exception_o[6:0]</obj_property>
+         <obj_property name="ObjectShortName">writeback_exception_o[6:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/writeback_value_o" type="array">
+         <obj_property name="ElementShortName">writeback_value_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">writeback_value_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/stall_o" type="logic">
+         <obj_property name="ElementShortName">stall_o</obj_property>
+         <obj_property name="ObjectShortName">stall_o</obj_property>
+      </wvobject>
+      <wvobject type="divider" fp_name="divider8975">
+         <obj_property name="label">ISSUE</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">#FAAFBE</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/csr_writeback_exception_o" type="array">
+         <obj_property name="ElementShortName">csr_writeback_exception_o[6:0]</obj_property>
+         <obj_property name="ObjectShortName">csr_writeback_exception_o[6:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/csr_writeback_exception_pc_o" type="array">
+         <obj_property name="ElementShortName">csr_writeback_exception_pc_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">csr_writeback_exception_pc_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/csr_writeback_exception_addr_o" type="array">
+         <obj_property name="ElementShortName">csr_writeback_exception_addr_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">csr_writeback_exception_addr_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/squash_w" type="logic">
+         <obj_property name="ElementShortName">squash_w</obj_property>
+         <obj_property name="ObjectShortName">squash_w</obj_property>
+      </wvobject>
+      <wvobject type="divider" fp_name="divider2433">
+         <obj_property name="label">CSR</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">#800080</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_csr/u_csrfile/exception_i" type="array">
+         <obj_property name="ElementShortName">exception_i[6:0]</obj_property>
+         <obj_property name="ObjectShortName">exception_i[6:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_csr/u_csrfile/exception_pc_i" type="array">
+         <obj_property name="ElementShortName">exception_pc_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">exception_pc_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_csr/u_csrfile/exception_addr_i" type="array">
+         <obj_property name="ElementShortName">exception_addr_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">exception_addr_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_csr/u_csrfile/csr_target_o" type="array">
+         <obj_property name="ElementShortName">csr_target_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">csr_target_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_csr/u_csrfile/csr_branch_o" type="logic">
+         <obj_property name="ElementShortName">csr_branch_o</obj_property>
+         <obj_property name="ObjectShortName">csr_branch_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_csr/u_csrfile/csr_mcause_r" type="array">
+         <obj_property name="ElementShortName">csr_mcause_r[31:0]</obj_property>
+         <obj_property name="ObjectShortName">csr_mcause_r[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_csr/u_csrfile/csr_mtval_r" type="array">
+         <obj_property name="ElementShortName">csr_mtval_r[31:0]</obj_property>
+         <obj_property name="ObjectShortName">csr_mtval_r[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_csr/u_csrfile/csr_mepc_r" type="array">
+         <obj_property name="ElementShortName">csr_mepc_r[31:0]</obj_property>
+         <obj_property name="ObjectShortName">csr_mepc_r[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group2391" type="group">
+      <obj_property name="label">Validator LW</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="divider" fp_name="divider3484">
+         <obj_property name="label">LSU</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">#FFFF00</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_data_wr_o" type="array">
+         <obj_property name="ElementShortName">mem_data_wr_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_data_wr_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_addr_o" type="array">
+         <obj_property name="ElementShortName">mem_addr_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_addr_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_rd_o" type="logic">
+         <obj_property name="ElementShortName">mem_rd_o</obj_property>
+         <obj_property name="ObjectShortName">mem_rd_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/mem_wr_o" type="array">
+         <obj_property name="ElementShortName">mem_wr_o[3:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_wr_o[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_lsu/writeback_value_o" type="array">
+         <obj_property name="ElementShortName">writeback_value_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">writeback_value_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="divider" fp_name="divider2392">
+         <obj_property name="label">Registers</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">#FFD700</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x8_s0_w " type="array">
+         <obj_property name="ElementShortName">\REGFILE.x8_s0_w [31:0]</obj_property>
+         <obj_property name="ObjectShortName">\REGFILE.x8_s0_w [31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_core/u_issue/u_regfile/\REGFILE.x5_t0_w " type="array">
+         <obj_property name="ElementShortName">\REGFILE.x5_t0_w [31:0]</obj_property>
+         <obj_property name="ObjectShortName">\REGFILE.x5_t0_w [31:0]</obj_property>
+      </wvobject>
+      <wvobject type="divider" fp_name="divider2434">
+         <obj_property name="label">Validator</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">#A52A2A</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_validator /enc_data_i" type="array">
+         <obj_property name="ElementShortName">enc_data_i[63:0]</obj_property>
+         <obj_property name="ObjectShortName">enc_data_i[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_validator /otp_data_i" type="array">
+         <obj_property name="ElementShortName">otp_data_i[63:0]</obj_property>
+         <obj_property name="ObjectShortName">otp_data_i[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_validator /plain_data_i" type="array">
+         <obj_property name="ElementShortName">plain_data_i[63:0]</obj_property>
+         <obj_property name="ObjectShortName">plain_data_i[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_validator /data_hi_i" type="logic">
+         <obj_property name="ElementShortName">data_hi_i</obj_property>
+         <obj_property name="ObjectShortName">data_hi_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_validator /mem_d_rd_i" type="logic">
+         <obj_property name="ElementShortName">mem_d_rd_i</obj_property>
+         <obj_property name="ObjectShortName">mem_d_rd_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_validator /data_valid_o" type="logic">
+         <obj_property name="ElementShortName">data_valid_o</obj_property>
+         <obj_property name="ObjectShortName">data_valid_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_validator /enc_word_w" type="array">
+         <obj_property name="ElementShortName">enc_word_w[31:0]</obj_property>
+         <obj_property name="ObjectShortName">enc_word_w[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_validator /otp_word_w" type="array">
+         <obj_property name="ElementShortName">otp_word_w[31:0]</obj_property>
+         <obj_property name="ObjectShortName">otp_word_w[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_validator /plain_word_w" type="array">
+         <obj_property name="ElementShortName">plain_word_w[31:0]</obj_property>
+         <obj_property name="ObjectShortName">plain_word_w[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="divider" fp_name="divider2414">
+         <obj_property name="label">Memories</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">#FFA500</obj_property>
+      </wvobject>
+      <wvobject fp_name="group2418" type="group">
+         <obj_property name="label">PLAIN Memory</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/u_ram/addr1_i" type="array">
+            <obj_property name="ElementShortName">addr1_i[12:0]</obj_property>
+            <obj_property name="ObjectShortName">addr1_i[12:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/u_ram/data1_i" type="array">
+            <obj_property name="ElementShortName">data1_i[63:0]</obj_property>
+            <obj_property name="ObjectShortName">data1_i[63:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/u_ram/wr1_i" type="array">
+            <obj_property name="ElementShortName">wr1_i[7:0]</obj_property>
+            <obj_property name="ObjectShortName">wr1_i[7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/u_ram/data1_o" type="array">
+            <obj_property name="ElementShortName">data1_o[63:0]</obj_property>
+            <obj_property name="ObjectShortName">data1_o[63:0]</obj_property>
+            <obj_property name="CustomSignalColor">#00FF00</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group2419" type="group">
+         <obj_property name="label">OTP Memory</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_otp_ram /addr0_i" type="array">
+            <obj_property name="ElementShortName">addr0_i[12:0]</obj_property>
+            <obj_property name="ObjectShortName">addr0_i[12:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_otp_ram /data0_i" type="array">
+            <obj_property name="ElementShortName">data0_i[63:0]</obj_property>
+            <obj_property name="ObjectShortName">data0_i[63:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_otp_ram /wr0_i" type="array">
+            <obj_property name="ElementShortName">wr0_i[7:0]</obj_property>
+            <obj_property name="ObjectShortName">wr0_i[7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_otp_ram /data0_o" type="array">
+            <obj_property name="ElementShortName">data0_o[63:0]</obj_property>
+            <obj_property name="ObjectShortName">data0_o[63:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group2420" type="group">
+         <obj_property name="label">ENC Memory</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_enc_ram /addr0_i" type="array">
+            <obj_property name="ElementShortName">addr0_i[12:0]</obj_property>
+            <obj_property name="ObjectShortName">addr0_i[12:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_enc_ram /data0_i" type="array">
+            <obj_property name="ElementShortName">data0_i[63:0]</obj_property>
+            <obj_property name="ObjectShortName">data0_i[63:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_enc_ram /wr0_i" type="array">
+            <obj_property name="ElementShortName">wr0_i[7:0]</obj_property>
+            <obj_property name="ObjectShortName">wr0_i[7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.no_enc_updater.u_enc_ram /data0_o" type="array">
+            <obj_property name="ElementShortName">data0_o[63:0]</obj_property>
+            <obj_property name="ObjectShortName">data0_o[63:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="divider" fp_name="divider2433">
+         <obj_property name="label">Encryptor</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">#D2691E</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /data_hi_i" type="logic">
+         <obj_property name="ElementShortName">data_hi_i</obj_property>
+         <obj_property name="ObjectShortName">data_hi_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /data_wr_i" type="array">
+         <obj_property name="ElementShortName">data_wr_i[3:0]</obj_property>
+         <obj_property name="ObjectShortName">data_wr_i[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /mem_addr_i" type="array">
+         <obj_property name="ElementShortName">mem_addr_i[12:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_addr_i[12:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /random_num_i" type="array">
+         <obj_property name="ElementShortName">random_num_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">random_num_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /plain_data_i" type="array">
+         <obj_property name="ElementShortName">plain_data_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">plain_data_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /random_num_request_o" type="logic">
+         <obj_property name="ElementShortName">random_num_request_o</obj_property>
+         <obj_property name="ObjectShortName">random_num_request_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /write_byte_otp_o" type="array">
+         <obj_property name="ElementShortName">write_byte_otp_o[7:0]</obj_property>
+         <obj_property name="ObjectShortName">write_byte_otp_o[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /otp_address_o" type="array">
+         <obj_property name="ElementShortName">otp_address_o[12:0]</obj_property>
+         <obj_property name="ObjectShortName">otp_address_o[12:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /otp_data_o" type="array">
+         <obj_property name="ElementShortName">otp_data_o[63:0]</obj_property>
+         <obj_property name="ObjectShortName">otp_data_o[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /write_byte_enc_o" type="array">
+         <obj_property name="ElementShortName">write_byte_enc_o[7:0]</obj_property>
+         <obj_property name="ObjectShortName">write_byte_enc_o[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /enc_address_o" type="array">
+         <obj_property name="ElementShortName">enc_address_o[12:0]</obj_property>
+         <obj_property name="ObjectShortName">enc_address_o[12:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_wrapper/UUT/RISCV_bd_i/riscv_wrapper_0/inst/rv_tcm_top/u_secure_zone/u_secure_memories/\secure_zone.u_encryptor /enc_data_o" type="array">
+         <obj_property name="ElementShortName">enc_data_o[63:0]</obj_property>
+         <obj_property name="ObjectShortName">enc_data_o[63:0]</obj_property>
+      </wvobject>
    </wvobject>
 </wave_config>

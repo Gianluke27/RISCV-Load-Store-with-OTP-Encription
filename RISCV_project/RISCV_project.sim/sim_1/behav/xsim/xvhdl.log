@@ -1,4 +1,0 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.ip_user_files/bd/RISCV_bd/ip/RISCV_bd_proc_sys_reset_0_0/sim/RISCV_bd_proc_sys_reset_0_0.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'RISCV_bd_proc_sys_reset_0_0'
-INFO: [VRFC 10-163] Analyzing VHDL file "H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.ip_user_files/bd/RISCV_demonstrator/ip/RISCV_demonstrator_rst_clk_wiz_100M_1/sim/RISCV_demonstrator_rst_clk_wiz_100M_1.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'RISCV_demonstrator_rst_clk_wiz_100M_1'

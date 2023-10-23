@@ -1,4 +1,38 @@
 Time resolution is 1 ps
+XilinxAXIVIP: Found at Path: tb_riscv_wrapper.UUT_demonstrator.RISCV_demonstrator_i.processing_system7_0.inst.M_AXI_GP0.master
+[0] : *ZYNQ_VIP_INFO : M_AXI_GP0 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: tb_riscv_wrapper.UUT_demonstrator.RISCV_demonstrator_i.processing_system7_0.inst.M_AXI_GP1.master
+[0] : *ZYNQ_VIP_INFO : M_AXI_GP1 : Port is ENABLED.
+XilinxAXIVIP: Found at Path: tb_riscv_wrapper.UUT_demonstrator.RISCV_demonstrator_i.processing_system7_0.inst.S_AXI_GP0.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_GP0 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: tb_riscv_wrapper.UUT_demonstrator.RISCV_demonstrator_i.processing_system7_0.inst.S_AXI_GP1.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_GP1 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: tb_riscv_wrapper.UUT_demonstrator.RISCV_demonstrator_i.processing_system7_0.inst.S_AXI_HP0.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_HP0 : Port is DISABLED.
+                   0 BEFORE checking line ...... x
+                   0 AFTER checking line ...... x
+XilinxAXIVIP: Found at Path: tb_riscv_wrapper.UUT_demonstrator.RISCV_demonstrator_i.processing_system7_0.inst.S_AXI_HP1.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_HP1 : Port is DISABLED.
+                   0 BEFORE checking line ...... x
+                   0 AFTER checking line ...... x
+XilinxAXIVIP: Found at Path: tb_riscv_wrapper.UUT_demonstrator.RISCV_demonstrator_i.processing_system7_0.inst.S_AXI_HP2.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_HP2 : Port is DISABLED.
+                   0 BEFORE checking line ...... x
+                   0 AFTER checking line ...... x
+XilinxAXIVIP: Found at Path: tb_riscv_wrapper.UUT_demonstrator.RISCV_demonstrator_i.processing_system7_0.inst.S_AXI_HP3.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_HP3 : Port is DISABLED.
+                   0 BEFORE checking line ...... x
+                   0 AFTER checking line ...... x
+XilinxAXIVIP: Found at Path: tb_riscv_wrapper.UUT_demonstrator.RISCV_demonstrator_i.processing_system7_0.inst.S_AXI_ACP.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_ACP : Port is DISABLED.
+Loading RAM for PLAIN.
+Loading vvadd_rvtests_pwr.mif file
+Load RAM completed!
+Loading RAM for ENC.
+Loading vvadd_rvtests_pwr.mif file
+Load RAM completed!
+Loading RAM for OTP.
+Load RAM completed!
 Loading RAM for PLAIN.
 Loading vvadd_rvtests_pwr.mif file
 Load RAM completed!
@@ -10,79 +44,114 @@ Load RAM completed!
 Starting testbench
 Test!
 after -> rdata:
-         99:0000806701010113
-         98:00c1240300078513
-         97:0000079300000013
+        134:0000806701010113
+        133:00c1240300078513
+        132:0000079300000013
+        131:0000001300000013
+        130:0000001300000013
+        129:0000001300000013
+        128:0000001300000013
+        127:0000001300000013
+        126:0000001300000013
+        125:0000001300000013
+        124:0000001300000013
+        123:0000001300000013
+        122:0000001300000013
+        121:0000001300000013
+        120:0000001300000013
+        119:0000001300000013
+        118:0000001300000013
+        117:0000001300000013
+        116:0000001300000013
+        115:0000001300000013
+        114:0000001300000013
+        113:0000001300000013
+        112:0000001300000013
+        111:0000001300000013
+        110:0000001300000013
+        109:0000001300000013
+        108:0000001300000013
+        107:0000001300000013
+        106:0000001300000013
+        105:0000001300000013
+        104:0000001304012903
+        103:0000001300000013
+        102:0000001300000013
+        101:0000001300000013
+        100:0471202300000013
+         99:0000001300000013
+         98:0000001300000013
+         97:0000001300000013
          96:0000001300000013
          95:0000001300000013
          94:0000001300000013
          93:0000001300000013
-         92:0061282301012983
-         91:0001290300512023
+         92:0000001300000013
+         91:0000001300000013
          90:0000001300000013
          89:0000001300000013
          88:0000001300000013
          87:0000001300000013
-         86:0000099300000913
-         85:ef0303139abce337
-         84:67828293123452b7
+         86:0000001300000013
+         85:0000001300000013
+         84:0000001300000013
          83:0000001300000013
          82:0000001300000013
          81:0000001300000013
          80:0000001300000013
-         79:0000001301012983
-         78:0061282300512023
-         77:0001290300000013
-         76:0000001300000013
+         79:0201148300000013
+         78:0000001300000013
+         77:0000001300000013
+         76:0000001302611023
          75:0000001300000013
          74:0000001300000013
          73:0000001300000013
-         72:0000099300000913
-         71:6783031312345337
-         70:ef0282939abce2b7
+         72:0000001300000013
+         71:0000001300000013
+         70:0000001300000013
          69:0000001300000013
          68:0000001300000013
          67:0000001300000013
          66:0000001300000013
-         65:0000001300612823
-         64:0101298300512023
-         63:0001290300000013
+         65:0000001300000013
+         64:0000001300000013
+         63:0000001300000013
          62:0000001300000013
          61:0000001300000013
          60:0000001300000013
-         59:0000001300000993
-         58:00000913ef030313
-         57:9abce33767828293
-         56:123452b700000013
-         55:0000001300000013
+         59:0000001300000013
+         58:0000001300000013
+         57:0000001300000013
+         56:0000001300000013
+         55:0000001300010403
          54:0000001300000013
          53:0000001300000013
-         52:0061282300512023
-         51:0101298300012903
+         52:0000001300000013
+         51:0051002300000013
          50:0000001300000013
          49:0000001300000013
          48:0000001300000013
          47:0000001300000013
          46:0000001300000013
          45:0000001300000013
-         44:0000099300000913
-         43:6783031312345337
-         42:ef0282939abce2b7
+         44:0000001300000013
+         43:0000001300000013
+         42:0000001300000013
          41:0000001300000013
          40:0000001300000013
          39:0000001300000013
          38:0000001300000013
-         37:0000001301012983
-         36:0001290300612823
-         35:0051202300000013
+         37:0000001300000013
+         36:0000001300000013
+         35:0000001300000013
          34:0000001300000013
          33:0000001300000013
          32:0000001300000013
          31:0000001300000013
-         30:0000099300000913
-         29:ef0303139abce337
-         28:67828293123452b7
-         27:fe81011301010413
+         30:bcc3839399aac3b7
+         29:7883031355667337
+         28:34428293112232b7
+         27:f801011301010413
          26:00812623ff010113
          25:0000006f7b201073
          24:00000013008000ef
@@ -110,3 +179,15 @@ after -> rdata:
           2:0bc000ef30529073
           1:02078293800007b7
           0:8001011380010137
+                   0 else checking line ......x
+WARNING: 4 ns tb_riscv_wrapper.UUT_demonstrator.RISCV_demonstrator_i.processing_system7_0.inst.M_AXI_GP1.master.IF : ARESET_N can't be X/Z after 1 cycle of clock. To downgrade, use <hierarchy_path to VIP>.IF.set_enable_xchecks_to_warn(), or filter using clr_enable_xchecks.
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+$finish called at time : 13588 ns : File "H:/TesiMagistrale/Github/RISCV_Enc_Load_Store/RISCV-Load-Store-with-OTP-Encription/RISCV_project/RISCV_project.srcs/sim_1/new/tb_riscv_wrapper.v" Line 226

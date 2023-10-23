@@ -46,7 +46,7 @@ static uintptr_t insn_len(uintptr_t pc)
   } while(0)
 
 
-/*
+//*
 void _wait_ms(unsigned int time_ms);
 void _wait_us(unsigned int time_ms);
 

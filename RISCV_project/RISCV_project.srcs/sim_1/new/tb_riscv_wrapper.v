@@ -46,7 +46,7 @@
 /*
     Tests
 */
-`define FILE_NAME               ("median_rvtests.mif")   
+`define FILE_NAME               ("RISCV_Encryptor_test_01.mif")   
 
 module tb_riscv_wrapper();
     reg tb_ACLK;    // PS clock
@@ -90,6 +90,7 @@ module tb_riscv_wrapper();
     
     reg [31:0] inst_prev = 32'b0;
     integer inst_count = 0;
+    integer addr = 0;
     
     initial
     begin
@@ -108,7 +109,7 @@ module tb_riscv_wrapper();
             
             mem_empty = 1;
             for (i=mem_dim-1; i >= 0; i=i-1)
-                if(UUT.RISCV_bd_i.riscv_wrapper_0.inst.rv_tcm_top.u_tcm.u_ram.ram[i] != 64'd0)
+                if(UUT.RISCV_bd_i.riscv_wrapper_0.inst.rv_tcm_top.u_secure_zone.u_secure_memories.u_ram.ram[i] != 64'd0)
                     mem_empty = 0;
                     
             if(mem_empty)
@@ -125,8 +126,8 @@ module tb_riscv_wrapper();
             
             $display("after -> rdata:");
             for (i=mem_dim-1; i >= 0; i=i-1)
-                if(UUT.RISCV_bd_i.riscv_wrapper_0.inst.rv_tcm_top.u_tcm.u_ram.ram[i] != 64'd0)
-                    $display("%d:%h",i,UUT.RISCV_bd_i.riscv_wrapper_0.inst.rv_tcm_top.u_tcm.u_ram.ram[i]);       
+                if(UUT.RISCV_bd_i.riscv_wrapper_0.inst.rv_tcm_top.u_secure_zone.u_secure_memories.u_ram.ram[i] != 64'd0)
+                    $display("%d:%h",i,UUT.RISCV_bd_i.riscv_wrapper_0.inst.rv_tcm_top.u_secure_zone.u_secure_memories.u_ram.ram[i]);       
         end
         else if(`TB_TYPE == "Test_Demonstator")
         begin
@@ -135,7 +136,7 @@ module tb_riscv_wrapper();
             
             mem_empty = 1;
             for (i=mem_dim-1; i >= 0; i=i-1)
-                if(UUT_demonstrator.RISCV_demonstrator_i.riscv_wrapper_0.inst.rv_tcm_top.u_tcm.u_ram.ram[i] != 64'd0)
+                if(UUT_demonstrator.RISCV_demonstrator_i.riscv_wrapper_0.inst.rv_tcm_top.u_secure_zone.u_secure_memories.u_ram.ram[i] != 64'd0)
                     mem_empty = 0;
                     
             if(mem_empty)
@@ -152,8 +153,8 @@ module tb_riscv_wrapper();
             
             $display("after -> rdata:");
             for (i=mem_dim-1; i >= 0; i=i-1)
-                if(UUT_demonstrator.RISCV_demonstrator_i.riscv_wrapper_0.inst.rv_tcm_top.u_tcm.u_ram.ram[i] != 64'd0)
-                    $display("%d:%h",i,UUT_demonstrator.RISCV_demonstrator_i.riscv_wrapper_0.inst.rv_tcm_top.u_tcm.u_ram.ram[i]);      
+                if(UUT_demonstrator.RISCV_demonstrator_i.riscv_wrapper_0.inst.rv_tcm_top.u_secure_zone.u_secure_memories.u_ram.ram[i] != 64'd0)
+                    $display("%d:%h",i,UUT_demonstrator.RISCV_demonstrator_i.riscv_wrapper_0.inst.rv_tcm_top.u_secure_zone.u_secure_memories.u_ram.ram[i]);      
         end           
     end  
     
@@ -176,6 +177,14 @@ module tb_riscv_wrapper();
                     inst_count = inst_count + 1;
                 end
                 inst_prev = UUT.RISCV_bd_i.riscv_wrapper_0.inst.rv_tcm_top.u_core.u_frontend.u_fetch.fetch_pc_o;
+                
+                if(UUT.RISCV_bd_i.riscv_wrapper_0.inst.rv_tcm_top.u_secure_zone.u_secure_memories.secure_zone.u_encryptor.plain_data_i == 32'h7788)
+                begin
+                    addr = UUT.RISCV_bd_i.riscv_wrapper_0.inst.rv_tcm_top.u_secure_zone.u_secure_memories.secure_zone.u_encryptor.mem_addr_i;
+                    repeat (6) @(posedge temp_clk);  
+                    write(addr , 64'haaaa7788);
+                end
+                
                 repeat (1) @(posedge temp_clk);   
             end
         end
@@ -208,6 +217,9 @@ module tb_riscv_wrapper();
                     inst_count = inst_count + 1;
                 end
                 inst_prev = UUT_demonstrator.RISCV_demonstrator_i.riscv_wrapper_0.inst.rv_tcm_top.u_core.u_frontend.u_fetch.fetch_pc_o;
+                
+                
+                
                 repeat (1) @(posedge temp_clk);   
             end
         end
@@ -222,7 +234,7 @@ task write;
     input [31:0] addr;
     input [63:0]  data;
 begin   
-    UUT.RISCV_bd_i.riscv_wrapper_0.inst.rv_tcm_top.u_tcm.u_ram.ram[addr][63:0]  = data;    
+    UUT.RISCV_bd_i.riscv_wrapper_0.inst.rv_tcm_top.u_secure_zone.u_secure_memories.u_ram.ram[addr][63:0]  = data;    
 end
 endtask
 
@@ -230,7 +242,7 @@ task write_otp;
     input [31:0] addr;
     input [63:0]  data;
 begin
-    UUT.RISCV_bd_i.riscv_wrapper_0.inst.rv_tcm_top.u_tcm.secure_zone.no_enc_updater.u_otp_ram.ram[addr][63:0] = data;
+    UUT.RISCV_bd_i.riscv_wrapper_0.inst.rv_tcm_top.u_secure_zone.u_secure_memories.secure_zone.no_enc_updater.u_otp_ram.ram[addr][63:0] = data;
 end
 endtask
 
@@ -238,7 +250,7 @@ task write_enc;
     input [31:0] addr;
     input [63:0]  data;
 begin
-    UUT.RISCV_bd_i.riscv_wrapper_0.inst.rv_tcm_top.u_tcm.secure_zone.no_enc_updater.u_enc_ram.ram[addr][63:0] = data;
+    UUT.RISCV_bd_i.riscv_wrapper_0.inst.rv_tcm_top.u_secure_zone.u_secure_memories.secure_zone.no_enc_updater.u_enc_ram.ram[addr][63:0] = data;
 end
 endtask
 
@@ -247,7 +259,7 @@ task write_demonstrator;
     input [31:0] addr;
     input [63:0]  data;
 begin
-    UUT_demonstrator.RISCV_demonstrator_i.riscv_wrapper_0.inst.rv_tcm_top.u_tcm.u_ram.ram[addr][63:0] = data;
+    UUT_demonstrator.RISCV_demonstrator_i.riscv_wrapper_0.inst.rv_tcm_top.u_secure_zone.u_secure_memories.u_ram.ram[addr][63:0] = data;
 end
 endtask
 
@@ -255,7 +267,7 @@ task write_otp_demonstrator;
     input [31:0] addr;
     input [63:0]  data;
 begin
-    UUT_demonstrator.RISCV_demonstrator_i.riscv_wrapper_0.inst.rv_tcm_top.u_tcm.secure_zone.no_enc_updater.u_otp_ram.ram[addr][63:0] = data;
+    UUT_demonstrator.RISCV_demonstrator_i.riscv_wrapper_0.inst.rv_tcm_top.u_secure_zone.u_secure_memories.secure_zone.no_enc_updater.u_otp_ram.ram[addr][63:0] = data;
 end
 endtask
 
@@ -263,7 +275,7 @@ task write_enc_demonstrator;
     input [31:0] addr;
     input [63:0]  data;
 begin
-    UUT_demonstrator.RISCV_demonstrator_i.riscv_wrapper_0.inst.rv_tcm_top.u_tcm.secure_zone.no_enc_updater.u_enc_ram.ram[addr][63:0] = data;
+    UUT_demonstrator.RISCV_demonstrator_i.riscv_wrapper_0.inst.rv_tcm_top.u_secure_zone.u_secure_memories.secure_zone.no_enc_updater.u_enc_ram.ram[addr][63:0] = data;
 end
 endtask
 //*/
